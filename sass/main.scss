@@ -1,0 +1,340 @@
+/* FONTS, COLORS, MIX-IN'S*/
+
+@import "compass/css3";
+
+@font-face {
+    font-family: 'beautysd';
+    src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
+         url('../fonts/beautyschooldropout.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'caviardreams';
+    src: url('../fonts/CaviarDreams.ttf') format('truetype'),
+}         
+
+@font-face {
+    font-family: 'caviardreams';
+    src: url('../fonts/CaviarDreamsBold.ttf') format('truetype'),
+         url('../fonts/CaviarDreamsBold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'arcon';
+    src: url('fonts/Arcon-Regular.otf');
+}
+
+h2 {
+    font-family: 'caviardreams';
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'caviardreams';
+}
+
+p {
+    font-family: 'arcon';
+    line-height: 24px;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+$test-border: 2px solid green;
+$pink: #f06490;
+$lblue: #2ba4c0;
+$dblue: #3d52a1;
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+
+//***********************//
+//******* HEADER ********//
+//***********************//
+
+.jocelyn {
+    text-align: center; 
+    background-color: white;
+    padding: 50px 50px 50px 80px;
+//    border: $test-border;
+    h1 {
+        color: $dblue;
+        font-family: 'beautysd';
+        margin: 0;
+        font-size: 96px;
+        letter-spacing: .14em;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: $lblue;
+    margin: 0;
+    padding: 50px;
+    font: bold 20px 'caviardreams';
+    position: relative;
+    a {
+        text-decoration: none;
+        color: white;
+
+    }
+    #floating img {
+        max-width: 150px;
+        height: auto;
+        z-index: 2;
+        position: absolute;
+        left: 45%;
+        top: -10px;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.post-header-gap {
+    height: 60px;
+}
+
+//***********************//
+//**** WEB PORTFOLIO ****//
+//***********************//
+.content-item{
+  background: url(https://dummyimage.com/400x300/000/fff);
+  display: flex;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  margin-top: 40px;
+  .overlay{
+    border-top: 100px solid $lblue;
+    border-right: 800px solid transparent;
+    top: 0;
+    height: 0;
+    opacity: .95;
+    position: absolute;
+    left: 0;
+    text-indent: -9999px;
+    @include transition(all .5s ease-out);
+    width: 0;
+  }
+  &:hover .overlay{
+    border-top: 1000px solid $lblue; //size must be double container
+    border-right: 800px solid transparent;//size must be double container
+    @include transition(all .4s ease-out);
+  }
+  .corner-overlay-content{
+    top: 15px;
+    color: white;
+    position: absolute;
+    left: 15px;
+    padding: 13px;
+    @include transition(all .5s ease-out);
+  }
+    p {
+        padding: 12px 0 0 0;
+        border-top: 1px solid white;
+        transition: all .5s ease-out;
+        opacity: 0;
+    }
+    &:hover {
+        p {
+            opacity: 1;
+        }
+    }
+}
+//***********************//
+//***** Image Tiles *****//
+//***********************//
+.content-item{   
+    &.cvilleweekly {
+      background: url(../raw/cvilleweekly.png) top left / cover no-repeat;
+    }
+
+    &.vector {
+      background: url(../raw/vector.png) top left / cover no-repeat;
+    }
+    
+    &.AEM {
+      background: url(../raw/AEM.png) top left / cover no-repeat;
+    }
+    
+    &.CSO {
+      background: url(../raw/CSO.png) top left / cover no-repeat;
+    }
+    
+    &.HC {
+      background: url(../raw/HC.png) top left / cover no-repeat;
+    }
+
+}
+
+
+.content-item.bottom {
+    .overlay {
+        
+    }
+}
+
+//***********************//
+//***** PILOT TEST ******//
+//***********************//
+
+//.test {
+//    margin-top: 50px;
+////    border-top: 100px solid red;
+////    border-right: 0px solid green;
+//    background-color: $dblue;
+//    width: 400px;
+//    height: 300px;
+//    color: white;
+//    padding: 20px;
+//    box-sizing: border-box;
+//    h2 {
+//        margin: 0 0 12px;
+//    }
+//    p {
+//        padding: 12px 0 0 0;
+//        border-top: 1px solid white;
+//        transition: all .5s ease-out;
+//        opacity: 0;
+//    }
+//    &:hover {
+//        p {
+//            opacity: 1;
+//        }
+//    }
+//}
+//
+//
+//
+//
+//p{
+//  margin: 0;
+//  padding: 0;
+//}
+
+
+
+//***********************//
+//********* ART *********//
+//***********************//
+
+.thumbnail-container {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.sm-thumbnail {
+    width: 200px;
+    height: auto;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.art .flex{
+    padding: 0px 30px;
+    flex-flow: row wrap;
+}
+
+//***********************//
+//**** GRAPHIC DESIGN ***//
+//***********************//
+
+h2.graphicdesign {
+    color: $dblue;
+    display: block;
+    width: 100%;
+//    margin-left: 40px;
+    text-align: center;
+    font-size: 55px;
+    margin: 20px 0px;
+}
+
+.flex.graphicdesign {
+    align-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.flex{
+    h2 {
+        color: white;
+    }
+    
+    &.dblue {
+        background-color: $dblue;
+    }
+    
+    &.lblue {
+        background-color: $lblue;
+    }
+    
+    &.pink {
+        background-color: $pink;
+    }
+    
+    &.white {
+        h2 {
+            color: $dblue;
+        }
+    }
+    
+}
+
+//***********************//
+//**** MUSIC ***//
+//***********************//
+
+.dblue {
+    background-color: $dblue;
+    color: white;
+}
+
+.pink {
+    background-color: $pink;
+    color: white;
+}
+
+.container {
+    padding: 40px;
+}
+
+.ensemble p {
+    text-indent: 20px;
+    &.indent {
+        text-indent: 40px;
+    }
+}
+
+.education {
+    
+    &.gap {
+    height: 40px;
+    }
+    h3 {
+        text-indent: 20px;
+    }
+    p{
+        text-indent: 40px;
+    }
+}
