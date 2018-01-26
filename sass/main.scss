@@ -180,17 +180,21 @@ li {
     display: none;
 }
 
+#mobile-navbar {
+    display: none;
+}
+
 /********** **********
 *  HAMBURGER BUTTON  *
 ********** **********/
 
 .hamburger {
-    display: inline-block;
+    display: none;
     position: absolute;
     cursor: pointer;
     z-index: 100;
     color: $lblue;
-    left: 0px;
+    left: 10px;
     top: 10px;
 }
 
@@ -635,31 +639,39 @@ h2.graphicdesign, .graphicdesign h2 {
 }
 
 @media screen and (max-width: 500px) {
-    
     #navbar {
         display: none;
     }
-    .jocelyn, ul {
-        padding: 30px;
+    
+    .hamburger {
+        display: inline-block;
     }
     
-    .menu.relative li {
-        display: block;
-    }
+    #mobile-navbar {
+        
     
-    .menu.relative {
-        width: 100%;
-        padding: 0px;
-    }
-    
-    
-    .links.mobile {
-        flex-flow: column wrap;
-        justify-content: center;
-        width: 80%;
-        & li {
-            text-align: center;
-            margin: 10px auto;
+        .jocelyn, ul {
+            padding: 30px;
+        }
+
+        .menu.relative li {
+            display: block;
+        }
+
+        &.menu.relative {
+            width: 100%;
+            padding: 0px;
+        }
+
+
+        .links.mobile {
+            flex-flow: column wrap;
+            justify-content: center;
+            width: 80%;
+            & li {
+                text-align: center;
+                margin: 10px auto;
+            }
         }
     }
     .content-item {
