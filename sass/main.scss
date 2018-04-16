@@ -5,23 +5,23 @@
 @font-face {
     font-family: 'beautysd';
     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
-         url('../fonts/beautyschooldropout.woff') format('woff');
+    url('../fonts/beautyschooldropout.woff') format('woff');
 }
 
 @font-face {
     font-family: 'caviardreams';
     src: url('../fonts/CaviarDreams_Bold.ttf') format('truetype'),
-         url('../fonts/CaviarDreams_Bold.woff') format('woff'),
-         url('../fonts/CaviarDreams_Bold.woff2') format('woff2'),
-         url('../fonts/CaviarDreams_Bold.otf') format('opentype');
+    url('../fonts/CaviarDreams_Bold.woff') format('woff'),
+    url('../fonts/CaviarDreams_Bold.woff2') format('woff2'),
+    url('../fonts/CaviarDreams-Bold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'arcon';
     src: url('../fonts/Arcon-Regular.otf') format('opentype'),
-         url('../fonts/Arcon-Regular.woff') format('woff'),
-         url('../fonts/Arcon-Regular.woff2') format('woff2'),
-         url('../fonts/Arcon-Regular.ttf') format('truetype');
+    url('../fonts/Arcon-Regular.woff') format('woff'),
+    url('../fonts/Arcon-Regular.woff2') format('woff2'),
+    url('../fonts/Arcon-Regular.ttf') format('truetype');
 }
 
 h2 {
@@ -43,11 +43,12 @@ p {
 }
 
 @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    displa: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 
 $test-border: 2px solid green;
@@ -65,12 +66,11 @@ body {
 //***********************//
 //******* HEADER ********//
 //***********************//
-
 .jocelyn {
-    text-align: center; 
+    text-align: center;
     background-color: white;
     padding: 50px 50px 50px 80px;
-//    border: $test-border;
+    //    border: $test-border;
     h1 {
         color: $dblue;
         font-family: 'beautysd';
@@ -84,6 +84,7 @@ ul {
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     font: bold 20px 'caviardreams';
     padding: 0;
@@ -113,6 +114,7 @@ li {
     flex-flow: row nowrap;
     justify-content: space-around;
 }
+
 .menu.relative {
     position: relative;
     background-color: $lblue;
@@ -120,13 +122,14 @@ li {
     padding: 50px;
     flex-flow: row nowrap;
     @include flexbox();
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
 #floating img {
     width: 100%;
     height: auto;
-    webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
     filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
 }
 
@@ -143,7 +146,7 @@ li {
 .mobile img {
     width: 100%;
     height: auto;
-    webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
     filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
 }
 
@@ -162,7 +165,7 @@ li {
     width: 20%;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -172,8 +175,8 @@ li {
     height: 60px;
 }
 
-.links a:hover{
-  border-bottom: 4px solid $pink;
+.links a:hover {
+    border-bottom: 4px solid $pink;
 }
 
 .links.mobile {
@@ -198,7 +201,9 @@ li {
     top: 10px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: $lblue;
@@ -211,7 +216,9 @@ li {
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -221,74 +228,74 @@ li {
 //***********************//
 //**** WEB PORTFOLIO ****//
 //***********************//
-.content-item{
-  background: url(https://dummyimage.com/400x300/000/fff);
-  display: flex;
-  width: 40%;
-  height: 30vmax;
-  overflow: hidden;
-  position: relative;
-  margin-top: 40px;
-  .overlay{
-    border-bottom: 100px solid $lblue;
-    border-left: 1000px solid transparent;
-    bottom: 0;  
-    height: 0;
-    opacity: .95;
-    position: absolute;
-    right: 0;
-    text-indent: -9999px;
-    @include transition(all .5s ease-out);
-    width: 0;
-  }
-  &:hover .overlay{
-    border-bottom: 2000px solid $lblue; //size must be double container
-    border-left: 2000px solid transparent;//size must be double container
-    @include transition(all .4s ease-out);
-  }
-  .corner-overlay-content{
-    bottom: 15px;
-    color: white;
-    position: absolute;
-    right: 15px;
-//    padding: 13px;
-    @include transition(all .5s ease-out);
-  }
-//    p {
-//        padding: 12px 0 0 0;
-//        border-top: 1px solid white;
-//        transition: all .5s ease-out;
-//        opacity: 0;
-//    }
-//    &:hover {
-//        p {
-//            opacity: 1;
-//        }
-//    }
-    &:hover .corner-overlay-content{
-    opacity: 0;
-    @include transition(all .5s ease-out);
-  }
-.overlay-content{
-    bottom: 0;
-    color: white;
-    left: 0;
-    opacity: 0;
-    padding: 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    @include transition(all .3s ease-out);
-    h2{
-      border-bottom: 1px solid white;
-      padding: 0 0 12px;
+.content-item {
+    background: url(https://dummyimage.com/400x300/000/fff);
+    display: flex;
+    width: 40%;
+    height: 30vmax;
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+    .overlay {
+        border-bottom: 100px solid $lblue;
+        border-left: 1000px solid transparent;
+        bottom: 0;
+        height: 0;
+        opacity: .95;
+        position: absolute;
+        right: 0;
+        text-indent: -9999px;
+        @include transition(all .5s ease-out);
+        width: 0;
     }
-  }
-  &:hover .overlay-content {
-    opacity: 1;
-    @include transition(all .3s ease-out);
-    @include transition-delay(.3s);
-  }
+    &:hover .overlay {
+        border-bottom: 2000px solid $lblue; //size must be double container
+        border-left: 2000px solid transparent; //size must be double container
+        @include transition(all .4s ease-out);
+    }
+    .corner-overlay-content {
+        bottom: 15px;
+        color: white;
+        position: absolute;
+        right: 15px;
+        //    padding: 13px;
+        @include transition(all .5s ease-out);
+    }
+    //    p {
+    //        padding: 12px 0 0 0;
+    //        border-top: 1px solid white;
+    //        transition: all .5s ease-out;
+    //        opacity: 0;
+    //    }
+    //    &:hover {
+    //        p {
+    //            opacity: 1;
+    //        }
+    //    }
+    &:hover .corner-overlay-content {
+        opacity: 0;
+        @include transition(all .5s ease-out);
+    }
+    .overlay-content {
+        bottom: 0;
+        color: white;
+        left: 0;
+        opacity: 0;
+        padding: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include transition(all .3s ease-out);
+        h2 {
+            border-bottom: 1px solid white;
+            padding: 0 0 12px;
+        }
+    }
+    &:hover .overlay-content {
+        opacity: 1;
+        @include transition(all .3s ease-out);
+        @include transition-delay(.3s);
+    }
 
 }
 
@@ -300,35 +307,35 @@ li {
 //***********************//
 //***** Image Tiles *****//
 //***********************//
-.content-item{   
+.content-item {
     &.cvilleweekly {
-      background: url(../raw/cvilleweekly.png) top left / cover no-repeat;
+        background: url(../raw/cvilleweekly.png) top left / cover no-repeat;
     }
 
     &.vector {
-      background: url(../raw/vector.png) top left / cover no-repeat;
+        background: url(../raw/vector.png) top left / cover no-repeat;
     }
-    
+
     &.AEM {
-      background: url(../raw/AEM.png) top left / cover no-repeat;
+        background: url(../raw/AEM.png) top left / cover no-repeat;
     }
-    
+
     &.CSO {
-      background: url(../raw/CSO.png) top left / cover no-repeat;
+        background: url(../raw/CSO.png) top left / cover no-repeat;
     }
-    
+
     &.HC {
-      background: url(../raw/HC.png) top left / cover no-repeat;
+        background: url(../raw/HC.png) top left / cover no-repeat;
     }
-    
+
     &.C4K {
         background: url(../raw/C4K/C4K-tile.png) top left / cover no-repeat;
     }
-    
+
     &.Foodio {
         background: url(../raw/Foodio-tile.png) top left / cover no-repeat;
     }
-    
+
     &.RogueJohnsen {
         background: url(../raw/RogueJohnsen-tile.png) top left / cover no-repeat;
     }
@@ -337,15 +344,12 @@ li {
 
 
 .content-item.bottom {
-    .overlay {
-        
-    }
+    .overlay {}
 }
 
 //***********************//
 //***** PILOT TEST ******//
 //***********************//
-
 //.test {
 //    margin-top: 50px;
 ////    border-top: 100px solid red;
@@ -379,13 +383,9 @@ li {
 //  margin: 0;
 //  padding: 0;
 //}
-
-
-
 //***********************//
 //********* ART *********//
 //***********************//
-
 .thumbnail-container {
     width: 100%;
     height: auto;
@@ -397,19 +397,20 @@ li {
     height: auto;
     &:hover {
         opacity: .5;
-        background-color: rgba(90,90,90,0.9);
+        background-color: rgba(90, 90, 90, 0.9);
         transform: scale(1);
         cursor: zoom-in;
         @include transition(all .2s ease-out);
     }
 }
 
-.art .flex{
+.art .flex {
     padding: 0px 30px;
     flex-flow: row wrap;
 }
 
-.art h2, .art h3 {
+.art h2,
+.art h3 {
     text-align: center;
 }
 
@@ -419,7 +420,7 @@ li {
 
 .gallery {
     column-count: 3;
-    column-gap:   30px;
+    column-gap: 30px;
     line-height: 20px;
     padding: 0px 40px;
 }
@@ -435,12 +436,12 @@ li {
 //***********************//
 //**** GRAPHIC DESIGN ***//
 //***********************//
-
-h2.graphicdesign, .graphicdesign h2 {
+h2.graphicdesign,
+.graphicdesign h2 {
     color: $dblue;
     display: block;
     width: 100%;
-//    margin-left: 40px;
+    //    margin-left: 40px;
     text-align: center;
     font-size: 55px;
     margin: 20px 0px;
@@ -457,25 +458,25 @@ h2.graphicdesign, .graphicdesign h2 {
         color: white;
         margin-bottom: 30px;
     }
-    
+
     &.dblue {
         background-color: $dblue;
     }
-    
+
     &.lblue {
         background-color: $lblue;
     }
-    
+
     &.pink {
         background-color: $pink;
     }
-    
+
     &.white {
         h2 {
             color: $dblue;
         }
     }
-    
+
 }
 
 .graphicdesign.block {
@@ -486,19 +487,18 @@ h2.graphicdesign, .graphicdesign h2 {
 //    max-width: 300px;
 //    max-height: 300px;
 //}
-
 .graphicdesign .gallery .thumbnail-container {
     padding: 10px;
 }
 
-.graphicdesign h2, .graphicdesign h3 {
+.graphicdesign h2,
+.graphicdesign h3 {
     text-align: center;
 }
 
 //****************//
 //**** MUSIC *****//
 //****************//
-
 .dblue {
     background-color: $dblue;
     color: white;
@@ -531,12 +531,12 @@ h2.graphicdesign, .graphicdesign h2 {
 
 .education {
     &.gap {
-    height: 40px;
+        height: 40px;
     }
     h3 {
         text-indent: 20px;
     }
-    p{
+    p {
         text-indent: 40px;
     }
 }
@@ -545,7 +545,7 @@ h2.graphicdesign, .graphicdesign h2 {
     width: 40%;
     margin-right: 5%;
     & img {
-        width: 100%;        
+        width: 100%;
     }
 }
 
@@ -563,7 +563,6 @@ h2.graphicdesign, .graphicdesign h2 {
 //*************************//
 //******** FOODIO *********//
 //*************************//
-
 .indent {
     text-indent: 20px;
 }
@@ -572,24 +571,22 @@ h2.graphicdesign, .graphicdesign h2 {
 //*************************//
 //***** RESPONSIVENESS ****//
 //*************************//
-
-
 @media screen and (max-width: 1100px) {
-   .gallery {
+    .gallery {
         column-count: 2;
     }
-    
+
     .menu.relative {
         padding: 3vw;
     }
- 
+
 }
 
 @media screen and (max-width: 1000px) {
     li:nth-child(4) {
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width: 800px) {
@@ -599,32 +596,33 @@ h2.graphicdesign, .graphicdesign h2 {
     #floating {
         display: none;
     }
-    
+
     .jocelyn {
         display: none;
     }
-    
-   .gallery {
+
+    .gallery {
         column-count: 1;
-       column-gap: 5px;
-       padding: 0px;
+        column-gap: 5px;
+        padding: 0px;
     }
-    
+
     .graphicdesign .gallery .thumbnail-container {
         padding: 10px 0px;
     }
-    
-    li#placeholder, .links {
+
+    li#placeholder,
+    .links {
         display: none;
     }
-    
+
     .links.mobile {
         @include flexbox();
         flex-flow: row nowrap;
         justify-content: space-around;
         width: 100%;
     }
-    
+
     li:nth-child(4) {
         display: list-item;
     }
@@ -642,15 +640,16 @@ h2.graphicdesign, .graphicdesign h2 {
     #navbar {
         display: none;
     }
-    
+
     .hamburger {
         display: inline-block;
     }
-    
+
     #mobile-navbar {
-        
-    
-        .jocelyn, ul {
+
+
+        .jocelyn,
+        ul {
             padding: 30px;
         }
 
@@ -679,8 +678,3 @@ h2.graphicdesign, .graphicdesign h2 {
         height: 30vmax;
     }
 }
-
-
-
-
-

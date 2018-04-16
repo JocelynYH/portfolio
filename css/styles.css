@@ -1,426 +1,58 @@
-/* FONTS, COLORS, MIX-IN'S*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
-@font-face {
-  font-family: 'beautysd';
-  src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
-}
-@font-face {
-  font-family: 'caviardreams';
-  src: url("../fonts/CaviarDreams.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'caviardreams';
-  src: url("../fonts/CaviarDreamsBold.ttf") format("truetype"), url("../fonts/CaviarDreamsBold.woff") format("woff");
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'arcon';
-  src: url("fonts/Arcon-Regular.otf");
-}
-/* line 29, ../sass/styles.scss */
-h2, h3, h4, h5 {
-  font-family: 'caviardreams';
-  margin: 0;
-}
+/*
+Error: File to import not found or unreadable: compass/css3.
+       Load path: /Users/SheepMaster/Github/Portfolio/sass
+        on line 3 of sass/styles.scss
 
-/* line 34, ../sass/styles.scss */
-p {
-  font-family: 'arcon';
-  margin: 0;
-}
+1: /* FONTS, COLORS, MIX-IN'S*\/
+2: 
+3: @import "compass/css3";
+4: 
+5: @font-face {
+6:     font-family: 'beautysd';
+7:     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
+8:          url('../fonts/beautyschooldropout.woff') format('woff');
 
-/* line 53, ../sass/styles.scss */
-body {
-  padding: 0;
-  margin: 0;
-  color: white;
-  box-sizing: border-box;
-}
-
-/* line 110, ../sass/styles.scss */
-.jocelyn {
-  text-align: center;
-  background-color: white;
-  padding: 50px 50px 50px 80px;
-}
-/* line 115, ../sass/styles.scss */
-.jocelyn h1 {
-  color: #3d52a1;
-  font-family: 'beautysd';
-  margin: 0;
-  font-size: 96px;
-  letter-spacing: .14em;
-}
-
-/* line 124, ../sass/styles.scss */
-ul {
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  font: bold 20px 'caviardreams';
-  padding: 0;
-  margin: 0;
-}
-/* line 132, ../sass/styles.scss */
-ul a {
-  text-decoration: none;
-  color: white;
-}
-
-/* line 138, ../sass/styles.scss */
-li {
-  list-style: none;
-  font: bold 20px 'caviardreams';
-}
-/* line 141, ../sass/styles.scss */
-li a {
-  text-decoration: none;
-  color: white;
-}
-/* line 145, ../sass/styles.scss */
-li#placeholder {
-  width: 12%;
-}
-
-/* line 151, ../sass/styles.scss */
-.links {
-  width: 44%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-/* line 158, ../sass/styles.scss */
-.menu.relative {
-  position: relative;
-  background-color: #2ba4c0;
-  margin: 0;
-  padding: 50px;
-  flex-flow: row nowrap;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 168, ../sass/styles.scss */
-#floating img {
-  width: 100%;
-  height: auto;
-  webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
-  filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
-}
-
-/* line 175, ../sass/styles.scss */
-#floating {
-  z-index: 2;
-  position: absolute;
-  display: block;
-  margin: 0 auto;
-  top: -10px;
-  left: 44%;
-  width: 12%;
-}
-
-/* line 185, ../sass/styles.scss */
-.placeholder {
-  width: 20%;
-}
-
-/* line 189, ../sass/styles.scss */
-.flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-/* line 195, ../sass/styles.scss */
-.post-header-gap {
-  height: 60px;
-}
-
-/* line 203, ../sass/styles.scss */
-.block {
-  padding: 50px;
-}
-
-/* line 207, ../sass/styles.scss */
-.dblue {
-  background-color: #3d52a1;
-  color: white;
-}
-
-/* line 212, ../sass/styles.scss */
-.lblue {
-  background-color: #2ba4c0;
-  color: white;
-}
-
-/* line 217, ../sass/styles.scss */
-.pink {
-  background-color: #f06490;
-  color: white;
-}
-
-/* line 222, ../sass/styles.scss */
-.white {
-  color: dblue;
-}
-
-/* line 226, ../sass/styles.scss */
-.infobox {
-  padding-top: 10px;
-}
-
-/* line 234, ../sass/styles.scss */
-.thumbnail {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 242, ../sass/styles.scss */
-.sm-thumbnail {
-  width: 200px;
-  height: auto;
-}
-
-/* line 252, ../sass/styles.scss */
-.overlay {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 20px;
-  text-align: center;
-  background-color: #2ba4c0;
-}
-/* line 262, ../sass/styles.scss */
-.overlay:hover {
-  opacity: 1;
-}
-/* line 265, ../sass/styles.scss */
-.overlay .vam {
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-/* line 272, ../sass/styles.scss */
-.overlay .thumbnail-info {
-  display: inline-block;
-  max-width: 95%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* line 284, ../sass/styles.scss */
-.portfolio.block.dblue {
-  text-align: center;
-}
-/* line 286, ../sass/styles.scss */
-.portfolio.block.dblue h2 {
-  font-size: 40px;
-  border-bottom: 1px solid white;
-  margin: 0px 0px 10px 0px;
-  line-height: 2em;
-}
-/* line 292, ../sass/styles.scss */
-.portfolio.block.dblue button {
-  background-color: #f06490;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 10px;
-  margin: 8px 10px 10px 10px;
-}
-
-/* line 301, ../sass/styles.scss */
-button.btn.med-type {
-  font-family: 'arcon';
-  font-size: 16px;
-}
-
-/* line 306, ../sass/styles.scss */
-.tile {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
-
-/* line 314, ../sass/styles.scss */
-.scale-anm {
-  transform: scale(1);
-}
-
-/* line 319, ../sass/styles.scss */
-p:hover {
-  cursor: pointer;
-}
-
-/* line 324, ../sass/styles.scss */
-.btn {
-  -webkit-appearance: none;
-}
-
-/* line 328, ../sass/styles.scss */
-.btn:hover {
-  text-decoration: none;
-}
-
-/* line 332, ../sass/styles.scss */
-.btn:focus {
-  outline: none;
-  border-color: var(--darken-2);
-  box-shadow: 0 0 0 3px var(--darken-3);
-}
-
-/* line 338, ../sass/styles.scss */
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 351, ../sass/styles.scss */
-.block {
-  padding: 50px;
-}
-
-/* line 355, ../sass/styles.scss */
-table {
-  border-collapse: collapse;
-  margin-left: 40px;
-}
-/* line 358, ../sass/styles.scss */
-table p, table h4 {
-  padding: 0;
-  margin: 0;
-}
-
-/* line 365, ../sass/styles.scss */
-td, th {
-  text-align: left;
-  padding: 8px;
-}
-
-/* line 370, ../sass/styles.scss */
-.description {
-  padding-top: 8px;
-}
-
-/* line 374, ../sass/styles.scss */
-td {
-  padding-left: 10px;
-}
-
-/* line 378, ../sass/styles.scss */
-.flex .info {
-  flex-basis: 50%;
-}
-
-/* line 382, ../sass/styles.scss */
-.flex .description {
-  flex-basis: 50%;
-  line-height: 1.7em;
-}
-
-/* line 387, ../sass/styles.scss */
-h2.project-title {
-  font-size: 40px;
-  border-bottom: 1px solid white;
-  margin: 0px 0px 10px 0px;
-  line-height: 2em;
-}
-
-/* line 394, ../sass/styles.scss */
-.block img {
-  width: 100%;
-  height: auto;
-}
-
-/* line 399, ../sass/styles.scss */
-.displayphoto.block {
-  padding: 0px 50px 30px 50px;
-}
-
-/* line 410, ../sass/styles.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 415, ../sass/styles.scss */
-.background {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 432, ../sass/styles.scss */
-.paper {
-  width: 35em;
-  height: 50em;
-  background: #e8e8ea;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8ea), color-stop(100%, #efefef));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #e8e8ea 0%, #efefef 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8ea', endColorstr='#efefef',GradientType=0 );
-  /* IE6-9 */
-  margin: auto;
-  border-radius: 2px;
-  border-left: 2px solid #f5f5f7;
-  border-bottom: 2px solid #f5f5f7;
-  border-right: 1px solid #adc0bc;
-  border-top: 1px solid #f4f4f6;
-  box-shadow: 0 0 2px 0 #f4f4f6 inset, 0em 100px 500px -5px rgba(255, 255, 255, 0.5), -1em 1em 3em 1em rgba(255, 255, 255, 0.2), -5em 1em 30em 1em rgba(255, 255, 255, 0.2), 0em 2px 0 rgba(255, 255, 255, 0.7), 0em 10px 50px -10px white, 1.2em -0.8em 2em 0em #044134, 5.5em -1em 50em 0em #044134, 0px -5px 25px 0px #808f8c;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-  backface-visibility: hidden;
-}
-
-/* 
-.paper:hover{
-  -webkit-transform: scale(1.2);
-     -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-       -o-transform: scale(1.2);
-          transform: scale(1.2);
-} */
-/* line 481, ../sass/styles.scss */
-h1 {
-  margin: 5em 0;
-  margin-bottom: 50px;
-  color: #111;
-  font-weight: normal;
-  text-align: center;
-  text-shadow: 0 0px 20px #eee;
-}
+Backtrace:
+sass/styles.scss:3
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:45:in `import'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/SheepMaster/.rvm/gems/ruby-2.4.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3.\A        Load path: /Users/SheepMaster/Github/Portfolio/sass\A         on line 3 of sass/styles.scss\A \A 1: /* FONTS, COLORS, MIX-IN'S*/\A 2: \A 3: @import \"compass/css3\";\A 4: \A 5: @font-face {\A 6:     font-family: 'beautysd';\A 7:     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),\A 8:          url('../fonts/beautyschooldropout.woff') format('woff');"; }
