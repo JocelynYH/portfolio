@@ -77,6 +77,8 @@ body {
         margin: 0;
         font-size: 96px;
         letter-spacing: .14em;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
@@ -109,7 +111,8 @@ li {
 
 
 .links {
-    width: 44%;
+    width: 90%;
+    margin: 0 auto;
     @include flexbox();
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -126,21 +129,24 @@ li {
     justify-content: space-between;
 }
 
-#floating img {
+#logo img {
     width: 100%;
     height: auto;
-    -webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
-    filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
+//    -webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
+//    filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
+    vertical-align: middle;
 }
 
-#floating {
+#logo {
     z-index: 2;
-    position: absolute;
     display: block;
     margin: 0 auto;
     top: -10px;
     left: 44%;
     width: 12%;
+    display: inline-block;
+    width: 200px;
+    margin-right: 40px;
 }
 
 .mobile img {
@@ -593,7 +599,7 @@ h2.graphicdesign,
     .mobile {
         display: block;
     }
-    #floating {
+    #logo {
         display: none;
     }
 

@@ -4,6 +4,7 @@
         <?php include("includes/head.html");?>
     </head>
 <body>
+<!--This is the index.php file-->
 <?php include("includes/header.html");?>
     
     
