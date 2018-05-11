@@ -5,24 +5,27 @@
 @font-face {
     font-family: 'beautysd';
     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
-         url('../fonts/beautyschooldropout.woff') format('woff');
+    url('../fonts/beautyschooldropout.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'caviardreams';
-  src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"),
+    font-family: 'caviardreams';
+    src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"),
     url("../fonts/CaviarDreams_Bold.woff") format("woff");
 }
+
 @font-face {
-  font-family: 'arcon';
-  src: url("../fonts/Arcon-Regular.otf"),
-      url("../font/Arcon-Regular.ttf")
-      url("../font/Arcon-Regular.woff"),
-      url("../font/Arcon-Regular.woff2");
+    font-family: 'arcon';
+    src: url("../fonts/Arcon-Regular.otf"),
+    url("../font/Arcon-Regular.ttf") url("../font/Arcon-Regular.woff"),
+    url("../font/Arcon-Regular.woff2");
 }
 
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     font-family: 'caviardreams';
     margin: 0;
 }
@@ -30,15 +33,15 @@ h2, h3, h4, h5 {
 p {
     font-family: 'arcon';
     margin: 0;
-    
+
 }
 
 @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 
 $test-border: 2px solid green;
@@ -98,16 +101,14 @@ body {
 //.post-header-gap {
 //    height: 60px;
 //}
-
 //***********************//
 //******* HEADER ********//
 //***********************//
-
 .jocelyn {
-    text-align: center; 
+    text-align: center;
     background-color: white;
     padding: 50px 50px 50px 80px;
-//    border: $test-border;
+    //    border: $test-border;
     h1 {
         color: $dblue;
         font-family: 'beautysd';
@@ -182,7 +183,7 @@ li {
     width: 20%;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -195,7 +196,6 @@ li {
 //***********************//
 //******** GENERAL *******//
 //***********************//
-
 .block {
     padding: 50px;
 }
@@ -226,7 +226,6 @@ li {
 //***********************//
 //****** PORTFOLIO ******//
 //***********************//
-
 .thumbnail {
     width: 200px;
     height: 200px;
@@ -238,10 +237,10 @@ li {
 .sm-thumbnail {
     width: 200px;
     height: auto;
-//    &:hover {
-//        opacity: .5;
-//        background-color: rgba(25, 225, 25, .5);
-//    }
+    //    &:hover {
+    //        opacity: .5;
+    //        background-color: rgba(25, 225, 25, .5);
+    //    }
 }
 
 
@@ -260,19 +259,19 @@ li {
     }
     .vam {
         height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: nowrap;
     }
-    
+
     .thumbnail-info {
-    display: inline-block;
-    max-width: 95%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    vertical-align: middle;
-    text-align: center;
+        display: inline-block;
+        max-width: 95%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        vertical-align: middle;
+        text-align: center;
     }
 }
 
@@ -280,10 +279,10 @@ li {
 .portfolio.block.dblue {
     text-align: center;
     & h2 {
-         font-size: 40px;
-    border-bottom: 1px solid white;
-    margin: 0px 0px 10px 0px;
-    line-height: 2em;
+        font-size: 40px;
+        border-bottom: 1px solid white;
+        margin: 0px 0px 10px 0px;
+        line-height: 2em;
     }
     & button {
         background-color: $pink;
@@ -299,7 +298,7 @@ button.btn.med-type {
     font-size: 16px;
 }
 
-.tile { 
+.tile {
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: all 350ms ease;
@@ -308,12 +307,12 @@ button.btn.med-type {
 }
 
 .scale-anm {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 
-p:hover { 
-  cursor:pointer; 
+p:hover {
+    cursor: pointer;
 }
 
 
@@ -322,18 +321,18 @@ p:hover {
 }
 
 .btn:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .btn:focus {
-  outline: none;
-  border-color: var(--darken-2);
-  box-shadow: 0 0 0 3px var(--darken-3);
+    outline: none;
+    border-color: var(--darken-2);
+    box-shadow: 0 0 0 3px var(--darken-3);
 }
 
 ::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 
@@ -343,7 +342,6 @@ p:hover {
 //***********************//
 //********* WORK ********//
 //***********************//
-
 .block {
     padding: 50px;
 }
@@ -351,14 +349,16 @@ p:hover {
 table {
     border-collapse: collapse;
     margin-left: 40px;
-    & p, h4 {
+    & p,
+    h4 {
         padding: 0;
         margin: 0;
     }
-    
+
 }
 
-td, th {
+td,
+th {
     text-align: left;
     padding: 8px;
 }
@@ -400,71 +400,79 @@ h2.project-title {
 //***********************//
 //******** PAPER ********//
 //***********************//
-
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 
-html,body{
-  height:100%;
+html,
+body {
+    height: 100%;
 }
 
 
-.background{
-  z-index:-1;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-//  background: #9bb8b3; /* Old browsers */
-//  background: -moz-linear-gradient(top,  #9bb8b3 0%, #b3eee2 100%); /* FF3.6+ */
-//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bb8b3), color-stop(100%,#b3eee2)); /* Chrome,Safari4+ */
-//  background: -webkit-linear-gradient(top,  #9bb8b3 0%,#b3eee2 100%); /* Chrome10+,Safari5.1+ */
-//  background: -o-linear-gradient(top,  #9bb8b3 0%,#b3eee2 100%); /* Opera 11.10+ */
-//  background: -ms-linear-gradient(top,  #9bb8b3 0%,#b3eee2 100%); /* IE10+ */
-//  background: linear-gradient(to bottom,  #9bb8b3 0%,#b3eee2 100%); /* W3C */
-//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bb8b3', endColorstr='#b3eee2',GradientType=0 ); /* IE6-9 */
+.background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //  background: #9bb8b3; /* Old browsers */
+    //  background: -moz-linear-gradient(top,  #9bb8b3 0%, #b3eee2 100%); /* FF3.6+ */
+    //  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bb8b3), color-stop(100%,#b3eee2)); /* Chrome,Safari4+ */
+    //  background: -webkit-linear-gradient(top,  #9bb8b3 0%,#b3eee2 100%); /* Chrome10+,Safari5.1+ */
+    //  background: -o-linear-gradient(top,  #9bb8b3 0%,#b3eee2 100%); /* Opera 11.10+ */
+    //  background: -ms-linear-gradient(top,  #9bb8b3 0%,#b3eee2 100%); /* IE10+ */
+    //  background: linear-gradient(to bottom,  #9bb8b3 0%,#b3eee2 100%); /* W3C */
+    //  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bb8b3', endColorstr='#b3eee2',GradientType=0 ); /* IE6-9 */
 }
 
-.paper{
-  
-  width:35em;
-  height:50em;
-  
-  background: #e8e8ea; /* Old browsers */
-  background: -moz-linear-gradient(top,  #e8e8ea 0%, #efefef 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8ea), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #e8e8ea 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #e8e8ea 0%,#efefef 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #e8e8ea 0%,#efefef 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #e8e8ea 0%,#efefef 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8ea', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+.paper {
 
-  margin:auto;
-  
-  border-radius:2px;
-  border-left: 2px solid #f5f5f7;
-  border-bottom: 2px solid #f5f5f7;
-  border-right: 1px solid #adc0bc;
-  border-top: 1px solid #f4f4f6;
+    width: 35em;
+    height: 50em;
 
-  box-shadow: 0 0 2px 0 #f4f4f6 inset,
-    0em 100px 500px -5px rgba(255,255,255,.5),
-    -1em 1em 3em 1em rgba(255,255,255,.2),
-    -5em 1em 30em 1em rgba(255,255,255,.2),
-    0em 2px 0 rgba(255,255,255,.7),
-    0em 10px 50px -10px rgba(255,255,255,1),
+    background: #e8e8ea;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8ea), color-stop(100%, #efefef));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e8e8ea 0%, #efefef 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #e8e8ea 0%, #efefef 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8ea', endColorstr='#efefef', GradientType=0);
+    /* IE6-9 */
+    margin: auto;
+
+    border-radius: 2px;
+    border-left: 2px solid #f5f5f7;
+    border-bottom: 2px solid #f5f5f7;
+    border-right: 1px solid #adc0bc;
+    border-top: 1px solid #f4f4f6;
+
+    box-shadow: 0 0 2px 0 #f4f4f6 inset,
+    0em 100px 500px -5px rgba(255, 255, 255, .5),
+    -1em 1em 3em 1em rgba(255, 255, 255, .2),
+    -5em 1em 30em 1em rgba(255, 255, 255, .2),
+    0em 2px 0 rgba(255, 255, 255, .7),
+    0em 10px 50px -10px rgba(255, 255, 255, 1),
     1.2em -0.8em 2em 0em #044134,
     5.5em -1em 50em 0em #044134,
     0px -5px 25px 0px #808f8c;
-  
-  -webkit-transition: all .5s ease;
-     -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-       -o-transition: all .5s ease;
-          transition: all .5s ease;
-  
-  backface-visibility:hidden;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+    backface-visibility: hidden;
 }
+
 /* 
 .paper:hover{
   -webkit-transform: scale(1.2);
@@ -474,14 +482,11 @@ html,body{
           transform: scale(1.2);
 } */
 
-h1{
-  margin:5em 0;
-  margin-bottom:50px;
-  color:#111;
-  font-weight:normal;
-  text-align:center;
-  text-shadow: 0 0px 20px #eee;
+h1 {
+    margin: 5em 0;
+    margin-bottom: 50px;
+    color: #111;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0 0px 20px #eee;
 }
-
-
-

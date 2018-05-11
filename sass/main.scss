@@ -54,6 +54,7 @@ p {
 $test-border: 2px solid green;
 $pink: #f06490;
 $lblue: #2ba4c0;
+$transblue: rgba(43, 164, 192, .85);
 $dblue: #3d52a1;
 
 body {
@@ -130,11 +131,14 @@ li {
 }
 
 #logo img {
-    width: 100%;
+    width: 200px;
+    display: inline-block;
     height: auto;
 //    -webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
 //    filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
     vertical-align: middle;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 #logo {
@@ -142,10 +146,7 @@ li {
     display: block;
     margin: 0 auto;
     top: -10px;
-    left: 44%;
-    width: 12%;
-    display: inline-block;
-    width: 200px;
+    width: 100%;
     margin-right: 40px;
 }
 
@@ -172,9 +173,13 @@ li {
 }
 
 .flex {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    @include flexbox();
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .post-header-gap {
@@ -242,47 +247,17 @@ li {
     overflow: hidden;
     position: relative;
     margin-top: 40px;
-    .overlay {
-        border-bottom: 100px solid $lblue;
-        border-left: 1000px solid transparent;
-        bottom: 0;
-        height: 0;
-        opacity: .95;
-        position: absolute;
-        right: 0;
-        text-indent: -9999px;
-        @include transition(all .5s ease-out);
-        width: 0;
-    }
+    @include transition(all .3s ease-out);
     &:hover .overlay {
-        border-bottom: 2000px solid $lblue; //size must be double container
-        border-left: 2000px solid transparent; //size must be double container
-        @include transition(all .4s ease-out);
+        background: rgba(43, 164, 192,.7);
+        
     }
     .corner-overlay-content {
-        bottom: 15px;
-        color: white;
-        position: absolute;
-        right: 15px;
-        //    padding: 13px;
-        @include transition(all .5s ease-out);
-    }
-    //    p {
-    //        padding: 12px 0 0 0;
-    //        border-top: 1px solid white;
-    //        transition: all .5s ease-out;
-    //        opacity: 0;
-    //    }
-    //    &:hover {
-    //        p {
-    //            opacity: 1;
-    //        }
-    //    }
-    &:hover .corner-overlay-content {
         opacity: 0;
-        @include transition(all .5s ease-out);
     }
+
     .overlay-content {
+        text-align: center;
         bottom: 0;
         color: white;
         left: 0;
@@ -295,12 +270,17 @@ li {
         h2 {
             border-bottom: 1px solid white;
             padding: 0 0 12px;
+            @include transition(all 2s ease-out);
+
         }
     }
     &:hover .overlay-content {
         opacity: 1;
+        background: $transblue;
         @include transition(all .3s ease-out);
-        @include transition-delay(.3s);
+    }
+    &:hover h2 {
+        opacity: 1;
     }
 
 }
@@ -348,47 +328,14 @@ li {
 
 }
 
-
-.content-item.bottom {
-    .overlay {}
+.button-container {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding: 10px;
 }
 
-//***********************//
-//***** PILOT TEST ******//
-//***********************//
-//.test {
-//    margin-top: 50px;
-////    border-top: 100px solid red;
-////    border-right: 0px solid green;
-//    background-color: $dblue;
-//    width: 400px;
-//    height: 300px;
-//    color: white;
-//    padding: 20px;
-//    box-sizing: border-box;
-//    h2 {
-//        margin: 0 0 12px;
-//    }
-//    p {
-//        padding: 12px 0 0 0;
-//        border-top: 1px solid white;
-//        transition: all .5s ease-out;
-//        opacity: 0;
-//    }
-//    &:hover {
-//        p {
-//            opacity: 1;
-//        }
-//    }
-//}
-//
-//
-//
-//
-//p{
-//  margin: 0;
-//  padding: 0;
-//}
+
 //***********************//
 //********* ART *********//
 //***********************//
@@ -406,7 +353,7 @@ li {
         background-color: rgba(90, 90, 90, 0.9);
         transform: scale(1);
         cursor: zoom-in;
-        @include transition(all .2s ease-out);
+        @include transition(all .3s ease-out);
     }
 }
 
@@ -575,6 +522,41 @@ h2.graphicdesign,
 
 
 //*************************//
+//******** BUTTONS ********//
+//*************************//
+
+button {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    color: #2ba4c0;
+    margin-bottom: 10px;
+    padding: 14px 12px;
+    font-size: 13px;
+    box-shadow: inset 0 0 0 2px white;
+    margin: 10px;
+    @include transition(all .3s ease-out);
+}
+
+button a {
+    color: $lblue;
+    text-decoration: none;
+}
+
+
+
+button:hover {
+    background: $pink;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover a {
+    color: white;
+}
+
+
+//*************************//
 //***** RESPONSIVENESS ****//
 //*************************//
 @media screen and (max-width: 1100px) {
@@ -599,13 +581,13 @@ h2.graphicdesign,
     .mobile {
         display: block;
     }
-    #logo {
+    #logo img{
         display: none;
     }
-
-    .jocelyn {
-        display: none;
-    }
+//
+//    .jocelyn {
+//        display: none;
+//    }
 
     .gallery {
         column-count: 1;
@@ -650,7 +632,19 @@ h2.graphicdesign,
     .hamburger {
         display: inline-block;
     }
-
+    
+    .jocelyn {
+        padding: 80px 20px 20px 20px;
+        
+        & h1 {
+            font-size: 20vw;    
+        }
+    }
+    
+    .content-item.no-margin {
+        margin-top: 0px;
+    }
+        
     #mobile-navbar {
 
 

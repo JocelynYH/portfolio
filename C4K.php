@@ -3,6 +3,7 @@
 
   <head>
         <?php include("includes/head.html");?>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
 <?php include("includes/header.html");?>

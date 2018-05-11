@@ -24,8 +24,8 @@
     
     
        <div class="flex"> 
-           <div class="content-item CSO">
-                 <a href='http://www.cavalierso.com/jocelyn'>  
+           <div class="content-item CSO no-margin">
+                 <a href='http://www.jocelynhuang.com/cso'>  
                       <div class="overlay"></div>
 
                       <div class="corner-overlay-content">            <h2>Cavalier Symphony Orchestra</h2>
@@ -56,13 +56,9 @@
             </div>
 
 
-
-        </div>
-
-        <div class="flex">
              <div class="content-item C4K">
 
-              <a href="C4K.html"><div class="overlay"></div>
+              <a href="C4K.php"><div class="overlay"></div>
                   
                   <div class="corner-overlay-content"><h2>C4K Concept Art</h2></div>
                   
@@ -89,12 +85,6 @@
             </div>
             
             
-        </div>
-         
-         
-
-         <div class="flex">
-             
 
              <div class="content-item HC">
 
@@ -126,10 +116,6 @@
                     
             </div>
             
-        </div>
-        
-        <div class="flex">
-             
 
              <div class="content-item Foodio">
 
