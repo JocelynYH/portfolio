@@ -1,6 +1,5 @@
 /* FONTS, COLORS, MIX-IN'S*/
 
-@import "compass/css3";
 
 @font-face {
     font-family: 'beautysd';
@@ -145,12 +144,12 @@ li {
 }
 
 
-.links {
-    width: 44%;
-    @include flexbox();
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
+//.links {
+//    width: 44%;
+//    @include flexbox();
+//    flex-flow: row nowrap;
+//    justify-content: space-around;
+//}
 
 .menu.relative {
     position: relative;

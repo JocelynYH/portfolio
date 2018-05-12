@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Old+Standard+TT|Playfair+Display+SC');
+
+body {
+    margin: 0px;
+    font-family: Old Standard TT;
+    font-size: 22px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Old+Standard+TT|Playfair+Display+SC');
+
+body {
+    margin: 0px;
+    font-family: Old Standard TT;
+    font-size: 22px;
+    padding: 0px;
+}
+
+#header h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Playfair Display SC;
+    letter-spacing: .05em;
+    margin: 40px auto;
+    margin-top: 60px;
+}
+
+ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+section.text {
+    margin: 40px;
+}
+
+.photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.photo {
+    height: 70vh;
+}
+
+#header.mini {
+    padding: 15px 0px;
+    background: skyblue;
+    border-top: 1px solid rgba(191, 191, 191, 0.4);
+    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+#header.mini a {
+    color: white;
+}
+
+#header.mini a:hover {
+    color: deepskyblue;
+}
+
+#footer {
+    margin-top: 100px;
+    text-align: center;
+        background: #f7f7f7;
+    border-top: 1px solid rgba(191, 191, 191, 0.4);
+    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+    padding: 40px 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+/****** CONTENT *******/
+
+#header h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Playfair Display SC;
+    letter-spacing: .05em;
+    margin: 40px auto;
+}
+
+
+ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+#section-one.photo {
+    height: 70vh;
+    margin: 0px;
+    background-image: url('../raw/music/31543537_1982965875302248_4754267533811384320_o.jpg');
+}
+
+#section-two {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.logo-holder {
+    max-width: 20%;
+    text-align: center;
+
+}
+
+.logo-holder img {
+    width: 80%;
+}
+
+
+.photo {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.photo.about {
+    background-image: url('../raw/music/12885941_10209040013187391_5468332101831870335_o.jpg');
+}
+section.photo.conducting {
+    background-image: url('../raw/music/31706357_1982964105302425_4219988097703608320_o.jpg');
+}
+
+section.photo.piano {
+    background-image: url('../raw/music/31718086_1982963008635868_3291274558941691904_o.jpg');
+}
+
+section.photo.flute {
+    background-image: url('../raw/music/CSOflutes.jpg')
+}
+
+.text {
+    color: #3d52a1;
+}
+
+p{
+    line-height: 1.9rem;
+}
+
+.music-caption {
+    text-shadow: -3px -5px 17px #0f0f0f;
+    font-size: 60px;
+
+}
+
+@media (max-width: 700px) {
+    .logo-holder {
+        max-width: 55%;
+        margin-bottom: 80px;
+    }
+}

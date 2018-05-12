@@ -112,7 +112,7 @@
                     
                     <div class="overlay-content">
                         <h2>HackCville Design Update</h2>
-                        <p>During HackCville's website redesign, I was responsible for creating the new stylesheet and branding guidelines.  Also assisted in other parts of designing and coding the new site.</p>
+                        <p>During HackCville's website redesign, I was responsible for creating the new stylesheet and branding guidelines.  </p>
                     <div class="button-container">
                                 <button class='read'><a href="https://www.hackcville.com">Live Branding</a></button> 
                                 
