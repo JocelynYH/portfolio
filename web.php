@@ -190,17 +190,6 @@
 		<script src="js/classie.js"></script>
 		<script src="js/demo9.js"></script>
     
-<script>
-function myFunction(x) {
-    x.classList.toggle("change");
-    var m = document.getElementById("mobile-navbar");
-    if (m.style.display === "inline-block") {
-        m.style.display = "none";
-    } else {
-        m.style.display = "inline-block";
-    }
-}
-</script>
 
 
 </body>

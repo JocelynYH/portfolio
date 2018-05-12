@@ -11,7 +11,8 @@
 <section class="header">
        <div class="jocelyn">
           <a id='logo' href="http://jocelynhuang.com"><img src="raw/circle%20initials.png" alt="">
-           <h1>JOCELYN HUANG</h1></a>
+           </a>
+           <h1>JOCELYN HUANG</h1>
        </div>
        
        <div class="hamburger mobile2" onclick="myFunction(this)">
@@ -21,10 +22,12 @@
         </div>
             
             
+<!--
        <div class='mobile'>
            <a id='logo' href="http://jocelynhuang.com"><img src="raw/circle%20initials.png" alt=""></a>
            
        </div>
+-->
        
        <div class="menu relative" id='navbar'>
             
@@ -69,3 +72,19 @@
             
        </div>
 </section>
+
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+    var m = document.getElementById("mobile-navbar");
+    var name = document.getElementById("logo")
+    if (m.style.display === "inline-block") {
+        m.style.display = "none";
+        name.style.display = "block";
+    } else {
+        m.style.display = "inline-block";
+        name.style.display = "none";
+    }
+}
+</script>
