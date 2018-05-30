@@ -1,0 +1,141 @@
+html {
+    height: 100%;
+}
+
+$lorange: #E9BC9F;
+body.about {
+    color: white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6ddc6+1,00a4ea+100 */
+    background: url('../raw/Clouds.svg'), #f6ddc6; /* Old browsers */
+    background: url('../raw/Clouds.svg'), -moz-radial-gradient(bottom, ellipse cover, #f6ddc6 1%, #00a4ea 100%); /* FF3.6-15 */
+    background: url('../raw/Clouds.svg'), -webkit-radial-gradient(bottom, ellipse cover, #f6ddc6 1%,#00a4ea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: url('../raw/Clouds.svg'), radial-gradient(ellipse at bottom, #f6ddc6 1%,#00a4ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6ddc6', endColorstr='#00a4ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+    background-size: cover;
+}
+ 
+h1 {
+    font-family: 'beautysd';
+    font-size: 10vw;
+    letter-spacing: .1em;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+29,f2fcfd+49,b9edf9+66,b9edf9+85,87def1+100 */
+    background: #87DEF1; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 29%, #f2fcfd 49%, #b9edf9 66%, #b9edf9 85%, #87def1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 29%,#f2fcfd 49%,#b9edf9 66%,#b9edf9 85%,#87def1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 29%,#f2fcfd 49%,#b9edf9 66%,#b9edf9 85%,#87def1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#87def1',GradientType=0 ); /* IE6-9 */
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+h2.hello {
+    font-size: 10vw;  
+    display: inline-block;
+    padding-right: 30px;
+}
+
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10%;
+    position: relative;
+}
+a:first-child {
+    padding-right: 2em;
+}
+
+span.nav:before,span.nav:after {
+ background-color: #ffffff;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: 40%;
+ width: 50%;
+}
+
+span.nav:before {
+ right: 1em;
+ margin-left: -50%;
+}
+
+span.nav:after {
+ left: 1em;
+ margin-right: -50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+}
+
+p {
+    font-size: 3.2vw;
+    line-height: 1.2em;
+}
+
+.cloud-container {
+    height: 100%;
+    background-image: url('../raw/Clouds.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 99;
+}
+
+section {
+    padding: 2% 10%;
+//    display: -webkit-flex;
+//    display: -moz-flex;
+//    display: -ms-flex;
+//    display: -o-flex;
+//    display: flex;
+//    justify-content: space-around;
+//    flex-flow: wrap;
+    & img {
+        width: 80%;
+        height: 100%;
+    }
+}
+
+.ib {
+    display: inline-block;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.intro {
+    text-shadow: 1px 1px 14px #6A7C81;
+}
+
+
+.orange-text {
+    color: #F4863D;
+    text-shadow: 1px 1px 6px #B5917A;
+}
+.intro h2.orange-text {
+    color: #F4863D;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 6px #B5917A;
+    &.two {
+        text-align: center;    
+    }
+    &.three {
+        text-align: right;
+    }
+}

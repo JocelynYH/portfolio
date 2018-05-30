@@ -36,7 +36,7 @@
                             <p>Built and designed the website for Cavalier Symphony Orchestra with the orchestra's CTO. </p>
                             <div class="button-container">
 <!--                                <button class='read'>Read about it</button> -->
-                                <button class='view'><a href="http://www.jocelynhuang.com/cso">View it live</a></button>
+                                <a href="http://www.jocelynhuang.com/cso"><button class='view'>View it live</button></a>
                             </div>
                         </div>
 <!--                 </a>-->
@@ -56,7 +56,7 @@
                     <p>Re-designed the  page for HackCville's vector class.</p>
                     <div class="button-container">
 <!--                                <button class='read'>Read about it</button> -->
-                                <button class='view'><a href="http://jocelynhuang.com/vector">View it live</a></button>
+                                <a href="http://jocelynhuang.com/vector"><button class='view'>View it live</button></a>
                             </div>
                     
                   </div>
@@ -75,7 +75,7 @@
                         <h2>C4K Concept Art</h2>
                         <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
                         <div class="button-container">
-                                <button class='read'><a href="C4K.php">Read about it</a></button> 
+                                <a href="C4K.php"><button class='read'>Read about it</button></a>
                             </div>
                   </div>
                   
@@ -94,7 +94,7 @@
                     <p>Built and designed a website for a client wishing to restart his professional music carrer.</p>
                                <div class="button-container">
 <!--                                <button class='read'>Read about it</button> -->
-                                <button class='view'><a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html">View it live</a></button>
+                                <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html"><button class='view'>View it live</button></a>
                             </div>
                   </div>
        
@@ -114,7 +114,7 @@
                         <h2>HackCville Design Update</h2>
                         <p>During HackCville's website redesign, I was responsible for creating the new stylesheet and branding guidelines.  </p>
                     <div class="button-container">
-                                <button class='read'><a href="https://www.hackcville.com">Live Branding</a></button> 
+                                <a href="https://www.hackcville.com"><button class='read'>Live Branding</button></a> 
                                 
                             </div>
                      </div>
@@ -137,7 +137,7 @@
                     <p>Re-imagined the news website for the Cville Weekly publication.</p>
                      <div class="button-container">
 <!--                                <button class='read'>Read about it</button> -->
-                                <button class='view'><a href="http://wireframewebsites.com/cville-weekly/">View it live</a></button>
+                                <a href="http://wireframewebsites.com/cville-weekly/"><button class='view'>View it live</button></a>
                             </div>
                 </div>
                
@@ -156,7 +156,7 @@
                         <h2>Foodio Client Websites</h2>
                         <p>I redesigned websites for Foodio's 2000+ restaurant clients.  Here is concept art from a high-fidelity mockup.</p>
                         <div class="button-container">
-                                <button class='read'><a href="Foodio.php">Read about it</a></button> 
+                            <a href="Foodio.php"><button class='read'>Read about it</button></a> 
 
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                     <p>Built a portfolio webpage to display my classmate's final projects for a class I took at UVA (MUSI 4523, African Electronic Music and Ethnography).</p>
                      <div class="button-container">
 <!--                                <button class='read'>Read about it</button> -->
-                                <button class='view'><a href="https://music-61330.firebaseapp.com/Music">View it live</a></button>
+                                <a href="https://music-61330.firebaseapp.com/Music"><button class='view'>View it live</button></a>
                             </div>
                   </div>
                  

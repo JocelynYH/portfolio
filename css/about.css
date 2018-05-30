@@ -1,0 +1,165 @@
+/* line 1, ../sass/about.scss */
+html {
+  height: 100%;
+}
+
+/* line 6, ../sass/about.scss */
+body.about {
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6ddc6+1,00a4ea+100 */
+  background: url("../raw/Clouds.svg"), #f6ddc6;
+  /* Old browsers */
+  background: url("../raw/Clouds.svg"), -moz-radial-gradient(bottom, ellipse cover, #f6ddc6 1%, #00a4ea 100%);
+  /* FF3.6-15 */
+  background: url("../raw/Clouds.svg"), -webkit-radial-gradient(bottom, ellipse cover, #f6ddc6 1%, #00a4ea 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: url("../raw/Clouds.svg"), radial-gradient(ellipse at bottom, #f6ddc6 1%, #00a4ea 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6ddc6', endColorstr='#00a4ea',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 18, ../sass/about.scss */
+h1 {
+  font-family: 'beautysd';
+  font-size: 10vw;
+  letter-spacing: .1em;
+  text-align: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+29,f2fcfd+49,b9edf9+66,b9edf9+85,87def1+100 */
+  background: #87DEF1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 29%, #f2fcfd 49%, #b9edf9 66%, #b9edf9 85%, #87def1 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 29%, #f2fcfd 49%, #b9edf9 66%, #b9edf9 85%, #87def1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 29%, #f2fcfd 49%, #b9edf9 66%, #b9edf9 85%, #87def1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#87def1',GradientType=0 );
+  /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* line 35, ../sass/about.scss */
+h2 {
+  font-size: 5vw;
+}
+
+/* line 39, ../sass/about.scss */
+h2.hello {
+  font-size: 10vw;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+/* line 45, ../sass/about.scss */
+nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 10%;
+  position: relative;
+}
+
+/* line 55, ../sass/about.scss */
+a:first-child {
+  padding-right: 2em;
+}
+
+/* line 59, ../sass/about.scss */
+span.nav:before, span.nav:after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: 40%;
+  width: 50%;
+}
+
+/* line 69, ../sass/about.scss */
+span.nav:before {
+  right: 1em;
+  margin-left: -50%;
+}
+
+/* line 74, ../sass/about.scss */
+span.nav:after {
+  left: 1em;
+  margin-right: -50%;
+}
+
+/* line 79, ../sass/about.scss */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+}
+
+/* line 85, ../sass/about.scss */
+p {
+  font-size: 3.2vw;
+  line-height: 1.2em;
+}
+
+/* line 90, ../sass/about.scss */
+.cloud-container {
+  height: 100%;
+  background-image: url("../raw/Clouds.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 99;
+}
+
+/* line 99, ../sass/about.scss */
+section {
+  padding: 2% 10%;
+}
+/* line 108, ../sass/about.scss */
+section img {
+  width: 80%;
+  height: 100%;
+}
+
+/* line 114, ../sass/about.scss */
+.ib {
+  display: inline-block;
+}
+
+/* line 118, ../sass/about.scss */
+.middle {
+  vertical-align: middle;
+}
+
+/* line 122, ../sass/about.scss */
+.intro {
+  text-shadow: 1px 1px 14px #6A7C81;
+}
+
+/* line 127, ../sass/about.scss */
+.orange-text {
+  color: #F4863D;
+  text-shadow: 1px 1px 6px #B5917A;
+}
+
+/* line 131, ../sass/about.scss */
+.intro h2.orange-text {
+  color: #F4863D;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px #B5917A;
+}
+/* line 135, ../sass/about.scss */
+.intro h2.orange-text.two {
+  text-align: center;
+}
+/* line 138, ../sass/about.scss */
+.intro h2.orange-text.three {
+  text-align: right;
+}

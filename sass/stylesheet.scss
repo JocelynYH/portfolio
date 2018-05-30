@@ -1,0 +1,61 @@
+@import "compass/css3";
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Josefin+Sans:400,600,700|Open+Sans');
+
+@font-face {
+    font-family: 'beautysd';
+    src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
+    url('../fonts/beautyschooldropout.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'caviardreams';
+    src: url('../fonts/CaviarDreams_Bold.ttf') format('truetype'),
+    url('../fonts/CaviarDreams_Bold.woff') format('woff'),
+    url('../fonts/CaviarDreams_Bold.woff2') format('woff2'),
+    url('../fonts/CaviarDreams-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'arcon';
+    src: url('../fonts/Arcon-Regular.otf') format('opentype'),
+    url('../fonts/Arcon-Regular.woff') format('woff'),
+    url('../fonts/Arcon-Regular.woff2') format('woff2'),
+    url('../fonts/Arcon-Regular.ttf') format('truetype');
+}
+
+
+h2 {
+    font-family: 'caviardreams';
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'caviardreams';
+}
+
+p {
+    font-family: 'arcon';
+    line-height: 24px;
+}
+
+a {
+    font-family: 'arcon';
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+$test-border: 2px solid green;
+$pink: #f06490;
+$lblue: #2ba4c0;
+$transblue: rgba(43, 164, 192, .85);
+$dblue: #3d52a1;
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}

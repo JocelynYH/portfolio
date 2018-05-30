@@ -262,7 +262,7 @@ m
   background: url(https://dummyimage.com/400x300/000/fff);
   display: flex;
   width: 40%;
-  height: 30vmax;
+  height: 30vw;
   overflow: hidden;
   position: relative;
   margin-top: 40px;
