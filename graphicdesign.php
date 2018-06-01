@@ -19,15 +19,16 @@
             
             <section class="gallery">
     
-                     <div class="thumbnail-container">
-                          <a href="https://carbonmade-media.accelerator.net/30534737;960x548.png" data-caption='Modus Create Business Card' data-fancybox="images" data-width="960" data-height="548">
-                              <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534737;960x548.png" />
+                                   
+                      <div class="thumbnail-container">
+                          <a href="http://jocelynhuang.com/raw/graphic design/Portfolio Modus Create Business Cards 2-31.jpg" data-caption='Modus Create Business Card' data-fancybox="images" data-width="1050" data-height="600">
+                              <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/Portfolio Modus Create Business Cards 2-31.jpg" />
                           </a>
                       </div>
-                      
+                
                        <div class="thumbnail-container">
-                          <a href="https://carbonmade-media.accelerator.net/30534723;960x425.png" data-caption='Concept to link multiple business cards' data-fancybox="images" data-width="960" data-height="425">
-                              <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534723;960x425.png" />
+                          <a href="http://jocelynhuang.com/raw/graphic design/modus-linking.png" data-caption='Concept to link multiple business cards' data-fancybox="images" data-width="960" data-height="425">
+                              <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/modus-linking.png" />
                           </a>
                       </div>
                       
@@ -36,12 +37,7 @@
                               <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/Portfolio Modus Create Business Cards 2-27.jpg" />
                           </a>
                       </div>
-                      
-                      <div class="thumbnail-container">
-                          <a href="http://jocelynhuang.com/raw/graphic design/Portfolio Modus Create Business Cards 2-31.jpg" data-caption='Modus Create Business Card' data-fancybox="images" data-width="1050" data-height="600">
-                              <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/Portfolio Modus Create Business Cards 2-31.jpg" />
-                          </a>
-                      </div>
+   
      
                       
                        <div class="thumbnail-container">
@@ -113,15 +109,15 @@
             <h2 class='graphicdesign'>UVA designs</h2>
             <!-- Good vibes -->
                <section class="gallery"> <div class="thumbnail-container">
-                      <a href="https://carbonmade-media.accelerator.net/30534702;960x284.png" data-caption='Illustrator - sticker design for Class of 2018' data-fancybox="images" data-width="960" data-height="284">
+                      <a href="http://jocelynhuang.com/raw/graphic design/uvacap.jpg" data-caption='Illustrator - sticker design for Class of 2018' data-fancybox="images" data-width="960" data-height="284">
                           <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534702;960x284.png" />
                       </a>
                                   </div>
                                   
                                   <!-- UVA cap -->
                     <div class="thumbnail-container">
-                      <a href="https://carbonmade-media.accelerator.net/30534710;960x1162.png" data-caption='High School Graduation Cap' data-fancybox="images" data-width="960" data-height="1162">
-                          <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534710;960x1162.png" />
+                      <a href="http://jocelynhuang.com/raw/graphic design/uvacap.jpg" data-caption='High School Graduation Cap' data-fancybox="images" data-width="960" data-height="1162">
+                          <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/uvacap.jpg" />
                       </a>
                                   </div>
                                   
@@ -208,15 +204,15 @@
         <!-- Good vibes -->
             <section class="gallery">
                 <div class="thumbnail-container">
-                      <a href="https://carbonmade-media.accelerator.net/30534597;960x741.png" data-caption='Black and White flyer for print' data-fancybox="images" data-width="960" data-height="741">
-                          <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534597;960x741.png" />
+                      <a href="http://jocelynhuang.com/raw/graphic design/Cover StudCo Reelection-03.jpg" data-caption='Black and White flyer for print' data-fancybox="images" data-width="960" data-height="741">
+                          <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/Cover StudCo Reelection-03.jpg" />
                       </a>
                   </div>
                 
                           <!-- Campaign Cover Photo 1 -->
                 <div class="thumbnail-container">
-                    <a href="https://carbonmade-media.accelerator.net/30534599;960x356.png" data-caption='Campaign Facebook Cover Photo 2' data-fancybox="images" data-width="960" data-height="356">
-                          <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534599;960x356.png" />
+                    <a href="http://jocelynhuang.com/raw/graphic design/StudCo 2016 Campaign Cover Mocha-05.jpg" data-caption='Campaign Facebook Cover Photo 2' data-fancybox="images" data-width="960" data-height="356">
+                          <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/StudCo 2016 Campaign Cover Mocha-05.jpg" />
                     </a>
                 </div>
                 
@@ -229,8 +225,8 @@
                 
                          <!-- Campaign Profile Photo -->
                 <div class="thumbnail-container">
-                    <a href="https://carbonmade-media.accelerator.net/30534603;960x960.png" data-caption='Campaign Facebook Profile Picture' data-fancybox="images" data-width="960" data-height="441">
-                          <img class='sm-thumbnail' src="https://carbonmade-media.accelerator.net/30534603;960x960.png" />
+                    <a href="http://jocelynhuang.com/raw/graphic design/campaign.jpg" data-caption='Campaign Facebook Profile Picture' data-fancybox="images" data-width="960" data-height="441">
+                          <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/graphic design/campaign.jpg" />
                     </a>
                 </div>
             </section>
