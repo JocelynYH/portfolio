@@ -24,24 +24,25 @@
     
     
        <div class="flex"> 
-           <div class="content-item CSO no-margin">
-<!--                 <a href='http://www.jocelynhuang.com/cso'>  -->
-                      <div class="overlay"></div>
+           
+            <div class="content-item C4K">
 
-                      <div class="corner-overlay-content">            <h2>Cavalier Symphony Orchestra</h2>
-                      </div>
-                 
-                        <div class="overlay-content">
-                            <h2>Cavalier Symphony Orchestra </h2>
-                            <p>Built and designed the website for Cavalier Symphony Orchestra with the orchestra's CTO. </p>
-                            <div class="button-container">
-<!--                                <button class='read'>Read about it</button> -->
-                                <a href="http://www.jocelynhuang.com/cso"><button class='view'>View it live</button></a>
+<!--              <a href="C4K.php"><div class="overlay"></div>-->
+                  
+                  <div class="corner-overlay-content"><h2>C4K Concept Art</h2></div>
+                  
+                  <div class="overlay-content">
+                        <h2>C4K Concept Art</h2>
+                        <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
+                        <div class="button-container">
+                                <a href="https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87"><button class='read'>Read about it</button></a>
                             </div>
-                        </div>
-<!--                 </a>-->
+                  </div>
+                  
+<!--              </a>-->
+
             </div>
-            
+                      
             
             
 
@@ -65,22 +66,22 @@
             </div>
 
 
-             <div class="content-item C4K">
+            <div class="content-item CSO ">
+<!--                 <a href='http://www.jocelynhuang.com/cso'>  -->
+                      <div class="overlay"></div>
 
-<!--              <a href="C4K.php"><div class="overlay"></div>-->
-                  
-                  <div class="corner-overlay-content"><h2>C4K Concept Art</h2></div>
-                  
-                  <div class="overlay-content">
-                        <h2>C4K Concept Art</h2>
-                        <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
-                        <div class="button-container">
-                                <a href="https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87"><button class='read'>Read about it</button></a>
+                      <div class="corner-overlay-content">            <h2>Cavalier Symphony Orchestra</h2>
+                      </div>
+                 
+                        <div class="overlay-content">
+                            <h2>Cavalier Symphony Orchestra </h2>
+                            <p>Built and designed the website for Cavalier Symphony Orchestra with the orchestra's CTO. </p>
+                            <div class="button-container">
+<!--                                <button class='read'>Read about it</button> -->
+                                <a href="http://www.jocelynhuang.com/cso"><button class='view'>View it live</button></a>
                             </div>
-                  </div>
-                  
-<!--              </a>-->
-
+                        </div>
+<!--                 </a>-->
             </div>
 
              <div class="content-item RogueJohnsen">

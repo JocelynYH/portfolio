@@ -24,7 +24,49 @@
     
     
        <div class="flex"> 
-           <div class="content-item CSO no-margin">
+           
+            <div class="content-item C4K">
+
+<!--              <a href="C4K.php"><div class="overlay"></div>-->
+                  
+                  <div class="corner-overlay-content"><h2>C4K Concept Art</h2></div>
+                  
+                  <div class="overlay-content">
+                        <h2>C4K Concept Art</h2>
+                        <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
+                        <div class="button-container">
+                                <a href="https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87"><button class='read'>Read about it</button></a>
+                            </div>
+                  </div>
+                  
+<!--              </a>-->
+
+            </div>
+                      
+            
+            
+
+            <div class="content-item vector bottom">
+
+<!--              <a href="http://jocelynhuang.com/vector"><div class="overlay"></div>-->
+
+                  <div class="corner-overlay-content"><h2>Vector Redesign</h2></div>
+                  
+                  <div class="overlay-content">
+                    <h2>Vector Page Redesign</h2>
+                    <p>Re-designed the  page for HackCville's vector class.</p>
+                    <div class="button-container">
+                        <a href="https://medium.com/@seaweed4/redesigning-vector-a-new-traj-vector-y-f7fe7db8494c"><button class='read'>Read about it</button></a>
+                                <a href="http://jocelynhuang.com/vector"><button class='view'>View it live</button></a>
+                            </div>
+                    
+                  </div>
+<!--              </a>-->
+
+            </div>
+
+
+            <div class="content-item CSO no-margin">
 <!--                 <a href='http://www.jocelynhuang.com/cso'>  -->
                       <div class="overlay"></div>
 
@@ -40,47 +82,6 @@
                             </div>
                         </div>
 <!--                 </a>-->
-            </div>
-            
-            
-            
-
-            <div class="content-item vector bottom">
-
-<!--              <a href="http://jocelynhuang.com/vector"><div class="overlay"></div>-->
-
-                  <div class="corner-overlay-content"><h2>Vector Redesign</h2></div>
-                  
-                  <div class="overlay-content">
-                    <h2>Vector Page Redesign</h2>
-                    <p>Re-designed the  page for HackCville's vector class.</p>
-                    <div class="button-container">
-<!--                                <button class='read'>Read about it</button> -->
-                                <a href="http://jocelynhuang.com/vector"><button class='view'>View it live</button></a>
-                            </div>
-                    
-                  </div>
-<!--              </a>-->
-
-            </div>
-
-
-             <div class="content-item C4K">
-
-<!--              <a href="C4K.php"><div class="overlay"></div>-->
-                  
-                  <div class="corner-overlay-content"><h2>C4K Concept Art</h2></div>
-                  
-                  <div class="overlay-content">
-                        <h2>C4K Concept Art</h2>
-                        <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
-                        <div class="button-container">
-                                <a href="C4K.php"><button class='read'>Read about it</button></a>
-                            </div>
-                  </div>
-                  
-<!--              </a>-->
-
             </div>
 
              <div class="content-item RogueJohnsen">
