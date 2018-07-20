@@ -27,7 +27,7 @@
            
             <div class="content-item C4K">
 
-<!--              <a href="C4K.php"><div class="overlay"></div>-->
+              <a href="C4K.php"><div class="overlay"></div>
                   
                   <div class="corner-overlay-content"><h2>C4K Concept Art</h2></div>
                   
@@ -39,7 +39,7 @@
                             </div>
                   </div>
                   
-<!--              </a>-->
+              </a>
 
             </div>
                       
@@ -48,7 +48,7 @@
 
             <div class="content-item vector bottom">
 
-<!--              <a href="http://jocelynhuang.com/vector"><div class="overlay"></div>-->
+              <a href="http://jocelynhuang.com/vector"><div class="overlay"></div>
 
                   <div class="corner-overlay-content"><h2>Vector Redesign</h2></div>
                   
@@ -61,13 +61,13 @@
                             </div>
                     
                   </div>
-<!--              </a>-->
+              </a>
 
             </div>
 
 
             <div class="content-item CSO ">
-<!--                 <a href='http://www.jocelynhuang.com/cso'>  -->
+                 <a href='http://www.jocelynhuang.com/cso'>  
                       <div class="overlay"></div>
 
                       <div class="corner-overlay-content">            <h2>Cavalier Symphony Orchestra</h2>
@@ -81,12 +81,12 @@
                                 <a href="http://www.jocelynhuang.com/cso"><button class='view'>View it live</button></a>
                             </div>
                         </div>
-<!--                 </a>-->
+                 </a>
             </div>
 
              <div class="content-item RogueJohnsen">
 
-<!--             <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html"> <div class="overlay"></div>-->
+             <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html"> <div class="overlay"></div>
 
                   <div class="corner-overlay-content"><h2>Rogue Johnsen</h2></div>
                   
@@ -94,12 +94,12 @@
                     <h2>Rogue Johnsen</h2>
                     <p>Built and designed a website for a client wishing to restart his professional music carrer.</p>
                                <div class="button-container">
-<!--                                <button class='read'>Read about it</button> -->
+                                <button class='read'>Read about it</button> 
                                 <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html"><button class='view'>View it live</button></a>
                             </div>
                   </div>
        
-<!--            </a>-->
+            </a>
 
             </div>
             
@@ -107,8 +107,8 @@
 
              <div class="content-item HC">
 
-<!--                <a href="https://www.hackcville.com"><div class="overlay"></div>-->
-                    
+                <a href="https://www.hackcville.com"><div class="overlay"></div>
+<!--                    -->
                     <div class="corner-overlay-content"><h2>HackCville redesign</h2></div>
                     
                     <div class="overlay-content">
@@ -120,12 +120,12 @@
                             </div>
                      </div>
                    
-<!--                    </a>-->
+                    </a>
 
             </div>
             
             <div class="content-item cvilleweekly">
-<!--              <a href="http://wireframewebsites.com/cville-weekly/">-->
+              <a href="http://wireframewebsites.com/cville-weekly/">
                 <div class="overlay"></div>
 
                 <div class="corner-overlay-content">
@@ -142,14 +142,14 @@
                             </div>
                 </div>
                
-<!--               </a>-->
+               </a>
                     
             </div>
             
 
              <div class="content-item Foodio">
 
-<!--                <a href="Foodio.php"><div class="overlay"></div>-->
+                <a href="Foodio.php"><div class="overlay"></div>
                     
                     <div class="corner-overlay-content"><h2>Foodio Client Websites</h2></div>
                     
@@ -162,13 +162,13 @@
                         </div>
                     </div>
 
-<!--                    </a>-->
+                    </a>
 
             </div>
             
             <div class="content-item AEM">
 
-<!--             <a href="https://music-61330.firebaseapp.com/Music"> <div class="overlay"></div>-->
+             <a href="https://music-61330.firebaseapp.com/Music"> <div class="overlay"></div>
 
                   <div class="corner-overlay-content"><h2>African Electronic Music</h2></div>
                   
@@ -181,7 +181,7 @@
                             </div>
                   </div>
                  
-<!--            </a>-->
+            </a>
 
             </div>
         </div>

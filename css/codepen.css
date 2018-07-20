@@ -1,58 +1,100 @@
-/*
-Error: File to import not found or unreadable: compass/css3.
-       Load path: D:/GithubPC/portfolio/sass
-        on line 1 of sass/codepen.scss
+/* line 5, ../sass/codepen.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
 
-1: @import "compass/css3";
-2: 
-3: $yellow: #e8c63d;
-4: 
-5: p{
-6:   margin: 0;
-
-Backtrace:
-sass/codepen.scss:1
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin.rb:109:in `method_missing'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
-D:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
-D:/Ruby24-x64/bin/sass:23:in `load'
-D:/Ruby24-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/css3.\A        Load path: D:/GithubPC/portfolio/sass\A         on line 1 of sass/codepen.scss\A \A 1: @import \"compass/css3\";\A 2: \A 3: $yellow: #e8c63d;\A 4: \A 5: p{\A 6:   margin: 0;"; }
+/* line 10, ../sass/codepen.scss */
+.content-item {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-size: cover !important;
+  border: 1px solid #eee;
+  height: 300px;
+  margin: 20px 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+/* line 20, ../sass/codepen.scss */
+.content-item:first-child {
+  margin-left: 20px;
+}
+/* line 23, ../sass/codepen.scss */
+.content-item .overlay {
+  border-bottom: 100px solid #e8c63d;
+  border-left: 100px solid transparent;
+  bottom: 0;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 0;
+}
+/* line 35, ../sass/codepen.scss */
+.content-item:hover .overlay {
+  border-bottom: 800px solid #e8c63d;
+  border-left: 800px solid transparent;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* line 40, ../sass/codepen.scss */
+.content-item .corner-overlay-content {
+  bottom: 15px;
+  color: #333;
+  position: absolute;
+  right: 15px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* line 47, ../sass/codepen.scss */
+.content-item:hover .corner-overlay-content {
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* line 51, ../sass/codepen.scss */
+.content-item .overlay-content {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transition: border-bottom 0.3s ease-out;
+  -o-transition: border-bottom 0.3s ease-out;
+  -webkit-transition: border-bottom 0.3s ease-out;
+  transition: border-bottom 0.3s ease-out;
+}
+/* line 61, ../sass/codepen.scss */
+.content-item .overlay-content h2 {
+  border-bottom: 1px solid #333;
+  padding: 0 0 12px;
+}
+/* line 66, ../sass/codepen.scss */
+.content-item:hover .overlay-content {
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}

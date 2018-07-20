@@ -65,8 +65,13 @@ body {
     padding: 0;
     margin: 0;
     color: white;
+    background-color: #eef5f7;
 }
 
+.content-item a {
+    text-decoration: none;
+    color: white;
+}
 
 //***********************//
 //******* HEADER ********//
@@ -101,33 +106,37 @@ li {
 
 
 .links {
-    width: 90%;
-    margin: 0 auto;
     @include flexbox();
     flex-flow: row nowrap;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
+    & li {
+        padding: 20px;
+    }
 }
 
 .menu.relative {
     position: relative;
     background-color: $lblue;
     margin: 0;
-    padding: 50px;
-    flex-flow: row nowrap;
+    padding: 30px 55px;
+    flex-flow: row wrap;
     @include flexbox();
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    text-align: center;
 }
 
 .jocelyn {
-    text-align: center;
+//    text-align: center;
+    width: 100%;
     background-color: white;
-    padding: 50px 50px 50px 80px;
+//    padding: 50px 50px 50px 80px;
     //    border: $test-border;
     @include flexbox();
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;m
+//    align-items: center;
+//    justify-content: space-around;
     & a {
         text-decoration: none;
     }
@@ -205,6 +214,12 @@ li {
     display: none;
 }
 
+a#home {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
 /********** **********
 *  HAMBURGER BUTTON  *
 ********** **********/
@@ -213,10 +228,24 @@ li {
     display: none;
     position: absolute;
     cursor: pointer;
-    z-index: 100;
-    color: $lblue;
-    left: 10px;
-    top: 10px;
+    z-index: 200;
+    color: white;
+    right: 10px;
+    top: 16px;
+}
+
+a#name {
+    display: none;
+    cursor: pointer;
+    z-index: 200;
+    color: white;
+//    position: absolute;
+//    left: 50%;
+//    transform: translateX(-50%);
+//    top: 3%;
+    text-decoration: none;
+    font-size: 8vw;
+    white-space: nowrap;
 }
 
 .bar1,
@@ -246,6 +275,7 @@ li {
 //***********************//
 //**** WEB PORTFOLIO ****//
 //***********************//
+
 .content-item {
     background: url(https://dummyimage.com/400x300/000/fff);
     display: flex;
@@ -256,6 +286,7 @@ li {
     margin-top: 40px;
     @include transition(all .3s ease-out);
     &:hover .overlay {
+        cursor: pointer;
         background: rgba(43, 164, 192,.7);
         
     }
@@ -585,10 +616,6 @@ button:hover a {
     .mobile {
         display: block;
     }
-//
-//    .jocelyn {
-//        display: none;
-//    }
 
     .gallery {
         column-count: 1;
@@ -622,10 +649,43 @@ button:hover a {
         width: 500px;
         height: 300px;
     }
+    
+    a#home {
+        border-bottom: 1px solid white;
+        line-height: 2.6em;
+        margin-bottom: .2em;
+    }
+    .menu.relative {
+        padding-top: 0px;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+    .links {
+        width: 100%;
+    }
+    
+    div.info {
+        margin-top: 20px;
+    }
 
 }
 
 @media screen and (max-width: 500px) {
+    .overlay-content {
+        & h2 {
+            font-size: .5em;
+        }
+        
+        & p {
+            font-size: 1em;
+            line-height: normal;
+        }
+    }
+    
+    .content-item .overlay-content {
+        padding: 20px 10px;
+    }
+    
     #logo img{
         display: none;
     }
@@ -633,13 +693,27 @@ button:hover a {
     #navbar {
         display: none;
     }
+    
 
     .hamburger {
         display: inline-block;
     }
     
+    a#name {
+        display: block;
+    }
+    
+    .bar1,
+    .bar2,
+    .bar3 {
+        background-color: white;
+    }
+    
     .jocelyn {
-        padding: 80px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
+        background-color: $lblue;
+        color: white;
+        text-align: left;
         
         & h1 {
             font-size: 20vw;    
@@ -679,7 +753,7 @@ button:hover a {
         }
     }
     .content-item {
-        width: 80%;
+        width: 90%;
         height: 38vmax;
     }
     
@@ -689,4 +763,10 @@ button:hover a {
         margin: 0px;
     }
 
+}
+
+
+a#test {
+
+    display: block;
 }

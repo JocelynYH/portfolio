@@ -2,16 +2,7 @@
 
 body {
     margin: 0px;
-    font-family: Old Standard TT;
-    font-size: 22px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Old+Standard+TT|Playfair+Display+SC');
-
-body {
-    margin: 0px;
-    font-family: Old Standard TT;
-    font-size: 22px;
+    font-size: 20px;
     padding: 0px;
 }
 
@@ -49,8 +40,10 @@ a:hover {
 }
 
 section.text {
-    margin: 40px;
+    padding: 46px;
+    box-sizing: border-box;
 }
+
 
 .photo {
     background-position: center;
@@ -58,9 +51,14 @@ section.text {
     background-size: cover;
 }
 
-section.photo {
-    height: 70vh;
+.photo h2 {
+    font-size: 8vh;
 }
+
+section.photo {
+    height: 50vh;
+}
+
 
 #header.mini {
     padding: 15px 0px;
@@ -115,9 +113,9 @@ li {
 }
 
 #section-one.photo {
-    height: 70vh;
+    height: 54vh;
     margin: 0px;
-    background-image: url('../raw/music/31543537_1982965875302248_4754267533811384320_o.jpg');
+    background-image: url('../raw/music/music-landing-photo.jpg');
 }
 
 #section-two {
@@ -150,17 +148,19 @@ li {
     align-content: center;
     justify-content: center;
     align-items: center;
+/*
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+*/
 }
 
 section.photo.about {
     background-image: url('../raw/music/12885941_10209040013187391_5468332101831870335_o.jpg');
 }
 section.photo.conducting {
-    background-image: url('../raw/music/31706357_1982964105302425_4219988097703608320_o.jpg');
+    background-image: url('../raw/music/conducting-photo.jpg');
 }
 
 section.photo.piano {
@@ -183,6 +183,10 @@ p{
     text-shadow: -3px -5px 17px #0f0f0f;
     font-size: 60px;
 
+}
+
+section.header {
+    position: relative;
 }
 
 @media (max-width: 700px) {
