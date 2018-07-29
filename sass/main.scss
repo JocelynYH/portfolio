@@ -1,6 +1,7 @@
 /* FONTS, COLORS, MIX-IN'S*/
 
 @import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 @font-face {
     font-family: 'beautysd';
@@ -22,6 +23,11 @@
     url('../fonts/Arcon-Regular.woff') format('woff'),
     url('../fonts/Arcon-Regular.woff2') format('woff2'),
     url('../fonts/Arcon-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFN Republic';
+    src: url(../fonts/SFNewRepublic-Bold.ttf) format('truetype');
 }
 
 h2 {
@@ -66,6 +72,7 @@ body {
     margin: 0;
     color: white;
     background-color: #eef5f7;
+    height: 100%;
 }
 
 .content-item a {
@@ -128,15 +135,11 @@ li {
 }
 
 .jocelyn {
-//    text-align: center;
     width: 100%;
-    background-color: white;
-//    padding: 50px 50px 50px 80px;
-    //    border: $test-border;
+
     @include flexbox();
     flex-flow: row wrap;
-//    align-items: center;
-//    justify-content: space-around;
+
     & a {
         text-decoration: none;
     }
@@ -151,8 +154,6 @@ li {
 }
 
 #logo img {
-//    -webkit-filter: drop-shadow(5px 5px 5px rgba(62, 84, 159, 0.9));
-//    filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
     vertical-align: middle;
     margin-right: 40px;
     width: 100%;
@@ -218,6 +219,7 @@ a#home {
     text-decoration: none;
     color: white;
     font-size: 50px;
+    font-family: 'SFN Republic';
 }
 
 /********** **********
@@ -234,15 +236,11 @@ a#home {
     top: 16px;
 }
 
-a#name {
+a#home-desktop {
     display: none;
     cursor: pointer;
     z-index: 200;
     color: white;
-//    position: absolute;
-//    left: 50%;
-//    transform: translateX(-50%);
-//    top: 3%;
     text-decoration: none;
     font-size: 8vw;
     white-space: nowrap;
@@ -597,9 +595,11 @@ button:hover a {
 }
 
 
+
 //*************************//
 //***** RESPONSIVENESS ****//
 //*************************//
+
 @media screen and (max-width: 1100px) {
     .gallery {
         column-count: 2;
@@ -673,7 +673,7 @@ button:hover a {
 @media screen and (max-width: 500px) {
     .overlay-content {
         & h2 {
-            font-size: .5em;
+            font-size: 1.5em;
         }
         
         & p {
@@ -699,7 +699,7 @@ button:hover a {
         display: inline-block;
     }
     
-    a#name {
+    a#home-desktop {
         display: block;
     }
     
@@ -770,3 +770,5 @@ a#test {
 
     display: block;
 }
+
+

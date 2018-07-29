@@ -286,13 +286,22 @@ h2.project-title {
     font-size: 25px;
   }
 }
-/* line 303, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
+section.article {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: block;
+  color: #3d52a1;
+}
+
+/* line 315, ../sass/styles.scss */
 html,
 body {
   height: 100%;
 }
 
-/* line 309, ../sass/styles.scss */
+/* line 321, ../sass/styles.scss */
 .background {
   z-index: -1;
   position: fixed;
@@ -302,7 +311,7 @@ body {
   height: 100%;
 }
 
-/* line 326, ../sass/styles.scss */
+/* line 338, ../sass/styles.scss */
 .paper {
   width: 35em;
   height: 50em;
@@ -345,7 +354,7 @@ body {
        -o-transform: scale(1.2);
           transform: scale(1.2);
 } */
-/* line 383, ../sass/styles.scss */
+/* line 395, ../sass/styles.scss */
 h1 {
   margin: 5em 0;
   margin-bottom: 50px;

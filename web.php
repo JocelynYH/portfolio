@@ -31,7 +31,6 @@
 
         <div class="flex">
 
-            <a id='test' href='https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87'>
 
                 <div class="content-item C4K">
 
@@ -50,7 +49,6 @@
 
 
                 </div>
-            </a>
 
 
 

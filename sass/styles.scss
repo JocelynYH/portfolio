@@ -293,6 +293,18 @@ h2.project-title {
 
 
 
+//***********************//
+//******* ARTICLE *******//
+//***********************//
+
+section.article {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: block;
+    color: $dblue;
+}
+
 
 
 //***********************//
@@ -388,3 +400,5 @@ h1 {
     text-align: center;
     text-shadow: 0 0px 20px #eee;
 }
+
+

@@ -1,5 +1,234 @@
-/* line 1, ../sass/test.scss */
-section {
-  height: 300px;
-  background: pink;
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+/* line 17, ../sass/test.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/test.scss */
+body {
+  overflow: auto;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+/* line 33, ../sass/test.scss */
+body,
+body * {
+  transform-style: preserve-3d;
+}
+
+/* line 60, ../sass/test.scss */
+.container {
+  padding: 1%;
+  max-width: 100%;
+  margin: auto;
+}
+/* line 61, ../sass/test.scss */
+.container :nth-child(1) {
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -400;
+  top: 5%;
+  left: 0px;
+}
+/* line 66, ../sass/test.scss */
+.container :nth-child(2) {
+  transform: translateZ(0px) scale(1);
+  z-index: 0;
+  top: 0%;
+  right: 0px;
+}
+/* line 71, ../sass/test.scss */
+.container :nth-child(3) {
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -400;
+  top: 600px;
+  left: 300px;
+}
+/* line 76, ../sass/test.scss */
+.container :nth-child(4) {
+  transform: translateZ(-0.8px) scale(1.8);
+  z-index: -800;
+  top: 500px;
+  left: 1200px;
+}
+/* line 81, ../sass/test.scss */
+.container :nth-child(5) {
+  transform: translateZ(-2px) scale(3);
+  z-index: -2000;
+  top: 2000px;
+  left: 2000px;
+}
+/* line 86, ../sass/test.scss */
+.container :nth-child(6) {
+  transform: translateZ(0.4px) scale(0.6);
+  z-index: 400;
+  top: 600px;
+  left: 300px;
+}
+/* line 91, ../sass/test.scss */
+.container :nth-child(7) {
+  transform: translateZ(-1px) scale(2);
+  z-index: -1000;
+  top: 400px;
+  left: 1000px;
+}
+/* line 96, ../sass/test.scss */
+.container :nth-child(8) {
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -400;
+  top: 1600px;
+  left: 1400px;
+}
+/* line 101, ../sass/test.scss */
+.container :nth-child(9) {
+  transform: translateZ(0.4px) scale(0.6);
+  z-index: 400;
+  top: 1600px;
+  left: 500px;
+}
+/* line 106, ../sass/test.scss */
+.container :nth-child(10) {
+  transform: translateZ(-1px) scale(2);
+  z-index: -1000;
+  top: 1600px;
+  left: -600px;
+}
+/* line 112, ../sass/test.scss */
+.container :nth-child(11) {
+  transform: translateZ(0.6px) scale(0.4);
+  z-index: 600;
+  top: 1600px;
+  left: 100px;
+}
+/* line 117, ../sass/test.scss */
+.container :nth-child(12) {
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -400;
+  top: 1200px;
+  left: -20px;
+}
+/* line 122, ../sass/test.scss */
+.container :nth-child(13) {
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -400;
+  top: 2000px;
+  left: 400px;
+}
+/* line 127, ../sass/test.scss */
+.container :nth-child(14) {
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -400;
+  top: 2400px;
+  left: 1500px;
+}
+/* line 132, ../sass/test.scss */
+.container :nth-child(15) {
+  transform: translateZ(-1px) scale(2);
+  z-index: -1000;
+  top: 2400px;
+  left: 1200px;
+}
+/* line 141, ../sass/test.scss */
+.container > * {
+  position: absolute;
+}
+
+/* line 146, ../sass/test.scss */
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  background: #3d52a1;
+  line-height: 1;
+  position: relative;
+}
+
+/* line 154, ../sass/test.scss */
+h1,
+h2 {
+  font-weight: 100;
+  margin: 0;
+}
+
+/* line 160, ../sass/test.scss */
+h1 {
+  font-size: 5em;
+  color: #1586D1;
+}
+
+/* line 165, ../sass/test.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 169, ../sass/test.scss */
+.name-plaque,
+.card, .three {
+  height: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 182, ../sass/test.scss */
+.name-plaque img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 188, ../sass/test.scss */
+.name-plaque h1 {
+  position: absolute;
+}
+
+/* line 192, ../sass/test.scss */
+.card {
+  top: 150%;
+  background-color: white;
+  color: #3d52a1;
+  height: 50%;
+  box-sizing: border-box;
+  padding: 5%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 202, ../sass/test.scss */
+.card h2 {
+  text-align: center;
+}
+
+/* line 207, ../sass/test.scss */
+.three {
+  top: 250%;
+  color: white;
+  height: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  line-height: .8em;
+}
+
+/* line 219, ../sass/test.scss */
+p.space-below {
+  line-height: 1.8em;
+  font: italic 300 40px 'raleway';
 }

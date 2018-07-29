@@ -1,4 +1,222 @@
-section {
-    height: 300px;
-    background: pink;
+// Magic parallax mixins
+$test-border: 2px solid green;
+$pink: #f06490;
+$lblue: #2ba4c0;
+$transblue: rgba(43, 164, 192, .85);
+$dblue: #3d52a1;
+
+
+$parallax-perspective: 1 !default;
+$parallax-element: "body" !default;
+$parallax-ios: true !default;
+
+@mixin parallax-init( $perspective: $parallax-perspective,
+$element: $parallax-element,
+$parallax-ios: $parallax-ios) {
+    @if $element=="body" {
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    }
+    #{$element} {
+        overflow: auto;
+        perspective: $perspective * 1px;
+        transform-style: preserve-3d; // Allows for smooth scrolling but disables parallax effects.
+        @if $parallax-ios==false {
+            -webkit-overflow-scrolling: touch;
+        } // Preserve 3D
+        &,
+        * {
+            transform-style: preserve-3d;
+        }
+    }
+}
+
+@mixin parallax( $distance: 0,
+$perspective: $parallax-perspective) {
+    transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
+    z-index: $distance * 1000;
+}
+
+@mixin flexbox() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+// End of magic parallax mixins
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+$primary: #1586D1;
+
+@include parallax-init;
+
+.container {
+    :nth-child(1) {
+        @include parallax(-.4);
+        top: 5%;
+        left: 0px;
+    }
+    :nth-child(2) {
+        @include parallax(0);
+        top: 0%;
+        right: 0px;
+    }
+    :nth-child(3) {
+        @include parallax(-.4);
+        top: 600px;
+        left: 300px;
+    }
+    :nth-child(4) {
+        @include parallax(-.8);
+        top: 500px;
+        left: 1200px;
+    }
+    :nth-child(5) {
+        @include parallax(-2);
+        top: 2000px;
+        left: 2000px;
+    }
+    :nth-child(6) {
+        @include parallax(.4);
+        top: 600px;
+        left: 300px;
+    }
+    :nth-child(7) {
+        @include parallax(-1);
+        top: 400px;
+        left: 1000px;
+    }
+    :nth-child(8) {
+        @include parallax(-.4);
+        top: 1600px;
+        left: 1400px;
+    }
+    :nth-child(9) {
+        @include parallax(.4);
+        top: 1600px;
+        left: 500px;
+    }
+    :nth-child(10) {
+        @include parallax(-1);
+        top: 1600px;
+        left: -600px;
+    }
+
+    :nth-child(11) {
+        @include parallax(.6);
+        top: 1600px;
+        left: 100px;
+    }
+    :nth-child(12) {
+        @include parallax(-.4);
+        top: 1200px;
+        left: -20px;
+    }
+    :nth-child(13) {
+        @include parallax(-.4);
+        top: 2000px;
+        left: 400px;
+    }
+    :nth-child(14) {
+        @include parallax(-.4);
+        top: 2400px;
+        left: 1500px;
+    }
+    :nth-child(15) {
+        @include parallax(-1);
+        top: 2400px;
+        left: 1200px;
+    }
+
+    padding: 1%;
+    max-width: 100%;
+    margin: auto;
+    > * {
+        position: absolute;
+    }
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    background: $dblue;
+    line-height: 1;
+    position: relative;
+}
+
+h1,
+h2 {
+    font-weight: 100;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5em;
+    color: $primary;
+}
+
+h2 {
+    font-size: 3em; //  @include parallax(.2);
+}
+
+.name-plaque,
+.card, .three {
+    height: 80%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-plaque img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.name-plaque h1 {
+    position: absolute;
+}
+
+.card {
+    top: 150%;
+    background-color: white;
+    color: $dblue;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 5%;
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    & h2 {
+        text-align: center;
+    }
+}
+
+.three {
+    top: 250%;
+    color: white;
+    height: 50%;
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+     font-size: 40px;
+    line-height: .8em;
+    
+}
+
+p.space-below {
+    line-height: 1.8em;
+    font: italic 300 40px 'raleway';
 }
