@@ -1,10 +1,12 @@
-// Magic parallax mixins
-$test-border: 2px solid green;
-$pink: #f06490;
-$lblue: #2ba4c0;
-$transblue: rgba(43, 164, 192, .85);
-$dblue: #3d52a1;
+//***********************//
+//***** STYLESHEET ******//
+//***********************//
 
+@import "stylesheet.scss";
+
+
+
+// Magic parallax mixins
 
 $parallax-perspective: 1 !default;
 $parallax-element: "body" !default;
@@ -43,6 +45,10 @@ $perspective: $parallax-perspective) {
     z-index: $distance * 1000;
 }
 
+
+// End of magic parallax mixins
+
+//Flexbox
 @mixin flexbox() {
     display: -webkit-flex;
     display: -moz-flex;
@@ -51,9 +57,29 @@ $perspective: $parallax-perspective) {
     display: flex;
 }
 
-// End of magic parallax mixins
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
 $primary: #1586D1;
+
+// Normalize
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    background: $dblue;
+    line-height: 1;
+    position: relative;
+}
+
+// Fonts
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    color: $primary;
+}
 
 @include parallax-init;
 
@@ -143,28 +169,6 @@ $primary: #1586D1;
     }
 }
 
-body {
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    background: $dblue;
-    line-height: 1;
-    position: relative;
-}
-
-h1,
-h2 {
-    font-weight: 100;
-    margin: 0;
-}
-
-h1 {
-    font-size: 5em;
-    color: $primary;
-}
-
-h2 {
-    font-size: 3em; //  @include parallax(.2);
-}
 
 .name-plaque,
 .card, .three {
@@ -173,16 +177,19 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 900;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
 }
 
 .name-plaque img {
     position: relative;
     display: block;
     margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 .name-plaque h1 {
@@ -193,7 +200,7 @@ h2 {
     top: 150%;
     background-color: white;
     color: $dblue;
-    height: 50%;
+    height: auto;
     box-sizing: border-box;
     padding: 5%;
     @include flexbox();
@@ -202,12 +209,15 @@ h2 {
     & h2 {
         text-align: center;
     }
+    @include for-phone-only {
+        height: auto;
+    }
 }
 
 .three {
     top: 250%;
     color: white;
-    height: 50%;
+    height: 80%;
     @include flexbox();
     align-items: center;
     justify-content: center;
@@ -219,4 +229,22 @@ h2 {
 p.space-below {
     line-height: 1.8em;
     font: italic 300 40px 'raleway';
+}
+
+
+/* RESPONSIVENESS */
+
+
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+body * {
+    transform-style: flat;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
 }

@@ -1,6 +1,28 @@
-@import "compass/css3";
 
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Josefin+Sans:400,600,700|Open+Sans');
+// Responsive mixins
+
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-tv-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+
+/* FONTS, COLORS, MIX-IN'S*/
+
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 @font-face {
     font-family: 'beautysd';
@@ -24,10 +46,57 @@
     url('../fonts/Arcon-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'SFN Republic';
+    src: url(../fonts/SFNewRepublic-Bold.ttf) format('truetype');
+}
 
+
+h1 {
+    font-family: 'SFN Republic';
+    @include for-phone-only {
+        font-size: 7vmin;
+    }
+    
+    @include for-tablet-portrait-up {
+        font-size: 9vmin;
+    }
+    
+    @include for-tablet-landscape-up {
+        font-size: 9vmin;
+    }
+    
+    @include for-desktop-up {
+        font-size: 9vmin;
+    }
+    
+    @include for-tv-up {
+        font-size: 10vmin;
+    }
+}
 h2 {
     font-family: 'caviardreams';
     margin: 0px;
+    
+     @include for-phone-only {
+        font-size: 7vmin;
+    }
+    
+    @include for-tablet-portrait-up {
+        font-size: 5vmin;
+    }
+    
+    @include for-tablet-landscape-up {
+        font-size: 7vmin;
+    }
+    
+    @include for-desktop-up {
+        font-size: 9vmin;
+    }
+    
+    @include for-tv-up {
+        font-size: 10vmin;
+    }
 }
 
 h3 {
@@ -35,8 +104,29 @@ h3 {
 }
 
 p {
-    font-family: 'arcon';
-    line-height: 24px;
+    font-family: 'raleway';
+    
+     @include for-phone-only {
+        font-size: 18px;
+         line-height: 1.2em;
+    }
+    
+    @include for-tablet-portrait-up {
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    
+    @include for-tablet-landscape-up {
+        font-size: 24px;
+    }
+    
+    @include for-desktop-up {
+        font-size: 26px;
+    }
+    
+    @include for-tv-up {
+        font-size: 10vmin;
+    }
 }
 
 a {
@@ -47,6 +137,14 @@ a {
     font-weight: bold;
 }
 
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    displa: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
 
 $test-border: 2px solid green;
 $pink: #f06490;
@@ -57,5 +155,12 @@ $dblue: #3d52a1;
 body {
     padding: 0;
     margin: 0;
+    color: white;
+    background-color: #eef5f7;
+    height: 100%;
+}
+
+.content-item a {
+    text-decoration: none;
     color: white;
 }

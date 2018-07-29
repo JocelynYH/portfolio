@@ -1,5 +1,181 @@
+/* FONTS, COLORS, MIX-IN'S*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
-/* line 17, ../sass/test.scss */
+@font-face {
+  font-family: 'beautysd';
+  src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
+}
+@font-face {
+  font-family: 'caviardreams';
+  src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"), url("../fonts/CaviarDreams_Bold.woff") format("woff"), url("../fonts/CaviarDreams_Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'arcon';
+  src: url("../fonts/Arcon-Regular.otf") format("opentype"), url("../fonts/Arcon-Regular.woff") format("woff"), url("../fonts/Arcon-Regular.woff2") format("woff2"), url("../fonts/Arcon-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SFN Republic';
+  src: url(../fonts/SFNewRepublic-Bold.ttf) format("truetype");
+}
+/* line 55, ../sass/stylesheet.scss */
+h1 {
+  font-family: 'SFN Republic';
+}
+@media (max-width: 599px) {
+  /* line 55, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 7vmin;
+  }
+}
+@media (min-width: 600px) {
+  /* line 55, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 9vmin;
+  }
+}
+@media (min-width: 900px) {
+  /* line 55, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 9vmin;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 55, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 9vmin;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 55, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 10vmin;
+  }
+}
+
+/* line 77, ../sass/stylesheet.scss */
+h2 {
+  font-family: 'caviardreams';
+  margin: 0px;
+}
+@media (max-width: 599px) {
+  /* line 77, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 7vmin;
+  }
+}
+@media (min-width: 600px) {
+  /* line 77, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 5vmin;
+  }
+}
+@media (min-width: 900px) {
+  /* line 77, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 7vmin;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 77, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 9vmin;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 77, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 10vmin;
+  }
+}
+
+/* line 102, ../sass/stylesheet.scss */
+h3 {
+  font-family: 'caviardreams';
+}
+
+/* line 106, ../sass/stylesheet.scss */
+p {
+  font-family: 'raleway';
+}
+@media (max-width: 599px) {
+  /* line 106, ../sass/stylesheet.scss */
+  p {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+}
+@media (min-width: 600px) {
+  /* line 106, ../sass/stylesheet.scss */
+  p {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+}
+@media (min-width: 900px) {
+  /* line 106, ../sass/stylesheet.scss */
+  p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 106, ../sass/stylesheet.scss */
+  p {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 106, ../sass/stylesheet.scss */
+  p {
+    font-size: 10vmin;
+  }
+}
+
+/* line 132, ../sass/stylesheet.scss */
+a {
+  font-family: 'arcon';
+}
+
+/* line 136, ../sass/stylesheet.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 155, ../sass/stylesheet.scss */
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: #eef5f7;
+  height: 100%;
+}
+
+/* line 163, ../sass/stylesheet.scss */
+.content-item a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 65, ../sass/test.scss */
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  background: #3d52a1;
+  line-height: 1;
+  position: relative;
+}
+
+/* line 75, ../sass/test.scss */
+h1,
+h2 {
+  margin: 0;
+}
+
+/* line 80, ../sass/test.scss */
+h1 {
+  color: #1586D1;
+}
+
+/* line 19, ../sass/test.scss */
 html,
 body {
   width: 100%;
@@ -9,162 +185,135 @@ body {
   overflow: hidden;
 }
 
-/* line 26, ../sass/test.scss */
+/* line 28, ../sass/test.scss */
 body {
   overflow: auto;
   perspective: 1px;
   transform-style: preserve-3d;
 }
-/* line 33, ../sass/test.scss */
+/* line 35, ../sass/test.scss */
 body,
 body * {
   transform-style: preserve-3d;
 }
 
-/* line 60, ../sass/test.scss */
+/* line 86, ../sass/test.scss */
 .container {
   padding: 1%;
   max-width: 100%;
   margin: auto;
 }
-/* line 61, ../sass/test.scss */
+/* line 87, ../sass/test.scss */
 .container :nth-child(1) {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
   top: 5%;
   left: 0px;
 }
-/* line 66, ../sass/test.scss */
+/* line 92, ../sass/test.scss */
 .container :nth-child(2) {
   transform: translateZ(0px) scale(1);
   z-index: 0;
   top: 0%;
   right: 0px;
 }
-/* line 71, ../sass/test.scss */
+/* line 97, ../sass/test.scss */
 .container :nth-child(3) {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
   top: 600px;
   left: 300px;
 }
-/* line 76, ../sass/test.scss */
+/* line 102, ../sass/test.scss */
 .container :nth-child(4) {
   transform: translateZ(-0.8px) scale(1.8);
   z-index: -800;
   top: 500px;
   left: 1200px;
 }
-/* line 81, ../sass/test.scss */
+/* line 107, ../sass/test.scss */
 .container :nth-child(5) {
   transform: translateZ(-2px) scale(3);
   z-index: -2000;
   top: 2000px;
   left: 2000px;
 }
-/* line 86, ../sass/test.scss */
+/* line 112, ../sass/test.scss */
 .container :nth-child(6) {
   transform: translateZ(0.4px) scale(0.6);
   z-index: 400;
   top: 600px;
   left: 300px;
 }
-/* line 91, ../sass/test.scss */
+/* line 117, ../sass/test.scss */
 .container :nth-child(7) {
   transform: translateZ(-1px) scale(2);
   z-index: -1000;
   top: 400px;
   left: 1000px;
 }
-/* line 96, ../sass/test.scss */
+/* line 122, ../sass/test.scss */
 .container :nth-child(8) {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
   top: 1600px;
   left: 1400px;
 }
-/* line 101, ../sass/test.scss */
+/* line 127, ../sass/test.scss */
 .container :nth-child(9) {
   transform: translateZ(0.4px) scale(0.6);
   z-index: 400;
   top: 1600px;
   left: 500px;
 }
-/* line 106, ../sass/test.scss */
+/* line 132, ../sass/test.scss */
 .container :nth-child(10) {
   transform: translateZ(-1px) scale(2);
   z-index: -1000;
   top: 1600px;
   left: -600px;
 }
-/* line 112, ../sass/test.scss */
+/* line 138, ../sass/test.scss */
 .container :nth-child(11) {
   transform: translateZ(0.6px) scale(0.4);
   z-index: 600;
   top: 1600px;
   left: 100px;
 }
-/* line 117, ../sass/test.scss */
+/* line 143, ../sass/test.scss */
 .container :nth-child(12) {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
   top: 1200px;
   left: -20px;
 }
-/* line 122, ../sass/test.scss */
+/* line 148, ../sass/test.scss */
 .container :nth-child(13) {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
   top: 2000px;
   left: 400px;
 }
-/* line 127, ../sass/test.scss */
+/* line 153, ../sass/test.scss */
 .container :nth-child(14) {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
   top: 2400px;
   left: 1500px;
 }
-/* line 132, ../sass/test.scss */
+/* line 158, ../sass/test.scss */
 .container :nth-child(15) {
   transform: translateZ(-1px) scale(2);
   z-index: -1000;
   top: 2400px;
   left: 1200px;
 }
-/* line 141, ../sass/test.scss */
+/* line 167, ../sass/test.scss */
 .container > * {
   position: absolute;
 }
 
-/* line 146, ../sass/test.scss */
-body {
-  font-family: Roboto, sans-serif;
-  font-weight: 100;
-  background: #3d52a1;
-  line-height: 1;
-  position: relative;
-}
-
-/* line 154, ../sass/test.scss */
-h1,
-h2 {
-  font-weight: 100;
-  margin: 0;
-}
-
-/* line 160, ../sass/test.scss */
-h1 {
-  font-size: 5em;
-  color: #1586D1;
-}
-
-/* line 165, ../sass/test.scss */
-h2 {
-  font-size: 3em;
-}
-
-/* line 169, ../sass/test.scss */
+/* line 173, ../sass/test.scss */
 .name-plaque,
 .card, .three {
   height: 80%;
@@ -172,30 +321,33 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 900;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
 }
 
-/* line 182, ../sass/test.scss */
+/* line 187, ../sass/test.scss */
 .name-plaque img {
   position: relative;
   display: block;
   margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
-/* line 188, ../sass/test.scss */
+/* line 195, ../sass/test.scss */
 .name-plaque h1 {
   position: absolute;
 }
 
-/* line 192, ../sass/test.scss */
+/* line 199, ../sass/test.scss */
 .card {
   top: 150%;
   background-color: white;
   color: #3d52a1;
-  height: 50%;
+  height: auto;
   box-sizing: border-box;
   padding: 5%;
   display: -webkit-flex;
@@ -206,16 +358,22 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-/* line 202, ../sass/test.scss */
+/* line 209, ../sass/test.scss */
 .card h2 {
   text-align: center;
 }
+@media (max-width: 599px) {
+  /* line 199, ../sass/test.scss */
+  .card {
+    height: auto;
+  }
+}
 
-/* line 207, ../sass/test.scss */
+/* line 217, ../sass/test.scss */
 .three {
   top: 250%;
   color: white;
-  height: 50%;
+  height: 80%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -227,8 +385,23 @@ h2 {
   line-height: .8em;
 }
 
-/* line 219, ../sass/test.scss */
+/* line 229, ../sass/test.scss */
 p.space-below {
   line-height: 1.8em;
   font: italic 300 40px 'raleway';
+}
+
+/* RESPONSIVENESS */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* line 243, ../sass/test.scss */
+body * {
+  transform-style: flat;
+}
+
+/* line 247, ../sass/test.scss */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
