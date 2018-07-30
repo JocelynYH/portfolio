@@ -40,7 +40,7 @@
                     </div>
                     <div class="overlay"></div>
                     <div class="overlay-content">
-                        <h2>Computers 4 Kids</h2>
+                        <h3>Computers 4 Kids</h3>
                         <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
                         <div class="button-container">
                             <a href="https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87"><button class='read'>Read about it</button></a>
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>Vector Page Redesign</h2>
+                        <h3>Vector Page Redesign</h3>
                         <p>Re-designed the page for HackCville's vector class.</p>
                         <div class="button-container">
                             <a href="https://medium.com/@seaweed4/redesigning-vector-a-new-traj-vector-y-f7fe7db8494c"><button class='read'>Read about it</button></a>
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>Cavalier Symphony Orchestra </h2>
+                        <h3>Cavalier Symphony Orchestra </h3>
                         <p>Built and designed the website for Cavalier Symphony Orchestra with the orchestra's CTO. </p>
                         <div class="button-container">
                             <!--                                <button class='read'>Read about it</button> -->
@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>Rogue Johnsen</h2>
+                        <h3>Rogue Johnsen</h3>
                         <p>Built and designed a website for a client wishing to restart his professional music carrer.</p>
                         <div class="button-container">
                             <button class='read'>Read about it</button>
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>HackCville Design Update</h2>
+                        <h3>HackCville Rebrand</h3>
                         <p>During HackCville's website redesign, I was responsible for creating the new stylesheet and branding guidelines. </p>
                         <div class="button-container">
                             <a href="https://www.hackcville.com"><button class='read'>Live Branding</button></a>
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>Cville Weekly Redesign</h2>
+                        <h3>Cville Weekly Redesign</h3>
                         <p>Re-imagined the news website for the Cville Weekly publication.</p>
                         <div class="button-container">
                             <!--                                <button class='read'>Read about it</button> -->
@@ -173,7 +173,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>Foodio Client Websites</h2>
+                        <h3>Foodio Client Websites</h3>
                         <p>I redesigned websites for Foodio's 2000+ restaurant clients. </p>
                         <div class="button-container">
                             <a href="Foodio.php"><button class='read'>Read about it</button></a>
@@ -195,7 +195,7 @@
                     </div>
 
                     <div class="overlay-content">
-                        <h2>African Electronic Music Final Project</h2>
+                        <h3>African Electronic Music Final Project</h3>
                         <p>Built a portfolio webpage to display my classmate's final projects for a UVA course.</p>
                         <div class="button-container">
                             <!--                                <button class='read'>Read about it</button> -->

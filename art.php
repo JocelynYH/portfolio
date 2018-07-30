@@ -12,7 +12,8 @@
     <div class="post-header-gap"></div>
     
     <h2 class='white bold'>Art Gallery</h2>
-    <h3 class='white'>Click to enlarge</h3>
+<!--    <h3 class='white'>Click to enlarge</h3>-->
+  <br>
    
         <div class="flex">
          

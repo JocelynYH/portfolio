@@ -13,35 +13,39 @@
 }
 @font-face {
   font-family: 'SFN Republic';
-  src: url(../fonts/SFNewRepublic-Bold.ttf) format("truetype");
+  src: url(../fonts/SFNewRepublic-Bold.ttf) format("truetype"), url("../fonts/SFNewRepublic-Bold.woff") format("woff"), url("../fonts/SFNewRepublic-Bold.woff2") format("woff2"), url("../fonts/SFNewRepublic-Bold.otf") format("opentype");
 }
-/* line 31, ../sass/landing.scss */
+@font-face {
+  font-family: 'Great Vibes';
+  src: url(../fonts/GreatVibes-Regular.ttf) format("truetype"), url(../fonts/GreatVibes-Regular.woff) format("woff"), url(../fonts/GreatVibes-Regular.woff2) format("woff2"), url(../fonts/GreatVibes-Regular.otf) format("opentype");
+}
+/* line 42, ../sass/landing.scss */
 h2 {
   font-family: 'caviardreams';
   margin: 0px;
 }
 
-/* line 36, ../sass/landing.scss */
+/* line 47, ../sass/landing.scss */
 h3 {
   font-family: 'caviardreams';
 }
 
-/* line 40, ../sass/landing.scss */
+/* line 51, ../sass/landing.scss */
 p {
   font-family: 'raleway', sans-serif;
 }
 
-/* line 44, ../sass/landing.scss */
+/* line 55, ../sass/landing.scss */
 a {
   font-family: 'raleway', sans-serif;
 }
 
-/* line 48, ../sass/landing.scss */
+/* line 59, ../sass/landing.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 73, ../sass/landing.scss */
+/* line 84, ../sass/landing.scss */
 body {
   padding: 0;
   margin: 0;
@@ -50,25 +54,25 @@ body {
   font-family: 'raleway';
 }
 
-/* line 81, ../sass/landing.scss */
+/* line 92, ../sass/landing.scss */
 .content-item a {
   text-decoration: none;
   color: white;
 }
 
-/* line 87, ../sass/landing.scss */
+/* line 98, ../sass/landing.scss */
 html, body {
   height: 100%;
 }
 
-/* line 97, ../sass/landing.scss */
+/* line 108, ../sass/landing.scss */
 .landing-page img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 102, ../sass/landing.scss */
+/* line 113, ../sass/landing.scss */
 .landing {
   background: url(../raw/LP-01.svg) center/cover no-repeat;
   position: relative;
@@ -83,7 +87,7 @@ html, body {
   height: 100%;
 }
 
-/* line 109, ../sass/landing.scss */
+/* line 120, ../sass/landing.scss */
 .name-plaque {
   height: 80%;
   width: 800%;
@@ -97,13 +101,13 @@ html, body {
   align-items: center;
 }
 
-/* line 115, ../sass/landing.scss */
+/* line 126, ../sass/landing.scss */
 .name-plaque img {
   height: 100%;
   width: 100%;
 }
 
-/* line 121, ../sass/landing.scss */
+/* line 132, ../sass/landing.scss */
 .name-title {
   position: absolute;
   color: #3d52a1;
@@ -111,7 +115,7 @@ html, body {
   margin: 0px;
 }
 
-/* line 128, ../sass/landing.scss */
+/* line 139, ../sass/landing.scss */
 div.about-me {
   background: url(../raw/LP-07.svg) center/cover no-repeat;
   height: 100%;
@@ -119,7 +123,7 @@ div.about-me {
   color: #3d52a1;
 }
 
-/* line 135, ../sass/landing.scss */
+/* line 146, ../sass/landing.scss */
 div.card {
   background: white;
   height: 80%;
@@ -137,17 +141,17 @@ div.card {
   align-items: center;
   flex-flow: column nowrap;
 }
-/* line 145, ../sass/landing.scss */
+/* line 156, ../sass/landing.scss */
 div.card h2 {
   font-size: 44px;
 }
-/* line 149, ../sass/landing.scss */
+/* line 160, ../sass/landing.scss */
 div.card p {
   font-size: 25px;
   line-height: 1.4em;
 }
 
-/* line 155, ../sass/landing.scss */
+/* line 166, ../sass/landing.scss */
 div.stars {
   background: url(../raw/LP-08.svg) center/cover no-repeat;
   height: 100%;
@@ -164,28 +168,28 @@ div.stars {
   font-size: 40px;
   line-height: .8em;
 }
-/* line 164, ../sass/landing.scss */
+/* line 175, ../sass/landing.scss */
 div.stars .text {
   padding-left: 10%;
 }
 
-/* line 169, ../sass/landing.scss */
+/* line 180, ../sass/landing.scss */
 p.space-below {
   line-height: 1.8em;
   font: italic 300 40px 'raleway';
 }
 
-/* line 174, ../sass/landing.scss */
+/* line 185, ../sass/landing.scss */
 .shadow {
   text-shadow: 4px 5px 10px #1d1c52;
 }
 
-/* line 178, ../sass/landing.scss */
+/* line 189, ../sass/landing.scss */
 .indent {
   text-indent: 60px;
 }
 
-/* line 182, ../sass/landing.scss */
+/* line 193, ../sass/landing.scss */
 div.empty {
   height: 254/518%;
   background: url(../raw/LP-09.svg) center/cover no-repeat;

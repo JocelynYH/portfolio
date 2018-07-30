@@ -25,7 +25,18 @@
 
 @font-face {
     font-family: 'SFN Republic';
-    src: url(../fonts/SFNewRepublic-Bold.ttf) format('truetype');
+    src: url(../fonts/SFNewRepublic-Bold.ttf) format('truetype'),
+        url('../fonts/SFNewRepublic-Bold.woff') format('woff'),
+        url('../fonts/SFNewRepublic-Bold.woff2') format('woff2'),
+        url('../fonts/SFNewRepublic-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url(../fonts/GreatVibes-Regular.ttf) format('truetype'),
+        url(../fonts/GreatVibes-Regular.woff) format('woff'),
+        url(../fonts/GreatVibes-Regular.woff2) format('woff2'),
+        url(../fonts/GreatVibes-Regular.otf) format('opentype');
 }
 
 h2 {

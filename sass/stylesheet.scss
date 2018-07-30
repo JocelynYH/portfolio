@@ -22,7 +22,7 @@
 /* FONTS, COLORS, MIX-IN'S*/
 
 @import "compass/css3";
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,600,700,800,900');
 
 @font-face {
     font-family: 'beautysd';
@@ -87,11 +87,11 @@ h2 {
     }
     
     @include for-tablet-landscape-up {
-        font-size: 7vmin;
+        font-size: 5vmin;
     }
     
     @include for-desktop-up {
-        font-size: 9vmin;
+        font-size: 6vmin;
     }
     
     @include for-tv-up {
@@ -100,7 +100,28 @@ h2 {
 }
 
 h3 {
-    font-family: 'caviardreams';
+     font-family: 'caviardreams';
+    margin: 0px;
+    
+     @include for-phone-only {
+        font-size: 3vmin;
+    }
+    
+    @include for-tablet-portrait-up {
+        font-size: 4vmin;
+    }
+    
+    @include for-tablet-landscape-up {
+        font-size: 4vmin;
+    }
+    
+    @include for-desktop-up {
+        font-size: 4vmin;
+    }
+    
+    @include for-tv-up {
+        font-size: 4vmin;
+    }
 }
 
 p {
@@ -112,16 +133,16 @@ p {
     }
     
     @include for-tablet-portrait-up {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.2em;
     }
     
     @include for-tablet-landscape-up {
-        font-size: 24px;
+        font-size: 20px;
     }
     
     @include for-desktop-up {
-        font-size: 26px;
+        font-size: 22px;
     }
     
     @include for-tv-up {

@@ -1,5 +1,5 @@
 /* FONTS, COLORS, MIX-IN'S*/
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,600,700,800,900");
 @font-face {
   font-family: 'beautysd';
   src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
@@ -71,13 +71,13 @@ h2 {
 @media (min-width: 900px) {
   /* line 77, ../sass/stylesheet.scss */
   h2 {
-    font-size: 7vmin;
+    font-size: 5vmin;
   }
 }
 @media (min-width: 1200px) {
   /* line 77, ../sass/stylesheet.scss */
   h2 {
-    font-size: 9vmin;
+    font-size: 6vmin;
   }
 }
 @media (min-width: 1800px) {
@@ -90,56 +90,87 @@ h2 {
 /* line 102, ../sass/stylesheet.scss */
 h3 {
   font-family: 'caviardreams';
+  margin: 0px;
+}
+@media (max-width: 599px) {
+  /* line 102, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 600px) {
+  /* line 102, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+@media (min-width: 900px) {
+  /* line 102, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 102, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 102, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
 }
 
-/* line 106, ../sass/stylesheet.scss */
+/* line 127, ../sass/stylesheet.scss */
 p {
   font-family: 'raleway';
 }
 @media (max-width: 599px) {
-  /* line 106, ../sass/stylesheet.scss */
+  /* line 127, ../sass/stylesheet.scss */
   p {
     font-size: 18px;
     line-height: 1.2em;
   }
 }
 @media (min-width: 600px) {
-  /* line 106, ../sass/stylesheet.scss */
+  /* line 127, ../sass/stylesheet.scss */
   p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.2em;
   }
 }
 @media (min-width: 900px) {
-  /* line 106, ../sass/stylesheet.scss */
+  /* line 127, ../sass/stylesheet.scss */
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 106, ../sass/stylesheet.scss */
+  /* line 127, ../sass/stylesheet.scss */
   p {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1800px) {
-  /* line 106, ../sass/stylesheet.scss */
+  /* line 127, ../sass/stylesheet.scss */
   p {
     font-size: 10vmin;
   }
 }
 
-/* line 132, ../sass/stylesheet.scss */
+/* line 153, ../sass/stylesheet.scss */
 a {
   font-family: 'arcon';
 }
 
-/* line 136, ../sass/stylesheet.scss */
+/* line 157, ../sass/stylesheet.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 155, ../sass/stylesheet.scss */
+/* line 176, ../sass/stylesheet.scss */
 body {
   padding: 0;
   margin: 0;
@@ -148,7 +179,7 @@ body {
   height: 100%;
 }
 
-/* line 163, ../sass/stylesheet.scss */
+/* line 184, ../sass/stylesheet.scss */
 .content-item a {
   text-decoration: none;
   color: white;
