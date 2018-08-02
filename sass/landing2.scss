@@ -5,6 +5,10 @@
 @import "stylesheet.scss";
 
 
+//***********************//
+//***** PARALLAX ******//
+//***********************//
+
 
 // Magic parallax mixins
 
@@ -48,6 +52,8 @@ $perspective: $parallax-perspective) {
 
 // End of magic parallax mixins
 
+
+
 //Flexbox
 @mixin flexbox() {
     display: -webkit-flex;
@@ -80,6 +86,11 @@ h2 {
 h1 {
     color: $primary;
 }
+
+
+//***********************//
+//** PARALLAX CONTENT ***//
+//***********************//
 
 @include parallax-init;
 
@@ -185,9 +196,7 @@ h1 {
     }
 }
 
-
-.name-plaque,
-.card, .three, .four, .five {
+.section {
     height: 80%;
     position: relative;
     @include flexbox();
@@ -201,7 +210,13 @@ h1 {
     margin: 0 auto;
 }
 
-.name-plaque {
+
+//***********************//
+//***** SECTION ONE ******//
+//***********************//
+
+
+.section.one {
     margin-top: 15%;
 }
 
@@ -217,24 +232,133 @@ h1 {
     position: absolute;
 }
 
-.card {
-//    top: 150%;
+//***********************//
+//***** SECTION TWO ******//
+//***********************//
+
+
+
+.card-bkg {
     background-color: white;
-    color: $dblue;
+    display: none;
+}
+.card-content {
+    background-color: white;
+    z-index: 999;
+    color: #3d52a1;
     height: auto;
     box-sizing: border-box;
     padding: 5%;
-    @include flexbox();
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     & h2 {
         text-align: center;
     }
-    @include for-phone-only {
-        height: auto;
+//    @include for-phone-only {
+//        height: auto;
+//    }
+}
+
+.button-bkg {
+    position: absolute;
+    z-index: -999;
+    &.one {
+        left: -70px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+     &.two {
+        right: -70px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
+.card-container {
+    position: relative;
+    height: 400px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+.container-bkg {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 47%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: -50px;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: -50px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: $dblue;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+//***********************//
+//**** SECTION THREE ****//
+//***********************//
 .three {
 //    top: 250%;
     color: white;
@@ -256,11 +380,16 @@ p.space-below {
     font: italic 300 40px 'raleway';
 }
 
+//***********************//
+//**** SECTION FOUR *****//
+//***********************//
 
 .section.four {
 //    top: 400%;
 //    background: url('../raw/geom-17.svg') center / cover no-repeat;
     width: 100%;
+    height: 80%;
+    color: white;
     
     & .text {
         width: 80%;
@@ -269,8 +398,9 @@ p.space-below {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $dblue;
+        color: white;
         font-weight: 500;
+        line-height: 1em;
     }
     & .img-container {
         position: relative;
@@ -282,18 +412,18 @@ p.space-below {
     }
     
     & p {
-        font-size: 40px;
+        font-size: 30px;
     }
     
     & p.vstrong {
         font-weight: 800;
-        font-size: 90px;
+        font-size: 60px;
         line-height: .6em;
     }
     & p strong.cursive {
         font-family: 'Great Vibes', serif;
-        font-size: 100px;
-        line-height: 1.4em;
+        font-size: 80px;
+        line-height: 1.2em;
         font-weight: normal;
     }
     
@@ -387,16 +517,44 @@ div.section.five {
 
 
 div.footer {
-    height: 200px;
-    background: white;
-    margin-top: 2%;
+    margin-top: 20%;
+    height: 100%;
+    overflow-y: hidden;
+    & img {
+        width: 100%;
+    }
    
+}
+
+.portfolio-button {
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 19px;
+    text-decoration: none;
+    color: $dblue;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2em;
+    
+}
+
+
+
+//***********************//
+//***** TIMELINE ******//
+//***********************//
+
+div.section.timeline {
+    height: 80%;
 }
 
 
 
 
-/* RESPONSIVENESS */
+//***********************//
+//*** RESPONSIVENESS ****//
+//***********************//
+
 
 
 @media only screen and (min-width : 321px) {
