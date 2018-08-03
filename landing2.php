@@ -16,14 +16,19 @@
 
 <body>
         <div class="name-plaque section one">
+<!--
             <img class='plaque-image' src="raw/nameplaque.svg" alt="">
             <h1 class='name-title'>Jocelyn Huang</h1>
+-->
+            <div class="title-plaque">
+                <h1 class='name-title'>Jocelyn Huang</h1>
+                <img class='blue-triangle bottom' src="raw/blue-triangle-1.svg" alt="">
+                <img class='blue-triangle top' src="raw/blue-triangle-2.svg" alt="">
+            </div>
         </div>
-
-
-
-    <div class="spacer"></div>
-
+        
+        
+        
 
 
     <div class="container one">
@@ -90,7 +95,7 @@
         <div class="card-bkg ">
             <div class="card-content about-me">
                 <div class='text'>
-                    <p>My accomplishments & experiences equip me with skills for success in work & life. Here is an overview of what I’ve been up to recently.
+                    <p>My accomplishments & experiences equip me with skills for success in work & life. Check out the timeline below for an overview of what I’ve been up to recently.
                     </p>
                 </div>
             </div>
@@ -106,7 +111,7 @@
     
     <div class="parallax-container">
         <div class="container timeline">
-            <img src="raw/geom-28.svg" alt="">
+<!--            <img src="raw/timeline-stars.svg" alt="">-->
         </div>
     </div>
     
@@ -116,6 +121,7 @@
       <div id='timeline-embed' style="width: 100%; height: 600px"></div>
     <div class='btn-container'>
 <!--        <button id='studgov'>Show Student Government</button>-->
+       <h4>Filter by:</h4>
         <button id='arts'> Music & Arts</button>
         <button id='design'> Design</button>
         <button id='dev'> Development</button>
@@ -129,8 +135,8 @@
             var embed = document.getElementById('timeline-embed');
             var options = {
                 //            start_at_end: true,
-                hash_bookmark: false,
-                timenav_height_percentage: 60
+                hash_bookmark: false
+//                timenav_height_percentage: 60
             }
             embed.style.height = getComputedStyle(document.body).height;
             window.timeline = new TL.Timeline('timeline-embed', 'timeline.json', options);
@@ -141,7 +147,7 @@
             })
         });
 
-
+//       Filter timeline events by role
         
         $(document).ready(function() {
             window.onload = function () {
@@ -202,7 +208,19 @@
             });
         });
         
-        
+       
+       // Create space for filter buttons 
+       
+        $(document).ready(function() {
+            var div = document.createElement("div");
+            div.style.width = "100px";
+            div.style.height = "100px";
+            div.style.background = "red";
+            div.style.color = "white";
+            div.innerHTML = "Hello";
+
+            $('.tl-storyslider').appendChild(div);
+        });
         
         
 

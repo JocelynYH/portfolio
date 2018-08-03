@@ -78,7 +78,7 @@ h2 {
     font-family: 'caviardreams';
     margin: 0px;
     
-     @include for-phone-only {
+    @include for-phone-only {
         font-size: 7vmin;
     }
     
@@ -146,7 +146,7 @@ p {
     }
     
     @include for-tv-up {
-        font-size: 10vmin;
+        font-size: 5vmin;
     }
 }
 
@@ -185,3 +185,5 @@ body {
     text-decoration: none;
     color: white;
 }
+
+

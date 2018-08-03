@@ -156,7 +156,7 @@ p {
 @media (min-width: 1800px) {
   /* line 127, ../sass/stylesheet.scss */
   p {
-    font-size: 10vmin;
+    font-size: 5vmin;
   }
 }
 
