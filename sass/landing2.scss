@@ -568,11 +568,17 @@ div.footer {
 //***********************//
 
 div.section.timeline {
-    height: 80%;
+    height: 100%;
 }
 
 .container.timeline {
     
+}
+
+.btn-container {
+    position: absolute;
+//    display: none;
+    z-index: 1400;
 }
 
 

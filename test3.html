@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>find demo</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+    <div class="bigdiv">
+        <div class="myclass class2" id="1"></div>
+        <div class="myclass" id="2"></div>
+        <div class="myclass" id="3"></div>
+    </div>
+    <script>
+//        $(".hithere").find(".find").css("color", "red");
+        var IDArr = [];
+        $(".bigdiv").find(".myclass").each(function() {
+            IDArr.push(this.id);
+        });
+        console.log(IDArr);
+
+    </script>
+
+</body>
+
+</html>

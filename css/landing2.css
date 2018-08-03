@@ -739,18 +739,24 @@ div.footer img {
 
 /* line 570, ../sass/landing2.scss */
 div.section.timeline {
-  height: 80%;
+  height: 100%;
+}
+
+/* line 578, ../sass/landing2.scss */
+.btn-container {
+  position: absolute;
+  z-index: 1400;
 }
 
 @media only screen and (min-width: 321px) {
   /* Styles */
 }
-/* line 592, ../sass/landing2.scss */
+/* line 598, ../sass/landing2.scss */
 body * {
   transform-style: flat;
 }
 
-/* line 596, ../sass/landing2.scss */
+/* line 602, ../sass/landing2.scss */
 body {
   overflow-y: auto;
   overflow-x: hidden;

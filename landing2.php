@@ -114,54 +114,99 @@
         <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
       <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    <div class='btn-container'>
+<!--        <button id='studgov'>Show Student Government</button>-->
+        <button id='arts'> Music & Arts</button>
+        <button id='design'> Design</button>
+        <button id='dev'> Development</button>
+        <button id='marketing'> Marketing</button>
+        <button id="leadership">General Leadership</button>
+        <button id="all">All</button>
+    </div>
 
+   <script>
+        $(document).ready(function() {
+            var embed = document.getElementById('timeline-embed');
+            var options = {
+                //            start_at_end: true,
+                hash_bookmark: false,
+                timenav_height_percentage: 60
+            }
+            embed.style.height = getComputedStyle(document.body).height;
+            window.timeline = new TL.Timeline('timeline-embed', 'timeline.json', options);
+            window.addEventListener('resize', function() {
+                var embed = document.getElementById('timeline-embed');
+                embed.style.height = getComputedStyle(document.body).height;
+                timeline.updateDisplay();
+            })
+        });
+
+
+        
+        $(document).ready(function() {
+            window.onload = function () {
+//            console.log("Initializing boop beep boop");
+          var allMarkers = [];
+            $(".tl-timenav-item-container").find(".tl-timemarker").each(function() {
+                allMarkers.push(this.id);
+            });
+                
+            var musicElems = allMarkers.filter(markername => markername.includes("music") || markername.includes("flute") || markername.includes("conductor") || (markername.includes("symphony") && markername.includes("president") === false) || markername.includes("ensemble"));
+                
+            var studgovElems = allMarkers.filter(markername => markername.includes("council") || markername.includes("leadership") || markername.includes("lighting") || markername.includes("representative") || markername.includes("office"));
+                
+            var designElems = allMarkers.filter(markername => markername.includes("design") || markername.includes("second") || markername.includes("lighting") || markername.includes("web") || markername.includes("president") || markername.includes("guide"));
+                
+            var devElems = allMarkers.filter(markername => (markername.includes("web") && markername.includes("president") === false) || markername.includes("development") || markername.includes("developer") );
+                 
+            var marketingElems = allMarkers.filter(markername => markername.includes("marketing") || markername.includes("second") || markername.includes("brand") );
+                
+            var leadershipElems = allMarkers.filter(markername => markername.includes("director") || markername.includes("president") || markername.includes("conductor") || markername.includes("leadership") || markername.includes("council") || markername.includes("office") || markername.includes("instructor") );
+           
+                
+            $('button#arts').click(function() {
+                $('.tl-timemarker').hide();
+                musicElems.forEach(elem => $("#"+elem).show());
+            });   
+                
+            $('button#studgov').click(function() {
+                $('.tl-timemarker').hide();
+                studgovElems.forEach(elem => $("#"+elem).show());
+            });  
+                
+            $('button#design').click(function() {
+                $('.tl-timemarker').hide();
+                designElems.forEach(elem => $("#"+elem).show());
+            });  
+                
+            $('button#dev').click(function() {
+                $('.tl-timemarker').hide();
+                devElems.forEach(elem => $("#"+elem).show());
+            }); 
+            
+                
+            $('button#leadership').click(function() {
+                $('.tl-timemarker').hide();
+                leadershipElems.forEach(elem => $("#"+elem).show());
+            }); 
+                
+            };
+        });
+        
     
-    <!-- 3 -->
-<!--
-        <script type="text/javascript">
-          var timeline_json = make_the_json(); // replace make_the_json() with the JSON object you created
-          // two arguments: the id of the Timeline container (no '#')
-          // and the JSON object or an instance of TL.TimelineConfig created from
-          // a suitable JSON object
-          window.timeline = new TL.Timeline('timeline-embed', timeline_json);
-        </script>
--->
+    
+        
+         $(document).ready(function() {
+            $('button#all').click(function() {
+                $('.tl-timemarker').show();
+            });
+        });
+        
+        
+        
+        
 
-
- <!-- Demo -->
-  <div id="timeline-embed">
-    <div id="timeline"></div>
-  </div>
-  <!-- build:css //cdn.knightlab.com/libs/timeline3/%(cdn)s/css/timeline.css -->
-  <link rel="stylesheet" href="/build/css/fonts/font.knightlab.css">
-  <!-- endbuild -->
-  <!-- build:css //cdn.knightlab.com/libs/timeline3/%(cdn)s/css/timeline.css -->
-  <link title="timeline-styles" rel="stylesheet" href="/build/css/timeline.css">
-  <!-- endbuild -->
-  <!-- build:js //cdn.knightlab.com/libs/timeline3/%(cdn)s/js/timeline-min.js -->
-  <script src="/build/js/timeline.js"></script>
-  <!-- endbuild -->
-  <script>
-    $(document).ready(function(){
-        var embed = document.getElementById('timeline-embed');
-        var options = {
-//            start_at_end: true,
-            hash_bookmark: false,
-            timenav_height: 500;
-        }
-        embed.style.height = getComputedStyle(document.body).height;
-        window.timeline = new TL.Timeline('timeline-embed', 'timeline.json', options);
-        window.addEventListener('resize', function() {
-          var embed = document.getElementById('timeline-embed');
-          embed.style.height = getComputedStyle(document.body).height;
-          timeline.updateDisplay();
-        })
-      });
-      
-       
-      
-      
-  </script>
+    </script>
     </div>
 
 
