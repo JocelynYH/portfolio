@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <?php include("includes/head.html");?>
+    <!--    Timeline JS-->
+      <!-- 1 -->
+      <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+      
 
     <link rel="stylesheet" href="css/landing2.css">
 </head>
@@ -21,7 +26,7 @@
 
 
 
-    <div class="container">
+    <div class="container one">
         <img src="raw/geom-01.svg" alt="">
         <img src="raw/geom-02.svg" alt="">
         <img src="raw/geom-03.svg" alt="">
@@ -99,13 +104,78 @@
 
     <div class="spacer"></div>
     
+    <div class="parallax-container">
+        <div class="container timeline">
+            <img src="raw/geom-28.svg" alt="">
+        </div>
+    </div>
+    
     <div class="section timeline">
-        
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+      <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+    
+    <!-- 3 -->
+<!--
+        <script type="text/javascript">
+          var timeline_json = make_the_json(); // replace make_the_json() with the JSON object you created
+          // two arguments: the id of the Timeline container (no '#')
+          // and the JSON object or an instance of TL.TimelineConfig created from
+          // a suitable JSON object
+          window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+        </script>
+-->
+
+
+ <!-- Demo -->
+  <div id="timeline-embed">
+    <div id="timeline"></div>
+  </div>
+  <!-- build:css //cdn.knightlab.com/libs/timeline3/%(cdn)s/css/timeline.css -->
+  <link rel="stylesheet" href="/build/css/fonts/font.knightlab.css">
+  <!-- endbuild -->
+  <!-- build:css //cdn.knightlab.com/libs/timeline3/%(cdn)s/css/timeline.css -->
+  <link title="timeline-styles" rel="stylesheet" href="/build/css/timeline.css">
+  <!-- endbuild -->
+  <!-- build:js //cdn.knightlab.com/libs/timeline3/%(cdn)s/js/timeline-min.js -->
+  <script src="/build/js/timeline.js"></script>
+  <!-- endbuild -->
+  <script>
+    $(document).ready(function(){
+        var embed = document.getElementById('timeline-embed');
+        var options = {
+//            start_at_end: true,
+            hash_bookmark: false,
+            timenav_height: 500;
+        }
+        embed.style.height = getComputedStyle(document.body).height;
+        window.timeline = new TL.Timeline('timeline-embed', 'timeline.json', options);
+        window.addEventListener('resize', function() {
+          var embed = document.getElementById('timeline-embed');
+          embed.style.height = getComputedStyle(document.body).height;
+          timeline.updateDisplay();
+        })
+      });
+      
+       
+      
+      
+  </script>
     </div>
 
 
-
-    <div class="section three">
+    <div class="parallax-container">
+        <div class="container ring-stars">
+            <img src="raw/geom-23.svg" alt="">
+<!--
+            <img src="raw/geom-25.svg" alt="">
+            <img src="raw/geom-26.svg" alt="">
+            <img src="raw/geom-27.svg" alt="">
+-->
+        </div>
+    </div>
+    <div class="section ring-stars">
 
         <div class='text'>
             <p class='shadow space-below'>This all means...</p>
@@ -121,9 +191,13 @@
 
 
     <div class="parallax-container">
-        <div class='container-two'>
+        <div class='container planet'>
             <img src="raw/rocket.svg" alt="">
-            <img src="raw/geom-15.svg" alt="">
+<!--            <img src="raw/geom-15.svg" alt="">-->
+            <img src="raw/geom-25.svg" alt="">
+            <img src="raw/geom-26.svg" alt="">
+            <img src="raw/geom-27.svg" alt="">
+            <img src="raw/geom-28.svg" alt="">
             <!--
                 <img src="raw/big-stars.svg" alt="">
                 <img src="raw/small-stars.svg" alt="">
@@ -131,7 +205,7 @@
         </div>
     </div>
 
-    <div class="section four">
+    <div class="section planet">
         <div class="img-container">
 <!--            <img src="raw/moon-17.svg" alt="">-->
         </div>
@@ -155,11 +229,9 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
 
     <div class="parallax-container">
-        <div class='container-three'>
+        <div class='container four'>
 
             <img src="raw/geom-21.svg" alt="">
             <img src="raw/big-stars.svg" alt="">
@@ -181,7 +253,9 @@
 
     <div class="footer">
        <img src="raw/moon-17.svg" alt="">
-        <p>Keep scrolling to learn more about me and why I create</p>
+        <div class="footer content container">
+            
+        </div>
     </div>
 
     <script>

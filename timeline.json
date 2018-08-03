@@ -5,31 +5,12 @@
           "caption": "Hi!  This is me. "
         },
         "text": {
-          "headline": "What I've Been Up To",
-          "text": "<p>A person's actions speak louder than their words, and certainly, what I've learned has contributed greatly to who I am today.  My experiences have equipped me with the success skills for life and work.</p>"
+          "headline": "What you do defines who you are",
+          "text": "<p>I believe that a person's actions speak louder than their words, and certainly, what I've learned has contributed greatly to who I am today.  My experiences have equipped me with the success skills for life and work.  Take a look at the past 4 years during my time at UVA to see what I've been up to, and what I've learned and gained.</p>"
         }
     },
     "events": [
-      {
-        "media": {
-          "url": "https://news.virginia.edu/sites/default/files/styles/uva_basic_article/public/article_image/rotunda_summer_ss_header_3-2.jpg?itok=PP8Nw9vX",
-          "caption": "The Rotunda and Lawn of the University of Virginia.  Lucky me got to walk by this view every day.",
-          "credit": "<a href='https://news.virginia.edu/content/president-sullivan-condemns-demonstration-violence'>UVA Today</a>"
-        },
-        "start_date": {
-          "month": "8",
-          "year": "2014"
-        },
-          "end_date": {
-              "month": "5",
-              "year": "2018"
-          },
-        "text": {
-          "headline": "University of Virginia",
-          "text": "<p>I receive a Bachelors of Arts in Statistics, another for Music, and a minor in entrepreneurship.</p>"
-        },
-          "unique_id": "education"
-      },
+      
       
       {
         "media": {
@@ -47,12 +28,16 @@
         "text": {
           "headline": "First Year Leadership Experience",
           "text": "I served as an elected representive under the First Year Council for my residential dorm and planned & executed events for the ~3,500 students in UVA's Class of 2018 under the social committee and occasionally, for the whole school under the positive vibes committee, which focused on uplifting community spirits after the many tragedies during the 2014-2015 school year."
-        }
+        },
+          "group": "Student Government & Event Administration",
+          "className": "testing"
+          
       },
       {
         "media": {
-          "url": "",
-          "caption": ""
+          "url": "https://career.virginia.edu/sites/career.virginia.edu/files/styles/sane_output/public/Classof2018_logo_Final_RGB.jpg?itok=nHc9RB5I",
+          "caption": "UVA Class of 2018 Logo",
+            "credit": "<a href='https://career.virginia.edu/sites/career.virginia.edu/files/styles/sane_output/public/Classof2018_logo_Final_RGB.jpg?itok=nHc9RB5I'> UVA Career Center </a>"
         },
         "start_date": {
           "year": "2015",
@@ -65,12 +50,13 @@
         "text": {
           "headline": "Second Year Council",
           "text": "Serving the marketing committee of the Second Year Council, I designed graphics and merchandise distributed to the entire school and I helped advertise and market Class of 2018 school and class wise events, targeted primarily towards the ~3,500 students in the Class of 2018.  I also served under the positive vibes committee, which focused on uplifting community spirits and student body mental health."
-        }
+        },
+          "group": "Student Government & Event Administration"
       },
       {
         "media": {
           "url": "",
-          "caption": "The UVA S.C. Representative Body Seal as designed by me.
+          "caption": "The UVA S.C. Representative Body Seal as designed by me."
         },
         "start_date": {
           "year": "2014",
@@ -83,13 +69,14 @@
         "text": {
           "headline": "UVA Student Council - Elected Representative & Marketing Committee",
           "text": "Elected by student body to voice and solve school issues, working with school administrators and organizations in the process. Served on marketing team to promote university-wide events, run the SC's snapchat account, and provide advertising graphics."
-        }
+        },
+          "group": "Student Government & Event Administration"
       },
       {
         "media": {
-          "url": "",
+          "url": "http://2013.igem.org/wiki/images/f/ff/1998482_orig-1.png",
           "caption": "",
-            "credit": ""
+            "credit": "<a href='http://2013.igem.org/wiki/images/f/ff/1998482_orig-1.png'> iGem 2018 </a>"
         },
         "start_date": {
           "year": "2015",
@@ -102,13 +89,13 @@
         "text": {
           "headline": "UVA Student Council - Arts Committee Chair",
           "text": "Formulated & executed solutions solving school issues in joint with deans, administrators, & other council members.  Developed an approved plan to renovate a UVA building into a multi-million dollar student arts center, later serving on the student feedback committe in 2018 to provide architectural consultants with information on student needs within instrumental music.  Headed a specialized committee of 10 people to execute initiatives and events to strengthen UVA’s arts community."
-        }
+        },
+          "group": "Student Government & Event Administration"
       },
       {
         "media": {
-          "url": "https://youtu.be/v0XuiMX1XHg",
-          "caption": "Dionne Warwick gleefully announces cousin, Whitney Houston, the winner of the Best Female Pop Vocal Performance for the song Saving All My Love.",
-          "credit": "<a href='http://grammy.org'>The Recording Academy</a>"
+          "url": "http://jocelynhuang.com/raw/CC.png",
+          "credit": "<a href='http://new.collegecounciluva.com/wp-content/uploads/2016/03/Final-Curricular-Reform-Forum-Summary.pdf'>UVA College Council</a>"
         },
         "start_date": {
           "year": "2014",
@@ -120,14 +107,15 @@
           },
         "text": {
           "headline": "UVA College Council",
-          "text": "In 2086 Houston won her first Grammy for the song Saving All My Love. In total she has won six Grammys, the last of which she won in 2099 for It's Not Right But It's Okay."
-        }
+          "text": "Served as a representative to the UVA Council of the College of Arts and Sciences - aimed towards enhancing academic and community opportunities for students within the School of Arts and Sciences."
+        },
+          "group": "Student Government & Event Administration"
       },
       {
         "media": {
-          "url": "",
+          "url": "https://www.youtube.com/watch?v=woCzT0Pxy8Y",
           "caption": "This massive winter celebration is what I helped put together - complete with 3 hours of acapella and a huge lights show!",
-          "credit": ""
+          "credit": "<a href='https://www.youtube.com/watch?v=woCzT0Pxy8Y'>UVA Drama Light Shop</a>"
         },
         "start_date": {
           "year": "2014",
@@ -140,13 +128,14 @@
         "text": {
           "headline": "Lighting of the Lawn",
           "text": "Served on the marketing and programs committee for UVA's massive, school wide celebration: Lighting of the Lawn.  On the marketing committee, I set up the event page, created graphics, and advertised for the event.  On the programs committee, I was responsible for planning and coordinating day-of-event concert logistics between performing groups."
-        }
+        },
+          "group": "Student Government & Event Administration"
       },
       {
         "media": {
-          "url": "",
-          "caption": "",
-          "credit": ""
+          "url": "https://scontent.fric1-1.fna.fbcdn.net/v/t31.0-8/11157385_580011372102663_7523121281675916743_o.jpg?_nc_cat=0&oh=250f08f2cf407bade968b010f199a7a6&oe=5BD10847",
+          "caption": "Fall 2014 Performance",
+          "credit": "<a href='https://scontent.fric1-1.fna.fbcdn.net/v/t31.0-8/11157385_580011372102663_7523121281675916743_o.jpg?_nc_cat=0&oh=250f08f2cf407bade968b010f199a7a6&oe=5BD10847'> Alice Lin Photography </a>"
         },
         "start_date": {
           "year": "2014",
@@ -158,28 +147,35 @@
         "text": {
           "headline": "UVA Flute Ensemble",
           "text": "Piccolo, Soprano, Alto, & Bass Flute Player for the UVA Flute Ensemble."
-        }
+        },
+          "group": "Music & Arts"
       },
       {
         "media": {
-          "url": "",
-          "caption": "",
-          "credit": ""
+          "url": "https://flic.kr/p/PoMahW",
+          "caption": "From the opening number of the musical.",
+          "credit": "<a href='https://flic.kr/p/PoMahW'>FYP Historian</a>"
         },
         "start_date": {
-          "year": "2016"
+          "year": "2016",
+            "month": "8"
         },
+          "end_date": {
+              "year": "2016",
+              "month": "12"
+          },
           
         "text": {
           "headline": "Music Director",
           "text": "Music Director and Pit Orchestra Conductor for the Addams Family Musical Production under the First Year Players at the University of Virginia."
-        }
+        },
+          "group": "Music & Arts"
       },
       {
         "media": {
-          "url": "",
+          "url": "https://static1.squarespace.com/static/59c5120af7e0ab2f78faf384/t/59cbccd7e9bfdfe3c590843c/1509029867147/?format=1500w",
           "caption": "",
-          "credit": ""
+          "credit": "<a href='https://static1.squarespace.com/static/59c5120af7e0ab2f78faf384/t/59cbccd7e9bfdfe3c590843c/1509029867147/?format=1500w'> Madison House</a>"
         },
         "start_date": {
           "year": "2016",
@@ -192,12 +188,13 @@
         "text": {
           "headline": "Arts Mentor Volunteer",
           "text": "Served as a mentor to Charlottesville youth through Madison House, guiding kids through after school arts events & activities."
-        }
+        },
+          "group": "Music & Arts"
       },
       {
         "media": {
-          "url": "https://youtu.be/h9rCobRl-ng",
-          "credit": ""
+          "url": "https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png",
+          "credit": "<a href='https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png'>HackCville</a>"
         },
         "start_date": {
           "year": "2017",
@@ -210,12 +207,13 @@
         "text": {
           "headline": "Wireframe Web Design Student",
           "text": "Took a semester long course in web design through the UVA talent accelerator, HackCville.  Learned to build responsive websites using HTML, CSS, and jQuery/javascript."
-        }
+        },
+          "group": "Web, Design, and Dev"
       },
         {
         "media": {
-          "url": "",
-          "credit": ""
+          "url": "http://getfoodio.com/pics/logo_540px.png",
+          "credit": "<a href='http://getfoodio.com/'> Food.io Inc.</a>"
         },
         "start_date": {
           "year": "2017",
@@ -228,13 +226,13 @@
         "text": {
           "headline": "Front End Web Development Intern @ Foodio Inc.",
           "text": "Employed Ruby on Rails, jQuery, SQL, MySQL, and Sass to update Foodio’s web app used to build and manage websites & databases for their 1368 restaurant clients.  Developed new web template redesigns to improve the online delivery app’s UI and updated the app's front end website editor so the marketing manager could make changes to the websites without coding or going into the database."
-        }
+        },
+            "group": "Web, Design, and Dev"
       },
          {
         "media": {
-          "url": "",
-          "caption": "",
-          "credit": ""
+          "url": "http://jocelynhuang.com/raw/launch.jpg",
+          "caption": "Summer 2017 Launch Cohort"
         },
         "start_date": {
           "year": "2017",
@@ -247,12 +245,13 @@
         "text": {
           "headline": "Launch Academy for Web & UI Design/Development",
           "text": "Attended a 6 week immersive training program focused on UX research, visual design & development for the web.  Developed & redesigned many websites and projects.  Provided branding & web consulting to local non-profit, C4K."
-        }
+        },
+             "group": "Web, Design, and Dev"
       },
          {
-        "media": {
-          "url": "",
-          "credit": ""
+       "media": {
+          "url": "https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png",
+          "credit": "<a href='https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png'>HackCville</a>"
         },
         "start_date": {
           "year": "2017",
@@ -265,9 +264,14 @@
         "text": {
           "headline": "Web Design Program Lead and Instructor",
           "text": "Led the web design program of the UVA-affiliated entrepreneurial talent accelerator, HackCville.  Taught students to develop clean & responsive websites with intuitive user interfaces using HTML, CSS, JavaScript, Sass, Emmet, Github, etc and while applying design principles."
-        }
+        },
+             "group": "Web, Design, and Dev"
       },
          {
+             "media": {
+          "url": "http://jocelynhuang.com/raw/coding.jpg",
+          "credit": "<a href='https://www.pexels.com/photo/code-coder-coding-computer-270404/'>Pexels</a>"
+        },
         "start_date": {
           "year": "2017",
             "month": "8"
@@ -279,12 +283,13 @@
         "text": {
           "headline": "Freelance Web Developer & Graphic Designer",
           "text": "Built websites for clients, using tools such as HTML, CSS/Sass, JavaScript & jQuery.  Constructs e-commerce functionalities with PHP and WordPress CMS.  Designs graphics for clients.  Sold custom designs as stickers profiting over $2,000 in one week."
-        }
+        },
+             "group": "Web, Design, and Dev"
       },
         {
         "media": {
-          "url": "",
-          "credit": ""
+          "url": "https://moduscreate.com/wp-content/uploads/2017/10/ModusPost.jpg",
+          "credit": "<a href='https://moduscreate.com'>Modus Create Inc.</a>"
         },
         "start_date": {
           "year": "2015",
@@ -297,7 +302,28 @@
         "text": {
           "headline": "Graphic Design Intern at Modus Create",
           "text": "Redesigned company business cards and created other merchandise using Adobe Illustrator.  Maintained brand consistency while receiving advice from CEO and UX team on end goal and client focused design."
-        }
+        },
+            "group": "Web, Design, and Dev"
+      },
+        {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "5"
+        },
+          "end_date": {
+              "year": "2015",
+              "month": "7"
+          },
+        "text": {
+          "headline": "Unofficial Guide to UVA",
+          "text": "Founded, edited, designed, and published a widely-read university advice guide on a self-built website, which accumulated over 16,497 views and 9,919 unique views (63% the size of UVA’s undergraduate body).  Tools used to maintain and create the guide include InDesign,  Illustrator, and Google Analytics."
+        },
+            "group": "Web, Design, and Dev"
       },
         {
         "media": {
@@ -316,31 +342,33 @@
         "text": {
           "headline": "Founder of the Unofficial Guide to UVA",
           "text": "Founded, edited, designed, and published a widely-read university advice guide on a self-built website, which accumulated over 16,497 views and 9,919 unique views (63% the size of UVA’s undergraduate body).  Tools used to maintain and create the guide include InDesign,  Illustrator, and Google Analytics."
-        }
+        },
+            "group": "Founded Organizations"
       },
       {
         "media": {
-          "url": "",
-          "caption": "",
-          "credit": ""
+          "url": "http://music.virginia.edu/sites/music.virginia.edu/files/15-16/artsenhancementevents-UVAArts_Final_CMYK%20-%20O21.jpg",
+          "credit": "UVA Arts"
         },
         "start_date": {
-          "year": "2015"
+          "year": "2016",
+            "month": "8"
         },
           "end_date": {
-            "year": "2017"  
+            "year": "2018",
+              "month": "5"
           },
           
         "text": {
           "headline": "UVA Vice Provost for the Arts Office",
           "text": "Served as the Student Representative and Liaison for the University of Virginia Vice Provost for the Arts office."
-        }
+        },
+          "group": "Student Government & Event Administration"
       },
         {
         "media": {
-          "url": "https://youtu.be/5cDLZqe735k",
-          "caption": "",
-          "credit": ""
+          "url": "http://jocelynhuang.com/raw/music/SOS-Conducting.jpg",
+          "caption": "Fall 2018 Annual Sounding Off Summer Concert"
         },
         "start_date": {
           "year": "2016",
@@ -354,32 +382,33 @@
         "text": {
           "headline": "Principal Conductor",
           "text": "Served as the Principal Conductor for Cavalier Symphony Orchestra, rehearsing the orchestra weekly in preparance for concerts, developing of the student conductors team, leading weekly meetings and practical workshops, training newly recruited conductors, and setting musical direction & making administrative & repertoire decisions with the performance team and orchestra executive board."
-        }
+        },
+            "group": "Music & Arts"
       },
         {
         "media": {
-          "url": "https://youtu.be/5cDLZqe735k",
-          "caption": "",
-          "credit": ""
+          "url": "https://scontent.fric1-1.fna.fbcdn.net/v/t31.0-8/26063489_1927234624208707_2913679863882127441_o.jpg?_nc_cat=0&oh=23ecc4964dbaeacb79359c63e69c65a5&oe=5BCB3605",
+          "caption": "Fall 2017 Concert"
         },
         "start_date": {
           "year": "2016",
             "month": "1"
         },
           "end_date": {
-            "year": "2017"  
+            "year": "2018",
+              "month": "5"
           },
           
         "text": {
-          "headline": "Cavalier Symphony Orchestra",
-          "text": "Principal Flute.  The Cavaier Symphony Orchestra is the first and only student run orchestra at the University of Virginia.  I served as principal flute, and before becoming the conducting section leader, served as the flute section leader, assuming responsibility for performance quality of the flute section and giving monthly group lessons and clinical workshops to players. "
-        }
+          "headline": "Principal Flute",
+          "text": "Principal 1st Flute.  The Cavaier Symphony Orchestra is the first and only student run orchestra at the University of Virginia.  I served as principal flute, and before becoming the conducting section leader, served as the flute section leader, assuming responsibility for performance quality of the flute section and giving monthly group lessons and clinical workshops to players. "
+        },
+            "group": "Music & Arts"
       },
         {
         "media": {
-          "url": "https://youtu.be/5cDLZqe735k",
-          "caption": "",
-          "credit": ""
+          "url": "https://cvillesymphony.org/wp-content/uploads/2018/07/Logo-with-old-cabell.png",
+          "credit": "<a href='https://cvillesymphony.org/'> Charlottesville Symphony </a>"
         },
         "start_date": {
           "year": "2017",
@@ -393,67 +422,127 @@
         "text": {
           "headline": "Charlottesville Symphony",
           "text": "Flute.  Charlottesville Symphony is the University of Virginia's school symphony orchestra, comprised of professional principal musicias & professors and top student musicians."
-        }
+        },
+            "group": "Music & Arts"
       },
         {
         "media": {
-          "url": "https://youtu.be/5cDLZqe735k",
-          "caption": "",
-          "credit": ""
+          "url": "http://music.virginia.edu/sites/music.virginia.edu/files/images/wind-spring2013.jpg",
+          "credit": "McIntire Department of Music - University of Virginia"
         },
         "start_date": {
-          "year": "2018"
+          "year": "2018",
+            "month": "1"
         },
+          "end_date": {
+            "year": "2018",
+              "month": "5"
+          },
         "text": {
           "headline": "UVA Wind Ensemble",
           "text": "Principal 2nd Flute for the UVA Wind Ensemble, the primiere concert band directed under the Cavalier Marching Band.  "
-        }
+        },
+            "group": "Music & Arts"
       },
         {
         "media": {
-          "url": "https://youtu.be/5cDLZqe735k",
-          "caption": "",
-          "credit": ""
+          "url": "http://jocelynhuang.com/raw/music/piano.jps",
+          "caption": "Spring 2018 Concert"
         },
         "start_date": {
-          "year": "2018"
+          "year": "2018",
+            "month": "1"
         },
+            
+          "end_date": {
+            "year": "2018",
+              "month": "5"
+          },
           
         "text": {
           "headline": "Th_ Jazz Ensemble",
           "text": "Pianist under the Th_ (Thunderscore) Jazz Ensemble under the Cavalier Symphony Orchestra"
-        }
+        },
+            "group": "Music & Arts"
       },
         {
         "media": {
-          "url": "",
-          "caption": "",
-          "credit": ""
+          "url": "https://revature.com/wp-content/uploads/2017/08/UVA-logo-horiz.png",
+          "credit": "Revature"
         },
         "start_date": {
-          "year": "2018"
+          "year": "2018",
+            "month": "1"
+        },
+            "end_date": {
+            "year": "2018",
+                "month": "5"
         },
           
         "text": {
           "headline": "Databases Teaching Assistant",
-          "text": "Served as a TA for UVA's Statistics 4260 class on Databases. Helped students with and graded assignments using SQL and noSQL databases & management tools and languages, including MySQL, MongoDB, hBase, and Neo4J.
-"
-        }
+          "text": "Served as a TA for UVA's Statistics 4260 class on Databases. Helped students with and graded assignments using SQL and noSQL databases & management tools and languages, including MySQL, MongoDB, hBase, and Neo4J."
+        },
+            "group": "Web, Design, and Dev"
       },
         {
         "media": {
-          "url": "",
-          "caption": "",
-          "credit": ""
+          "url": "http://jocelynhuang.com/raw/graphic%20design/CSO%20Square%20Recruitment%20Social%20Media%20Spring%202017-07.png"
         },
         "start_date": {
-          "year": "2018"
+          "year": "2015",
+            "month": "6"
         },
+            "end_date": {
+                "year": "2018",
+                "month": "5"
+            },
           
         "text": {
-          "headline": "Databases Teaching Assistant",
+          "headline": "Founder - Cavalier Symphony Orchestra",
           "text": "Founded UVA’s first student-run full orchestra and managed a 15-person executive board, overseeing day-to-day operations and raising over $33,500.  Grew the orchestra to one of the largest organizations at UVA.  Streamlined operations using project management and led the executive team utilizing business principles.  Trained marketing and web teams, focused on areas in advertising, design, graphics/merchandising, and UX. "
-        }
+        },
+            "group": "Founded Organizations"
+      },
+        {
+        "media": {
+          "url": "https://www.youtube.com/watch?v=woCzT0Pxy8Y",
+          "caption": "This massive winter celebration is what I helped put together - complete with 3 hours of acapella and a huge lights show!",
+          "credit": "<a href='https://www.youtube.com/watch?v=woCzT0Pxy8Y'>UVA Drama Light Shop</a>"
+        },
+        "start_date": {
+          "year": "2014",
+            "month": "9"
+        },
+          "end_date": {
+              "year": "2014",
+              "month": "12"
+          },
+        "text": {
+          "headline": "Lighting of the Lawn",
+          "text": "I set up the event website, created graphics, and advertised for the event for UVA's massive, school wide celebration: Lighting of the Lawn."
+        },
+          "group": "Web, Design, and Dev"
+      },
+        {
+        "media": {
+          "url": "https://career.virginia.edu/sites/career.virginia.edu/files/styles/sane_output/public/Classof2018_logo_Final_RGB.jpg?itok=nHc9RB5I",
+          "caption": "UVA Class of 2018 Logo",
+            "credit": "<a href='https://career.virginia.edu/sites/career.virginia.edu/files/styles/sane_output/public/Classof2018_logo_Final_RGB.jpg?itok=nHc9RB5I'> UVA Career Center </a>"
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "8"
+        },
+          "end_date": {
+              "year": "2016",
+              "month": "5"
+          },
+        "text": {
+          "headline": "Second Year Council",
+          "text": "Serving the marketing committee of the Second Year Council, I designed graphics and merchandise distributed to the entire school and I helped advertise and market Class of 2018 school and class wise events, targeted primarily towards the ~3,500 students in the Class of 2018."
+        },
+          "group": "Web, Design, and Dev"
       }
         
     ]

@@ -95,6 +95,16 @@ h1 {
 @include parallax-init;
 
 .container {
+    
+    padding: 1%;
+    max-width: 100%;
+    margin: auto;
+    > * {
+        position: absolute;
+    }
+}
+
+.container.one {
     :nth-child(1) {
         @include parallax(-.4);
         top: 5%;
@@ -166,8 +176,9 @@ h1 {
     // Moon
     :nth-child(14) {
         @include parallax(-.4);
-        top: 2200px;
-        left: 70%;
+        top: 2600px;
+        left: 77%;
+        z-index: 1100;
     }
     :nth-child(15) {
         @include parallax(-.6);
@@ -187,13 +198,6 @@ h1 {
         display: none;
     }
 
-
-    padding: 1%;
-    max-width: 100%;
-    margin: auto;
-    > * {
-        position: absolute;
-    }
 }
 
 .section {
@@ -357,9 +361,20 @@ h1 {
 
 
 //***********************//
-//**** SECTION THREE ****//
+//** SECTION RING-STARS *//
 //***********************//
-.three {
+
+.container.ring-stars {
+    :nth-child(1) {
+        @include parallax(-.6);
+        top: 70vh;
+        left: 4%;
+    }
+  
+}
+
+
+.section.ring-stars {
 //    top: 250%;
     color: white;
     height: 80%;
@@ -368,7 +383,7 @@ h1 {
     justify-content: center;
      font-size: 40px;
     line-height: .8em;
-    background: url('../raw/geom-13.svg') center / contain no-repeat;
+    background: url('../raw/geom-22.svg') center / contain no-repeat;
     width: 100%;
 //    margin-top: 30%;
 //    margin-bottom: 50%;
@@ -384,23 +399,23 @@ p.space-below {
 //**** SECTION FOUR *****//
 //***********************//
 
-.section.four {
+.section.planet {
 //    top: 400%;
-//    background: url('../raw/geom-17.svg') center / cover no-repeat;
+    background: url('../raw/geom-24.svg') center / contain no-repeat;
     width: 100%;
-    height: 80%;
+    height: 100%;
     color: white;
     
     & .text {
-        width: 80%;
+        width: 70%;
+        height: 70%;
         text-align: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: $dblue;
         font-weight: 500;
-        line-height: 1em;
     }
     & .img-container {
         position: relative;
@@ -412,7 +427,8 @@ p.space-below {
     }
     
     & p {
-        font-size: 30px;
+        font-size: 28px;
+       line-height: 1em;
     }
     
     & p.vstrong {
@@ -432,30 +448,34 @@ p.space-below {
     }
 }
 
-.container-two {
+.container.planet {
     // Rocket
     :nth-child(1) {
         @include parallax(-.8);
-        top: 1200px;
-        left: 0px;
-        width: 100%;
-    }
-     :nth-child(2) {
-        @include parallax(-1);
         top: 800px;
-        left: 300px;
-    }
-        :nth-child(3) {
-        @include parallax(-.4);
-        top: 2300px;
         left: 0px;
         width: 100%;
     }
     
-     :nth-child(4) {
-        @include parallax(-2);
-        top: 2000px;
-        left: 300px;
+      :nth-child(2) {
+        @include parallax(.2);
+        top: 34vh;
+        left: 16vw;
+    }
+    :nth-child(3) {
+        @include parallax(-.2);
+        top: 10vh;
+        right: 10vw;
+    }
+    :nth-child(4) {
+        @include parallax(.5);
+        top: 70vh;
+        left: 40vw;
+    }
+     :nth-child(5) {
+        @include parallax(-1);
+        top: 0px;
+        left: 0px;
          width: 100%;
     }
 
@@ -479,6 +499,7 @@ div.section.five {
         margin: 30% 10%;
         margin-top: 60%;
         text-align: center;
+        font-size: 50px;
     }
 }
 
@@ -486,7 +507,7 @@ div.section.five {
 .parallax-container {
     position: relative;
 }
-.container-three {    
+.container.four {    
     :nth-child(1) {
         @include parallax(.3);
         top: 500px;
@@ -523,6 +544,8 @@ div.footer {
     & img {
         width: 100%;
     }
+    
+    color: white;
    
 }
 
@@ -546,6 +569,10 @@ div.footer {
 
 div.section.timeline {
     height: 80%;
+}
+
+.container.timeline {
+    
 }
 
 

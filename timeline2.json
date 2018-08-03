@@ -1,0 +1,20 @@
+{
+        "media": {
+          "url": "https://news.virginia.edu/sites/default/files/styles/uva_basic_article/public/article_image/rotunda_summer_ss_header_3-2.jpg?itok=PP8Nw9vX",
+          "caption": "The Rotunda and Lawn of the University of Virginia.  Lucky me got to walk by this view every day.",
+          "credit": "<a href='https://news.virginia.edu/content/president-sullivan-condemns-demonstration-violence'>UVA Today</a>"
+        },
+        "start_date": {
+          "month": "8",
+          "year": "2014"
+        },
+          "end_date": {
+              "month": "5",
+              "year": "2018"
+          },
+        "text": {
+          "headline": "University of Virginia",
+          "text": "<p>I receive a Bachelors of Arts in Statistics, another for Music, and a minor in entrepreneurship.</p>"
+        },
+          "unique_id": "education"
+      },
