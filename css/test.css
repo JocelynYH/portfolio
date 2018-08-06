@@ -1,9 +1,105 @@
-/* line 1, ../sass/test.scss */
-body {
-  position: relative;
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo);
+/* brandico */
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+/* line 5, ../sass/test.scss */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
 }
 
-/* line 5, ../sass/test.scss */
-.btn-container {
+/* line 11, ../sass/test.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/test.scss */
+html {
+  font-size: 18px;
+}
+
+/* line 21, ../sass/test.scss */
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  font-weight: 600;
+  background: #f0f0f0;
+}
+
+/* line 29, ../sass/test.scss */
+ul.sm {
+  list-style: none;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+/* line 36, ../sass/test.scss */
+ul.sm li.sm a {
+  display: block;
+  margin-left: -2px;
+  height: 60px;
+  width: 60px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  background: #FFF;
+  margin-bottom: 1em;
+  transition: all .4s ease;
+  color: #2980b9;
+  text-decoration: none;
+  line-height: 60px;
+  position: relative;
+}
+/* line 50, ../sass/test.scss */
+ul.sm li.sm a span {
+  padding: 0 30px 0 15px;
+  position: absolute;
+  left: -120px;
+  transition: left .4s ease;
+  display: none;
+}
+/* line 57, ../sass/test.scss */
+ul.sm li.sm a:hover {
+  cursor: pointer;
+  width: 180px;
+  color: #fff;
+}
+/* line 61, ../sass/test.scss */
+ul.sm li.sm a:hover span {
+  left: 0;
+  display: initial;
+}
+/* line 65, ../sass/test.scss */
+ul.sm li.sm a:hover svg {
+  fill: #fff;
+  margin-left: 20px;
+}
+/* line 70, ../sass/test.scss */
+ul.sm li.sm a:hover i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  left: 50%;
+}
+/* line 79, ../sass/test.scss */
+ul.sm li.sm a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  width: .8em;
+  height: .8em;
+  fill: #3d52a1;
+}
+/* line 91, ../sass/test.scss */
+ul.sm li.sm .transparency {
+  background: rgba(61, 82, 161, 0.1);
+  border-color: #3d52a1;
+  color: #3d52a1;
+}
+/* line 95, ../sass/test.scss */
+ul.sm li.sm .transparency:hover {
+  background: #3d52a1;
 }

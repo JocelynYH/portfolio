@@ -1,7 +1,7 @@
 {
     "title": {
         "media": {
-          "url": "http://jocelynhuang.com/raw/headshot.jpg",
+          "url": "http://jocelynhuang.com/raw/index/headshot.jpg",
           "caption": "Hi!  This is me. "
         },
         "text": {
@@ -89,7 +89,7 @@
       },
       {
         "media": {
-          "url": "http://jocelynhuang.com/raw/CC.png",
+          "url": "http://jocelynhuang.com/raw/index/CC.png",
           "credit": "<a href='http://new.collegecounciluva.com/wp-content/uploads/2016/03/Final-Curricular-Reform-Forum-Summary.pdf'>UVA College Council</a>"
         },
         "start_date": {
@@ -219,7 +219,7 @@
       },
          {
         "media": {
-          "url": "http://jocelynhuang.com/raw/launch.jpg",
+          "url": "http://jocelynhuang.com/raw/index/launch.jpg",
           "caption": "Summer 2017 Launch Cohort"
         },
         "start_date": {
@@ -255,7 +255,7 @@
       },
          {
              "media": {
-          "url": "http://jocelynhuang.com/raw/coding.jpg",
+          "url": "http://jocelynhuang.com/raw/index/coding.jpg",
           "credit": "<a href='https://www.pexels.com/photo/code-coder-coding-computer-270404/'>Pexels</a>"
         },
         "start_date": {
@@ -274,7 +274,7 @@
         
          {
              "media": {
-          "url": "http://jocelynhuang.com/raw/coding.jpg",
+          "url": "http://jocelynhuang.com/raw/index/coding.jpg",
           "credit": "<a href='https://www.pexels.com/photo/code-coder-coding-computer-270404/'>Pexels</a>"
         },
         "start_date": {

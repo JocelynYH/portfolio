@@ -1,10 +1,18 @@
 
 // Responsive mixins
 
+@mixin for-small-phone {
+  @media (max-width: 350px) { @content; }
+}
 
 @mixin for-phone-only {
+  @media (min-width: 351px) { @content; }
+}
+
+@mixin for-phone-down {
   @media (max-width: 599px) { @content; }
 }
+
 @mixin for-tablet-portrait-up {
   @media (min-width: 600px) { @content; }
 }
@@ -48,14 +56,25 @@
 
 @font-face {
     font-family: 'SFN Republic';
-    src: url(../fonts/SFNewRepublic-Bold.ttf) format('truetype');
+    src: url(../fonts/SFNewRepublic-Bold.otf) format('opentype'),
+    url('../fonts/SFNewRepublic-Bold.woff') format('woff'),
+    url('../fonts/SFNewRepublic-Bold.woff2') format('woff2'),
+    url('../fonts/SFNewRepublic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../fonts/GreatVibes-Regular.otf') format('opentype'),
+    url('../fonts/GreatVibes-Regular.woff') format('woff'),
+    url('../fonts/GreatVibes-Regular.woff2') format('woff2'),
+    url('../fonts/GreatVibes-Regular.ttf') format('truetype');
 }
 
 
 h1 {
     font-family: 'SFN Republic';
     @include for-phone-only {
-        font-size: 7vmin;
+        font-size: 16vmin;
     }
     
     @include for-tablet-portrait-up {
@@ -124,7 +143,7 @@ h3 {
     }
 }
 
-p {
+p, input, textarea {
     font-family: 'raleway';
     
      @include for-phone-only {
@@ -172,6 +191,8 @@ $pink: #f06490;
 $lblue: #2ba4c0;
 $transblue: rgba(43, 164, 192, .85);
 $dblue: #3d52a1;
+$moonblue: #daeff2;
+$lpink: #eac3d0;
 
 body {
     padding: 0;
@@ -186,4 +207,8 @@ body {
     color: white;
 }
 
+
+input {
+    border: none;
+}
 

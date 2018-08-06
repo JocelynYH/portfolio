@@ -14,163 +14,167 @@
 }
 @font-face {
   font-family: 'SFN Republic';
-  src: url(../fonts/SFNewRepublic-Bold.ttf) format("truetype");
+  src: url(../fonts/SFNewRepublic-Bold.otf) format("opentype"), url("../fonts/SFNewRepublic-Bold.woff") format("woff"), url("../fonts/SFNewRepublic-Bold.woff2") format("woff2"), url("../fonts/SFNewRepublic-Bold.ttf") format("truetype");
 }
-/* line 55, ../sass/stylesheet.scss */
+@font-face {
+  font-family: 'Great Vibes';
+  src: url("../fonts/GreatVibes-Regular.otf") format("opentype"), url("../fonts/GreatVibes-Regular.woff") format("woff"), url("../fonts/GreatVibes-Regular.woff2") format("woff2"), url("../fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+/* line 74, ../sass/stylesheet.scss */
 h1 {
   font-family: 'SFN Republic';
 }
-@media (max-width: 599px) {
-  /* line 55, ../sass/stylesheet.scss */
+@media (min-width: 351px) {
+  /* line 74, ../sass/stylesheet.scss */
   h1 {
-    font-size: 7vmin;
+    font-size: 16vmin;
   }
 }
 @media (min-width: 600px) {
-  /* line 55, ../sass/stylesheet.scss */
+  /* line 74, ../sass/stylesheet.scss */
   h1 {
     font-size: 9vmin;
   }
 }
 @media (min-width: 900px) {
-  /* line 55, ../sass/stylesheet.scss */
+  /* line 74, ../sass/stylesheet.scss */
   h1 {
     font-size: 9vmin;
   }
 }
 @media (min-width: 1200px) {
-  /* line 55, ../sass/stylesheet.scss */
+  /* line 74, ../sass/stylesheet.scss */
   h1 {
     font-size: 9vmin;
   }
 }
 @media (min-width: 1800px) {
-  /* line 55, ../sass/stylesheet.scss */
+  /* line 74, ../sass/stylesheet.scss */
   h1 {
     font-size: 10vmin;
   }
 }
 
-/* line 77, ../sass/stylesheet.scss */
+/* line 96, ../sass/stylesheet.scss */
 h2 {
   font-family: 'caviardreams';
   margin: 0px;
 }
-@media (max-width: 599px) {
-  /* line 77, ../sass/stylesheet.scss */
+@media (min-width: 351px) {
+  /* line 96, ../sass/stylesheet.scss */
   h2 {
     font-size: 7vmin;
   }
 }
 @media (min-width: 600px) {
-  /* line 77, ../sass/stylesheet.scss */
+  /* line 96, ../sass/stylesheet.scss */
   h2 {
     font-size: 5vmin;
   }
 }
 @media (min-width: 900px) {
-  /* line 77, ../sass/stylesheet.scss */
+  /* line 96, ../sass/stylesheet.scss */
   h2 {
     font-size: 5vmin;
   }
 }
 @media (min-width: 1200px) {
-  /* line 77, ../sass/stylesheet.scss */
+  /* line 96, ../sass/stylesheet.scss */
   h2 {
     font-size: 6vmin;
   }
 }
 @media (min-width: 1800px) {
-  /* line 77, ../sass/stylesheet.scss */
+  /* line 96, ../sass/stylesheet.scss */
   h2 {
     font-size: 10vmin;
   }
 }
 
-/* line 102, ../sass/stylesheet.scss */
+/* line 121, ../sass/stylesheet.scss */
 h3 {
   font-family: 'caviardreams';
   margin: 0px;
 }
-@media (max-width: 599px) {
-  /* line 102, ../sass/stylesheet.scss */
+@media (min-width: 351px) {
+  /* line 121, ../sass/stylesheet.scss */
   h3 {
     font-size: 3vmin;
   }
 }
 @media (min-width: 600px) {
-  /* line 102, ../sass/stylesheet.scss */
+  /* line 121, ../sass/stylesheet.scss */
   h3 {
     font-size: 4vmin;
   }
 }
 @media (min-width: 900px) {
-  /* line 102, ../sass/stylesheet.scss */
+  /* line 121, ../sass/stylesheet.scss */
   h3 {
     font-size: 4vmin;
   }
 }
 @media (min-width: 1200px) {
-  /* line 102, ../sass/stylesheet.scss */
+  /* line 121, ../sass/stylesheet.scss */
   h3 {
     font-size: 4vmin;
   }
 }
 @media (min-width: 1800px) {
-  /* line 102, ../sass/stylesheet.scss */
+  /* line 121, ../sass/stylesheet.scss */
   h3 {
     font-size: 4vmin;
   }
 }
 
-/* line 127, ../sass/stylesheet.scss */
-p {
+/* line 146, ../sass/stylesheet.scss */
+p, input, textarea {
   font-family: 'raleway';
 }
-@media (max-width: 599px) {
-  /* line 127, ../sass/stylesheet.scss */
-  p {
+@media (min-width: 351px) {
+  /* line 146, ../sass/stylesheet.scss */
+  p, input, textarea {
     font-size: 18px;
     line-height: 1.2em;
   }
 }
 @media (min-width: 600px) {
-  /* line 127, ../sass/stylesheet.scss */
-  p {
+  /* line 146, ../sass/stylesheet.scss */
+  p, input, textarea {
     font-size: 20px;
     line-height: 1.2em;
   }
 }
 @media (min-width: 900px) {
-  /* line 127, ../sass/stylesheet.scss */
-  p {
+  /* line 146, ../sass/stylesheet.scss */
+  p, input, textarea {
     font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 127, ../sass/stylesheet.scss */
-  p {
+  /* line 146, ../sass/stylesheet.scss */
+  p, input, textarea {
     font-size: 22px;
   }
 }
 @media (min-width: 1800px) {
-  /* line 127, ../sass/stylesheet.scss */
-  p {
+  /* line 146, ../sass/stylesheet.scss */
+  p, input, textarea {
     font-size: 5vmin;
   }
 }
 
-/* line 153, ../sass/stylesheet.scss */
+/* line 172, ../sass/stylesheet.scss */
 a {
   font-family: 'arcon';
 }
 
-/* line 157, ../sass/stylesheet.scss */
+/* line 176, ../sass/stylesheet.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 176, ../sass/stylesheet.scss */
+/* line 197, ../sass/stylesheet.scss */
 body {
   padding: 0;
   margin: 0;
@@ -179,8 +183,13 @@ body {
   height: 100%;
 }
 
-/* line 184, ../sass/stylesheet.scss */
+/* line 205, ../sass/stylesheet.scss */
 .content-item a {
   text-decoration: none;
   color: white;
+}
+
+/* line 211, ../sass/stylesheet.scss */
+input {
+  border: none;
 }
