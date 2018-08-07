@@ -1,101 +1,17 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico|entypo);
-
-/* brandico */
-
-[class*="brandico-"]:before {
-    font-family: 'brandico', sans-serif;
+div {
+    height: 200px;
+    width: 200px;
+    background-color: black;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
+@media (max-width: 600px) {
+    div {
+        background-color: yellow;
+    }
 }
 
-html {
-    font-size: 18px;
-}
-
-body {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1em;
-    line-height: 1.6;
-    font-weight: 600;
-    background: #f0f0f0;
-}
-
-ul.sm {
-    list-style: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    li.sm {
-        a {
-            display: block;
-            margin-left: -2px;
-            height: 60px;
-            width: 60px;
-            border-radius: 25px;
-            border: 2px solid #000;
-            background: #FFF;
-            margin-bottom: 1em;
-            transition: all .4s ease;
-            color: #2980b9;
-            text-decoration: none;
-            line-height: 60px;
-            position: relative;
-            span {
-                padding: 0 30px 0 15px;
-                position: absolute;
-                left: -120px;
-                transition: left .4s ease;
-                display: none;
-            }
-            &:hover {
-                cursor: pointer;
-                width: 180px;
-                color: #fff;
-                span {
-                    left: 0;
-                    display: initial;
-                }
-                svg {
-                    fill: #fff;
-                    margin-left: 20px;
-                }
-
-                i {
-                    position: absolute;
-                    right: 0px;
-                    top: 50%;
-                    left: 50%;
-                }
-            }
-
-   
-            svg {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 1.5em;
-                width: .8em;
-                height: .8em;
-                fill: #3d52a1;
-            }
-        }
-
-        .transparency {
-            background: rgba(#3d52a1, .1);
-            border-color: #3d52a1;
-            color: #3d52a1;
-            &:hover {
-                background: rgba(#3d52a1, 1);
-            }
-        }
-     
+@media (min-width: 600px) {
+    div {
+        background-color: green;
     }
 }

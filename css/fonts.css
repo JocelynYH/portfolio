@@ -1,12 +1,60 @@
-@font-face {
-  font-family: 'beautysd';
-  src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
-}
-@font-face {
-  font-family: 'caviardreams';
-  src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"), url("../fonts/CaviarDreams_Bold.woff") format("woff"), url("../fonts/CaviarDreams_Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: 'arcon';
-  src: url("../fonts/Arcon-Regular.otf") format("opentype"), url("../fonts/Arcon-Regular.woff") format("woff"), url("../fonts/Arcon-Regular.woff2") format("woff2"), url("../fonts/Arcon-Regular.ttf") format("truetype");
-}
+/*
+Error: File to import not found or unreadable: compass/css3.
+       Load path: /Users/jocelyn/Github/portfolio/sass
+        on line 1 of sass/fonts.scss
+
+1: @import "compass/css3";
+2: 
+3: @font-face {
+4:     font-family: 'beautysd';
+5:     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
+6:     url('../fonts/beautyschooldropout.woff') format('woff');
+
+Backtrace:
+sass/fonts.scss:1
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/sass:23:in `load'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/sass:23:in `<main>'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `eval'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3.\A        Load path: /Users/jocelyn/Github/portfolio/sass\A         on line 1 of sass/fonts.scss\A \A 1: @import \"compass/css3\";\A 2: \A 3: @font-face {\A 4:     font-family: 'beautysd';\A 5:     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),\A 6:     url('../fonts/beautyschooldropout.woff') format('woff');"; }

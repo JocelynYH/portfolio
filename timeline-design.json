@@ -1,0 +1,262 @@
+{
+    "title": {
+        "media": {
+          "url": "http://jocelynhuang.com/raw/index/headshot.jpg",
+          "caption": "Hi!  This is me. "
+        },
+        "text": {
+          "headline": "What you do defines who you are",
+          "text": "<p>I believe that a person's actions speak louder than their words, and certainly, what I've learned has contributed greatly to who I am today.  My experiences have equipped me with the success skills for life and work.  Take a look at the past 4 years during my time at UVA to see what I've been up to, and what I've learned and gained.</p>"
+        }
+    },
+    "events": [
+      
+    
+      {
+        "media": {
+          "url": "https://career.virginia.edu/sites/career.virginia.edu/files/styles/sane_output/public/Classof2018_logo_Final_RGB.jpg?itok=nHc9RB5I",
+          "caption": "UVA Class of 2018 Logo",
+            "credit": "<a href='https://career.virginia.edu/sites/career.virginia.edu/files/styles/sane_output/public/Classof2018_logo_Final_RGB.jpg?itok=nHc9RB5I'> UVA Career Center </a>"
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "8"
+        },
+          "end_date": {
+              "year": "2016",
+              "month": "5"
+          },
+        "text": {
+          "headline": "Second Year Council",
+          "text": "Serving the SYC marketing committee, I designed advertising graphics, stickers distributed to all of UVA, and utilized social media to advertise Class of 2018 & school wide events, targeted primarily towards the ~3,500 students in the Class of 2018.  I also served under the positive vibes committee, which focused on uplifting community spirits and student body mental health."
+        }
+      },
+
+
+      {
+        "media": {
+          "url": "https://www.youtube.com/watch?v=woCzT0Pxy8Y",
+          "caption": "This massive winter celebration is what I helped put together - complete with 3 hours of acapella and a huge lights show!",
+          "credit": "<a href='https://www.youtube.com/watch?v=woCzT0Pxy8Y'>UVA Drama Light Shop</a>"
+        },
+        "start_date": {
+          "year": "2014",
+            "month": "9"
+        },
+          "end_date": {
+              "year": "2015",
+              "month": "12"
+          },
+        "text": {
+          "headline": "Lighting of the Lawn",
+          "text": "Served on the marketing and programs committee for UVA's massive, school wide celebration: Lighting of the Lawn.  On the marketing committee, I set up the event page, created graphics, and advertised for the event.  On the programs committee, I was responsible for planning and coordinating day-of-event concert logistics between performing groups."
+        }
+      },
+
+      {
+        "media": {
+          "url": "https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png",
+          "credit": "<a href='https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png'>HackCville</a>"
+        },
+        "start_date": {
+          "year": "2017",
+            "month": "1"
+        },
+          "end_date": {
+              "year": "2017",
+              "month": "5"
+          },
+        "text": {
+          "headline": "Wireframe Web Design Student",
+          "text": "Took a semester long course in web design through the UVA talent accelerator, HackCville.  Learned to build responsive websites using HTML, CSS, and jQuery/javascript."
+        }
+      },
+        {
+        "media": {
+          "url": "http://getfoodio.com/pics/logo_540px.png",
+          "credit": "<a href='http://getfoodio.com/'> Food.io Inc.</a>"
+        },
+        "start_date": {
+          "year": "2017",
+            "month": "7"
+        },
+          "end_date": {
+              "year": "2017",
+              "month": "8"
+          },
+        "text": {
+          "headline": "Front End Web Development Intern @ Foodio Inc.",
+          "text": "Employed Ruby on Rails, jQuery, SQL, MySQL, and Sass to update Foodio’s web app used to build and manage websites & databases for their 1368 restaurant clients.  Redesigned and developed new web templates to improve the online delivery app’s UI and updated the app's front end website editor so the marketing manager could make changes to the websites without coding or going into the database."
+        }
+      },
+         {
+        "media": {
+          "url": "http://jocelynhuang.com/raw/index/launch.jpg",
+          "caption": "Summer 2017 Launch Cohort"
+        },
+        "start_date": {
+          "year": "2017",
+            "month": "5"
+        },
+          "end_date": {
+              "year": "2017",
+              "month": "7"
+          },
+        "text": {
+          "headline": "Launch Academy for Web & UI Design/Development",
+          "text": "Attended a 6 week immersive training program focused on UX research, visual design & development for the web.  Developed & redesigned many websites and projects.  Provided branding & web consulting to local non-profit, C4K."
+        }
+      },
+         {
+       "media": {
+          "url": "https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png",
+          "credit": "<a href='https://hackcville.com/wp-content/themes/hackcville-5-0/images/hackcville-logo.png'>HackCville</a>"
+        },
+        "start_date": {
+          "year": "2017",
+            "month": "8"
+        },
+          "end_date": {
+              "year": "2018",
+              "month": "1"
+          },
+        "text": {
+          "headline": "Web Design Program Lead and Instructor",
+          "text": "Led the web design program of the UVA-affiliated entrepreneurial talent accelerator, HackCville.  Taught students to develop clean & responsive websites with intuitive user interfaces using HTML, CSS, JavaScript, Sass, Emmet, Github, etc and while applying design principles."
+        }
+      },
+         {
+             "media": {
+          "url": "http://jocelynhuang.com/raw/index/coding.jpg",
+          "credit": "<a href='https://www.pexels.com/photo/code-coder-coding-computer-270404/'>Pexels</a>"
+        },
+        "start_date": {
+          "year": "2017",
+            "month": "8"
+        },
+          "end_date": {
+              "year": "2018",
+              "month": "5"
+          },
+        "text": {
+          "headline": "Freelance Web Developer",
+          "text": "Built websites for clients, using tools such as HTML, CSS/Sass, JavaScript & jQuery.  Constructs e-commerce functionalities with PHP and WordPress CMS."
+        }
+      },
+        
+         {
+             "media": {
+          "url": "http://jocelynhuang.com/raw/index/coding.jpg",
+          "credit": "<a href='https://www.pexels.com/photo/code-coder-coding-computer-270404/'>Pexels</a>"
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "5"
+        },
+          "end_date": {
+              "year": "2015",
+              "month": "7"
+          },
+        "text": {
+          "headline": "Freelance Graphic Designer",
+          "text": "Designed graphics for clients.  Sold custom designs as stickers profiting over $2,000 in one week."
+        }
+      },
+        
+        
+        {
+        "media": {
+          "url": "https://moduscreate.com/wp-content/uploads/2017/10/ModusPost.jpg",
+          "credit": "<a href='https://moduscreate.com'>Modus Create Inc.</a>"
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "6"
+        },
+          "end_date": {
+              "year": "2015",
+              "month": "8"
+          },
+        "text": {
+          "headline": "Graphic Design Intern at Modus Create",
+          "text": "Redesigned company business cards and created other merchandise using Adobe Illustrator.  Maintained brand consistency while receiving advice from CEO and UX team on end goal and client focused design."
+        }
+      },
+        {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "5"
+        },
+          "end_date": {
+              "year": "2015",
+              "month": "7"
+          },
+        "text": {
+          "headline": "Founder of the Unofficial Guide to UVA",
+          "text": "Founded, edited, designed, and published a widely-read university advice guide on a self-built website, which accumulated over 16,497 views and 9,919 unique views (63% the size of UVA’s undergraduate body).  Tools used to maintain and create the guide include InDesign,  Illustrator, and Google Analytics."
+        }
+      },
+      
+        {
+        "media": {
+          "url": "https://revature.com/wp-content/uploads/2017/08/UVA-logo-horiz.png",
+          "credit": "Revature"
+        },
+        "start_date": {
+          "year": "2018", 
+            "month": "1"
+        },
+        "end_date": {
+            "year" : "2018",
+            "month": "5"
+        },
+          
+        "text": {
+          "headline": "Databases Teaching Assistant",
+          "text": "Served as a TA for UVA's Statistics 4260 class on Databases. Helped students with and graded assignments using SQL and noSQL databases & management tools and languages, including MySQL, MongoDB, hBase, and Neo4J."
+        }
+      },
+        {
+        "media": {
+          "url": "http://jocelynhuang.com/raw/graphic%20design/CSO%20Square%20Recruitment%20Social%20Media%20Spring%202017-07.png"
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "6"
+        },
+            "end_date": {
+                "year": "2018",
+                "month": "5"
+            },
+          
+        "text": {
+          "headline": "Founder - Cavalier Symphony Orchestra",
+          "text": "Founded UVA’s first student-run full orchestra and managed a 15-person executive board, overseeing day-to-day operations and raising over $33,500.  Grew the orchestra to one of the largest organizations at UVA.  Streamlined operations using project management and led the executive team utilizing business principles."
+        }
+      },
+        
+        {
+        "media": {
+          "url": "http://jocelynhuang.com/raw/graphic%20design/CSO%20Square%20Recruitment%20Social%20Media%20Spring%202017-07.png"
+        },
+        "start_date": {
+          "year": "2015",
+            "month": "8"
+        },
+            "end_date": {
+                "year": "2017",
+                "month": "5"
+            },
+          
+        "text": {
+          "headline": "President, Marketing, and Web - Cavalier Symphony Orchestra",
+          "text": "Trained marketing and web teams, focused on areas in web and graphic design for web UX, print and digital advertisement, and merchandising.  Sometimes undertook design projects myself, especially before the marketing and web teams were formed."
+        }
+      }
+    ]
+}

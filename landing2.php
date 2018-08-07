@@ -160,14 +160,13 @@
                         //                timenav_height_percentage: 60
                     }
                     embed.style.height = getComputedStyle(document.body).height;
-                    window.timeline = new TL.Timeline('timeline-embed', 'timeline.json', options);
+                    window.timeline = new TL.Timeline('timeline-embed', 'timeline-design.json', options);
                     window.addEventListener('resize', function() {
                         var embed = document.getElementById('timeline-embed');
                         embed.style.height = getComputedStyle(document.body).height;
                         timeline.updateDisplay();
                     })
-                    //            $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertBefore(".tl-storyslider");
-
+                   
 
                 });
 
@@ -176,7 +175,7 @@
 
                 $(document).ready(function() {
                     window.onload = function() {
-                        $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertAfter(".tl-storyslider");
+//                        $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertAfter(".tl-storyslider");
                         //            console.log("Initializing boop beep boop");
                         var allMarkers = [];
                         $(".tl-timenav-item-container").find(".tl-timemarker").each(function() {

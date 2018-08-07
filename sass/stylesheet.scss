@@ -5,12 +5,13 @@
   @media (max-width: 350px) { @content; }
 }
 
-@mixin for-phone-only {
-  @media (min-width: 351px) { @content; }
+
+@mixin for-tablet-portrait-down {
+  @media (max-width: 599px) { @content; }
 }
 
-@mixin for-phone-down {
-  @media (max-width: 599px) { @content; }
+@mixin for-phone-only {
+  @media (min-width: 351px) { @content; }
 }
 
 @mixin for-tablet-portrait-up {
@@ -22,6 +23,11 @@
 @mixin for-desktop-up {
   @media (min-width: 1200px) { @content; }
 }
+
+@mixin under-desktop {
+    @media (max-width: 1200px) { @content; }
+}
+
 @mixin for-tv-up {
   @media (min-width: 1800px) { @content; }
 }
@@ -72,25 +78,29 @@
 
 
 h1 {
+    font-size: 7vmax;
     font-family: 'SFN Republic';
     @include for-phone-only {
-        font-size: 16vmin;
+        font-size: 9vmax;
     }
-    
-    @include for-tablet-portrait-up {
-        font-size: 9vmin;
+//    
+//    @include for-tablet-portrait-up {
+//        font-size: 9vmax;
+//    }
+//    
+//    @include for-tablet-landscape-up {
+//        font-size: 9vmax;
+//    }
+//    
+//    @include for-desktop-up {
+//        font-size: 9vmax;
+//    }
+//    
+    @include for-tablet-portrait-down {
+      font-size: 8vmax;
     }
-    
-    @include for-tablet-landscape-up {
-        font-size: 9vmin;
-    }
-    
-    @include for-desktop-up {
-        font-size: 9vmin;
-    }
-    
     @include for-tv-up {
-        font-size: 10vmin;
+        font-size: 8vmax;
     }
 }
 h2 {
@@ -147,25 +157,25 @@ p, input, textarea {
     font-family: 'raleway';
     
      @include for-phone-only {
-        font-size: 18px;
+        font-size: 15px;
          line-height: 1.2em;
     }
     
     @include for-tablet-portrait-up {
-        font-size: 20px;
-        line-height: 1.2em;
+        font-size: 15px;
+        line-height: 1.4em;
     }
     
     @include for-tablet-landscape-up {
-        font-size: 20px;
+        font-size: 15px;
     }
     
     @include for-desktop-up {
-        font-size: 22px;
+        font-size: 15px;
     }
     
     @include for-tv-up {
-        font-size: 5vmin;
+        font-size: 1.4vmax;
     }
 }
 
@@ -211,4 +221,3 @@ body {
 input {
     border: none;
 }
-

@@ -241,28 +241,6 @@ h1 {
         transform: translateX(-50%);
         margin-top: 6px;
         margin-bottom: 20px;
-        @include for-tablet-landscape-up {
-            margin-top: 2.2vmax;
-        }
-    }
-    
-    // thinner line
-     &::after {
-            content: '';
-    width: 70%;
-    height: 1px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: $lblue;
-//    max-width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 8px;
-        @include for-tablet-landscape-up {
-            margin-top: 2.3vmax;
-        }
     }
 }
 
@@ -283,10 +261,6 @@ h1 {
         max-width: 70%;
     }
     
-    @include for-tablet-portrait-down {
-        width: 90vw;
-    }
-    
     & p {
         color: $lblue;
         text-align: center;
@@ -294,23 +268,20 @@ h1 {
         margin-top: 30px;
     }
     
-//    &::before {
-//            content: '';
-//    width: 50%;
-//    height: 1px;
-//    display: block;
-//    position: absolute;
-//    top: 50%;
-//    transform: translateY(-50%);
-//    background-color: $lblue;
-////    max-width: 200px;
-//    left: 50%;
-//    transform: translateX(-50%);
-//    margin-top: 8px;
-//        @include for-tablet-landscape-up {
-//            margin-top: 24px;
-//        }
-//    }
+    &::before {
+            content: '';
+    width: 50%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $lblue;
+//    max-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    }
 }
 
 
@@ -977,7 +948,7 @@ span.arrow {
 //******* FOOTER ********//
 //***********************//
 div.footer {
-    height: auto;
+    height: 100%;
     overflow-y: hidden;
     & .moon-container {
         & img {
@@ -1002,6 +973,7 @@ div.footer {
     margin: 20% auto 0% auto;
     color: white;
     position: relative;
+    height: 120%;
 
 
     @include for-desktop-up {

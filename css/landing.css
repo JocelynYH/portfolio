@@ -1,196 +1,60 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,600,700");
-@font-face {
-  font-family: 'beautysd';
-  src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
-}
-@font-face {
-  font-family: 'caviardreams';
-  src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"), url("../fonts/CaviarDreams_Bold.woff") format("woff"), url("../fonts/CaviarDreams_Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: 'arcon';
-  src: url("../fonts/Arcon-Regular.otf") format("opentype"), url("../fonts/Arcon-Regular.woff") format("woff"), url("../fonts/Arcon-Regular.woff2") format("woff2"), url("../fonts/Arcon-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'SFN Republic';
-  src: url(../fonts/SFNewRepublic-Bold.ttf) format("truetype"), url("../fonts/SFNewRepublic-Bold.woff") format("woff"), url("../fonts/SFNewRepublic-Bold.woff2") format("woff2"), url("../fonts/SFNewRepublic-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: 'Great Vibes';
-  src: url(../fonts/GreatVibes-Regular.ttf) format("truetype"), url(../fonts/GreatVibes-Regular.woff) format("woff"), url(../fonts/GreatVibes-Regular.woff2) format("woff2"), url(../fonts/GreatVibes-Regular.otf) format("opentype");
-}
-/* line 42, ../sass/landing.scss */
-h2 {
-  font-family: 'caviardreams';
-  margin: 0px;
-}
+/*
+Error: File to import not found or unreadable: compass/css3.
+       Load path: /Users/jocelyn/Github/portfolio/sass
+        on line 1 of sass/landing.scss
 
-/* line 47, ../sass/landing.scss */
-h3 {
-  font-family: 'caviardreams';
-}
+1: @import "compass/css3";
+2: @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,600,700');
+3: 
+4: @font-face {
+5:     font-family: 'beautysd';
+6:     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),
 
-/* line 51, ../sass/landing.scss */
-p {
-  font-family: 'raleway', sans-serif;
-}
-
-/* line 55, ../sass/landing.scss */
-a {
-  font-family: 'raleway', sans-serif;
-}
-
-/* line 59, ../sass/landing.scss */
-.bold {
-  font-weight: bold;
-}
-
-/* line 84, ../sass/landing.scss */
-body {
-  padding: 0;
-  margin: 0;
-  color: white;
-  background-color: #3d52a1;
-  font-family: 'raleway';
-}
-
-/* line 92, ../sass/landing.scss */
-.content-item a {
-  text-decoration: none;
-  color: white;
-}
-
-/* line 98, ../sass/landing.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 108, ../sass/landing.scss */
-.landing-page img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 113, ../sass/landing.scss */
-.landing {
-  background: url(../raw/LP-01.svg) center/cover no-repeat;
-  position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  displa: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-/* line 120, ../sass/landing.scss */
-.name-plaque {
-  height: 80%;
-  width: 800%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  displa: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 126, ../sass/landing.scss */
-.name-plaque img {
-  height: 100%;
-  width: 100%;
-}
-
-/* line 132, ../sass/landing.scss */
-.name-title {
-  position: absolute;
-  color: #3d52a1;
-  font: 100px 'SFN Republic';
-  margin: 0px;
-}
-
-/* line 139, ../sass/landing.scss */
-div.about-me {
-  background: url(../raw/LP-07.svg) center/cover no-repeat;
-  height: 100%;
-  position: relative;
-  color: #3d52a1;
-}
-
-/* line 146, ../sass/landing.scss */
-div.card {
-  background: white;
-  height: 80%;
-  margin: 8%;
-  position: absolute;
-  padding: 5%;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  displa: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-/* line 156, ../sass/landing.scss */
-div.card h2 {
-  font-size: 44px;
-}
-/* line 160, ../sass/landing.scss */
-div.card p {
-  font-size: 25px;
-  line-height: 1.4em;
-}
-
-/* line 166, ../sass/landing.scss */
-div.stars {
-  background: url(../raw/LP-08.svg) center/cover no-repeat;
-  height: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  displa: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 40px;
-  line-height: .8em;
-}
-/* line 175, ../sass/landing.scss */
-div.stars .text {
-  padding-left: 10%;
-}
-
-/* line 180, ../sass/landing.scss */
-p.space-below {
-  line-height: 1.8em;
-  font: italic 300 40px 'raleway';
-}
-
-/* line 185, ../sass/landing.scss */
-.shadow {
-  text-shadow: 4px 5px 10px #1d1c52;
-}
-
-/* line 189, ../sass/landing.scss */
-.indent {
-  text-indent: 60px;
-}
-
-/* line 193, ../sass/landing.scss */
-div.empty {
-  height: 254/518%;
-  background: url(../raw/LP-09.svg) center/cover no-repeat;
-}
+Backtrace:
+sass/landing.scss:1
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/sass:23:in `load'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/sass:23:in `<main>'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `eval'
+/Users/jocelyn/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3.\A        Load path: /Users/jocelyn/Github/portfolio/sass\A         on line 1 of sass/landing.scss\A \A 1: @import \"compass/css3\";\A 2: @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,600,700');\A 3: \A 4: @font-face {\A 5:     font-family: 'beautysd';\A 6:     src: url('../fonts/BeautySchoolDropout.ttf') format('truetype'),"; }

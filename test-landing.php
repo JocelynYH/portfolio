@@ -42,9 +42,12 @@
             <h1 class='name-title'>Jocelyn Huang</h1>
 -->
             <div class="title-plaque">
-                <h1 class='name-title'>Jocelyn Huang</h1>
+                <h1 class='name-title'>Jocelyn</h1>
+                <p>Designer & Developer</p>
+<!--
                 <img class='blue-triangle bottom' src="raw/index/blue-triangle-1.svg" alt="">
                 <img class='blue-triangle top' src="raw/index/blue-triangle-2.svg" alt="">
+-->
             </div>
         </div>
 
@@ -160,7 +163,7 @@
                         //                timenav_height_percentage: 60
                     }
                     embed.style.height = getComputedStyle(document.body).height;
-                    window.timeline = new TL.Timeline('timeline-embed', 'timeline.json', options);
+                    window.timeline = new TL.Timeline('timeline-embed', 'timeline-design.json', options);
                     window.addEventListener('resize', function() {
                         var embed = document.getElementById('timeline-embed');
                         embed.style.height = getComputedStyle(document.body).height;
@@ -175,7 +178,7 @@
 
                 $(document).ready(function() {
                     window.onload = function() {
-                        $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertAfter(".tl-storyslider");
+//                        $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertAfter(".tl-storyslider");
                         //            console.log("Initializing boop beep boop");
                         var allMarkers = [];
                         $(".tl-timenav-item-container").find(".tl-timemarker").each(function() {
@@ -253,7 +256,7 @@
 
         <div class="parallax-container">
             <div class="container ring-stars">
-                <img src="raw/index/geom-23.svg" alt="">
+                <img src="raw/index/light-stars-23.svg" alt="">
                 <img src="raw/index/geom-14.svg" alt="">
 
                 <!--
@@ -294,9 +297,11 @@
         </div>
 
         <div class="section planet">
+<!--
             <div class="img-container">
-                <!--            <img src="raw/index/moon-17.svg" alt="">-->
+                            <img src="raw/index/moon-17.svg" alt="">
             </div>
+-->
             <div class="text">
                 <p>I’m ready to join a team that lives for </p>
                 <p>their work and can’t believe their
