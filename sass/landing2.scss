@@ -222,6 +222,10 @@ h1 {
     }
 }
 
+.spacer-for-line {
+    height: 20px;
+}
+
 
 
 .name-plaque h1 {
@@ -239,10 +243,10 @@ h1 {
         max-width: 200px;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 6px;
+        margin-top: 43px;
         margin-bottom: 20px;
         @include for-tablet-landscape-up {
-            margin-top: 2.2vmax;
+            margin-top: 6.2vmax;
         }
     }
     
@@ -259,9 +263,9 @@ h1 {
 //    max-width: 200px;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 8px;
+    margin-top: 45px;
         @include for-tablet-landscape-up {
-            margin-top: 2.3vmax;
+            margin-top: 6.3vmax;
         }
     }
 }
@@ -270,6 +274,7 @@ h1 {
     background-color: white;
     width: 60vw;
     height: 60vh;
+    min-height: 360px;
     @include flexbox();
     @include flexboxcenter();
     flex-flow: column wrap;
@@ -584,6 +589,7 @@ p.space-below {
     height: 100%;
     color: white;
     z-index: 2000;
+    min-height: 630px;
 
     @media (min-width: 700px) and (max-width: 1300px) {
         width: 80%;
@@ -707,7 +713,7 @@ p.space-below {
         }
 
         @include for-tablet-portrait-up {
-            font-size: 18px;
+            font-size: 22px;
             line-height: 1em;
         }
 
@@ -836,6 +842,7 @@ div.section.five {
 
 .parallax-container {
     position: relative;
+    
 }
 
 
@@ -1103,10 +1110,15 @@ $form-color: $dblue;
 
 h2.contact-title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: $form-color;
     font-weight: 800;
     font-family: 'raleway'; //    border-bottom: 3px solid $moonblue;
+}
+
+.copyright {
+    color: $dblue;
+    margin: 30px auto 0 auto;
 }
 
 
@@ -1114,12 +1126,19 @@ h2.contact-title {
 //***********************//
 //***** SM BUTTONS ******//
 //***********************//
+
+div.sm-links {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
 ul.sm {
     list-style: none;
     width: 100%;
     @include flexbox();
     justify-content: space-between;
     flex-flow: row nowrap;
+    margin-top: 30px;
     li.sm {
         a {
             display: block;
@@ -1194,6 +1213,9 @@ ul.sm {
 //***********************//
 div.section.timeline {
     height: 100%;
+    & * {
+        transform-style: flat;
+    }
 }
 
 .container.timeline {
@@ -1254,10 +1276,6 @@ h2.tl-headline {
     /* Styles */
 }
 
-
-body * {
-    transform-style: flat;
-}
 
 body {
     overflow-y: auto;

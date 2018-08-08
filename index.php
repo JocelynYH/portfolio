@@ -29,34 +29,12 @@
         <!--    Timeline JS-->
         <!-- 1 -->
         <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    
-
-
         <link rel="stylesheet" href="css/landing2.css">
+        <link rel="stylesheet" type="text/css" href="ie-compatibility.css" />
+        
     </head>
 
     <body>
-        <div class="name-plaque section one">
-            <!--
-            <img class='plaque-image' src="raw/index/nameplaque.svg" alt="">
-            <h1 class='name-title'>Jocelyn Huang</h1>
--->
-            <div class="title-plaque">
-                <h1 class='name-title'>Jocelyn</h1>
-                <div class="thin-line">
-                    <div class="thick-line"></div>
-                </div>
-                <p>Designer & Developer</p>
-<!--
-                <img class='blue-triangle bottom' src="raw/index/blue-triangle-1.svg" alt="">
-                <img class='blue-triangle top' src="raw/index/blue-triangle-2.svg" alt="">
--->
-            </div>
-        </div>
-
-
-
-
 
         <div class="container one">
             <img src="raw/index/geom-01.svg" alt="">
@@ -76,6 +54,24 @@
             <img src="raw/index/geom-15.svg" alt="">
             <img src="raw/index/geom-16.svg" alt="">
             <img src="raw/index/geom-18.svg" alt="">
+        </div>
+
+
+        <div class="name-plaque section one">
+            <!--
+            <img class='plaque-image' src="raw/index/nameplaque.svg" alt="">
+            <h1 class='name-title'>Jocelyn Huang</h1>
+-->
+            <div class="title-plaque">
+                <h1 class='name-title'>Jocelyn</h1>
+                <div class="spacer-for-line">
+                </div>
+                <p>Designer & Developer</p>
+                <!--
+                <img class='blue-triangle bottom' src="raw/index/blue-triangle-1.svg" alt="">
+                <img class='blue-triangle top' src="raw/index/blue-triangle-2.svg" alt="">
+-->
+            </div>
         </div>
 
 
@@ -172,7 +168,7 @@
                         embed.style.height = getComputedStyle(document.body).height;
                         timeline.updateDisplay();
                     })
-                   
+
 
                 });
 
@@ -181,7 +177,7 @@
 
                 $(document).ready(function() {
                     window.onload = function() {
-//                        $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertAfter(".tl-storyslider");
+                        //                        $("<div class='btn-container'><h4>Filter by:</h4><button id='arts'> Music & Arts</button><button id='design'> Design</button><button id='dev'> Development</button><button id='marketing'> Marketing</button><button id='leadership'>General Leadership</button><button id='all'>All</button></div>").insertAfter(".tl-storyslider");
                         //            console.log("Initializing boop beep boop");
                         var allMarkers = [];
                         $(".tl-timenav-item-container").find(".tl-timemarker").each(function() {
@@ -300,7 +296,7 @@
         </div>
 
         <div class="section planet">
-<!--
+            <!--
             <div class="img-container">
                             <img src="raw/index/moon-17.svg" alt="">
             </div>
@@ -354,7 +350,7 @@
 
         </div>
 
-<!--        FOOTER          -->
+        <!--        FOOTER          -->
 
         <div class="footer">
             <div class="moon-container">
@@ -379,32 +375,38 @@
                         <input type="submit" name='submit<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg>'>
                     </form>
 
-                    <ul class='sm-link-container sm'>
-                        <li class='sm'>
-                            <a href="#" class="transparency sm">
-                            <span class='sm'>LinkedIn</span>
-                            <i class="sm" data-text='github'>
-                                <?php echo file_get_contents("raw/icons/001-linkedin-logo.svg"); ?>
+                   <div class="sm-links">
+                       <h2 class='contact-title'>Find Me On:</h2>
+                        <ul class='sm-link-container sm'>
+                            <li class='sm'>
+                                <a href="#" class="transparency sm">
+                                <span class='sm'>LinkedIn</span>
+                                <i class="sm" data-text='github'>
+                                    <?php echo file_get_contents("raw/icons/001-linkedin-logo.svg"); ?>
+                       
+                          </i>
+                           </a>
+                            </li>
+                       
+                       
+                            <li class='sm'>
+                                <a href="#" class="transparency sm"><span class='sm'>Github</span><i class="sm">
+                            <?php echo file_get_contents("raw/icons/002-github-logo.svg"); ?></i></a>
+                            </li>
+                            <li class='sm'>
+                                <a href="#" class="transparency sm"><span class='sm'>Resume</span><i class="sm">
+                           <?php echo file_get_contents("raw/icons/003-resume.svg"); ?></i></a>
+                            </li>
+                            <li class='sm'>
+                                <a href="#" class="transparency sm"><span class='sm'>Email</span><i class="sm">
+                           <?php echo file_get_contents("raw/icons/envelope.svg"); ?></i></a>
+                            </li>
+                        </ul>
+                   </div>
 
-                      </i>
-                       </a>
-                        </li>
-
-
-                        <li class='sm'>
-                            <a href="#" class="transparency sm"><span class='sm'>Github</span><i class="sm">
-     <?php echo file_get_contents("raw/icons/002-github-logo.svg"); ?></i></a>
-                        </li>
-                        <li class='sm'>
-                            <a href="#" class="transparency sm"><span class='sm'>Resume</span><i class="sm">
-    <?php echo file_get_contents("raw/icons/003-resume.svg"); ?></i></a>
-                        </li>
-                        <li class='sm'>
-                            <a href="#" class="transparency sm"><span class='sm'>Email</span><i class="sm">
-    <?php echo file_get_contents("raw/icons/envelope.svg"); ?></i></a>
-                        </li>
-                    </ul>
-
+                    <div class="copyright">
+                        <p>All design and development by Jocelyn Huang © 2018</p>
+                    </div>
             </div>
         </div>
 
