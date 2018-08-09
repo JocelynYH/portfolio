@@ -374,6 +374,11 @@
 
     <!-- FANCY BOX JS -->
 	<script type="text/javascript">
+        
+    $(document).ready(function() {
+        $('a.graphic-design').addClass('active-a');
+    });
+    
 	$("[data-fancybox]").fancybox({
 		// Options will go here
         buttons : [

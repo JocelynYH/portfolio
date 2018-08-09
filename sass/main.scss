@@ -5,6 +5,10 @@
 @import "stylesheet.scss";
 
 
+//***********************//
+//******* HEADER ********//
+//***********************//
+
 ul.sm {
     list-style: none;
     display: flex;
@@ -96,7 +100,7 @@ li {
     filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
 }
 
-.mobile {
+.mobile, .tablet {
     z-index: 2;
     position: relative;
     display: none;
@@ -125,9 +129,6 @@ li {
     height: 60px;
 }
 
-//.links a:hover {
-//    border-bottom: 4px solid $pink;
-//}
 
 .links.mobile {
     display: none;
@@ -142,6 +143,33 @@ a#home {
     color: white;
     font-size: 50px;
     font-family: 'SFN Republic';
+}
+
+.nav-li {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+.hover-underline::after {
+        content: "";
+        position: absolute;
+        top: 80%;
+        height: 4px;
+        width: 0%;
+        left: 10%;
+        background-color: $pink;
+        transition: 0.3s ease all .1s;
+}
+
+.nav-li:hover  .hover-underline::after  {
+    width: 85%;
+    transition: .15s ease all;
+}
+
+.active-a {
+    color: $dblue;
 }
 
 /********** **********
@@ -192,27 +220,9 @@ a#mobile-home-button {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.nav-li {
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
 
-.hover-underline::after {
-        content: "";
-        position: absolute;
-        top: 65%;
-        height: 3px;
-        width: 0%;
-        left: 5%;
-        background-color: deeppink;
-        transition: 0.3s ease all .3s;
-}
 
-.nav-li:hover  .hover-underline::after  {
-    width: 100%;
-    transition: .3s ease all;
-}
+
 
 //***********************//
 //**** WEB PORTFOLIO ****//
@@ -557,39 +567,6 @@ button:hover a {
 
 }
 
-
-@media screen and (max-width: 800px) {
-    .mobile {
-        display: block;
-    }
-
-    .gallery {
-        column-count: 1;
-        column-gap: 5px;
-        padding: 0px;
-    }
-
-    .graphicdesign .gallery .thumbnail-container {
-        padding: 10px 0px;
-    }
-
-    li#placeholder,
-    .links {
-        display: none;
-    }
-
-    .links.mobile {
-        @include flexbox();
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    li:nth-child(4) {
-        display: list-item;
-    }
-}
-
 @media screen and (max-width: 950px) {
     .content-item {
         width: 500px;
@@ -598,8 +575,9 @@ button:hover a {
     
     a#home {
         border-bottom: 1px solid white;
-        line-height: 2.6em;
+        line-height: 14vh;
         margin-bottom: .2em;
+        margin-top: 20px;
     }
     .menu.relative {
         padding-top: 0px;
@@ -616,7 +594,38 @@ button:hover a {
 
 }
 
+
+@media screen and (max-width: 800px) {
+    .mobile {
+        display: block;
+    }
+
+    .gallery {
+        column-count: 1;
+        column-gap: 5px;
+        padding: 0px;
+    }
+
+    .graphicdesign .gallery .thumbnail-container {
+        padding: 10px 0px;
+    }
+
+
+
+    li:nth-child(4) {
+        display: list-item;
+    }
+}
+
+
+
 @media screen and (max-width: 500px) {
+        .links.mobile {
+        @include flexbox();
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
     .overlay-content {
         & h2 {
             font-size: 1.5em;
@@ -688,7 +697,7 @@ button:hover a {
         }
 
 
-        .links.mobile {
+        .links.mobile, .links.tablet {
             flex-flow: column wrap;
             justify-content: center;
             width: 80%;
@@ -716,4 +725,6 @@ a#test {
 
     display: block;
 }
+
+
 

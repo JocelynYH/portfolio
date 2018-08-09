@@ -99,7 +99,7 @@ li {
     filter: drop-shadow(5px 5px 5px rgba(42, 64, 139, 0.9));
 }
 
-.mobile {
+.mobile, .tablet {
     z-index: 2;
     position: relative;
     display: none;
@@ -234,39 +234,6 @@ a#mobile-home-button {
 
 }
 
-
-@media screen and (max-width: 800px) {
-    .mobile {
-        display: block;
-    }
-
-    .gallery {
-        column-count: 1;
-        column-gap: 5px;
-        padding: 0px;
-    }
-
-    .graphicdesign .gallery .thumbnail-container {
-        padding: 10px 0px;
-    }
-
-    li#placeholder,
-    .links {
-        display: none;
-    }
-
-    .links.mobile {
-        @include flexbox();
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    li:nth-child(4) {
-        display: list-item;
-    }
-}
-
 @media screen and (max-width: 950px) {
     .content-item {
         width: 500px;
@@ -293,7 +260,38 @@ a#mobile-home-button {
 
 }
 
+
+@media screen and (max-width: 800px) {
+    .mobile {
+        display: block;
+    }
+
+    .gallery {
+        column-count: 1;
+        column-gap: 5px;
+        padding: 0px;
+    }
+
+    .graphicdesign .gallery .thumbnail-container {
+        padding: 10px 0px;
+    }
+
+
+
+    li:nth-child(4) {
+        display: list-item;
+    }
+}
+
+
+
 @media screen and (max-width: 500px) {
+        .links.mobile {
+        @include flexbox();
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
     .overlay-content {
         & h2 {
             font-size: 1.5em;
@@ -365,7 +363,7 @@ a#mobile-home-button {
         }
 
 
-        .links.mobile {
+        .links.mobile, .links.tablet {
             flex-flow: column wrap;
             justify-content: center;
             width: 80%;

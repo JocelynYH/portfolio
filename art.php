@@ -130,6 +130,12 @@
     'close'
   ]
 	});
+        
+        
+//    Highlight active page on navbar
+     $(document).ready(function() {
+        $('a.art').addClass('active-a');
+    });
 </script>
 	
 </body>

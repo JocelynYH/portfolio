@@ -212,6 +212,11 @@
 
     <script src="js/classie.js"></script>
     <script src="js/demo9.js"></script>
+    <script>
+         $(document).ready(function() {
+            $('a.web').addClass('active-a');
+        });
+    </script>
 
 
 

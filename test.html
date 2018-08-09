@@ -11,131 +11,100 @@
 
     <!--    Timeline JS-->
     <!-- 1 -->
-<!--    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">-->
+    <!--    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">-->
 
 
 
 
 </head>
 
-<body><!-- Global site tag (gtag.js) - Google Analytics -->
+<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<!--    php header    -->
-<section class="navbar">
+    <!--    php header    -->
+    <section class="navbar">
 
 
-<!--DESKTOP & TABLET LINKS-->
+        <!--DESKTOP & TABLET LINKS-->
 
-    <div class="menu relative" id='navbar-tablet'>
-        <a id='home' href="http://jocelynhuang.com/">Jocelyn Huang </a>
-        <div class="links">
-            <!--                    <li><a href="music.php">Music</a></li>-->
-            <li class='nav-li'><a href="art.php">Artwork</a></li>
+        <div class="menu relative" id='navbar-tablet'>
+            <a id='home' href="http://jocelynhuang.com/">Jocelyn Huang </a>
+            <div class="links">
+                <li class='nav-li'><a href="art.php" class='hover-underline' >Artwork</a></li>
+                <li class='nav-li'><a href="web.php" class='hover-underline' >Web</a></li>
+                <li class='nav-li'><a href="graphicdesign.php" class='hover-underline' >Graphic Design</a></li>
+            </div>
 
-            <li class='nav-li'><a class='hover-underline' href="web.php">Web</a></li>
-            <li><a href="graphicdesign.php">Graphic Design</a></li>
         </div>
 
-        <div class="links mobile">
-            <!--                    <li><a href="music.php">Music</a></li>-->
-            <li><a href="art.php">Artwork</a></li>
-            <li class='nav-li'><a class='hover-underline' href="web.php">Web</a></li>
-            <li><a href="graphicdesign.php">Graphic Design</a></li>
+
+        <!--   MOBILE NAVBAR -->
+        <div class="mobile-home-button-container">
+            <a id='mobile-home-button' href="http://jocelynhuang.com">Jocelyn Huang</a>
         </div>
 
-    </div>
-
-   
-<!--   MOBILE NAVBAR -->
-    <div class="mobile-home-button-container">
-        <a id='mobile-home-button' href="http://jocelynhuang.com">Jocelyn Huang</a>
-    </div>
-    
-    <div class="hamburger mobile2" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>   
-   
-<!-- MOBILE LINKS -->
-    <div class="menu relative" id='navbar-mobile'>
-
-<!--
-        <div class="links">
-                                <li><a href="music.php">Music</a></li>
-            <li><a href="art.php">Artwork</a></li>
-        </div>
--->
-
-        <a id='logo-mobile' href="http://jocelynhuang.com"><img src="raw/circle%20initials.png" alt=""></a>
-        <li id='placeholder'></li>
-
-<!--
-        <div class="links">
-            <li><a href="web.php">Web</a></li>
-            <li><a href="graphicdesign.php">Graphic Design</a></li>
-        </div>
--->
-
-        <div class="links mobile">
-            <!--                    <li><a href="music.php">Music</a></li>-->
-            <li><a href="art.php">Artwork</a></li>
-            <li><a href="web.php">Web</a></li>
-            <li><a href="graphicdesign.php">Graphic Design</a></li>
+        <div class="hamburger mobile2" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
 
-    </div>
-</section>
+        <!-- MOBILE LINKS -->
+        <div class="menu relative" id='navbar-mobile'>
 
 
-<script>
-    function myFunction(x) {
-                
+            <a id='logo-mobile' href="http://jocelynhuang.com"><img src="raw/circle%20initials.png" alt=""></a>
+            <li id='placeholder'></li>
 
-        x.classList.toggle("change");
-        var m = document.getElementById("navbar-mobile");
-        var name = document.getElementById("logo-mobile");
-        
-        if (m.style.display === "inline-block") {
-            m.style.display = "none";
-            name.style.display = "block";
-        } 
-        
-        else {
-            m.style.display = "inline-block";
-            name.style.display = "none";
+
+
+            <div class="links mobile">
+                <li class='nav-li'><a href="art.php" class='hover-underline' >Artwork</a></li>
+                <li class='nav-li'><a href="web.php" class='hover-underline' >Web</a></li>
+                <li class='nav-li'><a href="graphicdesign.php" class='hover-underline' >Graphic Design</a></li>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        function myFunction(x) {
+
+
+            x.classList.toggle("change");
+            var m = document.getElementById("navbar-mobile");
+            var name = document.getElementById("logo-mobile");
+
+            if (m.style.display === "inline-block") {
+                m.style.display = "none";
+                name.style.display = "block";
+            } else {
+                m.style.display = "inline-block";
+                name.style.display = "none";
+            }
+
         }
-        
-    }
-    
-//        if(!$('.hamburger')).is(':visible') {
-//            console.log("you're in mobile!");
-//        }
-    
-     $(window).resize(function() { 
-         var isHamburgerInvisible = $('.hamburger.mobile2').css('display') == 'none';
-         var dropdown = document.getElementById("navbar-mobile");
 
-         
-         if (isHamburgerInvisible) { 
-             dropdown.style.display = "none";
-             if ($('.hamburger').hasClass('change')) {
-                 $('.hamburger').removeClass('change');
-             }
-             
-         } 
-         
- });
-//    
-//    $('.hamburger').onclick(function() {
-//        $('.links.mobile').show();
-//    });
 
-</script>
+
+        $(window).resize(function() {
+            var isHamburgerInvisible = $('.hamburger.mobile2').css('display') == 'none';
+            var dropdown = document.getElementById("navbar-mobile");
+
+
+            if (isHamburgerInvisible) {
+                dropdown.style.display = "none";
+                if ($('.hamburger').hasClass('change')) {
+                    $('.hamburger').removeClass('change');
+                }
+
+            }
+
+        });
+
+    </script>
 
 </body>
 
 </html>
-
-
-

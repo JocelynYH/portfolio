@@ -31,7 +31,7 @@
         <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
         <link rel="stylesheet" href="css/landing2.css">
         <link rel="stylesheet" type="text/css" href="ie-compatibilityse.css" />
-        <script src='js/hamburger.js'></script>
+        <script src='js/landing.js'></script>
 
 
 
@@ -47,16 +47,16 @@
                         <span>
                             <ul class="sub-menu ">
                                 <li>
-                                    <a href="#about" title="about">Home & About</a>
+                                    <a href="index.php" title="Home">Home & About</a>
                                 </li>
                                 <li>
-                                    <a href="#skills" title="skills">Artwork</a>
+                                    <a href="art.php" title="Art">Artwork</a>
                                 </li>
                                 <li>
-                                    <a href="#jobs" title="jobs">Web Portfolio</a>
+                                    <a href="web.php" title="Web">Web Portfolio</a>
                                 </li>
                                 <li>
-                                    <a href="#contact" title="contact">Graphic Design Portfolio</a>
+                                    <a href="graphicdesign.php" title="Graphics">Graphic Design Portfolio</a>
                                 </li>
                             </ul>
                         </span>
