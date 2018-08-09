@@ -301,7 +301,7 @@ li#placeholder {
 }
 
 /* line 102, ../sass/test.scss */
-.mobile {
+.mobile, .tablet {
   z-index: 2;
   position: relative;
   display: none;
@@ -445,31 +445,62 @@ a#mobile-home-button {
     padding: 3vw;
   }
 }
+@media screen and (max-width: 950px) {
+  /* line 238, ../sass/test.scss */
+  .content-item {
+    width: 500px;
+    height: 300px;
+  }
+
+  /* line 243, ../sass/test.scss */
+  a#home {
+    border-bottom: 1px solid white;
+    line-height: 2.6em;
+    margin-bottom: .2em;
+  }
+
+  /* line 248, ../sass/test.scss */
+  .menu.relative {
+    padding-top: 0px;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+  }
+
+  /* line 253, ../sass/test.scss */
+  .links {
+    width: 100%;
+  }
+
+  /* line 257, ../sass/test.scss */
+  div.info {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 800px) {
-  /* line 239, ../sass/test.scss */
+  /* line 265, ../sass/test.scss */
   .mobile {
     display: block;
   }
 
-  /* line 243, ../sass/test.scss */
+  /* line 269, ../sass/test.scss */
   .gallery {
     column-count: 1;
     column-gap: 5px;
     padding: 0px;
   }
 
-  /* line 249, ../sass/test.scss */
+  /* line 275, ../sass/test.scss */
   .graphicdesign .gallery .thumbnail-container {
     padding: 10px 0px;
   }
 
-  /* line 253, ../sass/test.scss */
-  li#placeholder,
-  .links {
-    display: none;
+  /* line 281, ../sass/test.scss */
+  li:nth-child(4) {
+    display: list-item;
   }
-
-  /* line 258, ../sass/test.scss */
+}
+@media screen and (max-width: 500px) {
+  /* line 289, ../sass/test.scss */
   .links.mobile {
     display: -webkit-box;
     display: -moz-box;
@@ -482,142 +513,105 @@ a#mobile-home-button {
     width: 100%;
   }
 
-  /* line 265, ../sass/test.scss */
-  li:nth-child(4) {
-    display: list-item;
-  }
-}
-@media screen and (max-width: 950px) {
-  /* line 271, ../sass/test.scss */
-  .content-item {
-    width: 500px;
-    height: 300px;
-  }
-
-  /* line 276, ../sass/test.scss */
-  a#home {
-    border-bottom: 1px solid white;
-    line-height: 2.6em;
-    margin-bottom: .2em;
-  }
-
-  /* line 281, ../sass/test.scss */
-  .menu.relative {
-    padding-top: 0px;
-    justify-content: space-around;
-    -webkit-justify-content: space-around;
-  }
-
-  /* line 286, ../sass/test.scss */
-  .links {
-    width: 100%;
-  }
-
-  /* line 290, ../sass/test.scss */
-  div.info {
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 298, ../sass/test.scss */
+  /* line 296, ../sass/test.scss */
   .overlay-content h2 {
     font-size: 1.5em;
   }
-  /* line 302, ../sass/test.scss */
+  /* line 300, ../sass/test.scss */
   .overlay-content p {
     font-size: 1em;
     line-height: normal;
   }
 
-  /* line 308, ../sass/test.scss */
+  /* line 306, ../sass/test.scss */
   .content-item .overlay-content {
     padding: 20px 10px;
   }
 
-  /* line 312, ../sass/test.scss */
+  /* line 310, ../sass/test.scss */
   #logo img {
     display: none;
   }
 
-  /* line 316, ../sass/test.scss */
+  /* line 314, ../sass/test.scss */
   #navbar-tablet {
     display: none;
   }
 
-  /* line 321, ../sass/test.scss */
+  /* line 319, ../sass/test.scss */
   .hamburger {
     display: inline-block;
   }
 
-  /* line 325, ../sass/test.scss */
+  /* line 323, ../sass/test.scss */
   a#mobile-home-button {
     display: block;
   }
 
-  /* line 329, ../sass/test.scss */
+  /* line 327, ../sass/test.scss */
   .bar1,
   .bar2,
   .bar3 {
     background-color: white;
   }
 
-  /* line 335, ../sass/test.scss */
+  /* line 333, ../sass/test.scss */
   .mobile-home-button-container {
     padding: 20px 20px 20px 20px;
     background-color: #2ba4c0;
     color: white;
     text-align: left;
   }
-  /* line 341, ../sass/test.scss */
+  /* line 339, ../sass/test.scss */
   .mobile-home-button-container h1 {
     font-size: 20vw;
   }
 
-  /* line 346, ../sass/test.scss */
+  /* line 344, ../sass/test.scss */
   .content-item.no-margin {
     margin-top: 0px;
   }
 
-  /* line 353, ../sass/test.scss */
+  /* line 351, ../sass/test.scss */
   #navbar-mobile .mobile-home-button-container,
   #navbar-mobile ul {
     padding: 30px;
   }
-  /* line 358, ../sass/test.scss */
+  /* line 356, ../sass/test.scss */
   #navbar-mobile .menu.relative li {
     display: block;
   }
-  /* line 362, ../sass/test.scss */
+  /* line 360, ../sass/test.scss */
   #navbar-mobile.menu.relative {
     width: 100%;
     padding: 0px;
   }
-  /* line 368, ../sass/test.scss */
-  #navbar-mobile .links.mobile {
+  /* line 366, ../sass/test.scss */
+  #navbar-mobile .links.mobile, #navbar-mobile .links.tablet {
     flex-flow: column wrap;
     justify-content: center;
     width: 80%;
   }
-  /* line 372, ../sass/test.scss */
-  #navbar-mobile .links.mobile li {
+  /* line 370, ../sass/test.scss */
+  #navbar-mobile .links.mobile li, #navbar-mobile .links.tablet li {
     text-align: center;
     margin: 10px auto;
   }
 
-  /* line 378, ../sass/test.scss */
+  /* line 376, ../sass/test.scss */
   .content-item {
     width: 90%;
     height: 38vmax;
   }
 
-  /* line 383, ../sass/test.scss */
+  /* line 381, ../sass/test.scss */
   div.button-container {
     position: relative;
     padding: 0px;
     margin: 0px;
   }
 }
-/* line 392, ../sass/test.scss */
+/* line 390, ../sass/test.scss */
 a#test {
   display: block;
 }
