@@ -1706,34 +1706,38 @@ html {
 /* line 1432, ../sass/landing2.scss */
 .sub-menu li a {
   color: #fff;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 16px;
   width: 100%;
   display: block;
   float: left;
   line-height: 40px;
 }
+/* line 1440, ../sass/landing2.scss */
+.sub-menu li a:hover {
+  color: #3d52a1;
+}
 
-/* line 1445, ../sass/landing2.scss */
+/* line 1448, ../sass/landing2.scss */
 .oppenned .sub-menu {
   opacity: 1;
   height: 400px;
   width: 400px;
 }
-/* line 1450, ../sass/landing2.scss */
+/* line 1453, ../sass/landing2.scss */
 .oppenned span:nth-child(2) {
   overflow: visible;
 }
-/* line 1453, ../sass/landing2.scss */
+/* line 1456, ../sass/landing2.scss */
 .oppenned span:nth-child(1), .oppenned span:nth-child(3) {
   z-index: 100;
   transform: rotate(45deg);
 }
-/* line 1457, ../sass/landing2.scss */
+/* line 1460, ../sass/landing2.scss */
 .oppenned span:nth-child(1) {
   transform: rotate(45deg) translateY(12px) translateX(12px);
 }
-/* line 1460, ../sass/landing2.scss */
+/* line 1463, ../sass/landing2.scss */
 .oppenned span:nth-child(2) {
   height: 400px;
   width: 400px;
@@ -1742,16 +1746,16 @@ html {
   border-radius: 50%;
   background-color: #f06490;
 }
-/* line 1468, ../sass/landing2.scss */
+/* line 1471, ../sass/landing2.scss */
 .oppenned span:nth-child(3) {
   transform: rotate(-45deg) translateY(-10px) translateX(10px);
 }
-/* line 1471, ../sass/landing2.scss */
+/* line 1474, ../sass/landing2.scss */
 .oppenned li {
   margin-left: 100px;
 }
 
-/* line 1475, ../sass/landing2.scss */
+/* line 1478, ../sass/landing2.scss */
 .button {
   display: block;
   float: left;
@@ -1763,7 +1767,7 @@ html {
   overflow: hidden;
   position: relative;
 }
-/* line 1485, ../sass/landing2.scss */
+/* line 1488, ../sass/landing2.scss */
 .button:after {
   transition: transform 0.3s ease;
   content: "";
@@ -1774,7 +1778,7 @@ html {
   background: #10a1ea;
   z-index: 1;
 }
-/* line 1495, ../sass/landing2.scss */
+/* line 1498, ../sass/landing2.scss */
 .button:before {
   transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   content: attr(title);
@@ -1789,26 +1793,26 @@ html {
   padding: 20px 40px;
   transform: translateY(200px);
 }
-/* line 1509, ../sass/landing2.scss */
+/* line 1512, ../sass/landing2.scss */
 .button:hover {
   text-decoration: none;
 }
-/* line 1511, ../sass/landing2.scss */
+/* line 1514, ../sass/landing2.scss */
 .button:hover:after {
   transform: translateX(-300px) translateY(-100px);
 }
-/* line 1514, ../sass/landing2.scss */
+/* line 1517, ../sass/landing2.scss */
 .button:hover:before {
   transform: translateY(0);
 }
 
-/* line 1524, ../sass/landing2.scss */
+/* line 1527, ../sass/landing2.scss */
 #new-menu * {
   transform-style: flat;
 }
 
 @media (max-width: 599px) {
-  /* line 1529, ../sass/landing2.scss */
+  /* line 1532, ../sass/landing2.scss */
   #new-menu {
     left: 1vw;
   }

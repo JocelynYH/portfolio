@@ -1431,12 +1431,15 @@ html{
 			}
 			a{
 				color: #fff;
-				font-family: 'Lato', Arial, Helvetica, sans-serif;
+				font-family: 'Raleway', Arial, Helvetica, sans-serif;
 				font-size: 16px;
 				width: 100%;
 				display: block;
 				float: left;
 				line-height: 40px;
+                &:hover {
+                    color: $dblue;
+                }
 			}
 		}
 	}
