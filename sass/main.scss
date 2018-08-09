@@ -4,9 +4,6 @@
 
 @import "stylesheet.scss";
 
-//***********************//
-//******* HEADER ********//
-//***********************//
 
 ul.sm {
     list-style: none;
@@ -59,7 +56,7 @@ li {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.jocelyn {
+.mobile-home-button-container {
     width: 100%;
 
     @include flexbox();
@@ -128,15 +125,15 @@ li {
     height: 60px;
 }
 
-.links a:hover {
-    border-bottom: 4px solid $pink;
-}
+//.links a:hover {
+//    border-bottom: 4px solid $pink;
+//}
 
 .links.mobile {
     display: none;
 }
 
-#mobile-navbar {
+#navbar-mobile {
     display: none;
 }
 
@@ -161,7 +158,7 @@ a#home {
     top: 16px;
 }
 
-a#home-desktop {
+a#mobile-home-button {
     display: none;
     cursor: pointer;
     z-index: 200;
@@ -193,6 +190,28 @@ a#home-desktop {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav-li {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.hover-underline::after {
+        content: "";
+        position: absolute;
+        top: 65%;
+        height: 3px;
+        width: 0%;
+        left: 5%;
+        background-color: deeppink;
+        transition: 0.3s ease all .3s;
+}
+
+.nav-li:hover  .hover-underline::after  {
+    width: 100%;
+    transition: .3s ease all;
 }
 
 //***********************//
@@ -521,6 +540,8 @@ button:hover a {
 
 
 
+
+
 //*************************//
 //***** RESPONSIVENESS ****//
 //*************************//
@@ -615,7 +636,7 @@ button:hover a {
         display: none;
     }
     
-    #navbar {
+    #navbar-tablet {
         display: none;
     }
     
@@ -624,7 +645,7 @@ button:hover a {
         display: inline-block;
     }
     
-    a#home-desktop {
+    a#mobile-home-button {
         display: block;
     }
     
@@ -634,7 +655,7 @@ button:hover a {
         background-color: white;
     }
     
-    .jocelyn {
+    .mobile-home-button-container {
         padding: 20px 20px 20px 20px;
         background-color: $lblue;
         color: white;
@@ -649,10 +670,10 @@ button:hover a {
         margin-top: 0px;
     }
         
-    #mobile-navbar {
+    #navbar-mobile {
 
 
-        .jocelyn,
+        .mobile-home-button-container,
         ul {
             padding: 30px;
         }
@@ -695,5 +716,4 @@ a#test {
 
     display: block;
 }
-
 
