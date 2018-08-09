@@ -1,19 +1,227 @@
 /* line 1, ../sass/test.scss */
-div {
-  height: 200px;
-  width: 200px;
-  background-color: black;
+html {
+  box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  /* line 8, ../sass/test.scss */
-  div {
-    background-color: yellow;
-  }
+/* line 4, ../sass/test.scss */
+*, *:after, *:before {
+  box-sizing: inherit;
 }
-@media (min-width: 600px) {
-  /* line 14, ../sass/test.scss */
-  div {
-    background-color: green;
-  }
+
+/* line 7, ../sass/test.scss */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 11, ../sass/test.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, ../sass/test.scss */
+body {
+  background: #161616;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 60px;
+}
+
+/* line 23, ../sass/test.scss */
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* line 28, ../sass/test.scss */
+.open {
+  position: fixed;
+  top: 40px;
+  left: 200px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+/* line 37, ../sass/test.scss */
+.open:hover {
+  opacity: 0.8;
+}
+/* line 40, ../sass/test.scss */
+.open span {
+  display: block;
+  float: left;
+  clear: both;
+  height: 4px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+/* line 53, ../sass/test.scss */
+.open span:nth-child(1) {
+  margin-top: 10px;
+  z-index: 9;
+}
+/* line 57, ../sass/test.scss */
+.open span:nth-child(2) {
+  margin-top: 25px;
+}
+/* line 60, ../sass/test.scss */
+.open span:nth-child(3) {
+  margin-top: 40px;
+}
+
+/* line 65, ../sass/test.scss */
+.sub-menu {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: #f06490;
+  border-radius: 50%;
+  z-index: 18;
+  overflow: hidden;
+}
+/* line 76, ../sass/test.scss */
+.sub-menu li {
+  display: block;
+  float: left;
+  clear: both;
+  height: auto;
+  margin-right: -160px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/* line 83, ../sass/test.scss */
+.sub-menu li:first-child {
+  margin-top: 150px;
+}
+/* line 86, ../sass/test.scss */
+.sub-menu li:nth-child(1) {
+  -webkit-transition-delay: 0.05s;
+}
+/* line 89, ../sass/test.scss */
+.sub-menu li:nth-child(2) {
+  -webkit-transition-delay: 0.10s;
+}
+/* line 92, ../sass/test.scss */
+.sub-menu li:nth-child(3) {
+  -webkit-transition-delay: 0.15s;
+}
+/* line 95, ../sass/test.scss */
+.sub-menu li:nth-child(4) {
+  -webkit-transition-delay: 0.20s;
+}
+/* line 98, ../sass/test.scss */
+.sub-menu li:nth-child(5) {
+  -webkit-transition-delay: 0.25s;
+}
+/* line 101, ../sass/test.scss */
+.sub-menu li a {
+  color: #fff;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
+}
+
+/* line 114, ../sass/test.scss */
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 400px;
+  width: 400px;
+}
+/* line 119, ../sass/test.scss */
+.oppenned span:nth-child(2) {
+  overflow: visible;
+}
+/* line 122, ../sass/test.scss */
+.oppenned span:nth-child(1), .oppenned span:nth-child(3) {
+  z-index: 100;
+  transform: rotate(45deg);
+}
+/* line 126, ../sass/test.scss */
+.oppenned span:nth-child(1) {
+  transform: rotate(45deg) translateY(12px) translateX(12px);
+}
+/* line 129, ../sass/test.scss */
+.oppenned span:nth-child(2) {
+  height: 400px;
+  width: 400px;
+  left: -70px;
+  top: -160px;
+  border-radius: 50%;
+  background-color: #f06490;
+}
+/* line 137, ../sass/test.scss */
+.oppenned span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px) translateX(10px);
+}
+/* line 140, ../sass/test.scss */
+.oppenned li {
+  margin-left: 100px;
+}
+
+/* line 144, ../sass/test.scss */
+.button {
+  display: block;
+  float: left;
+  clear: both;
+  padding: 20px 40px;
+  background: #fff;
+  border-radius: 3px;
+  border: 2px solid #10a1ea;
+  overflow: hidden;
+  position: relative;
+}
+/* line 154, ../sass/test.scss */
+.button:after {
+  transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  transform: rotate(45deg) translateX(-540px) translateY(-100px);
+  background: #10a1ea;
+  z-index: 1;
+}
+/* line 164, ../sass/test.scss */
+.button:before {
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 40px;
+  transform: translateY(200px);
+}
+/* line 178, ../sass/test.scss */
+.button:hover {
+  text-decoration: none;
+}
+/* line 180, ../sass/test.scss */
+.button:hover:after {
+  transform: translateX(-300px) translateY(-100px);
+}
+/* line 183, ../sass/test.scss */
+.button:hover:before {
+  transform: translateY(0);
 }

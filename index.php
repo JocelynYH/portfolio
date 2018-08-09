@@ -30,12 +30,23 @@
         <!-- 1 -->
         <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
         <link rel="stylesheet" href="css/landing2.css">
-        <link rel="stylesheet" type="text/css" href="ie-compatibility.css" />
+        <link rel="stylesheet" type="text/css" href="ie-compatibilityse.css" />
+        
+
         
     </head>
 
     <body>
-
+        
+        <div id="new-menu">
+            <a href="">
+               <span class="menu-icon">☰</span>
+                
+            </a>
+            
+        </div>
+        
+        
         <div class="container one">
             <img src="raw/index/geom-01.svg" alt="">
             <img src="raw/index/geom-02.svg" alt="">
@@ -104,7 +115,7 @@
                         <h2>The web and I were meant to be</h2>
                         <p>I have been in love once and still am with... the web.</p>
 
-                        <p>Yes, it’s true - designing and development let’s me combine my artistic ability with my coding skills and indulge my fascination for psychology, businesss, and efficiency.
+                        <p>Yes, it’s true - designing and development lets me combine my artistic ability with my coding skills and indulge my fascination for psychology, businesss, and efficiency.
                         </p>
 
                         <p>When I discovered the field, I knew I found where I wanted to work for the rest of my life.

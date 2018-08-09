@@ -30,3 +30,20 @@
 //      dots[slideIndex-1].className += " active";
 //    }
 //});
+
+
+$(document).ready(function() {
+		$(document).delegate('.open', 'click', function(event){
+			$(this).addClass('oppenned');
+      $(this).addClass('Xed');
+			event.stopPropagation();
+		})
+		$(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		})
+		$(document).delegate('.Xed', 'click', function(event){
+			$('.open').removeClass('oppenned');
+      $('.open').removeClass('Xed');
+			event.stopPropagation();
+		});
+	});

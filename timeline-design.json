@@ -221,24 +221,7 @@
           "text": "Served as a TA for UVA's Statistics 4260 class on Databases. Helped students with and graded assignments using SQL and noSQL databases & management tools and languages, including MySQL, MongoDB, hBase, and Neo4J."
         }
       },
-        {
-        "media": {
-          "url": "http://jocelynhuang.com/raw/graphic%20design/CSO%20Square%20Recruitment%20Social%20Media%20Spring%202017-07.png"
-        },
-        "start_date": {
-          "year": "2015",
-            "month": "6"
-        },
-            "end_date": {
-                "year": "2018",
-                "month": "5"
-            },
-          
-        "text": {
-          "headline": "Founder - Cavalier Symphony Orchestra",
-          "text": "Founded UVA’s first student-run full orchestra and managed a 15-person executive board, overseeing day-to-day operations and raising over $33,500.  Grew the orchestra to one of the largest organizations at UVA.  Streamlined operations using project management and led the executive team utilizing business principles."
-        }
-      },
+       
         
         {
         "media": {
@@ -249,13 +232,13 @@
             "month": "8"
         },
             "end_date": {
-                "year": "2017",
+                "year": "2018",
                 "month": "5"
             },
           
         "text": {
-          "headline": "President, Marketing, and Web - Cavalier Symphony Orchestra",
-          "text": "Trained marketing and web teams, focused on areas in web and graphic design for web UX, print and digital advertisement, and merchandising.  Sometimes undertook design projects myself, especially before the marketing and web teams were formed."
+          "headline": "Founder, President, Marketing, and Web - Cavalier Symphony Orchestra",
+          "text": "Founded UVA’s first student-run full orchestra and managed a 15-person executive board, overseeing day-to-day operations and raising over $33,500.  <br> Trained marketing and web teams, focused on areas in web and graphic design for web UX, print and digital advertisement, and merchandising.  Sometimes undertook design projects myself, especially before the marketing and web teams were formed."
         }
       }
     ]

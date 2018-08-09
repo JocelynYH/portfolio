@@ -184,7 +184,7 @@ input {
 }
 
 /* line 11, ../sass/main.scss */
-ul {
+ul.sm {
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -195,7 +195,7 @@ ul {
   margin: 0;
 }
 /* line 20, ../sass/main.scss */
-ul a {
+ul.sm a {
   text-decoration: none;
   color: white;
 }
