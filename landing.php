@@ -41,12 +41,7 @@
 
 
         <div id="new-menu">
-<!--            <a href="">-->
-                <!--                   <span class="menu-icon">☰</span>-->
-                <!--                    <img src="raw/index/menu-40.svg" alt="">-->
-
-
-<!--   <div class="fake-body-formenu">             -->
+            
                     <div  class="open">
                         <span class="cls"></span>
                         <span>
@@ -67,10 +62,7 @@
                         </span>
                         <span class="cls"></span>
                     </div>
-<!--                    </div>-->
 
-
-<!--            </a>-->
         </div>
         <div class="wrappery">
 
