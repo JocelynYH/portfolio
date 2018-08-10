@@ -27,6 +27,24 @@
 
     <script>
         
+
+
+
+        $(window).resize(function() {
+            var isHamburgerInvisible = $('.hamburger.mobile2').css('display') == 'none';
+            var dropdown = document.getElementById("navbar-mobile");
+
+
+            if (isHamburgerInvisible) {
+                dropdown.style.display = "none";
+                if ($('.hamburger').hasClass('change')) {
+                    $('.hamburger').removeClass('change');
+                }
+
+            }
+
+        });
+
     </script>
 
 </body>
