@@ -30,7 +30,7 @@
         <!-- 1 -->
         <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
         <link rel="stylesheet" href="css/landing2.css">
-        <link rel="stylesheet" type="text/css" href="ie-compatibilityse.css" />
+        <!--        <link rel="stylesheet" type="text/css" href="ie-compatibilityse.css" />-->
         <script src='js/landing.js'></script>
 
 
@@ -41,10 +41,10 @@
 
 
         <div id="new-menu">
-            
-                    <div  class="open">
-                        <span class="cls"></span>
-                        <span>
+
+            <div class="open">
+                <span class="cls"></span>
+                <span>
                             <ul class="sub-menu ">
                                 <li>
                                     <a href="index.php" title="Home">Home & About</a>
@@ -60,8 +60,8 @@
                                 </li>
                             </ul>
                         </span>
-                        <span class="cls"></span>
-                    </div>
+                <span class="cls"></span>
+            </div>
 
         </div>
         <div class="wrappery">
@@ -84,7 +84,7 @@
                 <img src="raw/index/geom-14.svg" alt="">
                 <img src="raw/index/geom-15.svg" alt="">
                 <img src="raw/index/geom-16.svg" alt="">
-                <img src="raw/index/geom-18.svg" alt="">
+                <!--                <img src="raw/index/geom-18.svg" alt="">-->
             </div>
 
 
@@ -171,9 +171,10 @@
                 <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
                 <div id='timeline-embed' style="width: 100%; height: 600px"></div>
-     
+
                 <script>
-                   
+
+
                 </script>
             </div>
 
@@ -208,12 +209,12 @@
                     <img src="raw/index/geom-26.svg" alt="">
                     <img src="raw/index/geom-27.svg" alt="">
                     <img src="raw/index/geom-28.svg" alt="">
-                 
+
                 </div>
             </div>
 
             <div class="section planet">
-               
+
                 <div class="text">
                     <p>I’m ready to join a team that lives for </p>
                     <p>their work and can’t believe their
@@ -324,6 +325,27 @@
             </div>
 
             <script>
+                
+                
+                $(function() {
+                    $(window).scroll(function() {
+                        var aTop = $('.section.one').height();
+                        if ($(this).scrollTop() >= aTop) {
+                            alert('header just passed.');
+                            // instead of alert you can use to show your ad
+                            // something like $('#footAd').slideup();
+                        }
+                    });
+                });
+                
+                var bodyHeight = $(window).height();
+                console.log(bodyHeight);
+                
+                if ($(window).height() < 500) {
+                    alert('less than 500');
+                }
+
+
                 var slideIndex = 1;
                 showSlides(slideIndex);
 
@@ -340,7 +362,7 @@
                 function showSlides(n) {
                     var i;
                     var slides = document.getElementsByClassName("card-bkg");
-                    var dots = document.getElementsByClassName("dot");
+//                    var dots = document.getElementsByClassName("dot");
                     if (n > slides.length) {
                         slideIndex = 1
                     }
@@ -350,11 +372,11 @@
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                     }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
+//                    for (i = 0; i < dots.length; i++) {
+//                        dots[i].className = dots[i].className.replace(" active", "");
+//                    }
                     slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
+//                    dots[slideIndex - 1].className += " active";
                 }
 
             </script>

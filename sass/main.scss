@@ -9,6 +9,10 @@
 //******* HEADER ********//
 //***********************//
 
+$nav-text: white;
+$active-tab: $lblue;
+$nav-background: $dblue;
+
 ul.sm {
     list-style: none;
     display: flex;
@@ -29,7 +33,7 @@ li {
     font: bold 20px 'caviardreams';
     a {
         text-decoration: none;
-        color: white;
+        color: $nav-text;
     }
     &#placeholder {
         width: 12%;
@@ -49,7 +53,7 @@ li {
 
 .menu.relative {
     position: relative;
-    background-color: $lblue;
+    background-color: $nav-background;
     margin: 0;
     padding: 30px 55px;
     flex-flow: row wrap;
@@ -58,6 +62,7 @@ li {
     justify-content: space-between;
     text-align: center;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+//    border-top: 10px solid $nav-ribbon;
 }
 
 .mobile-home-button-container {
@@ -140,11 +145,12 @@ li {
 
 a#home {
     text-decoration: none;
-    color: white;
+    color: $nav-text;
     font-size: 50px;
     font-family: 'SFN Republic';
 }
 
+// Menu hover effects
 .nav-li {
     position: relative;
     display: block;
@@ -169,7 +175,7 @@ a#home {
 }
 
 .active-a {
-    color: $dblue;
+    color: $active-tab;
 }
 
 /********** **********
@@ -181,7 +187,7 @@ a#home {
     position: absolute;
     cursor: pointer;
     z-index: 200;
-    color: white;
+    color: $nav-text;
     right: 10px;
     top: 16px;
 }
@@ -190,7 +196,7 @@ a#mobile-home-button {
     display: none;
     cursor: pointer;
     z-index: 200;
-    color: white;
+    color: $nav-text;
     text-decoration: none;
     font-size: 8vw;
     white-space: nowrap;

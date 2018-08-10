@@ -213,7 +213,7 @@ h1 {
 //***** SECTION ONE ******//
 //***********************//
 .section.one {
-    margin-top: 15vh;
+    margin-top: 21vh;
     height: 60vh;
     margin-bottom: 40vh;
     width: auto;
@@ -231,7 +231,7 @@ h1 {
 
 .name-plaque h1 {
     text-align: center;
-//    border-bottom: 2px solid $lblue;
+        margin-top: 2vh;
     &::before {
         content: '';
         width: 114px;
@@ -677,7 +677,7 @@ p.space-below {
 
         @include for-phone-only {
             font-size: 43px;
-            line-height: -0.2em;
+            line-height: 0.8em;
         }
 
         @include for-tablet-portrait-up {
@@ -1309,7 +1309,8 @@ html{
 //    border: 3px solid green;
     position: fixed;
     top: 80px;
-    left: 5vw;
+    top: 5vh;
+    left: 1vw;
     width: 50px;
     height: 50px;
 
@@ -1317,6 +1318,12 @@ html{
         color: white;
         text-align: center;
         margin-left: 1vw;
+    }
+    
+    &:hover {
+        .open span {
+            color: $moonblue;
+        }
     }
 }
 
@@ -1326,7 +1333,7 @@ span.menu-icon {
 }
 
 .wrappery {
-        width: 100%;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
