@@ -40,6 +40,7 @@
         <label for="">Message:</label>
         <textarea name="message" id="" cols="30" rows="10"></textarea>
     <input type="submit" name='submit'>
+    <?= $thankYou ?>
 </form>
 
     

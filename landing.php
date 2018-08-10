@@ -1,6 +1,6 @@
 <?php
     if($_POST['submit']) {
-        $recipient='violetyell@yahoo.com';
+        $recipient='jocelynyh4@gmail.com';
         $subject='Message from Portfolio';
         $sender=$_POST['sender'];
         $senderEmail=$_POST['senderEmail'];
@@ -13,9 +13,6 @@
         $thankYou = '<p>Thank you!  Your message has been sent.</p>';
     }
     
-   
-
-
 ?>
 
 
@@ -274,9 +271,9 @@
                 </div>
                 <div class="footer content">
 
-                    <?= $thankYou ?>
+                    
 
-                        <form method="post" action="landing2.php">
+                        <form method="post" action="index.php" target="frame">
                             <h2 class='contact-title'>Contact Me</h2>
                             <label for=""><p>Name</p></label>
                             <input type="text" name='sender' placeholder='Jane Doe'>
@@ -286,7 +283,9 @@
 
                             <label for=""><p>Message:</p></label>
                             <textarea name="message" id="" rows="" placeholder='I was wondering if you were interested in this position.'></textarea>
-                            <input type="submit" name='submit<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg>'>
+                            <input type="submit" name='submit'>
+                            <?= $thankYou ?>
+                            <iframe name="frame"></iframe>
                         </form>
 
                         <div class="sm-links">
@@ -327,23 +326,26 @@
             </div>
 
             <script>
-                $(function() {
-                    $(window).scroll(function() {
-                        var aTop = $('.section.one').height();
-                        if ($(this).scrollTop() >= aTop) {
-                            alert('header just passed.');
-                            // instead of alert you can use to show your ad
-                            // something like $('#footAd').slideup();
-                        }
-                    });
-                });
-
-                var bodyHeight = $(window).height();
-                console.log(bodyHeight);
-
+//                $(function() {
+//                    $(window).scroll(function() {
+//                        var aTop = $('.section.one').height();
+//                        if ($(this).scrollTop() >= aTop) {
+//                            alert('header just passed.');
+//                            // instead of alert you can use to show your ad
+//                            // something like $('#footAd').slideup();
+//                        }
+//                    });
+//                });
+//
+//                var bodyHeight = $(window).height();
+//                console.log(bodyHeight);
+//                
+//                
+                $(window).scroll(function() {
                 if ($(window).height() < 500) {
-                    alert('less than 500');
+                    alert('Script is working');
                 }
+                });
 
 
                 var slideIndex = 1;

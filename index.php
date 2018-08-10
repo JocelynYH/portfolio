@@ -1,6 +1,6 @@
 <?php
     if($_POST['submit']) {
-        $recipient='violetyell@yahoo.com';
+        $recipient='jocelynyh4@gmail.com';
         $subject='Message from Portfolio';
         $sender=$_POST['sender'];
         $senderEmail=$_POST['senderEmail'];
@@ -13,9 +13,6 @@
         $thankYou = '<p>Thank you!  Your message has been sent.</p>';
     }
     
-   
-
-
 ?>
 
 
@@ -30,7 +27,7 @@
         <!-- 1 -->
         <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
         <link rel="stylesheet" href="css/landing2.css">
-        <link rel="stylesheet" type="text/css" href="ie-compatibilityse.css" />
+        <!--        <link rel="stylesheet" type="text/css" href="ie-compatibilityse.css" />-->
         <script src='js/landing.js'></script>
 
 
@@ -41,10 +38,10 @@
 
 
         <div id="new-menu">
-            
-                    <div  class="open">
-                        <span class="cls"></span>
-                        <span>
+
+            <div class="open">
+                <span class="cls"></span>
+                <span>
                             <ul class="sub-menu ">
                                 <li>
                                     <a href="index.php" title="Home">Home & About</a>
@@ -60,8 +57,8 @@
                                 </li>
                             </ul>
                         </span>
-                        <span class="cls"></span>
-                    </div>
+                <span class="cls"></span>
+            </div>
 
         </div>
         <div class="wrappery">
@@ -84,7 +81,7 @@
                 <img src="raw/index/geom-14.svg" alt="">
                 <img src="raw/index/geom-15.svg" alt="">
                 <img src="raw/index/geom-16.svg" alt="">
-                <img src="raw/index/geom-18.svg" alt="">
+                <!--                <img src="raw/index/geom-18.svg" alt="">-->
             </div>
 
 
@@ -171,9 +168,10 @@
                 <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
                 <div id='timeline-embed' style="width: 100%; height: 600px"></div>
-     
+
                 <script>
-                   
+
+
                 </script>
             </div>
 
@@ -208,12 +206,12 @@
                     <img src="raw/index/geom-26.svg" alt="">
                     <img src="raw/index/geom-27.svg" alt="">
                     <img src="raw/index/geom-28.svg" alt="">
-                 
+
                 </div>
             </div>
 
             <div class="section planet">
-               
+
                 <div class="text">
                     <p>I’m ready to join a team that lives for </p>
                     <p>their work and can’t believe their
@@ -273,9 +271,9 @@
                 </div>
                 <div class="footer content">
 
-                    <?= $thankYou ?>
+                    
 
-                        <form method="post" action="landing2.php">
+                        <form method="post" action="index.php" target="frame">
                             <h2 class='contact-title'>Contact Me</h2>
                             <label for=""><p>Name</p></label>
                             <input type="text" name='sender' placeholder='Jane Doe'>
@@ -285,14 +283,18 @@
 
                             <label for=""><p>Message:</p></label>
                             <textarea name="message" id="" rows="" placeholder='I was wondering if you were interested in this position.'></textarea>
-                            <input type="submit" name='submit<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg>'>
+                            <input type="submit" name='submit'>
+                            
+                            <iframe name="frame"></iframe>
                         </form>
+                        <?= $thankYou ?>
 
                         <div class="sm-links">
                             <h2 class='contact-title'>Find Me On:</h2>
                             <ul class='sm-link-container sm'>
+                               
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm">
+                                    <a href="https://www.linkedin.com/in/jocelyn-yuan-huang/" class="transparency sm" target="_blank">
                                     <span class='sm'>LinkedIn</span>
                                     <i class="sm" data-text='github'>
                                         <?php echo file_get_contents("raw/icons/001-linkedin-logo.svg"); ?>
@@ -303,15 +305,16 @@
 
 
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm"><span class='sm'>Github</span><i class="sm">
+                                    <a href="https://github.com/jocelynyh" class="transparency sm" target="_blank"><span class='sm'>Github</span><i class="sm">
                                 <?php echo file_get_contents("raw/icons/002-github-logo.svg"); ?></i></a>
                                 </li>
+                                
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm"><span class='sm'>Resume</span><i class="sm">
+                                    <a href="https://drive.google.com/file/d/195V9JnurYC8zP1tEK8VUzIcOz5994o9z/view?usp=sharing" class="transparency sm" target='_blank'><span class='sm'>Resume</span><i class="sm">
                                <?php echo file_get_contents("raw/icons/003-resume.svg"); ?></i></a>
                                 </li>
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm"><span class='sm'>Email</span><i class="sm">
+                                    <a href="mailto:jocelynyh4@gmail.com" class="transparency sm" target='_blank'><span class='sm'>Email</span><i class="sm">
                                <?php echo file_get_contents("raw/icons/envelope.svg"); ?></i></a>
                                 </li>
                             </ul>
@@ -324,6 +327,26 @@
             </div>
 
             <script>
+//                $(function() {
+//                    $(window).scroll(function() {
+//                        var aTop = $('.section.one').height();
+//                        if ($(this).scrollTop() >= aTop) {
+//                            alert('header just passed.');
+//                            // instead of alert you can use to show your ad
+//                            // something like $('#footAd').slideup();
+//                        }
+//                    });
+//                });
+//
+//                var bodyHeight = $(window).height();
+//                console.log(bodyHeight);
+//                
+//                
+                if ($(window).height() < 500) {
+                    alert('Script is working');
+                });
+
+
                 var slideIndex = 1;
                 showSlides(slideIndex);
 
@@ -340,7 +363,7 @@
                 function showSlides(n) {
                     var i;
                     var slides = document.getElementsByClassName("card-bkg");
-                    var dots = document.getElementsByClassName("dot");
+                    //                    var dots = document.getElementsByClassName("dot");
                     if (n > slides.length) {
                         slideIndex = 1
                     }
@@ -350,11 +373,11 @@
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                     }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
+                    //                    for (i = 0; i < dots.length; i++) {
+                    //                        dots[i].className = dots[i].className.replace(" active", "");
+                    //                    }
                     slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
+                    //                    dots[slideIndex - 1].className += " active";
                 }
 
             </script>
