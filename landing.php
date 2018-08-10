@@ -292,8 +292,9 @@
                         <div class="sm-links">
                             <h2 class='contact-title'>Find Me On:</h2>
                             <ul class='sm-link-container sm'>
+                               
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm">
+                                    <a href="https://www.linkedin.com/in/jocelyn-yuan-huang/" class="transparency sm" target="_blank">
                                     <span class='sm'>LinkedIn</span>
                                     <i class="sm" data-text='github'>
                                         <?php echo file_get_contents("raw/icons/001-linkedin-logo.svg"); ?>
@@ -304,15 +305,16 @@
 
 
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm"><span class='sm'>Github</span><i class="sm">
+                                    <a href="https://github.com/jocelynyh" class="transparency sm" target="_blank"><span class='sm'>Github</span><i class="sm">
                                 <?php echo file_get_contents("raw/icons/002-github-logo.svg"); ?></i></a>
                                 </li>
+                                
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm"><span class='sm'>Resume</span><i class="sm">
+                                    <a href="https://drive.google.com/file/d/195V9JnurYC8zP1tEK8VUzIcOz5994o9z/view?usp=sharing" class="transparency sm" target='_blank'><span class='sm'>Resume</span><i class="sm">
                                <?php echo file_get_contents("raw/icons/003-resume.svg"); ?></i></a>
                                 </li>
                                 <li class='sm'>
-                                    <a href="#" class="transparency sm"><span class='sm'>Email</span><i class="sm">
+                                    <a href="mailto:jocelynyh4@gmail.com" class="transparency sm" target='_blank'><span class='sm'>Email</span><i class="sm">
                                <?php echo file_get_contents("raw/icons/envelope.svg"); ?></i></a>
                                 </li>
                             </ul>
@@ -325,8 +327,6 @@
             </div>
 
             <script>
-                
-                
                 $(function() {
                     $(window).scroll(function() {
                         var aTop = $('.section.one').height();
@@ -337,10 +337,10 @@
                         }
                     });
                 });
-                
+
                 var bodyHeight = $(window).height();
                 console.log(bodyHeight);
-                
+
                 if ($(window).height() < 500) {
                     alert('less than 500');
                 }
@@ -362,7 +362,7 @@
                 function showSlides(n) {
                     var i;
                     var slides = document.getElementsByClassName("card-bkg");
-//                    var dots = document.getElementsByClassName("dot");
+                    //                    var dots = document.getElementsByClassName("dot");
                     if (n > slides.length) {
                         slideIndex = 1
                     }
@@ -372,11 +372,11 @@
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                     }
-//                    for (i = 0; i < dots.length; i++) {
-//                        dots[i].className = dots[i].className.replace(" active", "");
-//                    }
+                    //                    for (i = 0; i < dots.length; i++) {
+                    //                        dots[i].className = dots[i].className.replace(" active", "");
+                    //                    }
                     slides[slideIndex - 1].style.display = "block";
-//                    dots[slideIndex - 1].className += " active";
+                    //                    dots[slideIndex - 1].className += " active";
                 }
 
             </script>
