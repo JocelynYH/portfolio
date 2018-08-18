@@ -51,10 +51,9 @@
                 </div>
 
 
-
+        <a href="http://jocelynhuang.com/vector">
             <div class="content-item vector bottom">
 
-                <a href="http://jocelynhuang.com/vector">
                     <div class="overlay"></div>
 
                     <div class="corner-overlay-content">
@@ -70,9 +69,10 @@
                         </div>
 
                     </div>
-                </a>
 
             </div>
+        </a>
+
 
 
             <div class="content-item CSO ">

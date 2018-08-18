@@ -1,9 +1,13 @@
 <?php
 // form-process.php
+$errors = array();
+$data = array();
 
-$errors         = array();      // array to hold validation errors
-$data           = array();      // array to pass back data
+if (empty(_$POST['name']))
+    $errors['name'] = 'Name is required.';
 
+if(empty($_POST['sender-email']))
+    $errors[email]
 // validate the variables ======================================================
     // if any of these variables don't exist, add an error to our $errors array
 
