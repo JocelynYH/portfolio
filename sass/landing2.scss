@@ -47,20 +47,7 @@ $perspective: $parallax-perspective) {
 
 
 // End of magic parallax mixins
-// Flexbox
-@mixin flexbox() {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-}
 
-// Flexbox Center
-@mixin flexboxcenter() {
-    align-items: center;
-    justify-content: center;
-}
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
 $primary: #1586D1;
@@ -358,6 +345,7 @@ h1 {
     justify-content: center;
     & h2 {
         text-align: center;
+        margin-bottom: 40px;
     } //    @include for-phone-only {
     //        height: auto;
     //    }
@@ -667,7 +655,7 @@ p.space-below {
 
 
     & p strong.cursive {
-        font-family: 'Great Vibes', serif; //        font-size: 80px;
+        font-family: 'Great Vibes', cursive; //        font-size: 80px;
         //        line-height: 1.2em;
         font-weight: normal;
 
@@ -891,7 +879,7 @@ $port-btn-hov: $pink;
     font-size: 30px;
     line-height: 2em;
     white-space: nowrap;
-    font-family: 'raleway', serif;
+//    font-family: 'Futura', serif;
     font-weight: 900;
 }
 
@@ -1112,7 +1100,6 @@ h2.contact-title {
     margin-bottom: 40px;
     color: $form-color;
     font-weight: 800;
-    font-family: 'raleway'; //    border-bottom: 3px solid $moonblue;
 }
 
 .copyright {

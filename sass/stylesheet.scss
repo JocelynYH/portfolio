@@ -1,5 +1,5 @@
 
-// Responsive mixins
+// Responsive Mix-Ins
 
 @mixin for-small-phone {
   @media (max-width: 350px) { @content; }
@@ -32,6 +32,23 @@
   @media (min-width: 1800px) { @content; }
 }
 
+
+// Flexblox Mix-Ins
+
+// Flexbox
+@mixin flexbox() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+// Flexbox Center
+@mixin flexboxcenter() {
+    align-items: center;
+    justify-content: center;
+}
 
 /* FONTS, COLORS, MIX-IN'S*/
 
@@ -76,10 +93,29 @@
     url('../fonts/GreatVibes-Regular.ttf') format('truetype');
 }
 
+// Futura Medium
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura/Futura-Medium.otf') format('opentype'),
+        url('../fonts/Futura/Futura-Medium-01.woff') format('woff'),
+    url('../fonts/Futura/Futura-Medium-01.woff2') format('woff2'),
+    url('../fonts/Futura/Futura-Medium-01.ttf') format('truetype');
+    font-weight: normal;
+}
+
+//Futura Bold
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura/Futura-Bold.otf') format('opentype'),
+        url('../fonts/Futura/Futura-Bold.woff') format('woff'),
+    url('../fonts/Futura/Futura-Bold-03.woff2') format('woff2'),
+    url('../fonts/Futura/Futura-Bold-03.ttf') format('truetype');
+    font-weight: bold;
+}
 
 h1 {
     font-size: 7vmax;
-    font-family: 'SFN Republic';
+    font-family: 'SFN Republic', 'arial', serif;
     @include for-phone-only {
         font-size: 9vmax;
     }
@@ -104,7 +140,7 @@ h1 {
     }
 }
 h2 {
-    font-family: 'caviardreams';
+    font-family: 'Futura', 'arial', serif;
     margin: 0px;
     
     @include for-phone-only {
@@ -120,16 +156,16 @@ h2 {
     }
     
     @include for-desktop-up {
-        font-size: 6vmin;
+        font-size: 5vmin;
     }
     
     @include for-tv-up {
-        font-size: 10vmin;
+        font-size: 8vmin;
     }
 }
 
 h3 {
-     font-family: 'caviardreams';
+     font-family: 'Futura', 'arial', serif;
     margin: 0px;
     
      @include for-phone-only {
@@ -151,6 +187,10 @@ h3 {
     @include for-tv-up {
         font-size: 4vmin;
     }
+}
+
+h4 {
+    font-family: 'Futura', 'arial', serif;
 }
 
 p, input, textarea {
@@ -180,7 +220,7 @@ p, input, textarea {
 }
 
 a {
-    font-family: 'arcon';
+    font-family: 'Futura', 'arial', serif;
 }
 
 .bold {

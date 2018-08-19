@@ -1,0 +1,10 @@
+/* line 1, ../sass/web.scss */
+section.opening {
+  background: url("../raw/web/opening-waves.svg") top/contain no-repeat;
+  border: 1px solid black;
+}
+
+/* line 7, ../sass/web.scss */
+.web-portfolio-wrapper section {
+  height: 100vh;
+}

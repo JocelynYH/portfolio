@@ -1,0 +1,10 @@
+section.opening {
+    background: url('../raw/web/opening-waves.svg') top / contain no-repeat;
+    border: 1px solid black;
+}
+
+.web-portfolio-wrapper {
+    & section {
+        height: 100vh;
+    }
+}
