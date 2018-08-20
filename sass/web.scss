@@ -1,10 +1,154 @@
+@import "stylesheet.scss";
+
+
+
 section.opening {
-    background: url('../raw/web/opening-waves.svg') top / contain no-repeat;
+    //    background: url('../raw/web/opening-waves.svg') top / contain no-repeat;
     border: 1px solid black;
+    position: relative;
+    @include flexbox();
+    @include flexboxcenter();
+    flex-flow: column wrap;
+    overflow-y: visible;
 }
+
+/*** CONTENT ***/
+
+.content {
+    z-index: 200;
+    @include flexbox();
+    @include flexboxcenter();
+    flex-flow: column nowrap;
+    margin: 5%; // Computer image
+    & .image-container {
+        width: 50%;
+        height: 30%;
+        z-index: 100;
+        border-radius: 15px;
+        overflow: hidden;
+        background: white;
+        border: 3px solid #dddfe2;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    } // Title
+    & .title {
+        text-align: center;
+        color: $lblue;
+        border-top: 3px solid #dddfe2;
+        margin-top: 4%;
+        & h2 {
+            margin-top: 2%;
+            font-size: 5vmin;
+        }
+    }
+}
+
+/*** BACKGROUND IMAGES ***/
+
+div.background-images {
+    position: absolute;
+    &.waves {
+        top: -20vh;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background: url('../raw/web/opening-waves.svg') center / cover no-repeat;
+        & img {
+            max-height: 70%;
+        }
+    }
+    &.shapes {
+        width: 100%;
+        z-index: -100;
+        height: 100%;
+        .circle {
+            right: 0;
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background: url('../raw/web/pink-circle-outline.svg') center / cover no-repeat;
+        }
+
+        .stripes {
+            left: 0;
+            bottom: 0;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background: url('../raw/web/blue-stripes.svg') -100px 100px / contain no-repeat;
+        }
+    }
+}
+
+
+
 
 .web-portfolio-wrapper {
     & section {
         height: 100vh;
+    }
+}
+
+
+
+
+/******* Responsiveness ********/
+
+// 900 px and down
+@media (max-width: 900px) { 
+    .content {
+        & .image-container {
+            width: 70%;
+            height: 55%;
+        }
+        
+        & .title {
+            margin: 5%;
+        }
+    }
+}
+
+
+@include for-tablet-portrait-down {
+    section.opening {
+        justify-content: flex-start;
+        height: 80vh;
+    }
+     .content {
+         flex-flow: column-reverse nowrap;
+        & .image-container {
+           width: 90%;
+        }
+        
+        & .title {
+            color: white;
+            border-top: none;
+//            border-bottom: 1px solid #eadfe4;
+            margin-bottom: 20vh;
+            text-align: left;
+            & h2 {
+                font-size: 10vmin;
+            }
+        }
+    }
+    
+    div.background-images {
+        &.waves {
+            top: -20vh;
+            background: url('../raw/web/mobile-waves.png') center / cover no-repeat;
+        }
+        &.shapes {
+            z-index: 0;
+            .circle {
+                bottom: 40vh;
+                right: -20vw;
+                width: 270px;
+                height: 270px;
+            }
+        }
     }
 }

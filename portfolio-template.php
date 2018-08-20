@@ -19,7 +19,8 @@
            
             <a href='' id='view-all' class='button-container'>
                 <h4>view all</h4>
-                <img src="raw/web/view-all-squares.svg" alt="">
+<!--                <img src="raw/web/view-all-squares.svg" alt="">-->
+               <?php echo file_get_contents("raw/web/view-all-squares.svg"); ?>
             </a>
             
             <div id="menu" class='button-container'>
@@ -51,13 +52,55 @@
         </nav>
 
         <section class='opening'>
+           <div class="background-images waves">
+<!--               <img src="raw/web/opening-waves.svg" alt="">-->
+           </div>
+           
+           <div class="background-images shapes">
+                <div class="stripes"></div>
+                <div class="circle"></div>
+           </div>
+           
+          
+            
+            
+            <div class="content">
+                <div class="image-container">
+                    <img src="raw/Foodio-tile.png" alt="">
+                </div>
+                <div class="title">
+                    <h2>Redesign the websites for 1300 clients</h2>
+                </div>
+            </div>
             
         </section>
 
         <section></section>
         <section></section>
     </div>
+<script>
+$("#header-2").hide(); // hide the fixed navbar initially
 
+var topofDiv = $(".waves").offset().top; //gets offset of header
+var height = $(".waves").outerHeight(); //gets height of header
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > (topofDiv + height)){
+        console.log('height recognized');
+       $("#fixed-nav-container #view-all h4").addClass('dblue');
+        $('#fixed-nav-container').append('<style>.open:before{color: #3d52a1!important;}</style>');
+        $("#fixed-nav-container .open span").addClass('bkg-dblue');
+        $('rect').css("fill", "#3d52a1");
+        
+    }
+    else{
+       $("#fixed-nav-container #view-all h4").removeClass('dblue');
+        $('#fixed-nav-container').append('<style>.open:before{color: white!important;}</style>');
+        $("#fixed-nav-container .open span").removeClass('bkg-dblue');
+        $('rect').css("fill", "white");
+    }
+}); 
+</script>
 </body>
 
 </html>

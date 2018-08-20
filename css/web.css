@@ -1,10 +1,363 @@
-/* line 1, ../sass/web.scss */
-section.opening {
-  background: url("../raw/web/opening-waves.svg") top/contain no-repeat;
-  border: 1px solid black;
+/* FONTS, COLORS, MIX-IN'S*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,600,700,800,900");
+@font-face {
+  font-family: 'beautysd';
+  src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
+}
+@font-face {
+  font-family: 'caviardreams';
+  src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"), url("../fonts/CaviarDreams_Bold.woff") format("woff"), url("../fonts/CaviarDreams_Bold.woff2") format("woff2"), url("../fonts/CaviarDreams-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'arcon';
+  src: url("../fonts/Arcon-Regular.otf") format("opentype"), url("../fonts/Arcon-Regular.woff") format("woff"), url("../fonts/Arcon-Regular.woff2") format("woff2"), url("../fonts/Arcon-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SFN Republic';
+  src: url(../fonts/SFNewRepublic-Bold.otf) format("opentype"), url("../fonts/SFNewRepublic-Bold.woff") format("woff"), url("../fonts/SFNewRepublic-Bold.woff2") format("woff2"), url("../fonts/SFNewRepublic-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Great Vibes';
+  src: url("../fonts/GreatVibes-Regular.otf") format("opentype"), url("../fonts/GreatVibes-Regular.woff") format("woff"), url("../fonts/GreatVibes-Regular.woff2") format("woff2"), url("../fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/Futura/Futura-Medium.otf") format("opentype"), url("../fonts/Futura/Futura-Medium-01.woff") format("woff"), url("../fonts/Futura/Futura-Medium-01.woff2") format("woff2"), url("../fonts/Futura/Futura-Medium-01.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/Futura/Futura-Bold.otf") format("opentype"), url("../fonts/Futura/Futura-Bold.woff") format("woff"), url("../fonts/Futura/Futura-Bold-03.woff2") format("woff2"), url("../fonts/Futura/Futura-Bold-03.ttf") format("truetype");
+  font-weight: bold;
+}
+/* line 115, ../sass/stylesheet.scss */
+h1 {
+  font-size: 7vmax;
+  font-family: 'SFN Republic', 'arial', serif;
+}
+@media (min-width: 351px) {
+  /* line 115, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 9vmax;
+  }
+}
+@media (max-width: 599px) {
+  /* line 115, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 8vmax;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 115, ../sass/stylesheet.scss */
+  h1 {
+    font-size: 8vmax;
+  }
 }
 
-/* line 7, ../sass/web.scss */
+/* line 141, ../sass/stylesheet.scss */
+h2 {
+  font-family: 'Futura', 'arial', serif;
+  margin: 0px;
+}
+@media (min-width: 351px) {
+  /* line 141, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 7vmin;
+  }
+}
+@media (min-width: 600px) {
+  /* line 141, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 5vmin;
+  }
+}
+@media (min-width: 900px) {
+  /* line 141, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 5vmin;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 141, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 5vmin;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 141, ../sass/stylesheet.scss */
+  h2 {
+    font-size: 8vmin;
+  }
+}
+
+/* line 166, ../sass/stylesheet.scss */
+h3 {
+  font-family: 'Futura', 'arial', serif;
+  margin: 0px;
+}
+@media (min-width: 351px) {
+  /* line 166, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 600px) {
+  /* line 166, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+@media (min-width: 900px) {
+  /* line 166, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 166, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 166, ../sass/stylesheet.scss */
+  h3 {
+    font-size: 4vmin;
+  }
+}
+
+/* line 191, ../sass/stylesheet.scss */
+h4 {
+  font-family: 'Futura', 'arial', serif;
+}
+
+/* line 195, ../sass/stylesheet.scss */
+p, input, textarea {
+  font-family: 'raleway';
+}
+@media (min-width: 351px) {
+  /* line 195, ../sass/stylesheet.scss */
+  p, input, textarea {
+    font-size: 15px;
+    line-height: 1.2em;
+  }
+}
+@media (min-width: 600px) {
+  /* line 195, ../sass/stylesheet.scss */
+  p, input, textarea {
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 900px) {
+  /* line 195, ../sass/stylesheet.scss */
+  p, input, textarea {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 195, ../sass/stylesheet.scss */
+  p, input, textarea {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1800px) {
+  /* line 195, ../sass/stylesheet.scss */
+  p, input, textarea {
+    font-size: 1.4vmax;
+  }
+}
+
+/* line 221, ../sass/stylesheet.scss */
+a {
+  font-family: 'Futura', 'arial', serif;
+}
+
+/* line 225, ../sass/stylesheet.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 246, ../sass/stylesheet.scss */
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: #eef5f7;
+  height: 100%;
+}
+
+/* line 254, ../sass/stylesheet.scss */
+.content-item a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 260, ../sass/stylesheet.scss */
+input {
+  border: none;
+}
+
+/* line 5, ../sass/web.scss */
+section.opening {
+  border: 1px solid black;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  overflow-y: visible;
+}
+
+/*** CONTENT ***/
+/* line 17, ../sass/web.scss */
+.content {
+  z-index: 200;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  margin: 5%;
+}
+/* line 23, ../sass/web.scss */
+.content .image-container {
+  width: 50%;
+  height: 30%;
+  z-index: 100;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  border: 3px solid #dddfe2;
+}
+/* line 31, ../sass/web.scss */
+.content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../sass/web.scss */
+.content .title {
+  text-align: center;
+  color: #2ba4c0;
+  border-top: 3px solid #dddfe2;
+  margin-top: 4%;
+}
+/* line 41, ../sass/web.scss */
+.content .title h2 {
+  margin-top: 2%;
+  font-size: 5vmin;
+}
+
+/*** BACKGROUND IMAGES ***/
+/* line 50, ../sass/web.scss */
+div.background-images {
+  position: absolute;
+}
+/* line 52, ../sass/web.scss */
+div.background-images.waves {
+  top: -20vh;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: url("../raw/web/opening-waves.svg") center/cover no-repeat;
+}
+/* line 59, ../sass/web.scss */
+div.background-images.waves img {
+  max-height: 70%;
+}
+/* line 63, ../sass/web.scss */
+div.background-images.shapes {
+  width: 100%;
+  z-index: -100;
+  height: 100%;
+}
+/* line 67, ../sass/web.scss */
+div.background-images.shapes .circle {
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: url("../raw/web/pink-circle-outline.svg") center/cover no-repeat;
+}
+/* line 76, ../sass/web.scss */
+div.background-images.shapes .stripes {
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: url("../raw/web/blue-stripes.svg") -100px 100px/contain no-repeat;
+}
+
+/* line 91, ../sass/web.scss */
 .web-portfolio-wrapper section {
   height: 100vh;
+}
+
+/******* Responsiveness ********/
+@media (max-width: 900px) {
+  /* line 104, ../sass/web.scss */
+  .content .image-container {
+    width: 70%;
+    height: 55%;
+  }
+  /* line 109, ../sass/web.scss */
+  .content .title {
+    margin: 5%;
+  }
+}
+@media (max-width: 599px) {
+  /* line 117, ../sass/web.scss */
+  section.opening {
+    justify-content: flex-start;
+    height: 80vh;
+  }
+
+  /* line 121, ../sass/web.scss */
+  .content {
+    flex-flow: column-reverse nowrap;
+  }
+  /* line 123, ../sass/web.scss */
+  .content .image-container {
+    width: 90%;
+  }
+  /* line 127, ../sass/web.scss */
+  .content .title {
+    color: white;
+    border-top: none;
+    margin-bottom: 20vh;
+    text-align: left;
+  }
+  /* line 133, ../sass/web.scss */
+  .content .title h2 {
+    font-size: 10vmin;
+  }
+
+  /* line 140, ../sass/web.scss */
+  div.background-images.waves {
+    top: -20vh;
+    background: url("../raw/web/mobile-waves.png") center/cover no-repeat;
+  }
+  /* line 144, ../sass/web.scss */
+  div.background-images.shapes {
+    z-index: 0;
+  }
+  /* line 146, ../sass/web.scss */
+  div.background-images.shapes .circle {
+    bottom: 40vh;
+    right: -20vw;
+    width: 270px;
+    height: 270px;
+  }
 }

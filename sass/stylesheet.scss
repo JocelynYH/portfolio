@@ -5,7 +5,6 @@
   @media (max-width: 350px) { @content; }
 }
 
-
 @mixin for-tablet-portrait-down {
   @media (max-width: 599px) { @content; }
 }
