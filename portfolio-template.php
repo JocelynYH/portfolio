@@ -25,8 +25,9 @@
             
             <div id="menu" class='button-container'>
                 <div id="new-menu">
-
+                    <h4 class='no-marg'>menu</h4>
                     <div class="open">
+                       
                         <span class="cls"></span>
                         <span>
                             <ul class="sub-menu ">
@@ -87,14 +88,16 @@ var height = $(".waves").outerHeight(); //gets height of header
 $(window).scroll(function(){
     if($(window).scrollTop() > (topofDiv + height)){
         console.log('height recognized');
-       $("#fixed-nav-container #view-all h4").addClass('dblue');
+       $("#fixed-nav-container h4").addClass('dblue');
+         $("#fixed-nav-container #new-menu h4").addClass('dblue');
         $('#fixed-nav-container').append('<style>.open:before{color: #3d52a1!important;}</style>');
         $("#fixed-nav-container .open span").addClass('bkg-dblue');
         $('rect').css("fill", "#3d52a1");
         
     }
     else{
-       $("#fixed-nav-container #view-all h4").removeClass('dblue');
+       $("#fixed-nav-container h4").removeClass('dblue');
+        $("#fixed-nav-container #new-menu h4").removeClass('dblue');
         $('#fixed-nav-container').append('<style>.open:before{color: white!important;}</style>');
         $("#fixed-nav-container .open span").removeClass('bkg-dblue');
         $('rect').css("fill", "white");

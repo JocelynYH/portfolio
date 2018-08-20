@@ -10,6 +10,7 @@ section.opening {
     @include flexboxcenter();
     flex-flow: column wrap;
     overflow-y: visible;
+    overflow-x: hidden;
 }
 
 /*** CONTENT ***/
@@ -19,7 +20,8 @@ section.opening {
     @include flexbox();
     @include flexboxcenter();
     flex-flow: column nowrap;
-    margin: 5%; // Computer image
+    margin-top: 100px; 
+    // Computer image
     & .image-container {
         width: 50%;
         height: 30%;
@@ -116,7 +118,7 @@ div.background-images {
 @include for-tablet-portrait-down {
     section.opening {
         justify-content: flex-start;
-        height: 80vh;
+        height: 100vh;
     }
      .content {
          flex-flow: column-reverse nowrap;
@@ -144,7 +146,7 @@ div.background-images {
         &.shapes {
             z-index: 0;
             .circle {
-                bottom: 40vh;
+                bottom: 35vh;
                 right: -20vw;
                 width: 270px;
                 height: 270px;

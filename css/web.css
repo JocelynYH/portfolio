@@ -212,10 +212,11 @@ section.opening {
   justify-content: center;
   flex-flow: column wrap;
   overflow-y: visible;
+  overflow-x: hidden;
 }
 
 /*** CONTENT ***/
-/* line 17, ../sass/web.scss */
+/* line 18, ../sass/web.scss */
 .content {
   z-index: 200;
   display: -webkit-box;
@@ -227,9 +228,9 @@ section.opening {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  margin: 5%;
+  margin-top: 100px;
 }
-/* line 23, ../sass/web.scss */
+/* line 25, ../sass/web.scss */
 .content .image-container {
   width: 50%;
   height: 30%;
@@ -239,30 +240,30 @@ section.opening {
   background: white;
   border: 3px solid #dddfe2;
 }
-/* line 31, ../sass/web.scss */
+/* line 33, ../sass/web.scss */
 .content .image-container img {
   width: 100%;
   height: 100%;
 }
-/* line 36, ../sass/web.scss */
+/* line 38, ../sass/web.scss */
 .content .title {
   text-align: center;
   color: #2ba4c0;
   border-top: 3px solid #dddfe2;
   margin-top: 4%;
 }
-/* line 41, ../sass/web.scss */
+/* line 43, ../sass/web.scss */
 .content .title h2 {
   margin-top: 2%;
   font-size: 5vmin;
 }
 
 /*** BACKGROUND IMAGES ***/
-/* line 50, ../sass/web.scss */
+/* line 52, ../sass/web.scss */
 div.background-images {
   position: absolute;
 }
-/* line 52, ../sass/web.scss */
+/* line 54, ../sass/web.scss */
 div.background-images.waves {
   top: -20vh;
   width: 100%;
@@ -271,17 +272,17 @@ div.background-images.waves {
   left: 0;
   background: url("../raw/web/opening-waves.svg") center/cover no-repeat;
 }
-/* line 59, ../sass/web.scss */
+/* line 61, ../sass/web.scss */
 div.background-images.waves img {
   max-height: 70%;
 }
-/* line 63, ../sass/web.scss */
+/* line 65, ../sass/web.scss */
 div.background-images.shapes {
   width: 100%;
   z-index: -100;
   height: 100%;
 }
-/* line 67, ../sass/web.scss */
+/* line 69, ../sass/web.scss */
 div.background-images.shapes .circle {
   right: 0;
   bottom: 0;
@@ -290,7 +291,7 @@ div.background-images.shapes .circle {
   position: absolute;
   background: url("../raw/web/pink-circle-outline.svg") center/cover no-repeat;
 }
-/* line 76, ../sass/web.scss */
+/* line 78, ../sass/web.scss */
 div.background-images.shapes .stripes {
   left: 0;
   bottom: 0;
@@ -300,62 +301,62 @@ div.background-images.shapes .stripes {
   background: url("../raw/web/blue-stripes.svg") -100px 100px/contain no-repeat;
 }
 
-/* line 91, ../sass/web.scss */
+/* line 93, ../sass/web.scss */
 .web-portfolio-wrapper section {
   height: 100vh;
 }
 
 /******* Responsiveness ********/
 @media (max-width: 900px) {
-  /* line 104, ../sass/web.scss */
+  /* line 106, ../sass/web.scss */
   .content .image-container {
     width: 70%;
     height: 55%;
   }
-  /* line 109, ../sass/web.scss */
+  /* line 111, ../sass/web.scss */
   .content .title {
     margin: 5%;
   }
 }
 @media (max-width: 599px) {
-  /* line 117, ../sass/web.scss */
+  /* line 119, ../sass/web.scss */
   section.opening {
     justify-content: flex-start;
-    height: 80vh;
+    height: 100vh;
   }
 
-  /* line 121, ../sass/web.scss */
+  /* line 123, ../sass/web.scss */
   .content {
     flex-flow: column-reverse nowrap;
   }
-  /* line 123, ../sass/web.scss */
+  /* line 125, ../sass/web.scss */
   .content .image-container {
     width: 90%;
   }
-  /* line 127, ../sass/web.scss */
+  /* line 129, ../sass/web.scss */
   .content .title {
     color: white;
     border-top: none;
     margin-bottom: 20vh;
     text-align: left;
   }
-  /* line 133, ../sass/web.scss */
+  /* line 135, ../sass/web.scss */
   .content .title h2 {
     font-size: 10vmin;
   }
 
-  /* line 140, ../sass/web.scss */
+  /* line 142, ../sass/web.scss */
   div.background-images.waves {
     top: -20vh;
     background: url("../raw/web/mobile-waves.png") center/cover no-repeat;
   }
-  /* line 144, ../sass/web.scss */
+  /* line 146, ../sass/web.scss */
   div.background-images.shapes {
     z-index: 0;
   }
-  /* line 146, ../sass/web.scss */
+  /* line 148, ../sass/web.scss */
   div.background-images.shapes .circle {
-    bottom: 40vh;
+    bottom: 35vh;
     right: -20vw;
     width: 270px;
     height: 270px;
