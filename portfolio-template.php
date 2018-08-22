@@ -127,7 +127,72 @@
             </div>
         </section>
         
-        <section class='site-preview'></section>
+        <section class='site-preview'>
+           
+           <div class="computer-container">
+               <img src="raw/web/Cville-mac-desktop.png" alt="" class="computer">
+               <div class="iframe-container">
+                   <iframe src="http://jocelynhuang.com/vector/" frameborder="0">
+                
+            </iframe>
+               </div>
+                
+           </div>
+
+        </section>
+        
+        <section class="explore-more">
+            <h2>Explore Next</h2>
+            <div class="tiles">
+                <div class="image-container">
+                    <img src="raw/Foodio-tile.png" alt="">
+                </div>
+                <div class="image-container">
+                    <img src="raw/Foodio-tile.png" alt="">
+                </div>
+                <div class="image-container">
+                    <img src="raw/Foodio-tile.png" alt="">
+                </div>
+            </div>
+            
+            <button class='general'><a href=""><h3>View All</h3></a></button>
+        </section>
+        
+        <footer>
+<div class="waves-container"><img src="raw/web/footer_footer.png" alt="">
+                </div>          <div class="content">
+                  <div class="sm-links">
+                            <h2 class='contact-title'>Find Me On:</h2>
+                            <ul class='sm-link-container sm'>
+                
+                                <li class='sm'>
+                                    <a href="https://www.linkedin.com/in/jocelyn-yuan-huang/" class="transparency sm" target="_blank">
+                                        <span class='sm'>LinkedIn</span>
+                                        <i class="sm" data-text='github'>
+                                            <?php echo file_get_contents("raw/icons/001-linkedin-logo.svg"); ?>
+                               
+                                  </i>
+                                   </a>
+                                </li>
+                
+                
+                                <li class='sm'>
+                                    <a href="https://github.com/jocelynyh" class="transparency sm" target="_blank"><span class='sm'>Github</span><i class="sm">
+                                    <?php echo file_get_contents("raw/icons/002-github-logo.svg"); ?></i></a>
+                                </li>
+                
+                                <li class='sm'>
+                                    <a href="https://drive.google.com/file/d/195V9JnurYC8zP1tEK8VUzIcOz5994o9z/view?usp=sharing" class="transparency sm" target='_blank'><span class='sm'>Resume</span><i class="sm">
+                                   <?php echo file_get_contents("raw/icons/003-resume.svg"); ?></i></a>
+                                </li>
+                                <li class='sm'>
+                                    <a href="mailto:jocelynyh4@gmail.com" class="transparency sm" target='_blank'><span class='sm'>Email</span><i class="sm">
+                                   <?php echo file_get_contents("raw/icons/envelope.svg"); ?></i></a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </footer>
     </div>
 <script>
 $("#header-2").hide(); // hide the fixed navbar initially

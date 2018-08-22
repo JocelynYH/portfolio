@@ -339,9 +339,158 @@ div.info-card {
 /***********************/
 
 section.site-preview {
-    background-color:black;
-    width:500px;
-    height:50px;
-    border-bottom-left-radius:50%;
-    border-bottom-right-radius:50%;
+    @include flexbox();
+    @include flexboxcenter();
+    background-color: $grey-bkg;
+    position: relative;
+    height: calc((100vh)-100px);
+    margin: 160px auto;
+//    background: $grey-bkg url('../raw/web/Cville-mac-desktop.png') center / contain no-repeat;
+    &::after, &::before {
+        content: '';
+        width: 100%;
+        height: 50px;
+        background-color: $grey-bkg;
+        position: absolute;
+    }
+    
+    &::after {
+        bottom: -50px;
+         border-bottom-left-radius:50%;
+        border-bottom-right-radius:50%;
+    }
+    
+    &::before {
+        top: -50px;
+        border-top-left-radius:50%;
+        border-top-right-radius:50%;
+    }
+    
+    iframe {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+.computer-container {
+    position: relative;
+    img.computer {
+        width: 100%;
+        height: 100%;
+    }
+    .iframe-container {
+        position: absolute;
+        top: 13.7%;
+        left: 19.8%;
+        width: 75.4%;
+        height: 62.8%;
+        & iframe {
+            border: none;
+        }
+    }
+}
+
+
+/***********************/
+/***** EXPLORE-MORE ****/
+/***********************/
+
+section.explore-more {
+    height: 60vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,eef5f7+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 1%, #e9ebee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 1%,#e9ebee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 1%,#e9ebee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9ebee',GradientType=0 ); /* IE6-9 */
+    
+    & h2 {
+        color: $dblue;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+div.tiles {
+    height: auto;
+    @include flexbox();
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto 4%;
+}
+
+.image-container {
+    z-index: 100;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    border: 3px solid #dddfe2;
+    width: 26%;
+    height: auto;
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+button.general {
+    background: $dblue;
+    color: white;
+    border-radius: 15px;
+    margin: 6% auto;
+    display: block;
+    padding: 0px 20px;
+    a {
+        padding: 20px 30px;
+    }
+}
+
+
+/***********************/
+/******* FOOTER *******/
+/***********************/
+
+footer {
+//    background: $grey-bkg url('../raw/web/footer_footer.png') bottom / contain no-repeat;
+    background: $grey-bkg;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    z-index: 1;
+    @include flexbox();
+    @include flexboxcenter();
+    & .waves-container {
+        height: 50vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        z-index: -1;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+div.content {
+    z-index: 3;
+    width: 80%;
+    margin-top: 11%;
+}
+    
+ul.sm {
+    margin-top: 7%;
+    padding: 0px;
+}
+
+ul.sm li.sm .transparency {
+ border-color: white;
+}
+
+
+ul.sm li.sm a svg {
+    fill: white;
 }

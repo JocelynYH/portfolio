@@ -171,15 +171,18 @@ p, input, textarea {
 /* line 226, ../sass/stylesheet.scss */
 a {
   font-family: 'Futura', 'arial', serif;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* line 230, ../sass/stylesheet.scss */
+/* line 233, ../sass/stylesheet.scss */
 .bold {
   font-weight: bold;
 }
 
 /****** COLORS *********/
-/* line 254, ../sass/stylesheet.scss */
+/* line 259, ../sass/stylesheet.scss */
 body {
   padding: 0;
   margin: 0;
@@ -188,15 +191,111 @@ body {
   height: 100%;
 }
 
-/* line 262, ../sass/stylesheet.scss */
+/* line 267, ../sass/stylesheet.scss */
 .content-item a {
   text-decoration: none;
   color: white;
 }
 
-/* line 268, ../sass/stylesheet.scss */
+/* line 273, ../sass/stylesheet.scss */
 input {
   border: none;
+}
+
+/****** FOOTER *********/
+/* line 283, ../sass/stylesheet.scss */
+div.sm-links {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 289, ../sass/stylesheet.scss */
+li.sm {
+  cursor: pointer;
+}
+
+/* line 292, ../sass/stylesheet.scss */
+ul.sm {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  margin-top: 30px;
+}
+/* line 300, ../sass/stylesheet.scss */
+ul.sm li.sm a {
+  display: block;
+  margin-left: -2px;
+  height: 60px;
+  width: 60px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  background: #FFF;
+  margin-bottom: 1em;
+  transition: all .4s ease;
+  color: #2980b9;
+  text-decoration: none;
+  line-height: 60px;
+  position: relative;
+}
+/* line 314, ../sass/stylesheet.scss */
+ul.sm li.sm a span {
+  padding: 0 30px 0 15px;
+  position: absolute;
+  left: -120px;
+  transition: left .4s ease;
+  display: none;
+}
+/* line 321, ../sass/stylesheet.scss */
+ul.sm li.sm a:hover {
+  cursor: pointer;
+  width: 180px;
+  color: #fff;
+}
+/* line 325, ../sass/stylesheet.scss */
+ul.sm li.sm a:hover span {
+  left: 0;
+  display: initial;
+}
+/* line 329, ../sass/stylesheet.scss */
+ul.sm li.sm a:hover svg {
+  fill: #fff;
+  margin-left: 20px;
+}
+/* line 334, ../sass/stylesheet.scss */
+ul.sm li.sm a:hover i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  left: 50%;
+}
+/* line 343, ../sass/stylesheet.scss */
+ul.sm li.sm a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  width: .8em;
+  height: .8em;
+  fill: #3d52a1;
+}
+/* line 355, ../sass/stylesheet.scss */
+ul.sm li.sm .transparency {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: #3d52a1;
+  color: #3d52a1;
+}
+/* line 359, ../sass/stylesheet.scss */
+ul.sm li.sm .transparency:hover {
+  background: #3d52a1;
 }
 
 /***********************/
@@ -563,9 +662,191 @@ div.info-card {
 /***********************/
 /* line 341, ../sass/web.scss */
 section.site-preview {
-  background-color: black;
-  width: 500px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ebee;
+  position: relative;
+  height: calc((100vh)-100px);
+  margin: 160px auto;
+}
+/* line 349, ../sass/web.scss */
+section.site-preview::after, section.site-preview::before {
+  content: '';
+  width: 100%;
   height: 50px;
+  background-color: #e9ebee;
+  position: absolute;
+}
+/* line 357, ../sass/web.scss */
+section.site-preview::after {
+  bottom: -50px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+}
+/* line 363, ../sass/web.scss */
+section.site-preview::before {
+  top: -50px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+/* line 369, ../sass/web.scss */
+section.site-preview iframe {
+  height: 80%;
+  width: 80%;
+}
+
+/* line 375, ../sass/web.scss */
+.computer-container {
+  position: relative;
+}
+/* line 377, ../sass/web.scss */
+.computer-container img.computer {
+  width: 100%;
+  height: 100%;
+}
+/* line 381, ../sass/web.scss */
+.computer-container .iframe-container {
+  position: absolute;
+  top: 13.7%;
+  left: 19.8%;
+  width: 75.4%;
+  height: 62.8%;
+}
+/* line 387, ../sass/web.scss */
+.computer-container .iframe-container iframe {
+  border: none;
+}
+
+/***********************/
+/***** EXPLORE-MORE ****/
+/***********************/
+/* line 398, ../sass/web.scss */
+section.explore-more {
+  height: 60vh;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,eef5f7+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 1%, #e9ebee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 1%, #e9ebee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 1%, #e9ebee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9ebee',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 407, ../sass/web.scss */
+section.explore-more h2 {
+  color: #3d52a1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 414, ../sass/web.scss */
+div.tiles {
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto 4%;
+}
+
+/* line 422, ../sass/web.scss */
+.image-container {
+  z-index: 100;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  border: 3px solid #dddfe2;
+  width: 26%;
+  height: auto;
+}
+/* line 430, ../sass/web.scss */
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 436, ../sass/web.scss */
+button.general {
+  background: #3d52a1;
+  color: white;
+  border-radius: 15px;
+  margin: 6% auto;
+  display: block;
+  padding: 0px 20px;
+}
+/* line 443, ../sass/web.scss */
+button.general a {
+  padding: 20px 30px;
+}
+
+/***********************/
+/******* FOOTER *******/
+/***********************/
+/* line 453, ../sass/web.scss */
+footer {
+  background: #e9ebee;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 462, ../sass/web.scss */
+footer .waves-container {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  z-index: -1;
+}
+/* line 471, ../sass/web.scss */
+footer .waves-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 478, ../sass/web.scss */
+div.content {
+  z-index: 3;
+  width: 80%;
+  margin-top: 11%;
+}
+
+/* line 484, ../sass/web.scss */
+ul.sm {
+  margin-top: 7%;
+  padding: 0px;
+}
+
+/* line 489, ../sass/web.scss */
+ul.sm li.sm .transparency {
+  border-color: white;
+}
+
+/* line 494, ../sass/web.scss */
+ul.sm li.sm a svg {
+  fill: white;
 }
