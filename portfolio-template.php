@@ -52,14 +52,22 @@
             </div>
         </nav>
 
+       <div class="stripes"></div>
+                <div class="circle"></div>
+       
+       
+<!--       OPENING         -->
         <section class='opening'>
            <div class="background-images waves">
-<!--               <img src="raw/web/opening-waves.svg" alt="">-->
            </div>
            
            <div class="background-images shapes">
-                <div class="stripes"></div>
-                <div class="circle"></div>
+                <!--
+                   <img class='shape-stripes' src="raw/web/blue-stripes.svg" alt="">
+                    <img class='shape-circle' src="raw/web/pink-circle-outline.svg" alt="">
+                    
+-->
+                
            </div>
            
           
@@ -75,9 +83,51 @@
             </div>
             
         </section>
+        
+<!--       INFO         -->
 
-        <section></section>
-        <section></section>
+        <section class='info'>
+            <div class='border'></div>
+             <div class='pink-dotted-border'></div>
+             <div class="abs three-pink-stripes"></div>
+             <div class="abs pink-blob"></div>
+             <div class="abs pink-circle"></div>
+             <div class="abs blue-striped-circle"></div>
+             <div class="abs pink-outline-circle-2"></div>
+              <div class='info-card'>
+               <div class='company'>
+                   <h2>Foodio Inc.</h2>
+               </div>
+               <div class='challenge'>
+                   <h3>The Challenge</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                </div>
+               <div class='project'>
+                   <h3>The Project</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                </div>
+               
+               <div class="specs">
+                   <div class="role">
+                       <p><strong>Role</strong></p>
+                       <p>Front End Developer Intern</p>
+                   </div>
+                   
+                   <div class="areas">
+                       <p><strong>Areas</strong></p>
+                       <p>Web design, Development, Mockups</p>
+                   </div>
+                   
+                   <div class="tools">
+                       <p><strong>Tools</strong></p>
+                       <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                   </div>
+                   
+               </div>
+            </div>
+        </section>
+        
+        <section class='site-preview'></section>
     </div>
 <script>
 $("#header-2").hide(); // hide the fixed navbar initially

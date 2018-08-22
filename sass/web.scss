@@ -1,16 +1,44 @@
 @import "stylesheet.scss";
 
+/***********************/
+/******* ALL *******/
+/***********************/
 
+body {
+    background-color: white;
+}
+
+.web-portfolio-wrapper {
+    & section {
+        height: 100vh;
+//        border: 1px solid transparent;
+    }
+}
+
+.abs {
+    position: absolute;
+}
+
+
+/***********************/
+/******* OPENING *******/
+/***********************/
 
 section.opening {
-    //    background: url('../raw/web/opening-waves.svg') top / contain no-repeat;
-    border: 1px solid black;
     position: relative;
     @include flexbox();
     @include flexboxcenter();
     flex-flow: column wrap;
     overflow-y: visible;
     overflow-x: hidden;
+ 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eef5f7+0,ffffff+100 */
+background: #eef5f7; /* Old browsers */
+background: -moz-linear-gradient(top, #eef5f7 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #eef5f7 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #eef5f7 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 /*** CONTENT ***/
@@ -20,11 +48,11 @@ section.opening {
     @include flexbox();
     @include flexboxcenter();
     flex-flow: column nowrap;
-    margin-top: 100px; 
+//    margin-top: 100px; 
     // Computer image
     & .image-container {
         width: 50%;
-        height: 30%;
+        height: 50%;
         z-index: 100;
         border-radius: 15px;
         overflow: hidden;
@@ -39,7 +67,7 @@ section.opening {
         text-align: center;
         color: $lblue;
         border-top: 3px solid #dddfe2;
-        margin-top: 4%;
+        margin-top: 7%;
         & h2 {
             margin-top: 2%;
             font-size: 5vmin;
@@ -52,7 +80,7 @@ section.opening {
 div.background-images {
     position: absolute;
     &.waves {
-        top: -20vh;
+        top: -30vh;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -66,36 +94,29 @@ div.background-images {
         width: 100%;
         z-index: -100;
         height: 100%;
-        .circle {
-            right: 0;
-            bottom: 0;
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            background: url('../raw/web/pink-circle-outline.svg') center / cover no-repeat;
-        }
-
-        .stripes {
-            left: 0;
-            bottom: 0;
-            width: 300px;
-            height: 300px;
-            position: absolute;
-            background: url('../raw/web/blue-stripes.svg') -100px 100px / contain no-repeat;
-        }
+        
     }
 }
 
-
-
-
-.web-portfolio-wrapper {
-    & section {
-        height: 100vh;
-    }
+.circle {
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url('../raw/web/pink-circle-outline.svg') center / cover no-repeat;
+    z-index: 100;
 }
 
-
+.stripes {
+    left: 0;
+    bottom: -100px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: url('../raw/web/blue-stripes.svg') -100px 0px / contain no-repeat;
+    z-index: 100;
+}
 
 
 /******* Responsiveness ********/
@@ -104,26 +125,28 @@ div.background-images {
 @media (max-width: 900px) { 
     .content {
         & .image-container {
-            width: 70%;
+            width: 60%;
             height: 55%;
         }
         
         & .title {
-            margin: 5%;
+            margin: 7%;
+            margin-left: 10%;
         }
     }
 }
 
 
-@include for-tablet-portrait-down {
+@include for-small-phone {
     section.opening {
         justify-content: flex-start;
         height: 100vh;
     }
      .content {
          flex-flow: column-reverse nowrap;
+         margin-top: 100px;
         & .image-container {
-           width: 90%;
+           width: 76%;
         }
         
         & .title {
@@ -140,7 +163,7 @@ div.background-images {
     
     div.background-images {
         &.waves {
-            top: -20vh;
+            top: -35vh;
             background: url('../raw/web/mobile-waves.png') center / cover no-repeat;
         }
         &.shapes {
@@ -153,4 +176,172 @@ div.background-images {
             }
         }
     }
+}
+
+
+.shape-stripes {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    
+}
+
+/***********************/
+/***** INFORMATION *****/
+/***********************/
+
+section.info {
+    position: relative;
+    background: white;
+}
+
+div.info-card {
+    background: $dblue;
+    margin: 5% 10vw 0vw 10vw;
+    padding: 7% 5%;
+    padding-top: 9vw;
+    width: 60vw;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.company {
+    color: $dblue;
+    background: white;
+    width: auto;
+    position: relative;
+    &::before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 20px;
+        left: -20px;
+        
+    }
+}
+
+.border {
+    width: 95%;
+    height: 95%;
+    border: 1px solid $dblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.challenge, .project {
+    margin-top: 40px;
+    & h3 {
+        margin-bottom: 0px;
+    }
+    
+    & p {
+        margin-top: 10px;
+    }
+}
+
+
+.specs {
+    margin-top: 40px;
+}
+.specs p:nth-child(even) {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.specs p:nth-child(odd) {
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+
+.pink-dotted-border {
+    height: 40vh;
+    width: 78vw;
+    border: 3px dashed #eac3d0;
+    top:  50vh;
+    left: -20px;
+    position: absolute;
+}
+
+.three-pink-stripes {
+    top: 10vh;
+        left: -6%;
+    background: url('../raw/web/info-section-3-pink-stripes.svg') center / contain no-repeat;
+    width: 24vw;
+    height: 30%;
+}
+
+.pink-blob {
+    bottom: -16vh;
+    left: -2.5%;
+    background: url(../raw/web/info-section-pink-blob.svg) center/contain no-repeat;
+    width: 13vw;
+    height: 30%;
+}
+
+.pink-circle {
+    bottom: 40vh;
+    right: 0%;
+    background: url('../raw/web/info-section-pink-circle-2.svg') center / contain no-repeat;
+    width: 15vmax;
+    height: 35vw;
+}
+
+.blue-striped-circle {
+    bottom: 6vh;
+    left: 55vw;
+    background: url(../raw/web/info-section-blue-circle.svg) center/contain no-repeat;
+    width: 30vw;
+    height: 30%;
+}
+
+.pink-outline-circle-2 {
+    top: 0vh;
+    right: 2%;
+    background: url(../raw/web/info-section-half-circle.svg) center/contain no-repeat;
+    width: 40vw;
+    height: 30%;
+}
+
+// Responsiveness 
+
+@include for-tablet-landscape-down {
+    div.info-card {
+        width: 60vw;
+    }   
+}
+
+
+@include for-tablet-portrait-down {
+    div.info-card {
+        margin: auto;
+    }
+}
+
+@include for-small-phone {
+    div.info-card {
+        width: 80vw;
+    }
+    
+    section.info {
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+/***********************/
+/***** SITE-PREVIEW *****/
+/***********************/
+
+section.site-preview {
+    background-color:black;
+    width:500px;
+    height:50px;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
 }

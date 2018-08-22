@@ -30,155 +30,156 @@
   src: url("../fonts/Futura/Futura-Bold.otf") format("opentype"), url("../fonts/Futura/Futura-Bold.woff") format("woff"), url("../fonts/Futura/Futura-Bold-03.woff2") format("woff2"), url("../fonts/Futura/Futura-Bold-03.ttf") format("truetype");
   font-weight: bold;
 }
-/* line 115, ../sass/stylesheet.scss */
+/* line 120, ../sass/stylesheet.scss */
 h1 {
   font-size: 7vmax;
   font-family: 'SFN Republic', 'arial', serif;
 }
 @media (min-width: 351px) {
-  /* line 115, ../sass/stylesheet.scss */
+  /* line 120, ../sass/stylesheet.scss */
   h1 {
     font-size: 9vmax;
   }
 }
 @media (max-width: 599px) {
-  /* line 115, ../sass/stylesheet.scss */
+  /* line 120, ../sass/stylesheet.scss */
   h1 {
     font-size: 8vmax;
   }
 }
 @media (min-width: 1800px) {
-  /* line 115, ../sass/stylesheet.scss */
+  /* line 120, ../sass/stylesheet.scss */
   h1 {
     font-size: 8vmax;
   }
 }
 
-/* line 141, ../sass/stylesheet.scss */
+/* line 146, ../sass/stylesheet.scss */
 h2 {
   font-family: 'Futura', 'arial', serif;
   margin: 0px;
 }
 @media (min-width: 351px) {
-  /* line 141, ../sass/stylesheet.scss */
+  /* line 146, ../sass/stylesheet.scss */
   h2 {
     font-size: 7vmin;
   }
 }
 @media (min-width: 600px) {
-  /* line 141, ../sass/stylesheet.scss */
+  /* line 146, ../sass/stylesheet.scss */
   h2 {
     font-size: 5vmin;
   }
 }
 @media (min-width: 900px) {
-  /* line 141, ../sass/stylesheet.scss */
+  /* line 146, ../sass/stylesheet.scss */
   h2 {
     font-size: 5vmin;
   }
 }
 @media (min-width: 1200px) {
-  /* line 141, ../sass/stylesheet.scss */
+  /* line 146, ../sass/stylesheet.scss */
   h2 {
     font-size: 5vmin;
   }
 }
 @media (min-width: 1800px) {
-  /* line 141, ../sass/stylesheet.scss */
+  /* line 146, ../sass/stylesheet.scss */
   h2 {
     font-size: 8vmin;
   }
 }
 
-/* line 166, ../sass/stylesheet.scss */
+/* line 171, ../sass/stylesheet.scss */
 h3 {
   font-family: 'Futura', 'arial', serif;
   margin: 0px;
 }
 @media (min-width: 351px) {
-  /* line 166, ../sass/stylesheet.scss */
+  /* line 171, ../sass/stylesheet.scss */
   h3 {
     font-size: 3vmin;
   }
 }
 @media (min-width: 600px) {
-  /* line 166, ../sass/stylesheet.scss */
+  /* line 171, ../sass/stylesheet.scss */
   h3 {
-    font-size: 4vmin;
+    font-size: 2.5vmin;
   }
 }
 @media (min-width: 900px) {
-  /* line 166, ../sass/stylesheet.scss */
+  /* line 171, ../sass/stylesheet.scss */
   h3 {
-    font-size: 4vmin;
+    font-size: 2.5vmin;
   }
 }
 @media (min-width: 1200px) {
-  /* line 166, ../sass/stylesheet.scss */
+  /* line 171, ../sass/stylesheet.scss */
   h3 {
-    font-size: 4vmin;
+    font-size: 2.5vmin;
   }
 }
 @media (min-width: 1800px) {
-  /* line 166, ../sass/stylesheet.scss */
+  /* line 171, ../sass/stylesheet.scss */
   h3 {
     font-size: 4vmin;
   }
 }
 
-/* line 191, ../sass/stylesheet.scss */
+/* line 196, ../sass/stylesheet.scss */
 h4 {
   font-family: 'Futura', 'arial', serif;
 }
 
-/* line 195, ../sass/stylesheet.scss */
+/* line 200, ../sass/stylesheet.scss */
 p, input, textarea {
   font-family: 'raleway';
 }
 @media (min-width: 351px) {
-  /* line 195, ../sass/stylesheet.scss */
+  /* line 200, ../sass/stylesheet.scss */
   p, input, textarea {
     font-size: 15px;
     line-height: 1.2em;
   }
 }
 @media (min-width: 600px) {
-  /* line 195, ../sass/stylesheet.scss */
+  /* line 200, ../sass/stylesheet.scss */
   p, input, textarea {
     font-size: 15px;
     line-height: 1.4em;
   }
 }
 @media (min-width: 900px) {
-  /* line 195, ../sass/stylesheet.scss */
+  /* line 200, ../sass/stylesheet.scss */
   p, input, textarea {
     font-size: 15px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 195, ../sass/stylesheet.scss */
+  /* line 200, ../sass/stylesheet.scss */
   p, input, textarea {
     font-size: 15px;
   }
 }
 @media (min-width: 1800px) {
-  /* line 195, ../sass/stylesheet.scss */
+  /* line 200, ../sass/stylesheet.scss */
   p, input, textarea {
     font-size: 1.4vmax;
   }
 }
 
-/* line 221, ../sass/stylesheet.scss */
+/* line 226, ../sass/stylesheet.scss */
 a {
   font-family: 'Futura', 'arial', serif;
 }
 
-/* line 225, ../sass/stylesheet.scss */
+/* line 230, ../sass/stylesheet.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 246, ../sass/stylesheet.scss */
+/****** COLORS *********/
+/* line 254, ../sass/stylesheet.scss */
 body {
   padding: 0;
   margin: 0;
@@ -187,13 +188,13 @@ body {
   height: 100%;
 }
 
-/* line 254, ../sass/stylesheet.scss */
+/* line 262, ../sass/stylesheet.scss */
 .content-item a {
   text-decoration: none;
   color: white;
 }
 
-/* line 260, ../sass/stylesheet.scss */
+/* line 268, ../sass/stylesheet.scss */
 input {
   border: none;
 }

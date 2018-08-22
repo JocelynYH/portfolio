@@ -16,6 +16,11 @@
 @mixin for-tablet-portrait-up {
   @media (min-width: 600px) { @content; }
 }
+
+@mixin for-tablet-landscape-down {
+  @media (max-width: 900px) { @content; }
+}
+
 @mixin for-tablet-landscape-up {
   @media (min-width: 900px) { @content; }
 }
@@ -172,15 +177,15 @@ h3 {
     }
     
     @include for-tablet-portrait-up {
-        font-size: 4vmin;
+        font-size: 2.5vmin;
     }
     
     @include for-tablet-landscape-up {
-        font-size: 4vmin;
+        font-size: 2.5vmin;
     }
     
     @include for-desktop-up {
-        font-size: 4vmin;
+        font-size: 2.5vmin;
     }
     
     @include for-tv-up {
@@ -234,6 +239,9 @@ a {
     display: -webkit-flex;
     display: flex;
 }
+
+
+/****** COLORS *********/
 
 $test-border: 2px solid green;
 $pink: #f06490;
