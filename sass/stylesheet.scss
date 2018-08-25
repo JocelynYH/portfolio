@@ -152,15 +152,15 @@ h2 {
     }
     
     @include for-tablet-portrait-up {
-        font-size: 5vmin;
+        font-size: 40px;
     }
     
     @include for-tablet-landscape-up {
-        font-size: 5vmin;
+        font-size: 50px;
     }
     
     @include for-desktop-up {
-        font-size: 5vmin;
+        font-size: 50px;
     }
     
     @include for-tv-up {
@@ -251,6 +251,7 @@ $pink: #f06490;
 $lblue: #2ba4c0;
 $transblue: rgba(43, 164, 192, .85);
 $dblue: #3d52a1;
+$dblue-active: #314281;
 $moonblue: #d4eef6;
 $lpink: #eac3d0;
 $grey-bkg: #e9ebee;

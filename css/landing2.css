@@ -69,19 +69,19 @@ h2 {
 @media (min-width: 600px) {
   /* line 146, ../sass/stylesheet.scss */
   h2 {
-    font-size: 5vmin;
+    font-size: 40px;
   }
 }
 @media (min-width: 900px) {
   /* line 146, ../sass/stylesheet.scss */
   h2 {
-    font-size: 5vmin;
+    font-size: 50px;
   }
 }
 @media (min-width: 1200px) {
   /* line 146, ../sass/stylesheet.scss */
   h2 {
-    font-size: 5vmin;
+    font-size: 50px;
   }
 }
 @media (min-width: 1800px) {
@@ -183,7 +183,7 @@ a {
 }
 
 /****** COLORS *********/
-/* line 259, ../sass/stylesheet.scss */
+/* line 260, ../sass/stylesheet.scss */
 body {
   padding: 0;
   margin: 0;
@@ -192,31 +192,31 @@ body {
   height: 100%;
 }
 
-/* line 267, ../sass/stylesheet.scss */
+/* line 268, ../sass/stylesheet.scss */
 .content-item a {
   text-decoration: none;
   color: white;
 }
 
-/* line 273, ../sass/stylesheet.scss */
+/* line 274, ../sass/stylesheet.scss */
 input {
   border: none;
 }
 
 /****** FOOTER *********/
-/* line 283, ../sass/stylesheet.scss */
+/* line 284, ../sass/stylesheet.scss */
 div.sm-links {
   margin-top: 60px;
   text-align: center;
   width: 100%;
 }
 
-/* line 289, ../sass/stylesheet.scss */
+/* line 290, ../sass/stylesheet.scss */
 li.sm {
   cursor: pointer;
 }
 
-/* line 292, ../sass/stylesheet.scss */
+/* line 293, ../sass/stylesheet.scss */
 ul.sm {
   list-style: none;
   width: 100%;
@@ -230,7 +230,7 @@ ul.sm {
   flex-flow: row nowrap;
   margin-top: 30px;
 }
-/* line 300, ../sass/stylesheet.scss */
+/* line 301, ../sass/stylesheet.scss */
 ul.sm li.sm a {
   display: block;
   margin-left: -2px;
@@ -246,7 +246,7 @@ ul.sm li.sm a {
   line-height: 60px;
   position: relative;
 }
-/* line 314, ../sass/stylesheet.scss */
+/* line 315, ../sass/stylesheet.scss */
 ul.sm li.sm a span {
   padding: 0 30px 0 15px;
   position: absolute;
@@ -254,30 +254,30 @@ ul.sm li.sm a span {
   transition: left .4s ease;
   display: none;
 }
-/* line 321, ../sass/stylesheet.scss */
+/* line 322, ../sass/stylesheet.scss */
 ul.sm li.sm a:hover {
   cursor: pointer;
   width: 180px;
   color: #fff;
 }
-/* line 325, ../sass/stylesheet.scss */
+/* line 326, ../sass/stylesheet.scss */
 ul.sm li.sm a:hover span {
   left: 0;
   display: initial;
 }
-/* line 329, ../sass/stylesheet.scss */
+/* line 330, ../sass/stylesheet.scss */
 ul.sm li.sm a:hover svg {
   fill: #fff;
   margin-left: 20px;
 }
-/* line 334, ../sass/stylesheet.scss */
+/* line 335, ../sass/stylesheet.scss */
 ul.sm li.sm a:hover i {
   position: absolute;
   right: 0px;
   top: 50%;
   left: 50%;
 }
-/* line 343, ../sass/stylesheet.scss */
+/* line 344, ../sass/stylesheet.scss */
 ul.sm li.sm a svg {
   position: absolute;
   top: 50%;
@@ -288,13 +288,13 @@ ul.sm li.sm a svg {
   height: .8em;
   fill: #3d52a1;
 }
-/* line 355, ../sass/stylesheet.scss */
+/* line 356, ../sass/stylesheet.scss */
 ul.sm li.sm .transparency {
   background: rgba(255, 255, 255, 0.5);
   border-color: #3d52a1;
   color: #3d52a1;
 }
-/* line 359, ../sass/stylesheet.scss */
+/* line 360, ../sass/stylesheet.scss */
 ul.sm li.sm .transparency:hover {
   background: #3d52a1;
 }

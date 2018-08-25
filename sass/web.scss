@@ -1,17 +1,68 @@
 @import "stylesheet.scss";
 
+@mixin gradient-greytowhite{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9ebee+0,ffffff+100 */
+background: #e9ebee; /* Old browsers */
+background: -moz-linear-gradient(top, #e9ebee 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e9ebee 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e9ebee 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9ebee', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradient-whitetogrey {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e9ebee+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #e9ebee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#e9ebee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#e9ebee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9ebee',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradient-whitetoblue {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,3d52a1+48 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #3d52a1 48%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#3d52a1 48%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#3d52a1 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#3d52a1',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradient-bluetransition {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#384c94+0,3d52a1+100 */
+background: #384c94; /* Old browsers */
+background: -moz-linear-gradient(top, #384c94 0%, #3d52a1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #384c94 0%,#3d52a1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #384c94 0%,#3d52a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#384c94', endColorstr='#3d52a1',GradientType=0 ); /* IE6-9 */
+}
+
 /***********************/
 /******* ALL *******/
 /***********************/
 
 body {
     background-color: white;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 .web-portfolio-wrapper {
+    height: 100%;
     & section {
-        height: 100vh;
+        height: auto;
 //        border: 1px solid transparent;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1400px) { 
+
+    .web-portfolio-wrapper section.opening, .web-portfolio-wrapper section.info {
+        min-height: 700px;
     }
 }
 
@@ -48,6 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f7', end
     @include flexbox();
     @include flexboxcenter();
     flex-flow: column nowrap;
+        margin: auto 10%;
 //    margin-top: 100px; 
     // Computer image
     & .image-container {
@@ -65,12 +117,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f7', end
     } // Title
     & .title {
         text-align: center;
-        color: $lblue;
+        color: $dblue;
         border-top: 3px solid #dddfe2;
         margin-top: 7%;
         & h2 {
             margin-top: 2%;
-            font-size: 5vmin;
         }
     }
 }
@@ -119,73 +170,6 @@ div.background-images {
 }
 
 
-/******* Responsiveness ********/
-
-// 900 px and down
-@media (max-width: 900px) { 
-    .content {
-        & .image-container {
-            width: 60%;
-            height: 55%;
-        }
-        
-        & .title {
-            margin: 7%;
-            margin-left: 10%;
-        }
-    }
-}
-
-
-@include for-small-phone {
-    section.opening {
-        justify-content: flex-start;
-        height: 100vh;
-    }
-     .content {
-         flex-flow: column-reverse nowrap;
-         margin-top: 100px;
-        & .image-container {
-           width: 76%;
-        }
-        
-        & .title {
-            color: white;
-            border-top: none;
-//            border-bottom: 1px solid #eadfe4;
-            margin-bottom: 20vh;
-            text-align: left;
-            & h2 {
-                font-size: 10vmin;
-            }
-        }
-    }
-    
-    div.background-images {
-        &.waves {
-            top: -35vh;
-            background: url('../raw/web/mobile-waves.png') center / cover no-repeat;
-        }
-        &.shapes {
-            z-index: 0;
-            .circle {
-                bottom: 35vh;
-                right: -20vw;
-                width: 270px;
-                height: 270px;
-            }
-        }
-    }
-}
-
-
-.shape-stripes {
-    position: absolute;
-    bottom: -100px;
-    left: -100px;
-    
-}
-
 /***********************/
 /***** INFORMATION *****/
 /***********************/
@@ -197,10 +181,10 @@ section.info {
 
 div.info-card {
     background: $dblue;
-    margin: 5% 10vw 0vw 10vw;
-    padding: 7% 5%;
+    margin: 15% 10%;
+    padding: 6% 5%;
     padding-top: 9vw;
-    width: 60vw;
+//    width: 60vw;
     position: relative;
     height: auto;
     box-sizing: border-box;
@@ -209,8 +193,10 @@ div.info-card {
 .company {
     color: $dblue;
     background: white;
+    margin-right: 40%;
     width: auto;
     position: relative;
+    
     &::before {
         content: '';
         background-color: white;
@@ -218,6 +204,11 @@ div.info-card {
         height: 100%;
         width: 20px;
         left: -20px;
+        
+    }
+    
+    &::after {
+        content: '';
         
     }
 }
@@ -277,9 +268,10 @@ div.info-card {
 .pink-blob {
     bottom: -16vh;
     left: -2.5%;
-    background: url(../raw/web/info-section-pink-blob.svg) center/contain no-repeat;
+//    background: url(../raw/web/info-section-pink-blob.svg) center/contain no-repeat;
     width: 13vw;
     height: 30%;
+    z-index: 2;
 }
 
 .pink-circle {
@@ -338,38 +330,99 @@ div.info-card {
 /***** SITE-PREVIEW *****/
 /***********************/
 
+
+
 section.site-preview {
     @include flexbox();
     @include flexboxcenter();
-    background-color: $grey-bkg;
+//    background-color: $grey-bkg
+//    @include gradient-greytowhite;
     position: relative;
     height: calc((100vh)-100px);
-    margin: 160px auto;
+//    margin: 160px auto;
+    
 //    background: $grey-bkg url('../raw/web/Cville-mac-desktop.png') center / contain no-repeat;
-    &::after, &::before {
+    &::after {
         content: '';
         width: 100%;
         height: 50px;
-        background-color: $grey-bkg;
+        background-color: white;
         position: absolute;
     }
     
     &::after {
         bottom: -50px;
-         border-bottom-left-radius:50%;
+        border-bottom-left-radius:50%;
         border-bottom-right-radius:50%;
     }
     
-    &::before {
-        top: -50px;
-        border-top-left-radius:50%;
-        border-top-right-radius:50%;
-    }
-    
+
     iframe {
         height: 80%;
         width: 80%;
     }
+    
+    & .content {
+        padding-top: 10vh;
+        margin-top: 10%;
+        margin-left: 10%;
+        align-items: flex-start;
+        
+        & h2::after {
+            content: '';
+            width: 100%;
+            height: 20px;
+            margin-left: 20px;
+            border-bottom: 2px dashed $pink;
+        }
+        
+        & button.general {
+            margin-left: 4%;
+        }
+    }
+}
+
+.content-background {
+//     background: url(../raw/web/links_big%20pink%20blob.svg) center/contain no-repeat;
+    width: 100%;
+    height: 100%;
+    color: $dblue;
+    @include flexbox();
+    @include flexboxcenter();
+    margin-right: 14%;
+    font-size: 120%;
+    padding: 10% 10% 18% 6%;
+}
+
+.large-pink-blob {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.blue-blob {
+    bottom: 4%;
+    right: 4%;
+    width: 60vw;
+    height: 50%;
+    z-index: -2;
+}
+
+.blue-ring {
+    top: 0vh;
+    right: 2%;
+    height: 30%;
+}
+
+.blue-rings-two {
+    bottom: -10%;
+    left: -10%;
+    height: 40%;
+    width: 40%;
+    z-index: 2;
 }
 
 .computer-container {
@@ -390,20 +443,15 @@ section.site-preview {
     }
 }
 
-
 /***********************/
 /***** EXPLORE-MORE ****/
 /***********************/
 
 section.explore-more {
     height: 60vh;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,eef5f7+100 */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top, #ffffff 1%, #e9ebee 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ffffff 1%,#e9ebee 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ffffff 1%,#e9ebee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9ebee',GradientType=0 ); /* IE6-9 */
-    
+    @include gradient-greytowhite();
+    padding-top: 25vh;
+    padding-bottom: 10vh;
     & h2 {
         color: $dblue;
         text-align: center;
@@ -425,7 +473,7 @@ div.tiles {
     overflow: hidden;
     background: white;
     border: 3px solid #dddfe2;
-    width: 26%;
+    width: 20%;
     height: auto;
     & img {
         width: 100%;
@@ -440,8 +488,9 @@ button.general {
     margin: 6% auto;
     display: block;
     padding: 0px 20px;
+    padding: 20px 30px;
     a {
-        padding: 20px 30px;
+//        padding: 20px 30px;
     }
 }
 
@@ -452,18 +501,20 @@ button.general {
 
 footer {
 //    background: $grey-bkg url('../raw/web/footer_footer.png') bottom / contain no-repeat;
-    background: $grey-bkg;
+    @include gradient-whitetoblue;
+    background: white;
     position: relative;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     z-index: 1;
     @include flexbox();
     @include flexboxcenter();
+    overflow-y: hidden;
     & .waves-container {
-        height: 50vh;
+        height: 100vh;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
         right: 0;
         z-index: 2;
@@ -473,16 +524,29 @@ footer {
             height: 100%;
         }
     }
+    
+    div.content {
+    z-index: 3;
+    width: 50%;
+//    margin-top: 11%;
+        padding-top: 11%;
+        box-sizing: border-box;
+        & div.sm-links {
+            margin-top: 17%;
+        }
+    }
 }
 
-div.content {
-    z-index: 3;
-    width: 80%;
-    margin-top: 11%;
+.extra-blue {
+//    height: 10%;
+    width: 100%;
+//    @include gradient-bluetransition;
+    background: $dblue;
 }
+
     
 ul.sm {
-    margin-top: 7%;
+    margin-top: 10%;
     padding: 0px;
 }
 
@@ -493,4 +557,180 @@ ul.sm li.sm .transparency {
 
 ul.sm li.sm a svg {
     fill: white;
+}
+
+button:active {
+    outline: 0;
+    background-color: $dblue-active;
+    transform: translateY(10deg);
+}
+
+.btn,
+button {
+  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  min-width: 200px;
+  min-width: 20rem;
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 400px) {
+    width: auto;
+  }
+//  @media (min-width: 800px) {
+//    font-size: 1.1rem;
+//    padding: 1.6rem 2.8rem;
+//  }
+  &:hover {
+    background: lighten($dblue, 5%);
+    border-color: lighten($dblue, 5%);
+    color: #fff;
+  }
+}
+
+.btn-border {
+  background-color: transparent;
+  color: $dblue;
+}
+
+.btn-arrow {
+  position: relative;
+    transition: background-color 300ms ease-out;
+  span {
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+  }
+  &:hover span {
+    transform: translate3d(-1rem, 0, 0);
+  }
+  svg {
+    position: absolute;
+    width: 1.1em;
+    right: 0px;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+    * {
+      stroke-width: 5;
+      stroke-color: transparent;
+    }
+  }
+  &:hover svg {
+    opacity: 1;
+    right: -2rem;
+  }
+}
+
+
+/***********************/
+/*** RESPONSIVENESS ***/
+/***********************/
+
+// 900 px and down
+@media (max-width: 900px) { 
+    .content {
+        & .image-container {
+            width: 60%;
+            height: 55%;
+        }
+        
+        & .title {
+            margin: 7%;
+            margin-left: 10%;
+        }
+    }
+}
+
+
+// 600 px and down
+@include for-tablet-portrait-down {
+    // Opening 
+    .stripes {
+        top: 59vh;
+    }
+    
+    .circle {
+        top: 40vh;
+        right: -30%;
+    }
+    
+    .large-pink-blob {
+        width: 120%;
+        height: 120%;
+    }
+    
+    section.site-preview .content {
+        padding-top: 20vh;
+    }
+    
+    .content-background {
+        margin-right: 0%;
+    }
+    
+    .blue-rings-two {
+        bottom: -20%;
+    }
+    
+    .content {
+        margin: 0;
+    }
+}
+
+
+@include for-small-phone {
+    section.opening {
+        justify-content: flex-start;
+        height: 100vh;
+    }
+     section.opening .content {
+         flex-flow: column-reverse nowrap;
+         margin-top: 100px;
+        & .image-container {
+           width: 76%;
+        }
+        
+        & .title {
+            color: white;
+            border-top: none;
+//            border-bottom: 1px solid #eadfe4;
+            margin-bottom: 20vh;
+            text-align: left;
+            & h2 {
+                font-size: 10vmin;
+            }
+        }
+    }
+    
+    div.background-images {
+        &.waves {
+            top: -35vh;
+            background: url('../raw/web/mobile-waves.png') center / cover no-repeat;
+        }
+        &.shapes {
+            z-index: 0;
+            .circle {
+                bottom: 35vh;
+                right: -20vw;
+                width: 270px;
+                height: 270px;
+            }
+        }
+    }
+}
+
+
+.shape-stripes {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    
 }
