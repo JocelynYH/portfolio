@@ -53,7 +53,7 @@ html {
     height: 100%;
     & section {
         height: auto;
-//        border: 1px solid transparent;
+        border: 1px solid aqua;
         margin: 0;
         padding: 0;
     }
@@ -99,7 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f7', end
     @include flexbox();
     @include flexboxcenter();
     flex-flow: column nowrap;
-        margin: auto 10%;
+//        margin: auto 10%;
 //    margin-top: 100px; 
     // Computer image
     & .image-container {
@@ -110,20 +110,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f7', end
         overflow: hidden;
         background: white;
         border: 3px solid #dddfe2;
+        position: relative;
         & img {
             width: 100%;
             height: 100%;
         }
+       
     } // Title
     & .title {
         text-align: center;
         color: $dblue;
         border-top: 3px solid #dddfe2;
         margin-top: 7%;
+        margin: 7%;
+        margin-left: 10%;
         & h2 {
             margin-top: 2%;
         }
     }
+}
+
+section.opening .content {
+    margin-top: 12%;
 }
 
 /*** BACKGROUND IMAGES ***/
@@ -181,13 +189,14 @@ section.info {
 
 div.info-card {
     background: $dblue;
-    margin: 15% 10%;
-    padding: 6% 5%;
-    padding-top: 9vw;
-//    width: 60vw;
+    padding: 8%;
     position: relative;
     height: auto;
     box-sizing: border-box;
+    width: 80vw;
+    margin: 15% auto;
+    border-radius: 15px;
+    z-index: 200;
 }
 
 .company {
@@ -302,7 +311,7 @@ div.info-card {
 
 @include for-tablet-landscape-down {
     div.info-card {
-        width: 60vw;
+        padding: 10% 8%;
     }   
 }
 
@@ -316,11 +325,9 @@ div.info-card {
 @include for-small-phone {
     div.info-card {
         width: 80vw;
+        padding: 19% 8%;
     }
     
-    section.info {
-        overflow-x: hidden;
-    }
 }
 
 
@@ -335,13 +342,8 @@ div.info-card {
 section.site-preview {
     @include flexbox();
     @include flexboxcenter();
-//    background-color: $grey-bkg
-//    @include gradient-greytowhite;
     position: relative;
-    height: calc((100vh)-100px);
-//    margin: 160px auto;
-    
-//    background: $grey-bkg url('../raw/web/Cville-mac-desktop.png') center / contain no-repeat;
+
     &::after {
         content: '';
         width: 100%;
@@ -377,7 +379,7 @@ section.site-preview {
         }
         
         & button.general {
-            margin-left: 4%;
+            margin: 0 auto;
         }
     }
 }
@@ -390,8 +392,16 @@ section.site-preview {
     @include flexbox();
     @include flexboxcenter();
     margin-right: 14%;
-    font-size: 120%;
     padding: 10% 10% 18% 6%;
+    position: relative; 
+    overflow-x: hidden;
+//    & p {
+//        font-size: 120%;
+//    }
+//    
+//    & h2 {
+//        font-size: 250%;
+//    }
 }
 
 .large-pink-blob {
@@ -448,7 +458,7 @@ section.site-preview {
 /***********************/
 
 section.explore-more {
-    height: 60vh;
+    height: auto;
     @include gradient-greytowhite();
     padding-top: 25vh;
     padding-bottom: 10vh;
@@ -467,19 +477,52 @@ div.tiles {
     margin: auto 4%;
 }
 
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($dblue, 1);
+    @include flexbox();
+    @include flexboxcenter();
+}
+
+.overlay-link {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.image-container:hover .overlay-link {
+    visibility: visible;    
+    opacity: 1;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
 .image-container {
     z-index: 100;
     border-radius: 15px;
     overflow: hidden;
     background: white;
     border: 3px solid #dddfe2;
-    width: 20%;
+    width: 23%;
     height: auto;
+    line-height: 0;
+    position: relative;
+
     & img {
         width: 100%;
         height: 100%;
     }
+    & h3 {
+        line-height: normal;
+        text-align: center;
+    }
 }
+
 
 button.general {
     background: $dblue;
@@ -489,8 +532,10 @@ button.general {
     display: block;
     padding: 0px 20px;
     padding: 20px 30px;
-    a {
-//        padding: 20px 30px;
+    font-size: 18px;
+    font-family: 'futura';
+    h4 {
+        margin: 0;
     }
 }
 
@@ -500,16 +545,17 @@ button.general {
 /***********************/
 
 footer {
-//    background: $grey-bkg url('../raw/web/footer_footer.png') bottom / contain no-repeat;
-    @include gradient-whitetoblue;
-    background: white;
+    background: white url('../raw/web/footer-waves.png') top / cover no-repeat;
+//    @include gradient-whitetoblue;
+//    background: white;
     position: relative;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     z-index: 1;
     @include flexbox();
     @include flexboxcenter();
     overflow-y: hidden;
+    max-height: 500px;
     & .waves-container {
         height: 100vh;
         width: 100%;
@@ -570,9 +616,9 @@ button {
   transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
   display: inline-block;
   cursor: pointer;
-  width: 100%;
-  min-width: 200px;
-  min-width: 20rem;
+//  width: 100%;
+//  min-width: 200px;
+//  min-width: 20rem;
   outline: none;
   vertical-align: middle;
   text-align: center;
@@ -635,6 +681,17 @@ button {
 /*** RESPONSIVENESS ***/
 /***********************/
 
+@media (min-width: 900px) {
+    section.site-preview .content {
+        padding-top: 10vh;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 0%;
+        align-items: flex-start;   
+    }
+}
+
 // 900 px and down
 @media (max-width: 900px) { 
     .content {
@@ -643,10 +700,27 @@ button {
             height: 55%;
         }
         
-        & .title {
-            margin: 7%;
-            margin-left: 10%;
+    }
+    
+    .company {
+        margin-right: 23%;
+    }
+    
+    div.tiles {
+        flex-flow: column nowrap;
+        align-items: center;
+        & .image-container {
+            margin: 6% auto;
+            width: 70%;
         }
+        
+        & .image-container:first-child {
+            margin-top: 0%;
+        }
+    }
+    
+    section.explore-more {
+        height: auto;
     }
 }
 
@@ -663,13 +737,21 @@ button {
         right: -30%;
     }
     
-    .large-pink-blob {
-        width: 120%;
-        height: 120%;
+    // Information
+    .company {
+        margin-right: 10vw;
     }
     
+    // Site-preview
     section.site-preview .content {
-        padding-top: 20vh;
+        padding-top: 25vh;
+        margin: 0;
+        padding-bottom: 20vh;
+    }
+    
+    .large-pink-blob {
+        top: 40%;
+        left: 40%;
     }
     
     .content-background {
@@ -683,6 +765,18 @@ button {
     .content {
         margin: 0;
     }
+    
+    .content-background {
+        padding: 0;
+    }
+    
+//    section.site-preview .content button.general {
+//        margin: 0%;
+//    }
+    
+    footer div.content {
+        width: 90%;
+    }
 }
 
 
@@ -694,6 +788,7 @@ button {
      section.opening .content {
          flex-flow: column-reverse nowrap;
          margin-top: 100px;
+         
         & .image-container {
            width: 76%;
         }
@@ -701,14 +796,24 @@ button {
         & .title {
             color: white;
             border-top: none;
-//            border-bottom: 1px solid #eadfe4;
-            margin-bottom: 20vh;
+            margin-bottom: 14vh;
             text-align: left;
-            & h2 {
-                font-size: 10vmin;
-            }
+            font-size: 24px;
+            margin: 7%;
+            margin-left: 10%;
+
+//            & h2 {
+//                font-size: 10vmin;
+//            }
         }
     }
+    
+     section.site-preview .content {
+             margin-left: 6%;
+             & ul {
+                 padding-left: 20px;
+             }
+         }
     
     div.background-images {
         &.waves {
@@ -724,6 +829,10 @@ button {
                 height: 270px;
             }
         }
+    }
+    
+    div.tiles .image-container {
+        width: 80%;
     }
 }
 
