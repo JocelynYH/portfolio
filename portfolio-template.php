@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <?php include("includes/head.html");?>
-    <link rel="stylesheet" href="css/new-menu.css">
     <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/new-menu.css">
     <script src='js/landing.js'></script>
 
 </head>
@@ -14,14 +14,11 @@
 <body>
 
     <div class="web-portfolio-wrapper">
+    <?php include("includes/menu-portfolio.html");?>
 
+<!--
         <nav id='fixed-nav-container'>
 
-            <a href='' id='view-all' class='button-container'>
-                <h4>view all</h4>
-                <!--                <img src="raw/web/view-all-squares.svg" alt="">-->
-                <?php echo file_get_contents("raw/web/view-all-squares.svg"); ?>
-            </a>
 
             <div id="menu" class='button-container'>
                 <div id="new-menu">
@@ -51,6 +48,7 @@
                 </div>
             </div>
         </nav>
+-->
 
         <div class="stripes"></div>
         

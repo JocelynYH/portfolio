@@ -49,18 +49,6 @@ $perspective: $parallax-perspective) {
 // End of magic parallax mixins
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
-$primary: #1586D1;
-
-// Normalize
-body {
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
-    background: $dblue;
-    line-height: 1;
-    position: relative;
-}
-
 // Fonts
 h1,
 h2 {
@@ -1277,256 +1265,17 @@ body {
     overflow-x: hidden;
     position: relative;
     perspective: none;
-}
-
-html{
-	box-sizing: border-box;
-}
-*, *:after,*:before{
-	box-sizing: inherit;
-}
-
-//New menu
-
-#new-menu {
-//    background-color: white;
-    color: $pink;
-    right: 30px;
-    z-index: 10000;
-//    overflow: auto;
-//    border: 3px solid green;
-    position: fixed;
-    top: 80px;
-    top: 5vh;
-    left: 1vw;
-    width: 50px;
-    height: 50px;
-
-    & p {
-        color: white;
-        text-align: center;
-        margin-left: 1vw;
-    }
     
-    &:hover {
-        .open span {
-            color: $moonblue;
-        }
-    }
 }
 
-
-span.menu-icon {
-    color: $pink;
-}
-
-.wrappery {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    overflow: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-
-// Hamburger Menu 
 html{
 	box-sizing: border-box;
 }
 *, *:after,*:before{
 	box-sizing: inherit;
 }
-//a{
-//	color: #333;
-//	text-decoration: none;
-//}
-html{
-  width: 100%;
-   height: 100%;
-}
- 
-.open{
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	display: block;
-	cursor: pointer;
-	transition: opacity 0.2s linear;
-    &::before {
-        content: 'menu';
-    color: white;
-    display: block;
-    position: absolute;
-    top: -24%;
-    left: 13%;
-    }
-	&:hover{
-		opacity: 0.94;
-	}
-	span{
-		display: block;
-		float: left;
-		clear: both;
-		height: 4px;
-		width: 40px;
-		border-radius: 40px;
-		background-color: #fff;
-		position: absolute;
-		right: 3px;
-		top: 3px;
-		overflow: hidden;
-		transition: all 0.4s ease;
-		&:nth-child(1){
-			margin-top: 10px;
-			z-index: 9;
-		}
-		&:nth-child(2){
-			margin-top: 25px;
-		}
-		&:nth-child(3){
-			margin-top: 40px;
-		}
-	}
-}
-.sub-menu{
-	transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		height: 0;
-		width: 0;
-		right: 0;
-		top: 0;
-		position: absolute;
-		background-color: #f06490;
-		border-radius: 50%;
-		z-index: 18;
-		overflow: hidden;
-		li{
-			display: block;
-			float: left;
-			clear: both;
-			height: auto;
-			margin-right: -160px;
-			transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-			&:first-child{
-				margin-top: 150px;
-			}
-			&:nth-child(1){
-				-webkit-transition-delay: 0.05s;
-			}
-			&:nth-child(2){
-				-webkit-transition-delay: 0.10s;
-			}
-			&:nth-child(3){
-				-webkit-transition-delay: 0.15s;
-			}
-			&:nth-child(4){
-				-webkit-transition-delay: 0.20s;
-			}
-			&:nth-child(5){
-				-webkit-transition-delay: 0.25s;
-			}
-			a{
-				color: #fff;
-				font-family: 'Raleway', Arial, Helvetica, sans-serif;
-				font-size: 16px;
-				width: 100%;
-				display: block;
-				float: left;
-				line-height: 40px;
-                &:hover {
-                    color: $dblue;
-                }
-			}
-		}
-	}
 
-	.oppenned{
-		.sub-menu{
-			opacity: 1;
-			height: 400px;
-			width: 400px;
-		}
-		span:nth-child(2){
-			overflow: visible;
-		}
-		span:nth-child(1), span:nth-child(3){
-			z-index: 100;
-			transform: rotate(45deg);
-		}
-		span:nth-child(1){
-			transform: rotate(45deg) translateY(12px) translateX(12px);
-		}
-		span:nth-child(2){
-			height: 400px;
-			width: 400px;
-			left: -70px;
-			top: -160px;
-			border-radius: 50%;
-			background-color: #f06490;
-		}
-		span:nth-child(3){			
-			transform: rotate(-45deg) translateY(-10px) translateX(10px);
-		}
-		li{
-			margin-left: 100px;
-		}
-	}
-.button{
-	display: block;
-	float: left;
-  clear: both;
-	padding: 20px 40px;
-	background: #fff;
-	border-radius: 3px;
-	border: 2px solid #10a1ea;
-	overflow: hidden;
-	position: relative;
-	&:after{
-		transition: transform 0.3s ease;
-		content: "";
-		position: absolute;
-		height: 200px;
-		width: 400px;
-		transform: rotate(45deg) translateX(-540px) translateY(-100px);
-		background: #10a1ea;
-		z-index: 1;
-	}
-	&:before{
-		transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		content: attr(title);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		color: #fff;
-		z-index: 2;
-		text-align: center;
-		padding: 20px 40px;
-		transform: translateY(200px);
-	}
-	&:hover{
-		text-decoration: none;
-		&:after{
-			transform: translateX(-300px) translateY(-100px);
-		}
-		&:before{
-			transform: translateY(0);
-		}
-	}
-}
 
-.Xed {
-  
-}
-
-#new-menu * {
-    transform-style: flat;
-}
 
 @include for-tablet-portrait-down {
         #new-menu {
@@ -1537,4 +1286,12 @@ html{
 
 iframe {
     display: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: $dblue;
+    height: 100%;
 }

@@ -381,6 +381,11 @@ section.site-preview {
         & button.general {
             margin: 0 auto;
         }
+        
+        & li {
+            list-style: circle;
+            font-weight: 500;
+        }
     }
 }
 
@@ -534,6 +539,7 @@ button.general {
     padding: 20px 30px;
     font-size: 18px;
     font-family: 'futura';
+//    box-shadow: none;
     h4 {
         margin: 0;
     }
@@ -842,4 +848,9 @@ button {
     bottom: -100px;
     left: -100px;
     
+}
+
+
+.menu-active {
+    color: $lpink !important;
 }
