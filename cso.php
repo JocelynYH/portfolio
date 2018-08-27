@@ -16,6 +16,39 @@
     <div class="web-portfolio-wrapper">
     <?php include("includes/menu-portfolio.html");?>
 
+<!--
+        <nav id='fixed-nav-container'>
+
+
+            <div id="menu" class='button-container'>
+                <div id="new-menu">
+                    <h4 class='no-marg'>menu</h4>
+                    <div class="open">
+
+                        <span class="cls"></span>
+                        <span>
+                            <ul class="sub-menu ">
+                                <li>
+                                    <a href="index.php" title="Home">Home & About</a>
+                                </li>
+                                <li>
+                                    <a href="art.php" title="Art">Artwork</a>
+                                </li>
+                                <li>
+                                    <a href="web.php" title="Web">Web Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="graphicdesign.php" title="Graphics">Graphic Design Portfolio</a>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="cls"></span>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+-->
 
         <div class="stripes"></div>
         
@@ -28,6 +61,11 @@
             </div>
 
             <div class="background-images shapes">
+                <!--
+                   <img class='shape-stripes' src="raw/web/blue-stripes.svg" alt="">
+                    <img class='shape-circle' src="raw/web/pink-circle-outline.svg" alt="">
+                    
+-->
 
             </div>
 
@@ -36,10 +74,10 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/CSO.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Redesign the websites for 1300 clients</h2>
+                    <h2>Welcome freshman to their new college orchestra</h2>
                 </div>
             </div>
 
@@ -56,32 +94,36 @@
             <div class="abs blue-striped-circle"></div>
             <div class="abs pink-outline-circle-2"></div>
             <div class='info-card'>
-                <div class='company'>
-                    <h2>Foodio Inc.</h2>
+                <div class='company long'>
+                    <h2>Cavalier Symphony Orchestra</h2>
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>Completely rebuild and redesign an informative and impressive website able to link its 3 user segments together: current orchestra players, future members/recruits, and concert goers.</p>
+                    
+                    <p>Functionally, the site needed to serve as a clear hub of information for audience members seeking concert information and orchestra members looking for internal information.  </p>
+                    
+                    <p></p>The site also maintained a dual role as a recruiting tool: to make a lasting impression on potential new recruits & leading freshmen visitors to the next steps of joining. </p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>Delivered a fully functioning & responsive website, for mobile and desktop.  The code was maintained using github, and built in joint with the orchestra's CTO. </p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
                         <p><strong>Role</strong></p>
-                        <p>Front End Developer Intern</p>
+                        <p>Designer & Developer</p>
                     </div>
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>UX design, Web design, Development, Brand Design</p>
                     </div>
 
                     <div class="tools">
                         <p><strong>Tools</strong></p>
-                        <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                        <p>Sass, jQuery, HTML, GitHub, Bootstrap</p>
                     </div>
 
                 </div>
@@ -103,19 +145,19 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>a complete visual rebranding & consistency</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>prioritization of user needs</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>media showcasing the organization's members and performances</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>ease of navigation and access of information</p>
                             </li>
                         </ul>
-                    <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
+                    <button class='general btn btn-reverse btn-arrow'><a href="http://jocelynhuang.com/cso" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
                 </div>
             </div>
         </section>
@@ -127,16 +169,16 @@
             <h2>Explore Next</h2>
             <div class="tiles">
                 <div class="image-container">
-                   <a class="overlay-link" href="/art.php"><div class="overlay">
-                           <h3>African Electronic Music</h3>
+                   <a class="overlay-link" href="/c4k.php"><div class="overlay">
+                           <h3>Computers 4 Kids</h3>
                        </div></a>
-                    <img src="raw/AEM.png" alt="">
+                    <img src="raw/C4K/C4K-tile.png" alt="">
                 </div>
                 <div class="image-container">
-                   <a class="overlay-link" href="/art.php"><div class="overlay">
-                           <h3>Cavalier Symphony Orchestra</h3>
+                   <a class="overlay-link" href="/vector.php"><div class="overlay">
+                           <h3>Vector</h3>
                        </div></a>
-                    <img src="raw/CSO.png" alt="">
+                    <img src="raw/vector.png" alt="">
                 </div>
                 <div class="image-container">
                    <a class="overlay-link" href="/art.php"><div class="overlay">
@@ -200,19 +242,15 @@
         var height = $(".waves").outerHeight(); //gets height of header
 
         $(window).scroll(function() {
-            if ($(window).scrollTop() > (topofDiv + height)) {
+            if ($(window).scrollTop() > (topofDiv + height)*.5) {
                 console.log('height recognized');
-                $("#fixed-nav-container h4").addClass('dblue');
-                $("#fixed-nav-container #new-menu h4").addClass('dblue');
-                $('#fixed-nav-container').append('<style>.open:before{color: #3d52a1!important;}</style>');
-                $("#fixed-nav-container .open span").addClass('bkg-dblue');
+                $('#new-menu').append('<style>.open:before{color: #3d52a1!important;}</style>');
+                $(".open span").addClass('bkg-dblue');
                 $('rect').css("fill", "#3d52a1");
 
             } else {
-                $("#fixed-nav-container h4").removeClass('dblue');
-                $("#fixed-nav-container #new-menu h4").removeClass('dblue');
-                $('#fixed-nav-container').append('<style>.open:before{color: white!important;}</style>');
-                $("#fixed-nav-container .open span").removeClass('bkg-dblue');
+                $('#new-menu').append('<style>.open:before{color: white!important;}</style>');
+                $(".open span").removeClass('bkg-dblue');
                 $('rect').css("fill", "white");
             }
         });

@@ -36,10 +36,10 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/cvilleweekly.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Redesign the websites for 1300 clients</h2>
+                    <h2>Recreate digital platforms for local Charlottesville news</h2>
                 </div>
             </div>
 
@@ -57,31 +57,31 @@
             <div class="abs pink-outline-circle-2"></div>
             <div class='info-card'>
                 <div class='company'>
-                    <h2>Foodio Inc.</h2>
+                    <h2>Cville Weekly</h2>
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>Redesign and develop an entirely new news website for C-Ville Weekly, a local Charlottesille news publication.  Given the nature of digitally accessing news, ensure careful mobile optimization. </p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>In one week, our team of four undertook the entire process of designing and developing, from conducting user research to figure out what to include in the redesign, to building the website entirely from scratch as a custom wordpress theme.  All site content was added in through wordpress's front end CMS. </p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
                         <p><strong>Role</strong></p>
-                        <p>Front End Developer Intern</p>
+                        <p>Web Design Intern</p>
                     </div>
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>User research, UX Design, Web design, Development, Wireframes, Mockups</p>
                     </div>
 
                     <div class="tools">
                         <p><strong>Tools</strong></p>
-                        <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                        <p>PHP, Wordpress (local and hosting server), MAMP, CSS, jQuery, Sketch, GitHub </p>
                     </div>
 
                 </div>
@@ -103,16 +103,25 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>User research from local Charlottesville residents and students</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>A great [responsive] reading experience for mobile and desktop</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>Search functionality</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>An events page, on top of the main news site</p>
+                            </li>
+                            <li>
+                                <p>Dynamic content management from Wordpress</p>
+                            </li>
+                            <li>
+                                <p>Ability to print, email, tweet, and share</p>
+                            </li>
+                            <li>
+                                <p>Automatically generated related posts</p>
                             </li>
                         </ul>
                     <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>

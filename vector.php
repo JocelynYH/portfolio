@@ -36,10 +36,10 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/vector.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Redesign the websites for 1300 clients</h2>
+                    <h2>Create a new class application page</h2>
                 </div>
             </div>
 
@@ -57,31 +57,31 @@
             <div class="abs pink-outline-circle-2"></div>
             <div class='info-card'>
                 <div class='company'>
-                    <h2>Foodio Inc.</h2>
+                    <h2>Vector</h2>
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>Redesign the information and application page for Vector, HackCville's graphic design program.</p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>A partner and I were tasked with the challenge of redesigning the website, from end to end, starting with UX research to development.  Our deliverables included wireframes, mockups, and a fully coded page, built collaboratively using Github.</p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
                         <p><strong>Role</strong></p>
-                        <p>Front End Developer Intern</p>
+                        <p>Web Design Intern</p>
                     </div>
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>UX Design, Web design, Development, Wireframing, Mockups</p>
                     </div>
 
                     <div class="tools">
                         <p><strong>Tools</strong></p>
-                        <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                        <p>HTML, CSS, jQuery, GitHub, Balsamiq Mockups, Sketch</p>
                     </div>
 
                 </div>
@@ -103,19 +103,25 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>User research from UVA students and past Vector graduates</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>Alignment of user needs with client needs</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>Showcases for past student work</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>A visible Call to Action</p>
+                            </li>
+                            <li>
+                                <p>Interactive and creative layouts and features, conveying class information and</p>
+                            </li>
+                            <li>
+                                <p>Engaging presentation, convincing students to apply</p>
                             </li>
                         </ul>
-                    <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
+                    <button class='general btn btn-reverse btn-arrow'><a href="http://jocelynhuang.com/vector" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
                 </div>
             </div>
         </section>

@@ -36,10 +36,10 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/RogueJohnsen-tile.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Redesign the websites for 1300 clients</h2>
+                    <h2>Return a musician to the stage</h2>
                 </div>
             </div>
 
@@ -57,31 +57,31 @@
             <div class="abs pink-outline-circle-2"></div>
             <div class='info-card'>
                 <div class='company'>
-                    <h2>Foodio Inc.</h2>
+                    <h2>Rogue Johnsen</h2>
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>After taking a break from his music career, blues pianist & singer-songwriter, Rogue Johnsen, needed a digital platform to help relaunch his career.</p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>The website was build as part of a mock freelancing challenge for a web design class.  After given a client brief, a partner and I designed and developed a fully responsive and functioning site.  </p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
                         <p><strong>Role</strong></p>
-                        <p>Front End Developer Intern</p>
+                        <p>Mock Freelancer & Web Design Student</p>
                     </div>
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>Web design, Development, Wireframing</p>
                     </div>
 
                     <div class="tools">
                         <p><strong>Tools</strong></p>
-                        <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                        <p>HTML, CSS, jQuery, 3rd party widget integrations</p>
                     </div>
 
                 </div>
@@ -103,19 +103,19 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>a strong understanding of client needs</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>integration with social media channels & media platforms</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>a complete build from nothing</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>tools to enable visitors to book gigs and follow music</p>
                             </li>
                         </ul>
-                    <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
+                    <button class='general btn btn-reverse btn-arrow'><a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/index.html" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
                 </div>
             </div>
         </section>

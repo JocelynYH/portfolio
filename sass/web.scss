@@ -53,7 +53,7 @@ html {
     height: 100%;
     & section {
         height: auto;
-        border: 1px solid aqua;
+//        border: 1px solid aqua;
         margin: 0;
         padding: 0;
     }
@@ -206,6 +206,10 @@ div.info-card {
     width: auto;
     position: relative;
     
+    &.long {
+        margin-right: 0%;
+    }
+    
     &::before {
         content: '';
         background-color: white;
@@ -221,6 +225,7 @@ div.info-card {
         
     }
 }
+
 
 .border {
     width: 95%;
@@ -536,12 +541,15 @@ button.general {
     margin: 6% auto;
     display: block;
     padding: 0px 20px;
-    padding: 20px 30px;
+    padding: 20px 0px;
     font-size: 18px;
     font-family: 'futura';
 //    box-shadow: none;
     h4 {
         margin: 0;
+    }
+    & a {
+        padding: 20px 30px;
     }
 }
 

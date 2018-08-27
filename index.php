@@ -328,17 +328,10 @@
                 
             $('#submit').click(function(event) {
                 event.preventDefault();
-                
-//                var post_url = $(this).attr("action");
-//                var request_method = $(this).attr("method");
+         
                 var formData = $('#contact-form').serialize();
                 var validationErrors = $('#form-validation');
-                
-//                var formData = {
-//                    'sender' : $('input[name=name]').val(),
-//                    'senderEmail' : $('input[name=sender-email]').val(),
-//                    'message' : $('input[name=message]').val();                  
-//                }
+
                 $.ajax({
                     
                     url: 'index.php',
@@ -349,24 +342,7 @@
                     }
                 });
             });
-            
-                   //                $(function() {
-            //                    $(window).scroll(function() {
-            //                        var aTop = $('.section.one').height();
-            //                        if ($(this).scrollTop() >= aTop) {
-            //                            alert('header just passed.');
-            //                            // instead of alert you can use to show your ad
-            //                            // something like $('#footAd').slideup();
-            //                        }
-            //                    });
-            //                });
-            //
-            //                var bodyHeight = $(window).height();
-            //                console.log(bodyHeight);
-            //                
-            //     
-            
-            
+
             
             
             // About me card slideshow

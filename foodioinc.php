@@ -76,7 +76,7 @@
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>Web design, Development, Mockups, Web Applications, Database Management</p>
                     </div>
 
                     <div class="tools">
@@ -109,7 +109,7 @@
                                 <p>more space for content and boosted SEO</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>A database containing the website content of more than 1300 restaurants</p>
                             </li>
                             <li>
                                 <p>more space for content and boosted SEO</p>

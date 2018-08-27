@@ -36,10 +36,10 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/AEM.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Redesign the websites for 1300 clients</h2>
+                    <h2>Showcase music ethnography final projects</h2>
                 </div>
             </div>
 
@@ -57,31 +57,32 @@
             <div class="abs pink-outline-circle-2"></div>
             <div class='info-card'>
                 <div class='company'>
-                    <h2>Foodio Inc.</h2>
+                    <h2>African Electronic Music</h2>
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>As a final project for UVA's Music 4523, African Electronic Music, Class, I helped create a website to showcase the final projects of everyone in the class.</p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>I developed half of the website, along with a partner.  I coded the individual project pages for "Music", "Interviews", and "Writings", as well as picking the typography for headers and body text, and colors for those pages. </p>
+                    <p>I also gathered content from the students, set required information for submissions, and set deadlines for specific pieces of information </p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
                         <p><strong>Role</strong></p>
-                        <p>Front End Developer Intern</p>
+                        <p>Developer, Project Manager</p>
                     </div>
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>Development, Design, Project Management</p>
                     </div>
 
                     <div class="tools">
                         <p><strong>Tools</strong></p>
-                        <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                        <p>React JS, HTML, CSS, GitHub</p>
                     </div>
 
                 </div>
@@ -103,19 +104,19 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>A showcase displaying music, interview, and writing projects</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>Clear communication regarding deadlines</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>4 Final Projects displaying a semester's worth of learning</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>A discovery into African Electronic Music</p>
                             </li>
                         </ul>
-                    <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
+                    <button class='general btn btn-reverse btn-arrow'><a href="https://music-61330.firebaseapp.com/Music" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
                 </div>
             </div>
         </section>

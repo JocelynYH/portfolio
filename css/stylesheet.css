@@ -207,7 +207,6 @@ input {
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  line-height: 1;
   position: relative;
 }
 
@@ -576,4 +575,8 @@ html {
   #new-menu {
     left: 1vw;
   }
+}
+/* line 636, ../sass/stylesheet.scss */
+.bkg-dblue {
+  background-color: #3d52a1 !important;
 }

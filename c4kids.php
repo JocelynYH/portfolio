@@ -36,10 +36,10 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/C4K/C4K-tile.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Redesign the websites for 1300 clients</h2>
+                    <h2>Invite a community to change education</h2>
                 </div>
             </div>
 
@@ -56,32 +56,32 @@
             <div class="abs blue-striped-circle"></div>
             <div class="abs pink-outline-circle-2"></div>
             <div class='info-card'>
-                <div class='company'>
-                    <h2>Foodio Inc.</h2>
+                <div class='company long'>
+                    <h2>Computers 4 Kids</h2>
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>Computers 4 Kids, a Charlottesville non-profit dedicated to expanding technology outreach and education to under-privledged children.  Their website hadn't been properly maintained, and was in need of redesign and UI restructuring.</p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>Along with delivering high fidelity mockups, illustrating the new website redesign, a partner and I provided documents detailing navigation restructure and development implementation.  We also worked with 2 marketing bootcamp students to create a new stylesheet. </p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
                         <p><strong>Role</strong></p>
-                        <p>Front End Developer Intern</p>
+                        <p>Consulting Services during Launch Academy Bootcamp</p>
                     </div>
 
                     <div class="areas">
                         <p><strong>Areas</strong></p>
-                        <p>Web design, Development, Mockups</p>
+                        <p>Brand design, Web design, User Interface Design, Mockups, </p>
                     </div>
 
                     <div class="tools">
                         <p><strong>Tools</strong></p>
-                        <p>Ruby on Rails, Sass, jQuery, SQL, Figma</p>
+                        <p>Balsamiq Mockups, Figma</p>
                     </div>
 
                 </div>
@@ -103,16 +103,19 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>A deep understanding of C4K's mission and purpose</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>A new visual brand identity</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>Event and social media integration</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>Documentation for future development</p>
+                            </li>
+                            <li>
+                                <p>Content mapping and navigation restructuring</p>
                             </li>
                         </ul>
                     <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
@@ -126,23 +129,23 @@
         <section class="explore-more">
             <h2>Explore Next</h2>
             <div class="tiles">
+               <div class="image-container">
+                   <a class="overlay-link" href="/art.php"><div class="overlay">
+                           <h3>Vector</h3>
+                       </div></a>
+                    <img src="raw/vector.png" alt="">
+                </div>
                 <div class="image-container">
                    <a class="overlay-link" href="/art.php"><div class="overlay">
-                           <h3>African Electronic Music</h3>
+                           <h3>Rogue Johnsen</h3>
                        </div></a>
-                    <img src="raw/AEM.png" alt="">
+                    <img src="raw/RogueJohnsen-tile.png" alt="">
                 </div>
                 <div class="image-container">
                    <a class="overlay-link" href="/art.php"><div class="overlay">
                            <h3>Cavalier Symphony Orchestra</h3>
                        </div></a>
                     <img src="raw/CSO.png" alt="">
-                </div>
-                <div class="image-container">
-                   <a class="overlay-link" href="/art.php"><div class="overlay">
-                           <h3>Cville Weekly</h3>
-                       </div></a>
-                    <img src="raw/cvilleweekly.png" alt="">
                 </div>
             </div>
 
