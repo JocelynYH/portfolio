@@ -61,11 +61,11 @@
                 </div>
                 <div class='challenge'>
                     <h3>The Challenge</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus, enim error veniam, saepe aliquam praesentium accusantium culpa cum ratione quibusdam explicabo optio modi. Expedita repudiandae error dolore neque a.</p>
+                    <p>Redesign the ruby on rails template used to created customer facing websites for all of Foodio Inc.'s 1,368 clients, refocusing the user interface to increase food orders through Foodio's food delivery app.  Also update the backend of the app to allow non-developer employees to use the new web template and have their content, layout, and stylistic changes properly pushed to the redesigned sites.</p>
                 </div>
                 <div class='project'>
                     <h3>The Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis necessitatibus quidem sit consequatur vel! Iste libero possimus quos laboriosam eius sequi voluptate sint, dicta suscipit et, earum est id.</p>
+                    <p>Redesign the web template, using rails and sass, and strategize the UI to encourage customers to place food delivery orders.  In order to let the non-coding employees at Foodio customize the web template, and edit content, style, and layout to make personalized sites for each individual restaurant, update the app and sync changes from the business's front end editor to the database.</p>
                 </div>
 
                 <div class="specs">
@@ -103,19 +103,19 @@
                     <h2>The Recipe:</h2>
                         <ul>
                             <li>
-                                <p>a re-strategized UI focused on orders</p>
+                                <p>A re-strategized UI focused on orders</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>More space for content and boosted SEO</p>
                             </li>
                             <li>
-                                <p>A database containing the website content of more than 1300 restaurants</p>
+                                <p>A database containing the website content for more than 1300 restaurants</p>
                             </li>
                             <li>
-                                <p>more space for content and boosted SEO</p>
+                                <p>A way to synchronize the new web template to the front end editor</p>
                             </li>
                         </ul>
-                    <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
+<!--                    <button class='general btn btn-reverse btn-arrow'><a href="" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>-->
                 </div>
             </div>
         </section>
