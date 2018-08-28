@@ -21,7 +21,7 @@ $(document).ready(function () {
         //                timenav_height_percentage: 60
     }
     embed.style.height = getComputedStyle(document.body).height;
-    window.timeline = new TL.Timeline('timeline-embed', 'houston.json', options);
+    window.timeline = new TL.Timeline('timeline-embed', 'timeline-design.json', options);
     window.addEventListener('resize', function () {
         var embed = document.getElementById('timeline-embed');
         embed.style.height = getComputedStyle(document.body).height;

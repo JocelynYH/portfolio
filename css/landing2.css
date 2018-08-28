@@ -1963,12 +1963,7 @@ html {
     left: 1vw;
   }
 }
-/* line 1287, ../sass/landing2.scss */
-iframe {
-  display: none;
-}
-
-/* line 1291, ../sass/landing2.scss */
+/* line 1286, ../sass/landing2.scss */
 body {
   padding: 0;
   margin: 0;
