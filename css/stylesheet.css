@@ -576,7 +576,12 @@ html {
     left: 1vw;
   }
 }
-/* line 636, ../sass/stylesheet.scss */
+/* line 638, ../sass/stylesheet.scss */
 .bkg-dblue {
   background-color: #3d52a1 !important;
+}
+
+/* line 642, ../sass/stylesheet.scss */
+.radius {
+  border-radius: 15px;
 }

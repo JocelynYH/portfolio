@@ -146,8 +146,9 @@
         
          {
              "media": {
-          "url": "http://jocelynhuang.com/raw/index/coding.jpg",
-          "credit": "<a href='https://www.pexels.com/photo/code-coder-coding-computer-270404/'>Pexels</a>"
+          "url": "http://jocelynhuang.com/raw/index/adobe-photoshop.jpg",
+         "caption": "A more appropriate photo would hover over illustrator, but alas, stock photo options are limited.",
+          "credit": "<a href='https://www.pexels.com/photo/turned-on-laptop-on-desktop-with-hovered-adobe-photoshop-cc-application-693892/'>Pexels</a>"
         },
         "start_date": {
           "year": "2015",
@@ -225,7 +226,9 @@
         
         {
         "media": {
-          "url": "http://jocelynhuang.com/raw/graphic%20design/CSO%20Square%20Recruitment%20Social%20Media%20Spring%202017-07.png"
+          "url": "https://www.youtube.com/watch?v=jlAhAVD-7cA",
+          "caption": "Me conducting Cavalier Symphony Orchestra playing Star Wars!  I was also principal conductor for three semesters.",
+          "credit": "<a href='https://www.youtube.com/watch?v=jlAhAVD-7cA</a>"
         },
         "start_date": {
           "year": "2015",

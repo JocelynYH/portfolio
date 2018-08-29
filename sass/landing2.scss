@@ -1235,13 +1235,13 @@ div.section.timeline {
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title,
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description,
-.tl-credit {
+.tl-credit,  {
     color: $dblue;
 }
 
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date,
-.tl-caption {
+.tl-caption, .tl-timeline .tl-caption a, .tl-timeline .tl-credit a, .tl-timeline .tl-slidenav-next a, .tl-timeline .tl-slidenav-previous a {
     color: adjust-lightness($dblue, 20%);
 }
 
@@ -1254,7 +1254,13 @@ h2.tl-headline {
     font-size: 15px;
 }
 
+.tl-timeline {
+    border-radius: 15px;
+}
 
+.tl-attribution {
+    display: none;
+}
 
 //***********************//
 //*** Body overrides ****//

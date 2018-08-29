@@ -127,7 +127,7 @@ li {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
 }
 
 .post-header-gap {
@@ -237,15 +237,16 @@ a#mobile-home-button {
 .content-item {
     background: url(https://dummyimage.com/400x300/000/fff);
     display: flex;
-    width: 40%;
-    height: 30vw;
+    width: 43%;
+    height: 26vw;
     overflow: hidden;
     position: relative;
     margin-top: 40px;
+    border-radius: 15px;
     @include transition(all .3s ease-out);
     &:hover .overlay {
         cursor: pointer;
-        background: rgba(43, 164, 192,.7);
+        background: rgba($dblue,.9);
         
     }
     .corner-overlay-content {
@@ -262,17 +263,21 @@ a#mobile-home-button {
         position: absolute;
         right: 0;
         top: 0;
+        @include flexbox();
+        @include flexboxcenter();
+        flex-flow: column nowrap;
         @include transition(all .3s ease-out);
         h3 {
             border-bottom: 1px solid white;
             padding: 0 0 12px;
+            display: none;
             @include transition(all 2s ease-out);
 
         }
     }
     &:hover .overlay-content {
         opacity: 1;
-        background: $transblue;
+        background: $dblue;
         @include transition(all .3s ease-out);
     }
     &:hover h2 {
@@ -286,50 +291,54 @@ a#mobile-home-button {
 }
 
 
+.folio .flex {
+    justify-content: space-evenly;
+}
+
 //***********************//
 //***** Image Tiles *****//
 //***********************//
 .content-item {
     &.cvilleweekly {
-        background: url(../raw/cvilleweekly.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/cville-weekly.jpg) center / cover no-repeat;
     }
 
     &.vector {
-        background: url(../raw/vector.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/vector-thumb.jpg) center / cover no-repeat;
     }
 
     &.AEM {
-        background: url(../raw/AEM.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/aem2.jpg) center / cover no-repeat;
     }
 
     &.CSO {
-        background: url(../raw/CSO.png) top left / cover no-repeat;
+        background: url(../raw/thumbnails/CSO-thumb.jpg) center / cover no-repeat;
     }
 
     &.HC {
-        background: url(../raw/HC.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/hackcville2.jpg) center / cover no-repeat;
     }
 
     &.C4K {
-        background: url(../raw/C4K/C4K-tile.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/c4k-thumb.jpg) center / cover no-repeat;
     }
 
     &.Foodio {
-        background: url(../raw/Foodio-tile.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/foodio-thumb.jpg) center / cover no-repeat;
     }
 
     &.RogueJohnsen {
-        background: url(../raw/RogueJohnsen-tile.png) top left / cover no-repeat;
+        background: url(../raw/Thumbnails/rogue-thumb.jpg) center / cover no-repeat;
     }
 
 }
 
-.button-container {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    padding: 10px;
-}
+//.button-container {
+//    bottom: 0;
+//    right: 0;
+//    position: absolute;
+//    padding: 10px;
+//}
 
 
 //***********************//
@@ -522,7 +531,8 @@ h2.graphicdesign,
 //******** BUTTONS ********//
 //*************************//
 
-button {
+
+.overlay-content button {
     background: white;
     border: none;
     border-radius: 15px;
@@ -534,13 +544,6 @@ button {
     margin: 10px;
     @include transition(all .3s ease-out);
 }
-
-//button a {
-//    color: $lblue;
-//    text-decoration: none;
-//    font-family: 'arcon';
-//    font-size: 18px;
-//}
 
 
 

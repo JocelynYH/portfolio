@@ -43,7 +43,7 @@
                         <h3>Computers 4 Kids</h3>
                         <p>Worked with a marketing team and other web designer to rebrand, rehaul, and reorganize C4K's image and website. </p>
                         <div class="button-container">
-                            <a href="https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87"><button class='read'>Read about it</button></a>
+                            <a target='_blank'  href="https://medium.com/@seaweed4/c4k-a-ux-case-study-aa6f3b39fa87"><button class='read'>Read about it</button></a>
                         </div>
                     </div>
 
@@ -51,7 +51,6 @@
                 </div>
 
 
-        <a href="http://jocelynhuang.com/vector">
             <div class="content-item vector bottom">
 
                     <div class="overlay"></div>
@@ -64,19 +63,18 @@
                         <h3>Vector Page Redesign</h3>
                         <p>Re-designed the page for HackCville's vector class.</p>
                         <div class="button-container">
-                            <a href="https://medium.com/@seaweed4/redesigning-vector-a-new-traj-vector-y-f7fe7db8494c"><button class='read'>Read about it</button></a>
-                            <a href="http://jocelynhuang.com/vector"><button class='view'>View it live</button></a>
+                            <a target='_blank'  href="https://medium.com/@seaweed4/redesigning-vector-a-new-traj-vector-y-f7fe7db8494c"><button class='read'>Read about it</button></a>
+                            <a target='_blank'  href="http://jocelynhuang.com/vector"><button class='view'>View it live</button></a>
                         </div>
 
                     </div>
 
             </div>
-        </a>
 
 
 
             <div class="content-item CSO ">
-                <a href='http://www.jocelynhuang.com/cso'>
+                <a target='_blank'  href='http://www.jocelynhuang.com/cso'>
                     <div class="overlay"></div>
 
                     <div class="corner-overlay-content">
@@ -88,7 +86,7 @@
                         <p>Built and designed the website for Cavalier Symphony Orchestra with the orchestra's CTO. </p>
                         <div class="button-container">
                             <!--                                <button class='read'>Read about it</button> -->
-                            <a href="http://www.jocelynhuang.com/cso"><button class='view'>View it live</button></a>
+                            <a target='_blank'  href="http://www.jocelynhuang.com/cso"><button class='view'>View it live</button></a>
                         </div>
                     </div>
                 </a>
@@ -96,7 +94,7 @@
 
             <div class="content-item RogueJohnsen">
 
-                <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html">
+                <a target='_blank'  href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html">
                     <div class="overlay"></div>
 
                     <div class="corner-overlay-content">
@@ -107,8 +105,8 @@
                         <h3>Rogue Johnsen</h3>
                         <p>Built and designed a website for a client wishing to restart his professional music carrer.</p>
                         <div class="button-container">
-                            <button class='read'>Read about it</button>
-                            <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html"><button class='view'>View it live</button></a>
+<!--                            <button class='read'>Read about it</button>-->
+                            <a target='_blank'  href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html"><button class='view'>View it live</button></a>
                         </div>
                     </div>
 
@@ -120,7 +118,7 @@
 
             <div class="content-item HC">
 
-                <a href="https://www.hackcville.com">
+                <a target='_blank'  href="https://www.hackcville.com">
                     <div class="overlay"></div>
                     <!--                    -->
                     <div class="corner-overlay-content">
@@ -131,7 +129,7 @@
                         <h3>HackCville Rebrand</h3>
                         <p>During HackCville's website redesign, I was responsible for creating the new stylesheet and branding guidelines. </p>
                         <div class="button-container">
-                            <a href="https://www.hackcville.com"><button class='read'>Live Branding</button></a>
+                            <a target='_blank'  href="https://www.hackcville.com"><button class='read'>Live Branding</button></a>
 
                         </div>
                     </div>
@@ -141,7 +139,7 @@
             </div>
 
             <div class="content-item cvilleweekly">
-                <a href="http://wireframewebsites.com/cville-weekly/">
+                <a target='_blank'  href="http://wireframewebsites.com/cville-weekly/">
                     <div class="overlay"></div>
 
                     <div class="corner-overlay-content">
@@ -154,7 +152,7 @@
                         <p>Re-imagined the news website for the Cville Weekly publication.</p>
                         <div class="button-container">
                             <!--                                <button class='read'>Read about it</button> -->
-                            <a href="http://wireframewebsites.com/cville-weekly/"><button class='view'>View it live</button></a>
+                            <a target='_blank'  href="http://wireframewebsites.com/cville-weekly/"><button class='view'>View it live</button></a>
                         </div>
                     </div>
 
@@ -165,7 +163,7 @@
 
             <div class="content-item Foodio">
 
-                <a href="Foodio.php">
+                <a target='_blank'  href="Foodio.php">
                     <div class="overlay"></div>
 
                     <div class="corner-overlay-content">
@@ -176,7 +174,7 @@
                         <h3>Foodio Client Websites</h3>
                         <p>I redesigned websites for Foodio's 2000+ restaurant clients. </p>
                         <div class="button-container">
-                            <a href="Foodio.php"><button class='read'>Read about it</button></a>
+                            <a target='_blank'  href="Foodio.php"><button class='read'>Read about it</button></a>
 
                         </div>
                     </div>
@@ -187,7 +185,7 @@
 
             <div class="content-item AEM">
 
-                <a href="https://music-61330.firebaseapp.com/Music">
+                <a target='_blank'  href="https://music-61330.firebaseapp.com/Music">
                     <div class="overlay"></div>
 
                     <div class="corner-overlay-content">
@@ -199,7 +197,7 @@
                         <p>Built a portfolio webpage to display my classmate's final projects for a UVA course.</p>
                         <div class="button-container">
                             <!--                                <button class='read'>Read about it</button> -->
-                            <a href="https://music-61330.firebaseapp.com/Music"><button class='view'>View it live</button></a>
+                            <a target='_blank'  href="https://music-61330.firebaseapp.com/Music"><button class='view'>View it live</button></a>
                         </div>
                     </div>
 

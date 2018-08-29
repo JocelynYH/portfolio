@@ -576,9 +576,14 @@ html {
     left: 1vw;
   }
 }
-/* line 636, ../sass/stylesheet.scss */
+/* line 638, ../sass/stylesheet.scss */
 .bkg-dblue {
   background-color: #3d52a1 !important;
+}
+
+/* line 642, ../sass/stylesheet.scss */
+.radius {
+  border-radius: 15px;
 }
 
 /***********************/
@@ -1145,7 +1150,7 @@ button.general {
   margin: 6% auto;
   display: block;
   padding: 0px 20px;
-  padding: 20px 30px;
+  padding: 20px 0px;
   font-size: 18px;
   font-family: 'futura';
 }
@@ -1153,11 +1158,15 @@ button.general {
 button.general h4 {
   margin: 0;
 }
+/* line 551, ../sass/web.scss */
+button.general a {
+  padding: 20px 30px;
+}
 
 /***********************/
 /******* FOOTER *******/
 /***********************/
-/* line 558, ../sass/web.scss */
+/* line 561, ../sass/web.scss */
 footer {
   background: white url("../raw/web/footer-waves.png") top/cover no-repeat;
   position: relative;
@@ -1175,7 +1184,7 @@ footer {
   overflow-y: hidden;
   max-height: 500px;
 }
-/* line 570, ../sass/web.scss */
+/* line 573, ../sass/web.scss */
 footer .waves-container {
   height: 100vh;
   width: 100%;
@@ -1186,53 +1195,53 @@ footer .waves-container {
   z-index: 2;
   z-index: -1;
 }
-/* line 579, ../sass/web.scss */
+/* line 582, ../sass/web.scss */
 footer .waves-container img {
   width: 100%;
   height: 100%;
 }
-/* line 585, ../sass/web.scss */
+/* line 588, ../sass/web.scss */
 footer div.content {
   z-index: 3;
   width: 50%;
   padding-top: 11%;
   box-sizing: border-box;
 }
-/* line 591, ../sass/web.scss */
+/* line 594, ../sass/web.scss */
 footer div.content div.sm-links {
   margin-top: 17%;
 }
 
-/* line 597, ../sass/web.scss */
+/* line 600, ../sass/web.scss */
 .extra-blue {
   width: 100%;
   background: #3d52a1;
 }
 
-/* line 605, ../sass/web.scss */
+/* line 608, ../sass/web.scss */
 ul.sm {
   margin-top: 10%;
   padding: 0px;
 }
 
-/* line 610, ../sass/web.scss */
+/* line 613, ../sass/web.scss */
 ul.sm li.sm .transparency {
   border-color: white;
 }
 
-/* line 615, ../sass/web.scss */
+/* line 618, ../sass/web.scss */
 ul.sm li.sm a svg {
   fill: white;
 }
 
-/* line 619, ../sass/web.scss */
+/* line 622, ../sass/web.scss */
 button:active {
   outline: 0;
   background-color: #314281;
   transform: translateY(10deg);
 }
 
-/* line 625, ../sass/web.scss */
+/* line 628, ../sass/web.scss */
 .btn,
 button {
   transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
@@ -1245,13 +1254,13 @@ button {
   overflow: hidden;
 }
 @media (min-width: 400px) {
-  /* line 625, ../sass/web.scss */
+  /* line 628, ../sass/web.scss */
   .btn,
   button {
     width: auto;
   }
 }
-/* line 645, ../sass/web.scss */
+/* line 648, ../sass/web.scss */
 .btn:hover,
 button:hover {
   background: #445bb3;
@@ -1259,29 +1268,29 @@ button:hover {
   color: #fff;
 }
 
-/* line 652, ../sass/web.scss */
+/* line 655, ../sass/web.scss */
 .btn-border {
   background-color: transparent;
   color: #3d52a1;
 }
 
-/* line 657, ../sass/web.scss */
+/* line 660, ../sass/web.scss */
 .btn-arrow {
   position: relative;
   transition: background-color 300ms ease-out;
 }
-/* line 660, ../sass/web.scss */
+/* line 663, ../sass/web.scss */
 .btn-arrow span {
   display: inline-block;
   position: relative;
   transition: all 300ms ease-out;
   will-change: transform;
 }
-/* line 666, ../sass/web.scss */
+/* line 669, ../sass/web.scss */
 .btn-arrow:hover span {
   transform: translate3d(-1rem, 0, 0);
 }
-/* line 669, ../sass/web.scss */
+/* line 672, ../sass/web.scss */
 .btn-arrow svg {
   position: absolute;
   width: 1.1em;
@@ -1293,12 +1302,12 @@ button:hover {
   transition: all 300ms ease-out;
   will-change: right, opacity;
 }
-/* line 679, ../sass/web.scss */
+/* line 682, ../sass/web.scss */
 .btn-arrow svg * {
   stroke-width: 5;
   stroke-color: transparent;
 }
-/* line 684, ../sass/web.scss */
+/* line 687, ../sass/web.scss */
 .btn-arrow:hover svg {
   opacity: 1;
   right: -2rem;
@@ -1308,7 +1317,7 @@ button:hover {
 /*** RESPONSIVENESS ***/
 /***********************/
 @media (min-width: 900px) {
-  /* line 696, ../sass/web.scss */
+  /* line 699, ../sass/web.scss */
   section.site-preview .content {
     padding-top: 10vh;
     margin-top: 10%;
@@ -1319,109 +1328,109 @@ button:hover {
   }
 }
 @media (max-width: 900px) {
-  /* line 709, ../sass/web.scss */
+  /* line 712, ../sass/web.scss */
   .content .image-container {
     width: 60%;
     height: 55%;
   }
 
-  /* line 716, ../sass/web.scss */
+  /* line 719, ../sass/web.scss */
   .company {
     margin-right: 23%;
   }
 
-  /* line 720, ../sass/web.scss */
+  /* line 723, ../sass/web.scss */
   div.tiles {
     flex-flow: column nowrap;
     align-items: center;
   }
-  /* line 723, ../sass/web.scss */
+  /* line 726, ../sass/web.scss */
   div.tiles .image-container {
     margin: 6% auto;
     width: 70%;
   }
-  /* line 728, ../sass/web.scss */
+  /* line 731, ../sass/web.scss */
   div.tiles .image-container:first-child {
     margin-top: 0%;
   }
 
-  /* line 733, ../sass/web.scss */
+  /* line 736, ../sass/web.scss */
   section.explore-more {
     height: auto;
   }
 }
 @media (max-width: 599px) {
-  /* line 742, ../sass/web.scss */
+  /* line 745, ../sass/web.scss */
   .stripes {
     top: 59vh;
   }
 
-  /* line 746, ../sass/web.scss */
+  /* line 749, ../sass/web.scss */
   .circle {
     top: 40vh;
     right: -30%;
   }
 
-  /* line 752, ../sass/web.scss */
+  /* line 755, ../sass/web.scss */
   .company {
     margin-right: 10vw;
   }
 
-  /* line 757, ../sass/web.scss */
+  /* line 760, ../sass/web.scss */
   section.site-preview .content {
     padding-top: 25vh;
     margin: 0;
     padding-bottom: 20vh;
   }
 
-  /* line 763, ../sass/web.scss */
+  /* line 766, ../sass/web.scss */
   .large-pink-blob {
     top: 40%;
     left: 40%;
   }
 
-  /* line 768, ../sass/web.scss */
+  /* line 771, ../sass/web.scss */
   .content-background {
     margin-right: 0%;
   }
 
-  /* line 772, ../sass/web.scss */
+  /* line 775, ../sass/web.scss */
   .blue-rings-two {
     bottom: -20%;
   }
 
-  /* line 776, ../sass/web.scss */
+  /* line 779, ../sass/web.scss */
   .content {
     margin: 0;
   }
 
-  /* line 780, ../sass/web.scss */
+  /* line 783, ../sass/web.scss */
   .content-background {
     padding: 0;
   }
 
-  /* line 788, ../sass/web.scss */
+  /* line 791, ../sass/web.scss */
   footer div.content {
     width: 90%;
   }
 }
 @media (max-width: 350px) {
-  /* line 795, ../sass/web.scss */
+  /* line 798, ../sass/web.scss */
   section.opening {
     justify-content: flex-start;
     height: 100vh;
   }
 
-  /* line 799, ../sass/web.scss */
+  /* line 802, ../sass/web.scss */
   section.opening .content {
     flex-flow: column-reverse nowrap;
     margin-top: 100px;
   }
-  /* line 803, ../sass/web.scss */
+  /* line 806, ../sass/web.scss */
   section.opening .content .image-container {
     width: 76%;
   }
-  /* line 807, ../sass/web.scss */
+  /* line 810, ../sass/web.scss */
   section.opening .content .title {
     color: white;
     border-top: none;
@@ -1432,25 +1441,25 @@ button:hover {
     margin-left: 10%;
   }
 
-  /* line 822, ../sass/web.scss */
+  /* line 825, ../sass/web.scss */
   section.site-preview .content {
     margin-left: 6%;
   }
-  /* line 824, ../sass/web.scss */
+  /* line 827, ../sass/web.scss */
   section.site-preview .content ul {
     padding-left: 20px;
   }
 
-  /* line 830, ../sass/web.scss */
+  /* line 833, ../sass/web.scss */
   div.background-images.waves {
     top: -35vh;
     background: url("../raw/web/mobile-waves.png") center/cover no-repeat;
   }
-  /* line 834, ../sass/web.scss */
+  /* line 837, ../sass/web.scss */
   div.background-images.shapes {
     z-index: 0;
   }
-  /* line 836, ../sass/web.scss */
+  /* line 839, ../sass/web.scss */
   div.background-images.shapes .circle {
     bottom: 35vh;
     right: -20vw;
@@ -1458,19 +1467,19 @@ button:hover {
     height: 270px;
   }
 
-  /* line 845, ../sass/web.scss */
+  /* line 848, ../sass/web.scss */
   div.tiles .image-container {
     width: 80%;
   }
 }
-/* line 851, ../sass/web.scss */
+/* line 854, ../sass/web.scss */
 .shape-stripes {
   position: absolute;
   bottom: -100px;
   left: -100px;
 }
 
-/* line 859, ../sass/web.scss */
+/* line 862, ../sass/web.scss */
 .menu-active {
   color: #eac3d0 !important;
 }

@@ -85,12 +85,12 @@
         </div>
 
 
-        <div class="name-plaque section one">
+        <div class="name-plaque section one radius">
             <!--
                 <img class='plaque-image' src="raw/index/nameplaque.svg" alt="">
                 <h1 class='name-title'>Jocelyn Huang</h1>
             -->
-            <div class="title-plaque">
+            <div class="title-plaque radius">
                 <h1 class='name-title'>Jocelyn</h1>
                 <div class="spacer-for-line">
                 </div>
@@ -104,13 +104,13 @@
 
 
 
-        <div class="section two card-container">
+        <div class="section two card-container radius">
             <img class='button-bkg one' src="raw/index/geom-01.svg" alt="">
             <img class='button-bkg two' src="raw/index/geom-01.svg" alt="">
 
-            <div class='container-bkg'></div>
+            <div class='container-bkg radius'></div>
 
-            <div class="card-bkg ">
+            <div class="card-bkg">
                 <div class="card-content about-me">
                     <div class='text'>
                         <h2>About Me</h2>
@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="card-bkg ">
+            <div class="card-bkg radius">
                 <div class="card-content about-me">
                     <div class='text'>
                         <h2>The web and I were meant to be</h2>

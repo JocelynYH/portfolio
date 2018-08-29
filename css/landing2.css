@@ -576,9 +576,14 @@ html {
     left: 1vw;
   }
 }
-/* line 636, ../sass/stylesheet.scss */
+/* line 638, ../sass/stylesheet.scss */
 .bkg-dblue {
   background-color: #3d52a1 !important;
+}
+
+/* line 642, ../sass/stylesheet.scss */
+.radius {
+  border-radius: 15px;
 }
 
 /* line 53, ../sass/landing2.scss */
@@ -1924,7 +1929,7 @@ div.section.timeline * {
 /* line 1242, ../sass/landing2.scss */
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date,
-.tl-caption {
+.tl-caption, .tl-timeline .tl-caption a, .tl-timeline .tl-credit a, .tl-timeline .tl-slidenav-next a, .tl-timeline .tl-slidenav-previous a {
   color: #788acc;
 }
 
@@ -1939,7 +1944,17 @@ h2.tl-headline {
   font-size: 15px;
 }
 
-/* line 1263, ../sass/landing2.scss */
+/* line 1257, ../sass/landing2.scss */
+.tl-timeline {
+  border-radius: 15px;
+}
+
+/* line 1261, ../sass/landing2.scss */
+.tl-attribution {
+  display: none;
+}
+
+/* line 1269, ../sass/landing2.scss */
 body {
   overflow-y: auto;
   overflow-x: hidden;
@@ -1947,23 +1962,23 @@ body {
   perspective: none;
 }
 
-/* line 1271, ../sass/landing2.scss */
+/* line 1277, ../sass/landing2.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 1274, ../sass/landing2.scss */
+/* line 1280, ../sass/landing2.scss */
 *, *:after, *:before {
   box-sizing: inherit;
 }
 
 @media (max-width: 599px) {
-  /* line 1281, ../sass/landing2.scss */
+  /* line 1287, ../sass/landing2.scss */
   #new-menu {
     left: 1vw;
   }
 }
-/* line 1286, ../sass/landing2.scss */
+/* line 1292, ../sass/landing2.scss */
 body {
   padding: 0;
   margin: 0;
