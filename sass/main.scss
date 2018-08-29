@@ -200,6 +200,7 @@ a#mobile-home-button {
     text-decoration: none;
     font-size: 8vw;
     white-space: nowrap;
+    font-family: 'SFN Republic';
 }
 
 .bar1,
@@ -274,6 +275,9 @@ a#mobile-home-button {
             @include transition(all 2s ease-out);
 
         }
+        p {
+            font-size: 120%;
+        }
     }
     &:hover .overlay-content {
         opacity: 1;
@@ -291,8 +295,16 @@ a#mobile-home-button {
 }
 
 
+.folio {
+    margin-bottom: 40px;
+}
+
 .folio .flex {
     justify-content: space-evenly;
+}
+
+.bkg-blue-grey {
+    background-color: $bkg-blue-grey;
 }
 
 //***********************//
@@ -333,12 +345,6 @@ a#mobile-home-button {
 
 }
 
-//.button-container {
-//    bottom: 0;
-//    right: 0;
-//    position: absolute;
-//    padding: 10px;
-//}
 
 
 //***********************//
@@ -543,6 +549,9 @@ h2.graphicdesign,
     box-shadow: inset 0 0 0 2px white;
     margin: 10px;
     @include transition(all .3s ease-out);
+    & a {
+        color: $dblue;
+    }
 }
 
 
@@ -675,7 +684,7 @@ button:hover a {
     
     .mobile-home-button-container {
         padding: 20px 20px 20px 20px;
-        background-color: $lblue;
+        background-color: $dblue;
         color: white;
         text-align: left;
         

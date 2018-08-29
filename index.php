@@ -91,10 +91,14 @@
                 <h1 class='name-title'>Jocelyn Huang</h1>
             -->
             <div class="title-plaque radius">
-                <h1 class='name-title'>Jocelyn</h1>
-                <div class="spacer-for-line">
+               <div class="inside-card-white"></div>
+                <div class="content">
+                    <h1 class='name-title'>Jocelyn</h1>
+                    <div class="spacer-for-line">
+                    </div>
+                    <p>Designer & Developer</p>
                 </div>
-                <p>Designer & Developer</p>
+                
                 <!--
                     <img class='blue-triangle bottom' src="raw/index/blue-triangle-1.svg" alt="">
                     <img class='blue-triangle top' src="raw/index/blue-triangle-2.svg" alt="">

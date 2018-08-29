@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <?php include("includes/head.html");?>
-    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/new-menu.css">
     <script src='js/landing.js'></script>
 
@@ -39,7 +39,7 @@
                     <img src="raw/cvilleweekly.png" alt="">
                 </div>
                 <div class="title">
-                    <h2>Recreate digital platforms for local Charlottesville news</h2>
+                    <h2>Recreate news website for a local Charlottesville publication</h2>
                 </div>
             </div>
 

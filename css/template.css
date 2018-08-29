@@ -844,3 +844,801 @@ ul.sm li.sm a svg {
     width: 90%;
   }
 }
+/***********************/
+/******* ALL *******/
+/***********************/
+/* line 43, ../sass/template.scss */
+body {
+  background-color: white;
+  height: 100%;
+}
+
+/* line 48, ../sass/template.scss */
+html {
+  height: 100%;
+}
+
+/* line 52, ../sass/template.scss */
+.web-portfolio-wrapper {
+  height: 100%;
+}
+/* line 54, ../sass/template.scss */
+.web-portfolio-wrapper section {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1400px) {
+  /* line 64, ../sass/template.scss */
+  .web-portfolio-wrapper section.opening, .web-portfolio-wrapper section.info {
+    min-height: 700px;
+  }
+}
+/* line 69, ../sass/template.scss */
+.abs {
+  position: absolute;
+}
+
+/***********************/
+/******* OPENING *******/
+/***********************/
+/* line 78, ../sass/template.scss */
+section.opening {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  overflow-y: visible;
+  overflow-x: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eef5f7+0,ffffff+100 */
+  background: #eef5f7;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eef5f7 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eef5f7 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eef5f7 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f7', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+/*** CONTENT ***/
+/* line 97, ../sass/template.scss */
+.content {
+  z-index: 200;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+/* line 105, ../sass/template.scss */
+.content .image-container {
+  width: 50%;
+  height: 50%;
+  z-index: 100;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  border: 3px solid #dddfe2;
+  position: relative;
+}
+/* line 114, ../sass/template.scss */
+.content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 120, ../sass/template.scss */
+.content .title {
+  text-align: center;
+  color: #3d52a1;
+  border-top: 3px solid #dddfe2;
+  margin-top: 7%;
+  margin: 7%;
+  margin-left: 10%;
+}
+/* line 127, ../sass/template.scss */
+.content .title h2 {
+  margin-top: 2%;
+}
+
+/* line 133, ../sass/template.scss */
+section.opening .content {
+  margin-top: 12%;
+}
+
+/*** BACKGROUND IMAGES ***/
+/* line 139, ../sass/template.scss */
+div.background-images {
+  position: absolute;
+}
+/* line 141, ../sass/template.scss */
+div.background-images.waves {
+  top: -30vh;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: url("../raw/web/opening-waves.svg") center/cover no-repeat;
+}
+/* line 148, ../sass/template.scss */
+div.background-images.waves img {
+  max-height: 70%;
+}
+/* line 152, ../sass/template.scss */
+div.background-images.shapes {
+  width: 100%;
+  z-index: -100;
+  height: 100%;
+}
+
+/* line 160, ../sass/template.scss */
+.circle {
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: url("../raw/web/pink-circle-outline.svg") center/cover no-repeat;
+  z-index: 100;
+}
+
+/* line 170, ../sass/template.scss */
+.stripes {
+  left: 0;
+  bottom: -100px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: url("../raw/web/blue-stripes.svg") -100px 0px/contain no-repeat;
+  z-index: 100;
+}
+
+/***********************/
+/***** INFORMATION *****/
+/***********************/
+/* line 185, ../sass/template.scss */
+section.info {
+  position: relative;
+  background: white;
+}
+
+/* line 190, ../sass/template.scss */
+div.info-card {
+  background: #3d52a1;
+  padding: 8%;
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  width: 80vw;
+  margin: 15% auto;
+  border-radius: 15px;
+  z-index: 200;
+}
+
+/* line 202, ../sass/template.scss */
+.company {
+  color: #3d52a1;
+  background: white;
+  margin-right: 40%;
+  width: auto;
+  position: relative;
+}
+/* line 209, ../sass/template.scss */
+.company.long {
+  margin-right: 0%;
+}
+/* line 213, ../sass/template.scss */
+.company::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  left: -20px;
+}
+/* line 223, ../sass/template.scss */
+.company::after {
+  content: '';
+}
+
+/* line 230, ../sass/template.scss */
+.border {
+  width: 95%;
+  height: 95%;
+  border: 1px solid #3d52a1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 240, ../sass/template.scss */
+.challenge, .project {
+  margin-top: 40px;
+}
+/* line 242, ../sass/template.scss */
+.challenge h3, .project h3 {
+  margin-bottom: 0px;
+}
+/* line 246, ../sass/template.scss */
+.challenge p, .project p {
+  margin-top: 10px;
+}
+
+/* line 252, ../sass/template.scss */
+.specs {
+  margin-top: 40px;
+}
+
+/* line 255, ../sass/template.scss */
+.specs p:nth-child(even) {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+/* line 260, ../sass/template.scss */
+.specs p:nth-child(odd) {
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+
+/* line 265, ../sass/template.scss */
+.pink-dotted-border {
+  height: 40vh;
+  width: 78vw;
+  border: 3px dashed #eac3d0;
+  top: 50vh;
+  left: -20px;
+  position: absolute;
+}
+
+/* line 274, ../sass/template.scss */
+.three-pink-stripes {
+  top: 10vh;
+  left: -6%;
+  background: url("../raw/web/info-section-3-pink-stripes.svg") center/contain no-repeat;
+  width: 24vw;
+  height: 30%;
+}
+
+/* line 282, ../sass/template.scss */
+.pink-blob {
+  bottom: -16vh;
+  left: -2.5%;
+  width: 13vw;
+  height: 30%;
+  z-index: 2;
+}
+
+/* line 291, ../sass/template.scss */
+.pink-circle {
+  bottom: 40vh;
+  right: 0%;
+  background: url("../raw/web/info-section-pink-circle-2.svg") center/contain no-repeat;
+  width: 15vmax;
+  height: 35vw;
+}
+
+/* line 299, ../sass/template.scss */
+.blue-striped-circle {
+  bottom: 6vh;
+  left: 55vw;
+  background: url(../raw/web/info-section-blue-circle.svg) center/contain no-repeat;
+  width: 30vw;
+  height: 30%;
+}
+
+/* line 307, ../sass/template.scss */
+.pink-outline-circle-2 {
+  top: 0vh;
+  right: 2%;
+  background: url(../raw/web/info-section-half-circle.svg) center/contain no-repeat;
+  width: 40vw;
+  height: 30%;
+}
+
+@media (max-width: 900px) {
+  /* line 318, ../sass/template.scss */
+  div.info-card {
+    padding: 10% 8%;
+  }
+}
+@media (max-width: 599px) {
+  /* line 325, ../sass/template.scss */
+  div.info-card {
+    margin: auto;
+  }
+}
+@media (max-width: 350px) {
+  /* line 331, ../sass/template.scss */
+  div.info-card {
+    width: 80vw;
+    padding: 19% 8%;
+  }
+}
+/***********************/
+/***** SITE-PREVIEW *****/
+/***********************/
+/* line 347, ../sass/template.scss */
+section.site-preview {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* line 352, ../sass/template.scss */
+section.site-preview::after {
+  content: '';
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+}
+/* line 360, ../sass/template.scss */
+section.site-preview::after {
+  bottom: -50px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+/* line 367, ../sass/template.scss */
+section.site-preview iframe {
+  height: 80%;
+  width: 80%;
+}
+/* line 372, ../sass/template.scss */
+section.site-preview .content {
+  padding-top: 10vh;
+  margin-top: 10%;
+  margin-left: 10%;
+  align-items: flex-start;
+}
+/* line 378, ../sass/template.scss */
+section.site-preview .content h2::after {
+  content: '';
+  width: 100%;
+  height: 20px;
+  margin-left: 20px;
+  border-bottom: 2px dashed #f06490;
+}
+/* line 386, ../sass/template.scss */
+section.site-preview .content button.general {
+  margin: 0 auto;
+}
+/* line 390, ../sass/template.scss */
+section.site-preview .content li {
+  list-style: circle;
+  font-weight: 500;
+}
+
+/* line 397, ../sass/template.scss */
+.content-background {
+  width: 100%;
+  height: 100%;
+  color: #3d52a1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14%;
+  padding: 10% 10% 18% 6%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* line 417, ../sass/template.scss */
+.large-pink-blob {
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 426, ../sass/template.scss */
+.blue-blob {
+  bottom: 4%;
+  right: 4%;
+  width: 60vw;
+  height: 50%;
+  z-index: -2;
+}
+
+/* line 434, ../sass/template.scss */
+.blue-ring {
+  top: 0vh;
+  right: 2%;
+  height: 30%;
+}
+
+/* line 440, ../sass/template.scss */
+.blue-rings-two {
+  bottom: -10%;
+  left: -10%;
+  height: 40%;
+  width: 40%;
+  z-index: 2;
+}
+
+/* line 448, ../sass/template.scss */
+.computer-container {
+  position: relative;
+}
+/* line 450, ../sass/template.scss */
+.computer-container img.computer {
+  width: 100%;
+  height: 100%;
+}
+/* line 454, ../sass/template.scss */
+.computer-container .iframe-container {
+  position: absolute;
+  top: 13.7%;
+  left: 19.8%;
+  width: 75.4%;
+  height: 62.8%;
+}
+/* line 460, ../sass/template.scss */
+.computer-container .iframe-container iframe {
+  border: none;
+}
+
+/***********************/
+/***** EXPLORE-MORE ****/
+/***********************/
+/* line 470, ../sass/template.scss */
+section.explore-more {
+  height: auto;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9ebee+0,ffffff+100 */
+  background: #e9ebee;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e9ebee 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e9ebee 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e9ebee 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9ebee', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  padding-top: 25vh;
+  padding-bottom: 10vh;
+}
+/* line 475, ../sass/template.scss */
+section.explore-more h2 {
+  color: #3d52a1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 482, ../sass/template.scss */
+div.tiles {
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto 4%;
+}
+
+/* line 491, ../sass/template.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3d52a1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 502, ../sass/template.scss */
+.overlay-link {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* line 508, ../sass/template.scss */
+.image-container:hover .overlay-link {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* line 515, ../sass/template.scss */
+.image-container {
+  z-index: 100;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  border: 3px solid #dddfe2;
+  width: 23%;
+  height: auto;
+  line-height: 0;
+  position: relative;
+}
+/* line 526, ../sass/template.scss */
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 530, ../sass/template.scss */
+.image-container h3 {
+  line-height: normal;
+  text-align: center;
+}
+
+/***********************/
+/******* FOOTER *******/
+/***********************/
+/* line 541, ../sass/template.scss */
+footer {
+  background: white url("../raw/web/footer-waves.png") top/cover no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  displa: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  max-height: 500px;
+}
+/* line 553, ../sass/template.scss */
+footer .waves-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  z-index: -1;
+}
+/* line 562, ../sass/template.scss */
+footer .waves-container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 568, ../sass/template.scss */
+footer div.content {
+  z-index: 3;
+  width: 50%;
+  padding-top: 11%;
+  box-sizing: border-box;
+}
+/* line 574, ../sass/template.scss */
+footer div.content div.sm-links {
+  margin-top: 17%;
+}
+
+/* line 580, ../sass/template.scss */
+.extra-blue {
+  width: 100%;
+  background: #3d52a1;
+}
+
+/* line 588, ../sass/template.scss */
+ul.sm {
+  margin-top: 10%;
+  padding: 0px;
+}
+
+/* line 593, ../sass/template.scss */
+ul.sm li.sm .transparency {
+  border-color: white;
+}
+
+/* line 598, ../sass/template.scss */
+ul.sm li.sm a svg {
+  fill: white;
+}
+
+@media (max-width: 599px) {
+  /* line 603, ../sass/template.scss */
+  footer div.content {
+    width: 90%;
+  }
+}
+/***********************/
+/*** RESPONSIVENESS ***/
+/***********************/
+@media (min-width: 900px) {
+  /* line 614, ../sass/template.scss */
+  section.site-preview .content {
+    padding-top: 10vh;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 0%;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 900px) {
+  /* line 627, ../sass/template.scss */
+  .content .image-container {
+    width: 60%;
+    height: 55%;
+  }
+
+  /* line 634, ../sass/template.scss */
+  .company {
+    margin-right: 23%;
+  }
+
+  /* line 638, ../sass/template.scss */
+  div.tiles {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  /* line 641, ../sass/template.scss */
+  div.tiles .image-container {
+    margin: 6% auto;
+    width: 70%;
+  }
+  /* line 646, ../sass/template.scss */
+  div.tiles .image-container:first-child {
+    margin-top: 0%;
+  }
+
+  /* line 651, ../sass/template.scss */
+  section.explore-more {
+    height: auto;
+  }
+}
+@media (max-width: 599px) {
+  /* line 660, ../sass/template.scss */
+  .stripes {
+    top: 59vh;
+  }
+
+  /* line 664, ../sass/template.scss */
+  .circle {
+    top: 40vh;
+    right: -30%;
+  }
+
+  /* line 670, ../sass/template.scss */
+  .company {
+    margin-right: 10vw;
+  }
+
+  /* line 675, ../sass/template.scss */
+  section.site-preview .content {
+    padding-top: 25vh;
+    margin: 0;
+    padding-bottom: 20vh;
+  }
+
+  /* line 681, ../sass/template.scss */
+  .large-pink-blob {
+    top: 40%;
+    left: 40%;
+  }
+
+  /* line 686, ../sass/template.scss */
+  .content-background {
+    margin-right: 0%;
+  }
+
+  /* line 690, ../sass/template.scss */
+  .blue-rings-two {
+    bottom: -20%;
+  }
+
+  /* line 694, ../sass/template.scss */
+  .content {
+    margin: 0;
+  }
+
+  /* line 698, ../sass/template.scss */
+  .content-background {
+    padding: 0;
+  }
+}
+@media (max-width: 350px) {
+  /* line 706, ../sass/template.scss */
+  section.opening {
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  /* line 710, ../sass/template.scss */
+  section.opening .content {
+    flex-flow: column-reverse nowrap;
+    margin-top: 100px;
+  }
+  /* line 714, ../sass/template.scss */
+  section.opening .content .image-container {
+    width: 76%;
+  }
+  /* line 718, ../sass/template.scss */
+  section.opening .content .title {
+    color: white;
+    border-top: none;
+    margin-bottom: 14vh;
+    text-align: left;
+    font-size: 24px;
+    margin: 7%;
+    margin-left: 10%;
+  }
+
+  /* line 733, ../sass/template.scss */
+  section.site-preview .content {
+    margin-left: 6%;
+  }
+  /* line 735, ../sass/template.scss */
+  section.site-preview .content ul {
+    padding-left: 20px;
+  }
+
+  /* line 741, ../sass/template.scss */
+  div.background-images.waves {
+    top: -35vh;
+    background: url("../raw/web/mobile-waves.png") center/cover no-repeat;
+  }
+  /* line 745, ../sass/template.scss */
+  div.background-images.shapes {
+    z-index: 0;
+  }
+  /* line 747, ../sass/template.scss */
+  div.background-images.shapes .circle {
+    bottom: 35vh;
+    right: -20vw;
+    width: 270px;
+    height: 270px;
+  }
+
+  /* line 756, ../sass/template.scss */
+  div.tiles .image-container {
+    width: 80%;
+  }
+}
+/* line 762, ../sass/template.scss */
+.shape-stripes {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+}
+
+/* line 770, ../sass/template.scss */
+.menu-active {
+  color: #eac3d0 !important;
+}

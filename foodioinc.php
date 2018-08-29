@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <?php include("includes/head.html");?>
-    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/new-menu.css">
     <script src='js/landing.js'></script>
 
