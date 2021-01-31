@@ -125,8 +125,6 @@
             </div>
 
             <div class="content-item RogueJohnsen">
-
-                <!--                <a target='_blank' href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html">-->
                 <div class="overlay"></div>
 
                 <div class="corner-overlay-content">
@@ -139,7 +137,7 @@
                     <div class="button-container">
                         
                         <button class='general btn btn-reverse btn-arrow'>
-                             <a href="http://www.wireframewebsites.com/wireframespring17/roguejohnsen/jocelynandtroy/rogue2.html" target = "_blank">
+                             <a href="http://www.jocelynhuang.com/works/rogue" target = "_blank">
                                  <span>
                                  <h4>Explore the Site</h4>
                                  <?php include("raw/arrow.svg"); ?>
@@ -149,16 +147,11 @@
                         
                     </div>
                 </div>
-
-                <!--                </a>-->
-
             </div>
 
 
 
             <div class="content-item HC">
-
-<!--                <a target='_blank' href="https://www.hackcville.com">-->
                     <div class="overlay"></div>
                     <!--                    -->
                     <div class="corner-overlay-content">
