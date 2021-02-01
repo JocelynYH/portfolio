@@ -73,7 +73,7 @@
                     <p>Re-invent the page for HackCville's graphic design class.</p>
                     <div class="button-container">
                         <button class='general btn btn-reverse btn-arrow'>
-                             <a href="http://jocelynhuang.com/vector" target = "_blank">
+                             <a href="http://jocelynhuang.com/showcase/vector/index.html" target = "_blank">
                                  <span>
                                  <h4>Explore the Live Site</h4>
                                  <?php include("raw/arrow.svg"); ?>

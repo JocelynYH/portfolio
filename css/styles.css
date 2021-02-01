@@ -1,33 +1,30 @@
 /* FONTS, COLORS, MIX-IN'S*/
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @font-face {
-  font-family: 'beautysd';
+  font-family: "beautysd";
   src: url("../fonts/BeautySchoolDropout.ttf") format("truetype"), url("../fonts/beautyschooldropout.woff") format("woff");
 }
 @font-face {
-  font-family: 'caviardreams';
+  font-family: "caviardreams";
   src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype"), url("../fonts/CaviarDreams_Bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'arcon';
+  font-family: "arcon";
   src: url("../fonts/Arcon-Regular.otf"), url("../font/Arcon-Regular.ttf") url("../font/Arcon-Regular.woff"), url("../font/Arcon-Regular.woff2");
 }
-/* line 24, ../sass/styles.scss */
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'caviardreams';
+  font-family: "caviardreams";
   margin: 0;
 }
 
-/* line 32, ../sass/styles.scss */
 p {
-  font-family: 'arcon';
+  font-family: "arcon";
   margin: 0;
 }
 
-/* line 51, ../sass/styles.scss */
 body {
   padding: 0;
   margin: 0;
@@ -35,46 +32,38 @@ body {
   box-sizing: border-box;
 }
 
-/* line 58, ../sass/styles.scss */
 a {
   color: white;
   text-decoration: none;
 }
 
-/* line 67, ../sass/styles.scss */
 .block {
   padding: 50px;
 }
 
-/* line 71, ../sass/styles.scss */
 .dblue {
   background-color: #3d52a1;
   color: white;
 }
 
-/* line 76, ../sass/styles.scss */
 .lblue {
   background-color: #2ba4c0;
   color: white;
 }
 
-/* line 81, ../sass/styles.scss */
 .pink {
   background-color: #f06490;
   color: white;
 }
 
-/* line 86, ../sass/styles.scss */
 .white {
   color: dblue;
 }
 
-/* line 90, ../sass/styles.scss */
 .infobox {
   padding-top: 10px;
 }
 
-/* line 97, ../sass/styles.scss */
 .thumbnail {
   width: 200px;
   height: 200px;
@@ -83,13 +72,11 @@ a {
   position: relative;
 }
 
-/* line 105, ../sass/styles.scss */
 .sm-thumbnail {
   width: 200px;
   height: auto;
 }
 
-/* line 115, ../sass/styles.scss */
 .overlay {
   opacity: 0;
   position: absolute;
@@ -101,18 +88,15 @@ a {
   text-align: center;
   background-color: #2ba4c0;
 }
-/* line 125, ../sass/styles.scss */
 .overlay:hover {
   opacity: 1;
 }
-/* line 128, ../sass/styles.scss */
 .overlay .vam {
   height: 100%;
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
 }
-/* line 135, ../sass/styles.scss */
 .overlay .thumbnail-info {
   display: inline-block;
   max-width: 95%;
@@ -123,18 +107,15 @@ a {
   text-align: center;
 }
 
-/* line 147, ../sass/styles.scss */
 .portfolio.block.dblue {
   text-align: center;
 }
-/* line 149, ../sass/styles.scss */
 .portfolio.block.dblue h2 {
   font-size: 40px;
   border-bottom: 1px solid white;
   margin: 0px 0px 10px 0px;
   line-height: 2em;
 }
-/* line 155, ../sass/styles.scss */
 .portfolio.block.dblue button {
   background-color: #f06490;
   color: white;
@@ -143,13 +124,11 @@ a {
   margin: 8px 10px 10px 10px;
 }
 
-/* line 164, ../sass/styles.scss */
 button.btn.med-type {
-  font-family: 'arcon';
+  font-family: "arcon";
   font-size: 16px;
 }
 
-/* line 169, ../sass/styles.scss */
 .tile {
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -157,80 +136,66 @@ button.btn.med-type {
   transition: all 350ms ease;
 }
 
-/* line 177, ../sass/styles.scss */
 .scale-anm {
   transform: scale(1);
 }
 
-/* line 182, ../sass/styles.scss */
 .btn {
   -webkit-appearance: none;
 }
 
-/* line 186, ../sass/styles.scss */
 .btn:hover {
   text-decoration: none;
 }
 
-/* line 190, ../sass/styles.scss */
 .btn:focus {
   outline: none;
   border-color: var(--darken-2);
   box-shadow: 0 0 0 3px var(--darken-3);
 }
 
-/* line 196, ../sass/styles.scss */
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 208, ../sass/styles.scss */
 .block {
   padding: 50px;
 }
 
-/* line 212, ../sass/styles.scss */
 table {
   border-collapse: collapse;
   margin-left: 40px;
 }
-/* line 215, ../sass/styles.scss */
 table p,
 table h4 {
   padding: 0;
   margin: 0;
 }
 
-/* line 223, ../sass/styles.scss */
 td,
 th {
   text-align: left;
   padding: 8px;
 }
 
-/* line 229, ../sass/styles.scss */
 .description {
   padding-top: 8px;
 }
 
-/* line 233, ../sass/styles.scss */
 td {
   padding-left: 10px;
 }
 
-/* line 237, ../sass/styles.scss */
 .flex .info {
   flex-basis: 50%;
 }
 
-/* line 241, ../sass/styles.scss */
 .flex .description {
   flex-basis: 50%;
   line-height: 1.7em;
 }
 
-/* line 246, ../sass/styles.scss */
 h2.project-title {
   font-size: 40px;
   border-bottom: 1px solid white;
@@ -238,55 +203,45 @@ h2.project-title {
   line-height: 2em;
 }
 
-/* line 253, ../sass/styles.scss */
 .block img {
   width: 100%;
   height: auto;
 }
 
-/* line 258, ../sass/styles.scss */
 .displayphoto.block {
   padding: 0px 50px 30px 50px;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 263, ../sass/styles.scss */
   .flex .description, .flex .info {
     flex-basis: 100%;
   }
 
-  /* line 267, ../sass/styles.scss */
   .flex .info table {
     margin-left: 0px;
     margin-top: 10px;
   }
 
-  /* line 272, ../sass/styles.scss */
   td, th {
     padding-left: 0px;
   }
 
-  /* line 276, ../sass/styles.scss */
   th {
     padding-right: 8px;
   }
 
-  /* line 280, ../sass/styles.scss */
   .displayphoto.block {
     padding: 0px 5% 30px 5%;
   }
 
-  /* line 284, ../sass/styles.scss */
   .block {
     padding: 50px 5%;
   }
 
-  /* line 289, ../sass/styles.scss */
   h2.project-title {
     font-size: 25px;
   }
 }
-/* line 300, ../sass/styles.scss */
 section.article {
   width: 700px;
   margin: 0 auto;
@@ -295,13 +250,11 @@ section.article {
   color: #3d52a1;
 }
 
-/* line 315, ../sass/styles.scss */
 html,
 body {
   height: 100%;
 }
 
-/* line 321, ../sass/styles.scss */
 .background {
   z-index: -1;
   position: fixed;
@@ -311,7 +264,6 @@ body {
   height: 100%;
 }
 
-/* line 338, ../sass/styles.scss */
 .paper {
   width: 35em;
   height: 50em;
@@ -329,7 +281,7 @@ body {
   /* IE10+ */
   background: linear-gradient(to bottom, #e8e8ea 0%, #efefef 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8ea', endColorstr='#efefef', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e8e8ea", endColorstr="#efefef", GradientType=0);
   /* IE6-9 */
   margin: auto;
   border-radius: 2px;
@@ -338,11 +290,11 @@ body {
   border-right: 1px solid #adc0bc;
   border-top: 1px solid #f4f4f6;
   box-shadow: 0 0 2px 0 #f4f4f6 inset, 0em 100px 500px -5px rgba(255, 255, 255, 0.5), -1em 1em 3em 1em rgba(255, 255, 255, 0.2), -5em 1em 30em 1em rgba(255, 255, 255, 0.2), 0em 2px 0 rgba(255, 255, 255, 0.7), 0em 10px 50px -10px white, 1.2em -0.8em 2em 0em #044134, 5.5em -1em 50em 0em #044134, 0px -5px 25px 0px #808f8c;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   backface-visibility: hidden;
 }
 
@@ -354,7 +306,6 @@ body {
        -o-transform: scale(1.2);
           transform: scale(1.2);
 } */
-/* line 395, ../sass/styles.scss */
 h1 {
   margin: 5em 0;
   margin-bottom: 50px;
@@ -363,3 +314,5 @@ h1 {
   text-align: center;
   text-shadow: 0 0px 20px #eee;
 }
+
+/*# sourceMappingURL=styles.css.map */

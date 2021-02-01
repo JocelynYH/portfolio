@@ -36,7 +36,7 @@
 
             <div class="content">
                 <div class="image-container">
-                    <img src="raw/Foodio-tile.png" alt="">
+                    <img src="raw/site-tiles/hackcville-tile.png" alt="">
                 </div>
                 <div class="title">
                     <h2>Rebrand UVA's Talent Accelerator</h2>
@@ -48,7 +48,6 @@
         <!--       INFO         -->
 
         <section class='info'>
-            <!--            <div class='border'></div>-->
             <div class='pink-dotted-border'></div>
             <div class="abs three-pink-stripes"></div>
             <div class="abs pink-blob"></div>
@@ -113,7 +112,6 @@
                             </li>
                             
                         </ul>
-                    <button class='general btn btn-reverse btn-arrow'><a href="http://wireframewebsites.com/jocelynhuang/hc-styles/style3.html" target = "_blank"><span><h4>See the Result</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
                 </div>
             </div>
         </section>
@@ -122,8 +120,13 @@
 <!--       EXPLORE NEXT       -->
        
         <section class="explore-more">
-            <h2>Explore Next</h2>
+            <h2>Screenshots</h2>
             <div class="tiles">
+            <div class="thumbnail-container">
+             <a href="http://jocelynhuang.com/raw/art/beetle.png" data-caption='Tinted Graphite' data-fancybox="images" data-width="706" data-height="743">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/screenshots/hc-home.png" />
+              </a>
+          </div>
                 <div class="image-container">
                    <a class="overlay-link" href="/art.php"><div class="overlay">
                            <h3>African Electronic Music</h3>
@@ -144,7 +147,7 @@
                 </div>
             </div>
 
-            <button class='general btn btn-reverse btn-arrow'><a href=""><span><h4>View All</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
+            <button class='general btn btn-reverse btn-arrow'><a href="http://www.jocelynhuang.com"><span><h4>View All</h4><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a></button>
         </section>
 
        

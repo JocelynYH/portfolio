@@ -1,4 +1,3 @@
-/* line 4, ../sass/new-menu.scss */
 #web-portfolio-links a {
   font-weight: 200;
   font-size: 14px;
@@ -8,19 +7,18 @@
   border-left: 1px solid white;
 }
 
-/* line 13, ../sass/new-menu.scss */
 .oppenned span:nth-child(2) {
   width: 700px;
   height: 700px;
 }
 
-/* line 18, ../sass/new-menu.scss */
 .oppenned .sub-menu {
   width: 700px;
   height: 700px;
 }
 
-/* line 23, ../sass/new-menu.scss */
 .sub-menu li {
   font-weight: 600;
 }
+
+/*# sourceMappingURL=new-menu.css.map */
