@@ -18,14 +18,14 @@
         <div class="flex">
          
           <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/avocado.png" data-caption='Acrylic on Cardboard' data-fancybox="images" data-width="1125" data-height="1131">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/avocado.png" />
+              <a href="http://jocelynhuang.com/raw/art/avocado.jpg" data-caption='Acrylic on Cardboard' data-fancybox="images" data-width="1125" data-height="1131">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/avocado.jpg" />
               </a>
           </div>
           
            <div class="thumbnail-container">
-             <a href="http://jocelynhuang.com/raw/art/beetle.png" data-caption='Tinted Graphite' data-fancybox="images" data-width="706" data-height="743">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/beetle.png" />
+             <a href="http://jocelynhuang.com/raw/art/beetle.jpg" data-caption='Tinted Graphite' data-fancybox="images" data-width="706" data-height="743">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/beetle.jpg" />
               </a>
           </div>
           
@@ -38,8 +38,8 @@
         
         
           <div class="thumbnail-container">
-               <a href="http://jocelynhuang.com/raw/art/bird.png" data-caption='Watercolor' data-fancybox="images" data-width="1497" data-height="1125">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/bird-tile.png" />
+               <a href="http://jocelynhuang.com/raw/art/bird.jpg" data-caption='Watercolor' data-fancybox="images" data-width="1497" data-height="1125">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/bird-tile.jpg" />
               </a>
           </div>
           
@@ -50,45 +50,45 @@
           </div>
          
           <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/balloon.png" data-caption='Chalk Pastel' data-fancybox="images" data-width="1015" data-height="1125">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/balloon.png" />
+              <a href="http://jocelynhuang.com/raw/art/balloon.jpg" data-caption='Chalk Pastel' data-fancybox="images" data-width="1015" data-height="1125">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/balloon.jpg" />
               </a>
               
           </div>
           
           <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/music.png" data-caption='Tinted Graphite' data-fancybox="images" data-width="1526" data-height="1125">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/music-tile.png" />
+              <a href="http://jocelynhuang.com/raw/art/music.jpg" data-caption='Tinted Graphite' data-fancybox="images" data-width="1526" data-height="1125">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/music-tile.jpg" />
               </a>
           </div>        
           
           <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/StillLife.png" data-caption='Tinted Graphite' data-fancybox="images" data-width="915" data-height="902">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/StillLife.png" />
+              <a href="http://jocelynhuang.com/raw/art/StillLife.jpg" data-caption='Tinted Graphite' data-fancybox="images" data-width="915" data-height="902">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/StillLife.jpg" />
               </a>
           </div>
         
          <div class="thumbnail-container">
-                <a href="http://jocelynhuang.com/raw/art/owl.png" data-caption='India Ink' data-fancybox="images" data-width="1613" data-height="988">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/owl-tile.png" />
+                <a href="http://jocelynhuang.com/raw/art/owl.jpg" data-caption='India Ink' data-fancybox="images" data-width="1613" data-height="988">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/owl-tile.jpg" />
                </a>
           </div>
    
          <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/frog.png" data-caption='Colored Pencil' data-fancybox="images" data-width="1260" data-height="1140">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/frog-tile.png" />
+              <a href="http://jocelynhuang.com/raw/art/frog.jpg" data-caption='Colored Pencil' data-fancybox="images" data-width="1260" data-height="1140">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/frog-tile.jpg" />
               </a>
           </div>
         
           <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/teapot.png" data-caption='India Ink' data-fancybox="images" data-width="1512" data-height="1138">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/teapot-tile.png" />
+              <a href="http://jocelynhuang.com/raw/art/teapot.jpg" data-caption='India Ink' data-fancybox="images" data-width="1512" data-height="1138">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/teapot-tile.jpg" />
               </a>
           </div>
         
          <div class="thumbnail-container">
-               <a href="http://jocelynhuang.com/raw/art/tulip.png" data-caption='Chalk Pastel' data-fancybox="images" data-width="1500" data-height="1141">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/tulip-tile.png" />
+               <a href="http://jocelynhuang.com/raw/art/tulip.jpg" data-caption='Chalk Pastel' data-fancybox="images" data-width="1500" data-height="1141">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/tulip-tile.jpg" />
               </a>
           </div>
         
@@ -100,8 +100,8 @@
           </div>
         
           <div class="thumbnail-container">
-              <a href="http://jocelynhuang.com/raw/art/mouth.png" data-caption='Charcoal' data-fancybox="images" data-width="917" data-height="1220">
-                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/mouth-tile.png" />
+              <a href="http://jocelynhuang.com/raw/art/mouth.jpg" data-caption='Charcoal' data-fancybox="images" data-width="917" data-height="1220">
+                  <img class='sm-thumbnail' src="http://jocelynhuang.com/raw/art/mouth-tile.jpg" />
               </a>
           </div>
         
